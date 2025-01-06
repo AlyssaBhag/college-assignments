@@ -1,0 +1,20 @@
+{
+  "name": "inft-2202-lab",
+  "version": "1.0.0",
+  "description": "Hello! This is for all of my lab submittions",
+  "main": "index.js",
+  "module": "type",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlyssaBhag/inft-2202-lab.git"
+  },
+  "author": "Alyssa Bhagwandin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlyssaBhag/inft-2202-lab/issues"
+  },
+  "homepage": "https://github.com/AlyssaBhag/inft-2202-lab#readme"
+}
