@@ -1,0 +1,54 @@
+<!--
+Name: Alyssa Bhagwandin
+Filename: style.css
+Course: INFT 2202
+Created Date: January 8th, 2024
+Description: This is my general style sheet!
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INFT 2202</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <div id="empty"></div>
+    <form id="email-form">
+        <input type="email" name="email" required>
+        <input type="text" anme="name" required>
+        <button type="submit"> click me!</button>
+    </form>
+        
+    </body>
+    <!-- DELTEE THIS/ PUT IT INTO THE CSS-->
+<style>
+    .blue {color: blue;}
+</style>
+ <!-- Added this so you dont have to update the copyright year.-->
+  <script src="app/app.js"></script>
+    <script>
+        console.log('Hello world again?');
+        const heading = document.querySelector('h1');
+        console.log(heading);
+        const box = document.getElementById('empty-box');
+        console.log(box);
+
+        box.append('Not so empty now');
+        box.classList.add('text-danger');
+
+        const words = document.createElement('p');
+        words.append('Blah');
+        box.appendChild(words);
+
+        box.replaceChildren(words);
+
+        const date = new date();
+        const copy = document.getElementById('copyright');
+        copy.append(date.getFullYear)
+
+        console.log(date.getFullYear());
+
+    </script>
+</html>
