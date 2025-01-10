@@ -28,10 +28,10 @@ Description: This is my main page!
 
 <!-- The nav bar stuff!-->
 
-<header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<header>
+  <nav class="navbar navbar-expand-md fixed-top custom-navbar ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Zookédex</a>
+      <a class="navbar-brand" href="index.html"> <i class="fa-solid fa-circle-dot"></i> Zookédex</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,7 +54,6 @@ Description: This is my main page!
     </div>
   </nav>
 </header>
-
 <main>
 
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
@@ -65,29 +64,24 @@ Description: This is my main page!
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Welcome to Zookédex!</h1>
-            <p class="opacity-75">A cool place to view, learn and add to your animal collection!</p>
+            <p class="opacity-75">Your one-stop destination to discover, learn about, and add to an ever-growing collection of animals from around the world!</p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
           <div class="carousel-caption">
-            <h1>Another headline about Zookédex.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <h1>Explore the Animal Kingdom!</h1>
+            <p>Delve into a rich variety of animals and uncover fascinating facts about each species. Perfect for animal lovers of all ages!</p>
           </div>
         </div>
-      </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <h1>Join the Zookédex Community!</h1>
+            <p>Become a part of our vibrant community. Add your favorite animals and share your knowledge with fellow enthusiasts!</p>
           </div>
         </div>
       </div>
@@ -112,22 +106,22 @@ Description: This is my main page!
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src="img/turtle.png" class="rounded-circle" width="140" height="140" alt="Add to Zookédex">
         <h2 class="fw-normal">Add To Zookédex</h2>
         <p>Here you can add to your collection of animals in the Zookédex!</p>
-        <p><a class="btn btn-secondary" href="add.html">View details &raquo;</a></p>
+        <p><a class="btn custom-btn" href="add.html">View page &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <div class="col-lg-4 text-center">
+        <img src="img/folder.png" class="rounded-circle" width="140" height="140" alt="Add to Zookédex">
         <h2 class="fw-normal">Zookédex</h2>
         <p>Here is where you can view the collection of the animals in the Zookédex!</p>
-        <p><a class="btn btn-secondary" href="list.html">View page &raquo;</a></p>
+        <p><a class="btn custom-btn" href="list.html">View page &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src="img/info.jpg" class="rounded-circle" width="140" height="140" alt="Add to Zookédex">
         <h2 class="fw-normal">About Us</h2>
         <p>Here you can learn all about us and what we do here at Zookédex.</p>
-        <p><a class="btn btn-secondary" href="about.html">View page &raquo;</a></p>
+        <p><a class="btn custom-btn" href="about.html">View page &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -138,11 +132,11 @@ Description: This is my main page!
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal lh-1"> Resting in the Wild. <span class="custom-text-color">Discover the beauty of animal sleep.</span></h2>
+        <p class="lead">Even the fiercest creatures need their rest. This sleeping jaguar demonstrates the calmness of the wild when it’s time to recharge. Animals in the wild spend a significant part of their lives resting, ensuring they have the energy to hunt, explore, and thrive.</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        <img src="img/jaguar.jpg" class="featurette-image img-fluid mx-auto" alt="Description of your image" width="500" height="500">
       </div>
     </div>
 
@@ -150,23 +144,11 @@ Description: This is my main page!
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1">The Peaceful Panda. <span class="custom-text-color">A moment of tranquility in nature.</span></h2>
+        <p class="lead">Here we have a panda, deeply asleep in its serene environment. Pandas are known for their relaxed nature, and their sleep is just as peaceful. Did you know that pandas spend about 10-16 hours a day resting? They conserve energy for their slow and steady lifestyle.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        <img src="img/panda.jpg" class="featurette-image img-fluid mx-auto" alt="Description of your image" width="500" height="500">
       </div>
     </div>
 

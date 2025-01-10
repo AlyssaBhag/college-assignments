@@ -11,7 +11,7 @@ Description: This is my about page!
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Us - INFT 2202</title>
+    <title>About Me - INFT 2202</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,41 +23,49 @@ Description: This is my about page!
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-
-    <header data-bs-theme="dark">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Zooédex</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="list.html"><i class="fas fa-list"></i> List</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="add.html"><i class="fas fa-plus"></i> Add</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-                </li>
-              </ul>
-            </div>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top custom-navbar ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> <i class="fa-solid fa-circle-dot"></i> Zookédex</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="list.html"><i class="fas fa-list"></i> List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="add.html"><i class="fas fa-plus"></i> Add</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
 <!-- Begin page content -->
 <main class="flex-shrink-0">
-  <div class="container">
-    <h1 class="mt-5">About Us</h1>
-    <p class="lead">Helllooooo this is a page all about me and my fabulous company that I currently have anything cool to say about but I can assure you it is very cool....probably. </p>
+  <div class="container about-container d-flex">
+    <!-- Image Section -->
+    <img src="img/camal.png" alt="Profile Picture" class="profile-picture me-4">
+
+    <!-- Text Section -->
+    <div>
+      <h1 class="mt-4">About Me</h1>
+      <p class="lead">Hi! My name is Alyssa Bhagwandin</p>
+      <p>I am currently pursuing my studies in Computer Programming, with a passion for creating innovative and life-altering solutions. My goal is to work as a software developer or game designer upon graduation, contributing to exciting projects that make a difference.</p>
+      <p>Thank you for visiting Zookédex! I hope you enjoy learning more about the amazing animals in the collection.</p>
+    </div>
   </div>
 </main>
+
 
     <!-- FOOTER -->
 <footer class="container">
