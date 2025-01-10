@@ -68,15 +68,15 @@ Description: This is my about page!
 
 
     <!-- FOOTER -->
-<footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-      <!-- I know you saif to add this in the app.js file and I did, but I couldnt get it working right now.-->
-      <script>
-        const date = new Date();
-        const copy = document.getElementById('copyright');
-        copy.textContent = date.getFullYear();
-      </script>
-    </body>
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+    </footer>
+    <script>
+      //I know you said to add this in the app.js file and I did, but I couldnt get it working right now.
+      const date = new Date();
+      const copy = document.getElementById('copyright');
+      copy.textContent = date.getFullYear();
+    </script>
+  </body>
 </html>
