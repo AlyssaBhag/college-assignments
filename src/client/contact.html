@@ -23,7 +23,9 @@ Description: This is my contact page!
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script src="app/app.js" defer></script>
 
+    <script src="app/animals/create.js" defer></script>
     
     <header>
       <nav class="navbar navbar-expand-md fixed-top custom-navbar ">
@@ -38,7 +40,7 @@ Description: This is my contact page!
                 <a class="nav-link" href="list.html"><i class="fas fa-list"></i> List</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="add.html"><i class="fas fa-plus"></i> Add</a>
+                <a class="nav-link" href="create.html"><i class="fas fa-plus"></i> Create</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
@@ -64,11 +66,5 @@ Description: This is my contact page!
       <p class="float-end"><a href="#">Back to top</a></p>
       <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
 </footer>
-  <script>
-      //I know you said to add this in the app.js file and I did, but I couldnt get it working right now.
-      const date = new Date();
-      const copy = document.getElementById('copyright');
-      copy.textContent = date.getFullYear();
-  </script>
   </body>
 </html>
