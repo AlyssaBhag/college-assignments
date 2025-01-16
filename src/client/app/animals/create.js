@@ -10,36 +10,82 @@ Description: This is my create.js file
 
 // console.log("Hello")
 
+import Animal from './animal.js'; 
+import animalMockService from '../animal.mock.service.js';
+
+
+
 const eleForm = document.getElementById('animal-form')
 eleForm.addEventListener('submit', submitAnimalForm);
 
-
-function submitAnimalForm( event ) {
+function submitAnimalForm(event) {
     event.preventDefault();
-
     const animalForm = event.target;
-
+    const messageBox = document.getElementById('message-box');
+    // Spinner stuff for later when it the form get submitted correctly.
+    const spinner = document.getElementById('spinner');
+    const eleNameError = animalForm.name.nextElementSibling;
     const valid = validateAnimalForm(animalForm);
-    const messageBox = document.getElementById('message-box')
-    
+
+
+
+    // Clear previous messages.
+    messageBox.classList.add('d-none');
+    eleNameError.classList.add('d-none');
+
+
     if (valid){
         console.log('valid, lets save the animal!');
-        const animalObject = {
+        const animalObject = new Animal ({
+
+            // animalForm.name.value,
+            // animalForm.breed.value,
+            // animalForm.eyes.value,
+            // animalForm.legs.value,
+            // animalForm.sound.value,
             name: animalForm.name.value,
             breed: animalForm.breed.value,
-            legs: animalForm.legs.value,
             eyes: animalForm.eyes.value,
+            legs: animalForm.legs.value,
             sound: animalForm.sound.value,
-        };
+        });
+
         console.log(animalObject)
-        animalForm.reset();
-        messageBox.classList.add('d-none');
+
+        try {
+            // Show spinner while processing
+            spinner.classList.remove('d-none');
+
+            animalForm.reset();
+            animalMockService.createAnimal(animalObject);
+
+
+            
+            // Hide spinner after operation is complete.
+            setTimeout(() => {
+                spinner.classList.add('d-none');
+            }, 3000); // Adjust delay as necessary.
+
+            messageBox.classList.add('d-none');
+            alert("Animal created successfully!");
+
+            // Redirects after 3 seconds.
+            setTimeout(() => {
+                window.location.href = "list.html"; 
+            }, 3000);
+
+        } catch(error){
+            eleNameError.classList.remove('d-none');
+            eleNameError.textContent = error.message
+        }
+        
     }else {
         console.log('not valid')
         messageBox.classList.remove('d-none');
         messageBox.textContent = 'Error! Your form was submitting incorrectly, please try again.'
     }
     console.log('You tried to submit me!')
+
 }
 
 
