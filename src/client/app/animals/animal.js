@@ -1,6 +1,14 @@
+/*
+Name: Alyssa Bhagwandin
+Filename: animal.js
+Course: INFT 2202
+Created Date: January 16th, 2024
+Description: This is my animal.js file
+*/
+
 export default class Animal {
-    constructor({name, breed, eyes, legs, sound}) {
-        this.id = crypto.randomUUID();
+    constructor({id= null, name, breed, eyes, legs, sound}) {
+        this.id = id ?? crypto.randomUUID();
         // this.name = name;
         // this.breed = breed;
         // this.eyes = eyes;
@@ -9,12 +17,12 @@ export default class Animal {
         Object.assign(this, {name, breed, eyes, legs, sound });
     }
 
-
     toString() {
         return `${this.name} is  a ${this.breed} with ${this.eyes} eyes, ${this.legs} legs, and sound like ${this.sound}`;
+    
     }
 
-    toObject() {
+    toJSON() {
         // When I did it this first way is kept saying the name variable was not
         //  declared even though it was and created weird minor errors so I 
         // changed it to this...
@@ -33,10 +41,6 @@ export default class Animal {
             legs: this.legs,
             sound: this.sound
         };
-    }
-
-    toJSON() {
-        return JSON.stringify(this.toObject());
     }
 
 }

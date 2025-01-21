@@ -1,8 +1,16 @@
+/*
+Name: Alyssa Bhagwandin
+Filename: animal.mock.service.js
+Course: INFT 2202
+Created Date: January 16th, 2024
+Description: This is my animal.mock.service.js file
+*/
+
 
 import Animal from "./animals/animal.js";
-
 // Function gets hosited, put here for visibility
 export default new AnimalService()
+
 
 // service constructor.
 function AnimalService() {
@@ -24,8 +32,9 @@ AnimalService.prototype.listAnimals = function () {
 //find
 AnimalService.prototype.findIndex = function(id){
     const animals = this.listAnimals();
-    const index = animals.findIndex((a) = a.id === id);
-    if(!animals) {
+    const index = animals.findIndex(a => String(a.id) === String(id));
+    // if(!animals) {
+    if (index === -1) {
         throw new Error("That animal doesnt exist! Please try again with a valid animal.")
     }
     return index;
@@ -49,7 +58,8 @@ AnimalService.prototype.updateAnimal = function(animalModel) {
     const animals = this.listAnimals();
     const index = animals.findIndex(animalModel.id);
 
-    animals[index] = animalModel.toObject();
+    // I removed the toObject from here.
+    animals[index] = animalModel();
     localStorage.setItem('animals', JSON.stringify(animals));
     
     return true;
@@ -71,3 +81,4 @@ AnimalService.prototype.deleteAnimal = function(animalModel){
     
     return true
 }
+

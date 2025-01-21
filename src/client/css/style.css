@@ -11,9 +11,10 @@ Description: This is my general style sheet!
 /* Padding below the footer and lighter body text */
 body {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 80px;
   color: rgb(var(--bs-tertiary-color-rgb));
 }
+
 
 html, body {
   height: 100%;
@@ -179,6 +180,7 @@ footer {
 .about-container {
   display: flex;
   align-items: center; /* Align image and text vertically */
+  padding-top: 20px; 
 }
 
 .profile-picture {
@@ -187,3 +189,27 @@ footer {
   border-radius: 10px; /* Add rounded corners */
   margin-right: 20px; /* Add spacing between the image and text */
 }
+
+.btn-red {
+  background-color: #e82c2c !important; /* Twitch purple */
+  color: white !important;
+  border: none !important;
+}
+
+.btn-red:hover {
+  background-color: #e82c2c !important; /* Slightly darker purple for hover effect */
+  color: white !important;
+}
+
+.btn-pink {
+  background-color: #ff006e !important; /* Twitch purple */
+  color: white !important;
+  border: none !important;
+}
+
+.btn-pink:hover {
+  background-color: #ff006e !important; /* Slightly darker purple for hover effect */
+  color: white !important;
+}
+
+

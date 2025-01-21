@@ -11,33 +11,27 @@ Description: This is my about page!
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create - INFT 2202</title>
+    <title>About - INFT 2202</title>
 
+	<!-- CSS stylesheet. -->
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="icon" type="image/x-icon" href="img/Poké_Ball_icon.png">
-
-    
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <!--THE OLD ONE:  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
-
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!--THE OLD ONE:  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
-    
+ 
+ 	<!-- JavaScript Files. -->
     <script rel="stylesheet" src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Had to add "defer" because for some reason it wasnt working without it. Below shows the ref for it.-->
-    <!-- https://www.w3schools.com/tags/att_script_defer.asp-->
-    <script type="module" src="app/app.js" defer></script>
-
-    <script type="module" src="app/animals/create.js" defer></script>
-
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="app/animals/create.js"></script>
   </head>
-
+  
+  <!-- The nav bar stuff!-->
+  <body>
     <header>
       <nav class="navbar navbar-expand-md fixed-top custom-navbar ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"> <i class="fa-solid fa-circle-dot"></i> Zookédex</a>
+          <a class="navbar-brand" href="index.html"> 
+			<i class="fa-solid fa-circle-dot"></i> Zookédex</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -61,22 +55,21 @@ Description: This is my about page!
       </nav>
     </header>
 
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-  <div class="container about-container d-flex">
-    <!-- Image Section -->
-    <img src="img/camal.png" alt="Profile Picture" class="profile-picture me-4">
+	<!-- Begin page content -->
+	<main class="flex-shrink-0">
+	  <div class="container about-container d-flex">
+		<!-- Image Section -->
+		<img src="img/profilePic.jpg" alt="Profile Picture" class="profile-picture me-4">
 
-    <!-- Text Section -->
-    <div>
-      <h1 class="mt-4">About Me</h1>
-      <p class="lead">Hi! My name is Alyssa Bhagwandin</p>
-      <p>I am currently pursuing my studies in Computer Programming, with a passion for creating innovative and life-altering solutions. My goal is to work as a software developer or game designer upon graduation, contributing to exciting projects that make a difference.</p>
-      <p>Thank you for visiting Zookédex! I hope you enjoy learning more about the amazing animals in the collection.</p>
-    </div>
-  </div>
-</main>
-
+		<!-- Text Section -->
+		<div>
+		  <h1 class="mt-4">About Me</h1>
+		  <p class="lead">Hi! My name is Alyssa Bhagwandin</p>
+		  <p>I am currently pursuing my studies in Computer Programming, with a passion for creating innovative and life-altering solutions. My goal is to work as a software developer or game designer upon graduation, contributing to exciting projects that make a difference.</p>
+		  <p>Thank you for visiting Zookédex! I hope you enjoy learning more about the amazing animals in the collection.</p>
+		</div>
+	  </div>
+	</main>
 
     <!-- FOOTER -->
     <footer class="container">

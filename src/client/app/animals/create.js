@@ -13,31 +13,31 @@ Description: This is my create.js file
 import Animal from './animal.js'; 
 import animalMockService from '../animal.mock.service.js';
 
-
-
-const eleForm = document.getElementById('animal-form')
-eleForm.addEventListener('submit', submitAnimalForm);
-
+// Ended up making this into a if statement.
+const eleForm = document.getElementById('animal-form');
+if (eleForm) {
+    eleForm.addEventListener('submit', submitAnimalForm);
+};
+  
+  
 function submitAnimalForm(event) {
     event.preventDefault();
+    
     const animalForm = event.target;
     const messageBox = document.getElementById('message-box');
     // Spinner stuff for later when it the form get submitted correctly.
     const spinner = document.getElementById('spinner');
     const eleNameError = animalForm.name.nextElementSibling;
     const valid = validateAnimalForm(animalForm);
-
-
+    
 
     // Clear previous messages.
     messageBox.classList.add('d-none');
     eleNameError.classList.add('d-none');
 
-
     if (valid){
         console.log('valid, lets save the animal!');
         const animalObject = new Animal ({
-
             // animalForm.name.value,
             // animalForm.breed.value,
             // animalForm.eyes.value,
