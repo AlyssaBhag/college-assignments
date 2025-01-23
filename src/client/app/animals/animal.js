@@ -7,13 +7,8 @@ Description: This is my animal.js file
 */
 
 export default class Animal {
-    constructor({id= null, name, breed, eyes, legs, sound}) {
+    constructor({id = null, name, breed, eyes, legs, sound}) {
         this.id = id ?? crypto.randomUUID();
-        // this.name = name;
-        // this.breed = breed;
-        // this.eyes = eyes;
-        // this.legs = legs;
-        // this.sound = sound;
         Object.assign(this, {name, breed, eyes, legs, sound });
     }
 
@@ -23,16 +18,6 @@ export default class Animal {
     }
 
     toJSON() {
-        // When I did it this first way is kept saying the name variable was not
-        //  declared even though it was and created weird minor errors so I 
-        // changed it to this...
-        
-        // id = this.id;
-        // name = this.name;
-        // breed = this.breed;
-        // eyes = this.eyes;
-        // legs = this.legs;
-        // sound = this.sound;
         return {
             id: this.id,
             name: this.name,
@@ -42,7 +27,6 @@ export default class Animal {
             sound: this.sound
         };
     }
-
 }
 
 

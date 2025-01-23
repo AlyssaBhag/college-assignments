@@ -21,7 +21,7 @@ Description: This is my main page!
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- JavaScript Files -->
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- removed the bootstrap one and put it at the bottom. -->
     <script type="module" src="app/app.js"></script>
     <script type="module" src="app/animals/create.js" ></script>
   </head>
@@ -31,14 +31,14 @@ Description: This is my main page!
   <header>
     <nav class="navbar navbar-expand-md fixed-top custom-navbar ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"> <i class="fa-solid fa-circle-dot"></i> Zookédex</a>
+        <a class="navbar-brand active" href="index.html"> <i class="fa-solid fa-circle-dot"></i> Zookédex</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="list.html"><i class="fas fa-list"></i> List</a>
+              <a class="nav-link" href="search.html"><i class="fas fa-list"></i> List</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="create.html"><i class="fas fa-plus"></i> Create</a>
@@ -151,18 +151,16 @@ Description: This is my main page!
           <img src="img/panda.jpg" class="featurette-image img-fluid mx-auto" alt="Description of your image" width="500" height="500">
         </div>
       </div>
-
       <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
+    </div>
 
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
-      </footer>
-    </body>
-  </html>
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+    </footer>
+    <!-- Added this becuase the instructions said to put it at the bottom. -->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

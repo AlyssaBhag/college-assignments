@@ -1,10 +1,9 @@
 <!--
 Name: Alyssa Bhagwandin
-Filename: add.html
+Filename: list.html
 Course: INFT 2202
 Created Date: January 8th, 2024
-Last edited Date: January 13th, 2024
-Description: This is my add page!
+Description: This is my list page!
 -->
 
 <!doctype html>
@@ -12,7 +11,7 @@ Description: This is my add page!
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create - INFT 2202</title>
+    <title>List - INFT 2202</title>
 
 	<!-- CSS stylesheet. -->
     <link rel="stylesheet" href="css/style.css">
@@ -24,6 +23,7 @@ Description: This is my add page!
     <!-- removed the bootstrap one and put it at the bottom. -->
     <script type="module" src="app/app.js"></script>
     <script type="module" src="app/animals/create.js"></script>
+    <script type="module" src="app/animals/search.js"></script>
   </head>
   
   <!-- The nav bar stuff!-->
@@ -32,17 +32,17 @@ Description: This is my add page!
       <nav class="navbar navbar-expand-md fixed-top custom-navbar ">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"> 
-			<i class="fa-solid fa-circle-dot"></i> Zookédex</a>
+			    <i class="fa-solid fa-circle-dot"></i> Zookédex</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" href="search.html"><i class="fas fa-list"></i> List</a>
+                <a class="nav-link active" href="search.html"><i class="fas fa-list"></i> List</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="create.html"><i class="fas fa-plus"></i> Create</a>
+                <a class="nav-link" href="create.html"><i class="fas fa-plus"></i> Create</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
@@ -57,58 +57,30 @@ Description: This is my add page!
     </header>
 
 
-	<!-- Begin page content -->
-	<main class="flex-shrink-0">
-	  <div class="container">
-		<h1 class="mt-5">Create</h1>
-		<p class="lead">This page is for adding animals to the list.</p>
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+      <div class="container">
+      <h1 class="mt-5">Animal List</h1>
+      <p class="lead">Here will display all of the animals in your collection! </p>
+      <div id="message-box" class="alert alert-info d-none">There are currently no animals available in your local storage.</div>
+      <table id="animals-list" class="table table-striped d-none">
+        <thead>
+        <tr>
+          <th>Owner</th>
+          <th>Details</th>
+          <th>Controls</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      </div>
+    </main>
 
-		  <div id="message-box" class="alert alert-danger d-none"></div>
-		  <i id="spinner" class="fa fa-spinner fa-spin d-none" style="font-size:40px"></i>
 
-		  <form id='animal-form' novalidate>
 
-			<!-- Animal Name -->
-			<div class="mb-3">
-			  <label for="animalName" class="form-label">Animal Name</label>
-			  <input type="text" id="animalName" name="name" class="form-control">
-			  <p class="text-danger d-none">Animal name is required.</p>
-			</div>
 
-			<!-- Animal Breed -->
-			<div class="mb-3">
-			  <label for="animalBreed" class="form-label">Animal Breed</label>
-			  <input type="text" id="animalBreed" name="breed" class="form-control">
-			  <p class="text-danger d-none">Please enter a valid breed.</p>
-			</div>
 
-			<!-- Animal Eyes -->
-			<div class="mb-3">
-			  <label for="animalEyes" class="form-label">Animal Eyes</label>
-			  <input type="number" id="animalEyes" name="eyes" class="form-control">
-			  <p class="text-danger d-none">Please enter a valid number of eyes.</p>
-			</div>
-
-			<!-- Animal Legs -->
-			<div class="mb-3">
-			  <label for="animalLegs" class="form-label">Animal Legs</label>
-			  <input type="number" id="animalLegs" name="legs" class="form-control">
-			  <p class="text-danger d-none">Please enter a valid amount of legs.</p>
-			</div>
-
-			<!-- Animal Sound -->
-			<div class="mb-3">
-			  <label for="animalSounds" class="form-label">Animal Sound</label>
-			  <input type="text" id="animalSounds" name="sound" class="form-control">
-			  <p class="text-danger d-none">Please enter a valid animal sound.</p>
-			</div>
-      <input type="hidden" id="id" name="id">
-		  <!-- Submit Button -->
-		  <button type="submit" class="btn custom-btn">Add Animal</button>
-		  </form>
-	  </div>
-	</main>
-
+  
 
     <!-- FOOTER -->
     <footer class="container">

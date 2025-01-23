@@ -2,7 +2,7 @@
 Name: Alyssa Bhagwandin
 Filename: create.js
 Course: INFT 2202
-Created Date: January 13th, 2024
+Created Date: January 13th, 2025
 Description: This is my create.js file
 */
 
@@ -11,15 +11,60 @@ Description: This is my create.js file
 // console.log("Hello")
 
 import Animal from './animal.js'; 
-import animalMockService from '../animal.mock.service.js';
+import animalMockService from './animal.mock.service.js';
+
+const url = new URL(window.location);
+const searchParams = url.searchParams;
+const editId = searchParams.get('id');
+const isEditMode = editId ? true : false;
+
+if(isEditMode) {
+    setupEditForm();
+}
 
 // Ended up making this into a if statement.
 const eleForm = document.getElementById('animal-form');
 if (eleForm) {
     eleForm.addEventListener('submit', submitAnimalForm);
-};
+}
   
-  
+
+function setupEditForm() {
+    const eleheading = document.querySelector('h1');
+    eleheading.textContent = "Editing Existing Animal List";
+
+    // const existingAnimal = animalMockService.findAnimal(editId);
+
+    // Retrieve the animals from localStorage cuz it kept saying "undefined" and i was so lost for
+    const animal = JSON.parse(localStorage.getItem('animals'));
+    // Find the animal by its id
+    const existingAnimal = animal.find(animals => animals.id === editId);
+
+    // console.log(JSON.parse(localStorage.getItem('animals')));
+
+    // console.log(existingAnimal);
+    
+    if (existingAnimal) {
+        const eleAnimalForm = document.getElementById('animal-form');
+        // const existingAnimal = animalMockService.findAnimal(editId);
+        // Does the edit stuff and gives the fields it can edit.
+        eleAnimalForm.id.value = existingAnimal.id;
+        eleAnimalForm.name.value = existingAnimal.name;
+        eleAnimalForm.name.disabled = true;
+        eleAnimalForm.breed.value = existingAnimal.breed;   
+        eleAnimalForm.eyes.value = existingAnimal.eyes;  
+        eleAnimalForm.legs.value = existingAnimal.legs;
+        eleAnimalForm.sound.value = existingAnimal.sound;
+        // console.log(existingAnimal);
+    } else {
+        alert("Animal not found!");
+        // Redirect back if animal is not found
+        window.location.href = "search.html";   
+    }
+}
+
+
+
 function submitAnimalForm(event) {
     event.preventDefault();
     
@@ -27,22 +72,19 @@ function submitAnimalForm(event) {
     const messageBox = document.getElementById('message-box');
     // Spinner stuff for later when it the form get submitted correctly.
     const spinner = document.getElementById('spinner');
-    const eleNameError = animalForm.name.nextElementSibling;
+    // const eleNameError = animalForm.name.nextElementSibling;
     const valid = validateAnimalForm(animalForm);
     
 
     // Clear previous messages.
     messageBox.classList.add('d-none');
-    eleNameError.classList.add('d-none');
+    // eleNameError.classList.add('d-none');
 
     if (valid){
+        // const animalParms = {}
         console.log('valid, lets save the animal!');
         const animalObject = new Animal ({
-            // animalForm.name.value,
-            // animalForm.breed.value,
-            // animalForm.eyes.value,
-            // animalForm.legs.value,
-            // animalForm.sound.value,
+            id: animalForm.id.value,
             name: animalForm.name.value,
             breed: animalForm.breed.value,
             eyes: animalForm.eyes.value,
@@ -50,31 +92,30 @@ function submitAnimalForm(event) {
             sound: animalForm.sound.value,
         });
 
+        // console.log(animalObject.id)
         console.log(animalObject)
-
         try {
+
+            if(isEditMode){
+                animalMockService.updateAnimal(animalObject);
+            }else{
+                animalMockService.createAnimal(animalObject);
+            }
             // Show spinner while processing
             spinner.classList.remove('d-none');
 
-            animalForm.reset();
-            animalMockService.createAnimal(animalObject);
-
-
-            
-            // Hide spinner after operation is complete.
+            // // Hide spinner after operation is complete.
             setTimeout(() => {
                 spinner.classList.add('d-none');
-            }, 3000); // Adjust delay as necessary.
-
-            messageBox.classList.add('d-none');
-            alert("Animal created successfully!");
-
-            // Redirects after 3 seconds.
-            setTimeout(() => {
-                window.location.href = "list.html"; 
-            }, 3000);
+                alert("Animal created successfully!");
+                animalForm.reset();
+                window.location.href = "search.html";
+            }, 3000); 
 
         } catch(error){
+            // hide the spinner when there are errors.
+            spinner.classList.add('d-none'); 
+            console.error("Error saving animal:", error);
             eleNameError.classList.remove('d-none');
             eleNameError.textContent = error.message
         }
@@ -87,11 +128,6 @@ function submitAnimalForm(event) {
     console.log('You tried to submit me!')
 
 }
-
-
-// function validateAnimalForm(event){
-//     console.log("you tried to submit!");
-// }
 
 function validateAnimalForm(animalForm){
     // console.log("test if its valid or not");
