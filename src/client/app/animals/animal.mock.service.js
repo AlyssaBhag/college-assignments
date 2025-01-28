@@ -23,33 +23,44 @@ function AnimalService() {
 }
 
 // Gets the list of all of the animals when the user enters the stuff in the create.html page.
-AnimalService.prototype.getAnimals = function () {
-    const animals = JSON.parse(localStorage.getItem('animals'))
+// replaces the old one.
+AnimalService.prototype.getAnimals = function (page = 1, perPage = 10) {
+    const animals = JSON.parse(localStorage.getItem('animals')) || [];
+    
+    // Calculate pagination boundaries
+    const first = (page - 1) * perPage;
+    const last = first + perPage;
+
+    // Paginate and map to Animal instances
+    return animals.slice(first, last)
         .map(animalObject => new Animal(animalObject));
-    return animals;
+};
+
+// create a new method to count the amount of animals.
+AnimalService.prototype.getAnimalsCount = function() {
+    return JSON.parse(localStorage.getItem('animals')).length
 }
 
 // find the index of an animal by there name.
-AnimalService.prototype.findAnimal = function(id){
+AnimalService.prototype.findAnimal = function(name){
     const animals = this.getAnimals();
-    const animal = animals.find(animal => animal.id === id);
+    const animal = find(a => a.name === name) ?? null;
     // const animal = animals.find(animal => String(animal.id) === String(id));
     // animals.find(a => a.name === name) ?? null;
-    
 
     if (!animals) {
         // console.log("are you stoping here?")
         throw new Error("That animal doesnt exist! Please try again with a valid animal.")
     };
     // console.log("are you stoping here?")
-    return new Animal(animal);
+    return new Animal(animals);
 }
 
 // Creates a new animal.
 AnimalService.prototype.createAnimal = function(animalObject){
     const animals = this.getAnimals();
     if (animals.find(a => a.name === animalObject.name)) {
-        throw new Error("This animal already exist! Please try again with another one.");
+        throw new Error("This animal name already exist! Please try again with another one.");
     }
     // Note: took out the JSON() function from here. 
  
@@ -62,7 +73,7 @@ AnimalService.prototype.createAnimal = function(animalObject){
 // Update an animal.
 AnimalService.prototype.updateAnimal = function(updateAnimal) {
     const animals = this.getAnimals();
-    const index = animals.findIndex(animal => animal.id === updateAnimal.id);
+    const index = animals.findIndex(a => a.id === updateAnimal.id);
 
     if (index === -1) {
         throw new Error("Animal not found. Cannot update.");
@@ -77,9 +88,9 @@ AnimalService.prototype.updateAnimal = function(updateAnimal) {
 }
 
 // Delete the animal.
-AnimalService.prototype.deleteAnimal = function(animal){
+AnimalService.prototype.deleteAnimal = function(id) {
     const animals = this.getAnimals();
-    const index = animals.findIndex(a => String(a.id) === String(animal));
+    const index = animals.findIndex(a => a.id === id);
     // console.log("hello i am reaching here ")
     // console.log("Animal ID to delete:", animalId);
 
@@ -90,6 +101,6 @@ AnimalService.prototype.deleteAnimal = function(animal){
     animals.splice(index, 1);
     localStorage.setItem('animals', JSON.stringify(animals));
     // console.log("hello i am reaching here ")
-    return true
-}
+    return true;
+};
 

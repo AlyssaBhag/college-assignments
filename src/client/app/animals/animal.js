@@ -8,7 +8,7 @@ Description: This is my animal.js file
 
 export default class Animal {
     constructor({id = null, name, breed, eyes, legs, sound}) {
-        this.id = id ?? crypto.randomUUID();
+        this.id == id ?? crypto.randomUUID();
         Object.assign(this, {name, breed, eyes, legs, sound });
     }
 

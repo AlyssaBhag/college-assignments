@@ -34,28 +34,28 @@ function setupEditForm() {
     eleheading.textContent = "Editing Existing Animal List";
 
     // const existingAnimal = animalMockService.findAnimal(editId);
+    // console.log("Hello from the set up form function.")
+    const existingAnimal = JSON.parse(localStorage.getItem('animals'));
+   
+    // const existingAnimal = find(a => a.id === editId);
 
-    // Retrieve the animals from localStorage cuz it kept saying "undefined" and i was so lost for
-    const animal = JSON.parse(localStorage.getItem('animals'));
-    // Find the animal by its id
-    const existingAnimal = animal.find(animals => animals.id === editId);
 
-    // console.log(JSON.parse(localStorage.getItem('animals')));
-
+    console.log(JSON.parse(localStorage.getItem('animals')));
     // console.log(existingAnimal);
     
     if (existingAnimal) {
         const eleAnimalForm = document.getElementById('animal-form');
         // const existingAnimal = animalMockService.findAnimal(editId);
+        const editId = animalMockService.findAnimal(a => a.id === editId);
         // Does the edit stuff and gives the fields it can edit.
-        eleAnimalForm.id.value = existingAnimal.id;
+        // eleAnimalForm.id.value = existingAnimal.id;
         eleAnimalForm.name.value = existingAnimal.name;
         eleAnimalForm.name.disabled = true;
         eleAnimalForm.breed.value = existingAnimal.breed;   
         eleAnimalForm.eyes.value = existingAnimal.eyes;  
         eleAnimalForm.legs.value = existingAnimal.legs;
         eleAnimalForm.sound.value = existingAnimal.sound;
-        // console.log(existingAnimal);
+        // console.log(animal);
     } else {
         alert("Animal not found!");
         // Redirect back if animal is not found
@@ -63,13 +63,11 @@ function setupEditForm() {
     }
 }
 
-
-
 function submitAnimalForm(event) {
     event.preventDefault();
     
     const animalForm = event.target;
-    const messageBox = document.getElementById('message-box');
+    const eleNameError  = document.getElementById('message-box');
     // Spinner stuff for later when it the form get submitted correctly.
     const spinner = document.getElementById('spinner');
     // const eleNameError = animalForm.name.nextElementSibling;
@@ -77,14 +75,14 @@ function submitAnimalForm(event) {
     
 
     // Clear previous messages.
-    messageBox.classList.add('d-none');
+    eleNameError .classList.add('d-none');
     // eleNameError.classList.add('d-none');
 
     if (valid){
         // const animalParms = {}
         console.log('valid, lets save the animal!');
         const animalObject = new Animal ({
-            id: animalForm.id.value,
+            id: editId,
             name: animalForm.name.value,
             breed: animalForm.breed.value,
             eyes: animalForm.eyes.value,
@@ -98,7 +96,7 @@ function submitAnimalForm(event) {
 
             if(isEditMode){
                 animalMockService.updateAnimal(animalObject);
-            }else{
+            } else {
                 animalMockService.createAnimal(animalObject);
             }
             // Show spinner while processing
@@ -107,10 +105,17 @@ function submitAnimalForm(event) {
             // // Hide spinner after operation is complete.
             setTimeout(() => {
                 spinner.classList.add('d-none');
-                alert("Animal created successfully!");
-                animalForm.reset();
-                window.location.href = "search.html";
-            }, 3000); 
+                // Show the success modal
+                const successModal = new bootstrap.Modal(document.getElementById('SuccessModal'));
+                successModal.show();
+
+                // Handle the OK button behavior
+                document.getElementById('modal-ok-btn').addEventListener('click', () => {
+                        console.log("OK button clicked!");
+                        animalForm.reset();
+                        window.location.href = "search.html";
+                });
+            }, 3000);
 
         } catch(error){
             // hide the spinner when there are errors.
@@ -120,14 +125,16 @@ function submitAnimalForm(event) {
             eleNameError.textContent = error.message
         }
         
-    }else {
+    } else {
         console.log('not valid')
-        messageBox.classList.remove('d-none');
-        messageBox.textContent = 'Error! Your form was submitting incorrectly, please try again.'
+        eleNameError.classList.remove('d-none');
+        eleNameError.textContent = 'Error! Your form was submitting incorrectly, please try again.'
     }
+
     console.log('You tried to submit me!')
 
 }
+
 
 function validateAnimalForm(animalForm){
     // console.log("test if its valid or not");

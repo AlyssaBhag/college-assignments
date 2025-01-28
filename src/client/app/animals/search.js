@@ -8,13 +8,33 @@ Description: This is my list.js/now the search.js file
 */
 
 import animalMockService from "./animal.mock.service.js"
-// import Animal from "./animal.js";
+
 console.log("we are on the list page rn")
 
 const eleTable = document.getElementById('animals-list');
 const eleTbody= document.querySelector('tbody');
 const eleMessageBox = document.getElementById('message-box');
-const records = animalMockService.getAnimals()
+const elePaginationContainer = document.getElementById("pagination-container");
+
+const url = new URL(window.location);
+const search = url.searchParams;
+
+// I set default values cuz the $ was causing an error.
+const page = parseInt(search.get('page') ?? 1);
+const perPage = parseInt(search.get('perPage') ?? 5);
+console.log(`Page: ${page}, Per Page: ${perPage}`);
+
+// Get all records
+const records = animalMockService.getAnimals() // page, perPage
+console.log('All the stuff in local storage rn:', records); 
+
+// Calculate total pages
+const totalPages = Math.ceil(records.length / perPage);
+console.log('Total pages:', totalPages);
+
+// Calculate which animals to show based on the current page
+const currentRecords = records.slice((page - 1) * perPage, page * perPage);
+
 
 
 // Debugging.
@@ -24,14 +44,60 @@ function toggleTableVisibility (animals){
     if (animals.length === 0) {
         eleMessageBox.classList.remove('d-none');
         eleTable.classList.add('d-none');
+        //
+        // elePaginationContainer.classList.add("d-none");
     } else {
         eleMessageBox.classList.add('d-none')
         eleTable.classList.remove('d-none');
-        // drawAnimalTable(animals);
-        //parg thing
+        //
+        // elePaginationContainer.classList.remove("d-none");
     }
 }
 // console.log(eleTbody)
+
+function drawPaginationLinks(elePaginationContainer, currentPage, totalPages) {
+    const elePaginationLinks = elePaginationContainer.querySelector('ul.pagination');
+    // Clear previous links
+    elePaginationLinks.innerHTML = ''; 
+
+    // Create "Previous" button that disables once you are no longer allow to go back.
+    const prevButton = document.createElement("li");
+    prevButton.classList.add("page-item");
+    if (currentPage === 1) {
+        prevButton.classList.add("disabled");
+    }
+
+    prevButton.innerHTML = `<a class="page-link" href="search.html?page=${currentPage - 1}">Previous</a>`;
+    elePaginationLinks.appendChild(prevButton);
+
+    // create the page links
+    for (let i = 1; i <= totalPages; i++) {
+        const elePageItem = document.createElement('li');
+        elePageItem.classList.add('page-item');
+        if (i === currentPage) {
+            elePageItem.classList.add('active');
+        }
+        console.log()
+
+        const elePageLink = document.createElement('a');
+        elePageLink.classList.add('page-link');
+        elePageLink.textContent = i;
+        elePageLink.setAttribute('href', `search.html?page=${i}`);
+
+        elePageItem.appendChild(elePageLink);
+        elePaginationLinks.appendChild(elePageItem);
+    }
+    // Create "Next" button and disable that when there is no more next.
+    const nextButton = document.createElement("li");
+    nextButton.classList.add("page-item");
+    if (currentPage === totalPages) {
+        nextButton.classList.add("disabled");
+    }
+
+    nextButton.innerHTML = `<a class="page-link" href="search.html?page=${currentPage + 1}">Next</a>`;
+    elePaginationLinks.appendChild(nextButton);
+}
+
 
 function drawAnimalTable(animals){
 
@@ -59,8 +125,11 @@ function drawAnimalTable(animals){
         eleEditLink.classList.add('btn', 'btn-primary');
         eleEditLink.innerHTML = `<i class="fas fa-edit"</i>`;
         // 
-        eleEditLink.setAttribute('href', `create.html?id=${animal.id}`);
-   
+        eleEditLink.setAttribute('href', `create.html?id=${animals.id}`);
+        // Add tooltip and its text.
+        eleEditLink.setAttribute('data-bs-toggle', 'tooltip'); 
+        eleEditLink.setAttribute('title', 'Click here to update your animal!'); 
+
         // eleEditLink.addEventListener('click', onUpdateClick(animal));
         controlsCell.append(eleEditLink);
 
@@ -69,36 +138,74 @@ function drawAnimalTable(animals){
         eleDelete.innerHTML = '<i class="fa-solid fa-trash"></i>'; 
         // 
         eleDelete.addEventListener('click', onDeleteClick(animal));
+        // Add tooltip and its text.
+        eleDelete.setAttribute('data-bs-toggle', 'tooltip'); 
+        eleDelete.setAttribute('title', 'Click here to delete your animal :(');   
         controlsCell.append(eleDelete);
     }
 }
 
-
-
 function onDeleteClick(animal){
     return () => {
-        console.log(`clicked ${animal.id}`);
-        if (confirm('Are you sure you want to delete this animal?')) {
+        // console.log(`clicked ${animal.id}`);
+        // Add this to use the modal instead of the old ugly method.
+        const eleModalWindow = document.getElementById('ConfirmModal');
+        const modal = new bootstrap.Modal(eleModalWindow);
+
+        // Event listeners for confirm and delete buttons
+        eleModalWindow.querySelector('.btn-danger').addEventListener('click', () => {
             try {
-                animalMockService.deleteAnimal(animal.id)
-                const newAnimalList = animalMockService.getAnimals();
-                toggleTableVisibility(newAnimalList);
+                // Delete the animal
+                animalMockService.deleteAnimal(animal.id);
+                // Get the updated list of animals
+                const animals = animalMockService.getAnimals();
+                // Update the visibility of the table based on the number of animals
+                toggleTableVisibility(animals);
                 // If the animal list is empty, show the message box, otherwise hide it
-                if (newAnimalList.length === 0) {
+                if (animals.length === 0) {
                     eleMessageBox.classList.remove('d-none');
                     console.log("Hallo is this showing")
                 } else {
                     eleMessageBox.classList.add('d-none');
                 }
+
+                // Pagination logic. Slice the list to get only the animals for the current page
+                const currentPage = records.slice((page - 1) * perPage, page * perPage);
+                // Draw the table with the current page's animals
+                drawAnimalTable(currentPage);
+
+                drawPaginationLinks(elePaginationContainer, page, totalPages);
                 // Reload the page after deletion.
                 window.location.reload();
+
             } catch (error) {
-                eleMessageBox.classList.add('d-none')
                 eleMessageBox.textContent = error.message;
-                console.log(error)
+                eleMessageBox.classList.remove('d-none');
+                // console.error(error);
             }
-        }
-    }
+            // Close the modal
+            modal.hide();
+        });
+
+        // Add another event listener to handle confirmation actions
+        eleModalWindow.querySelector('.btn-danger').addEventListener('click', () => {
+            console.log(`Confirmed action for animal: ${animal.name}`);
+            // Close the modal after confirmation
+            modal.hide(); 
+        });
+
+        modal.show(); // Show the modal
+    };
 }
 
-drawAnimalTable(records);
+// Function to handle the "Confirm" button for the function above.
+function onConfirm(animal, modal) {
+    return () => {
+        console.log(`Confirmed action for animal: ${animal.name}`);
+        modal.hide(); // Close the modal after confirmation
+    };
+}
+
+// gets the records of the animals. shows the tables animal list.
+drawAnimalTable(currentRecords);
+drawPaginationLinks(elePaginationContainer, page, totalPages);

@@ -19,11 +19,7 @@ Description: This is my add page!
     <link rel="icon" type="image/x-icon" href="img/Poké_Ball_icon.png">
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
- 
- 	<!-- JavaScript Files. -->
-    <!-- removed the bootstrap one and put it at the bottom. -->
-    <script type="module" src="app/app.js"></script>
-    <script type="module" src="app/animals/create.js"></script>
+
   </head>
   
   <!-- The nav bar stuff!-->
@@ -72,7 +68,7 @@ Description: This is my add page!
 			<div class="mb-3">
 			  <label for="animalName" class="form-label">Animal Name</label>
 			  <input type="text" id="animalName" name="name" class="form-control">
-			  <p class="text-danger d-none">Animal name is required.</p>
+			  <p id="message-box" class="text-danger d-none">Animal name is required.</p>
 			</div>
 
 			<!-- Animal Breed -->
@@ -102,20 +98,41 @@ Description: This is my add page!
 			  <input type="text" id="animalSounds" name="sound" class="form-control">
 			  <p class="text-danger d-none">Please enter a valid animal sound.</p>
 			</div>
-      <input type="hidden" id="id" name="id">
+
 		  <!-- Submit Button -->
 		  <button type="submit" class="btn custom-btn">Add Animal</button>
 		  </form>
 	  </div>
 	</main>
 
+  <!-- Modal -->
+  <div class="modal fade" id="SuccessModal" tabindex="-1" aria-labelledby="SuccessModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SuccessModal">Animal Created 🎉🥳</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Your animal has been created successfully!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="modal-ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
-    <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+  </footer>
+  <!-- JavaScript Files. -->
   <!-- Added this becuase the instructions said to put it at the bottom. -->
-  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="app/animals/create.js"></script>
   </body>
 </html>
