@@ -8,18 +8,29 @@ Description: This is my create.js file
 
 // I used this refernce for the !isNaN thingy: https://www.geeksforgeeks.org/number-validation-in-javascript/
 
-// console.log("Hello")
 
 import Animal from './animal.js'; 
 import animalMockService from './animal.mock.service.js';
 
+
+
+// console.log("AnimalService works if it shows here:", animalMockService);
+// console.log("is getAllAnimals being seen, if yes this will say function:", typeof animalMockService.getAllAnimals);
+
+
+
 const url = new URL(window.location);
-const searchParams = url.searchParams;
+const searchParams= url.searchParams;
+
 const editId = searchParams.get('id');
+// console.log(editId)
 const isEditMode = editId ? true : false;
 
 if(isEditMode) {
     setupEditForm();
+    console.log("edit")
+} else {
+    console.log("add")
 }
 
 // Ended up making this into a if statement.
@@ -27,36 +38,44 @@ const eleForm = document.getElementById('animal-form');
 if (eleForm) {
     eleForm.addEventListener('submit', submitAnimalForm);
 }
-  
 
 function setupEditForm() {
     const eleheading = document.querySelector('h1');
     eleheading.textContent = "Editing Existing Animal List";
+    console.log("Updated the header")
+    const existingAnimal = animalMockService.findAnimal(editId);
+//     console.log("gaining access for the animal service.");
+//     let animal = animalMockService.getAllAnimals();
 
-    // const existingAnimal = animalMockService.findAnimal(editId);
-    // console.log("Hello from the set up form function.")
-    const existingAnimal = JSON.parse(localStorage.getItem('animals'));
-   
-    // const existingAnimal = find(a => a.id === editId);
+//     console.log("animals received: ", animal);
+// ``
+//     console.log(`checking for the ids: ${editId}`);
+//     const existingAnimal = animal.find(animal => String(animal.id).trim() === String(editId).trim());
 
+//     console.log("Existing animal found:", existingAnimal);
 
-    console.log(JSON.parse(localStorage.getItem('animals')));
-    // console.log(existingAnimal);
-    
     if (existingAnimal) {
+        console.log("Animal found!");
         const eleAnimalForm = document.getElementById('animal-form');
+
         // const existingAnimal = animalMockService.findAnimal(editId);
-        const editId = animalMockService.findAnimal(a => a.id === editId);
-        // Does the edit stuff and gives the fields it can edit.
-        // eleAnimalForm.id.value = existingAnimal.id;
+
+        console.log("it is now in the thingy!")
         eleAnimalForm.name.value = existingAnimal.name;
         eleAnimalForm.name.disabled = true;
         eleAnimalForm.breed.value = existingAnimal.breed;   
         eleAnimalForm.eyes.value = existingAnimal.eyes;  
         eleAnimalForm.legs.value = existingAnimal.legs;
         eleAnimalForm.sound.value = existingAnimal.sound;
-        // console.log(animal);
+        // console.log(eleAnimalForm.sound.)
+        console.log(existingAnimal);
+        // console.log(animals)
     } else {
+
+        // console.log('Animals retrieved from localStorage:', animals);
+        console.log('URL Search Params:', searchParams);
+        console.log('Edit ID:', editId);
+        
         alert("Animal not found!");
         // Redirect back if animal is not found
         window.location.href = "search.html";   

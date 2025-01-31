@@ -25,7 +25,7 @@ const perPage = parseInt(search.get('perPage') ?? 5);
 console.log(`Page: ${page}, Per Page: ${perPage}`);
 
 // Get all records
-const records = animalMockService.getAnimals() // page, perPage
+const records = animalMockService.getAllAnimals() // page, perPage
 console.log('All the stuff in local storage rn:', records); 
 
 // Calculate total pages
@@ -77,7 +77,6 @@ function drawPaginationLinks(elePaginationContainer, currentPage, totalPages) {
         if (i === currentPage) {
             elePageItem.classList.add('active');
         }
-        console.log()
 
         const elePageLink = document.createElement('a');
         elePageLink.classList.add('page-link');
@@ -105,7 +104,7 @@ function drawAnimalTable(animals){
     // eleTbody.replaceChild();
     eleTbody.innerHTML = '';
 
-    // console.log(animals)
+    console.log(animals)
     toggleTableVisibility(animals);
 
     for (const animal of animals){
@@ -125,7 +124,9 @@ function drawAnimalTable(animals){
         eleEditLink.classList.add('btn', 'btn-primary');
         eleEditLink.innerHTML = `<i class="fas fa-edit"</i>`;
         // 
-        eleEditLink.setAttribute('href', `create.html?id=${animals.id}`);
+        eleEditLink.setAttribute('href', `create.html?id=${animal.id}`);
+
+        ;
         // Add tooltip and its text.
         eleEditLink.setAttribute('data-bs-toggle', 'tooltip'); 
         eleEditLink.setAttribute('title', 'Click here to update your animal!'); 
@@ -158,7 +159,7 @@ function onDeleteClick(animal){
                 // Delete the animal
                 animalMockService.deleteAnimal(animal.id);
                 // Get the updated list of animals
-                const animals = animalMockService.getAnimals();
+                const animals = animalMockService.getAllAnimals();
                 // Update the visibility of the table based on the number of animals
                 toggleTableVisibility(animals);
                 // If the animal list is empty, show the message box, otherwise hide it
@@ -175,15 +176,17 @@ function onDeleteClick(animal){
                 drawAnimalTable(currentPage);
 
                 drawPaginationLinks(elePaginationContainer, page, totalPages);
+                
                 // Reload the page after deletion.
-                window.location.reload();
+                // window.location.reload();
+                window.location.href = 'search.html';
 
             } catch (error) {
                 eleMessageBox.textContent = error.message;
                 eleMessageBox.classList.remove('d-none');
                 // console.error(error);
             }
-            // Close the modal
+            // Close the modal.
             modal.hide();
         });
 
@@ -194,7 +197,8 @@ function onDeleteClick(animal){
             modal.hide(); 
         });
 
-        modal.show(); // Show the modal
+        // Show the modal.
+        modal.show(); 
     };
 }
 
@@ -202,7 +206,10 @@ function onDeleteClick(animal){
 function onConfirm(animal, modal) {
     return () => {
         console.log(`Confirmed action for animal: ${animal.name}`);
-        modal.hide(); // Close the modal after confirmation
+        // After consfirmation it redirects the page... I can also do refresh but it only rereshed it and not changes you back to the page you need.
+        window.location = 'search.html';
+        // Close the modal after confirmation.
+        modal.hide(); 
     };
 }
 
