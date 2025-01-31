@@ -13,44 +13,43 @@ Description: This is my contact page!
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact - Joystick Junkies</title>
 
+
     <!-- CSS stylesheet. -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/Poké_Ball_icon.png">
+    <link rel="icon" type="image/x-icon" href="img/control.png">
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
-
-  <!-- JavaScript Files. -->
     <script rel="stylesheet" src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="app/app.js"></script>
-    <script type="module" src="app/animals/create.js"></script>
   </head>
   
   <!-- The nav bar stuff!-->
   <header>
     <nav class="navbar navbar-expand-md fixed-top custom-navbar ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">  Joystick Junkies</a>
+        <a class="navbar-brand" href="index.html"> Joystick Junkies</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="list.html"><i class="fa-solid fa-gamepad"></i> Shop</a>
+              <a class="nav-link" href="search.html"><i class="fa-solid fa-gamepad"></i> Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create.html"><i class="fa-solid fa-cubes"></i> Add Stock</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+              <a class="nav-link active" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="create.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
             </li>
           </ul>
         </div>
@@ -131,5 +130,8 @@ Description: This is my contact page!
       <p class="float-end"><a href="#">Back to top</a></p>
       <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
     </footer>
-  </body>
+    <!-- JavaScript Files. -->
+    <script rel="stylesheet" src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="app/app.js"></script>
+
 </html>

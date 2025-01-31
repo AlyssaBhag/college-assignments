@@ -17,19 +17,12 @@ Description: This is my main page!
 
     <!-- CSS stylesheet. -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/Poké_Ball_icon.png">
+    <link rel="icon" type="image/x-icon" href="img/control.png">
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
-
-    
-
-  <!-- JavaScript Files. -->
     <script rel="stylesheet" src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="app/app.js"></script>
-    <script type="module" src="app/animals/create.js"></script>
   </head>
 
 <!-- The nav bar stuff!-->
@@ -43,7 +36,10 @@ Description: This is my main page!
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="list.html"><i class="fa-solid fa-gamepad"></i> Shop</a>
+              <a class="nav-link" href="search.html"><i class="fa-solid fa-gamepad"></i> Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create.html"><i class="fa-solid fa-cubes"></i> Add Stock</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
@@ -54,7 +50,7 @@ Description: This is my main page!
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="create.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
             </li>
           </ul>
         </div>
@@ -118,62 +114,61 @@ Description: This is my main page!
     </button>
   </div>
 
-
-  <div class="container marketing">
     <!-- Three columns of text below the carousel -->
     <div class="row text-center">
       <div class="col-lg-4 d-flex flex-column align-items-center justify-content-between">
         <img src="img/bag.jpg" class="rounded-circle" width="140" height="140" alt="Shop Now">
         <h2 class="fw-normal">Explore Our Shop!</h2>
         <p>Dive into our collection of epic gear, powerful upgrades, and exclusive in-game content to give you the ultimate edge.</p>
-        <p><a class="btn custom-btn" href="shop.html">Shop Now &raquo;</a></p>
+        <p><a class="btn custom-btn" href="search.html">Shop Now &raquo;</a></p>
       </div>
         <div class="col-lg-4 d-flex flex-column align-items-center justify-content-between">
-        <img src="img/cart.png" class="rounded-circle" width="140" height="140" alt="View Cart">
+          <img src="img/cart.png" class="rounded-circle" width="140" height="140" alt="View Cart">
         <h2 class="fw-normal">Your Cart</h2>
-        <p>Review the treasures you’ve picked so far and get ready to complete your purchase! </p>
-        <p><a class="btn custom-btn" href="cart.html">View Cart &raquo;</a></p>
+          <p>Review the treasures you’ve picked so far and get ready to complete your purchase! </p>
+        <p><a class="btn custom-btn" href="#">View Cart &raquo;</a></p>
       </div>
         <div class="col-lg-4 d-flex flex-column align-items-center justify-content-between">
-        <img src="img/info.jpg" class="rounded-circle" width="140" height="140" alt="About Us">
+          <img src="img/info.jpg" class="rounded-circle" width="140" height="140" alt="About Us">
         <h2 class="fw-normal">About Us</h2>
         <p>Learn more about our mission to bring the ultimate gaming experience to enthusiasts everywhere.</p>
-        <p><a class="btn custom-btn" href="about.html">Discover More &raquo;</a></p>
+          <p><a class="btn custom-btn" href="about.html">Discover More &raquo;</a></p>
       </div>
     </div>
-  
+      
     <!-- Featurettes -->
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Legendary Loot Awaits. <span class="custom-text-color">Upgrade your game in style!</span></h2>
-        <p class="lead">Discover a treasure trove of unique gaming accessories. From collectible figurines to custom controllers, we’ve got everything you need to personalize your gaming experience.</p>
+    <div class="container">
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Legendary Loot Awaits. <span class="custom-text-color">Upgrade your game in style!</span></h2>
+            <p class="lead">Discover a treasure trove of unique gaming accessories. From collectible figurines to custom controllers, we’ve got everything you need to personalize your gaming experience.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/game.png" class="featurette-image img-fluid mx-auto" alt="Gaming Accessories" width="500" height="500">
+        </div>
       </div>
-      <div class="col-md-5">
-        <img src="img/game.png" class="featurette-image img-fluid mx-auto" alt="Gaming Accessories" width="500" height="500">
+      
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Timeless Games. <span class="custom-text-color">From retro classics to modern reimaginings!</span></h2>
+            <p class="lead">Relive the golden age of gaming with a selection of retro titles, or explore new-age remasters of the classics you love. Every game tells a story—pick yours today!</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="img/tombRaider.png" class="featurette-image img-fluid mx-auto" alt="Retro and Modern Games" width="500" height="500">
+        </div>
       </div>
     </div>
-    
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Timeless Games. <span class="custom-text-color">From retro classics to modern reimaginings!</span></h2>
-        <p class="lead">Relive the golden age of gaming with a selection of retro titles, or explore new-age remasters of the classics you love. Every game tells a story—pick yours today!</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="img/tombRaider.png" class="featurette-image img-fluid mx-auto" alt="Retro and Modern Games" width="500" height="500">
-      </div>
-    </div>
-    <hr class="featurette-divider">
-    
-  
-
 
     <!-- Footer -->
     <footer class="container">
       <p class="float-end"><a href="#">Back to top</a></p>
       <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
     </footer>
+    <!-- JavaScript Files. -->
+    <script rel="stylesheet" src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="app/app.js"></script>
   </body>
 </html>
 

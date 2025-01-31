@@ -12,19 +12,15 @@ Description: This is my privacy page!
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy - INFT 2202</title>
+
     <!-- CSS stylesheet. -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/Poké_Ball_icon.png">
+    <link rel="icon" type="image/x-icon" href="img/control.png">
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
-
-  <!-- JavaScript Files. -->
     <script rel="stylesheet" src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="app/app.js"></script>
-    <script type="module" src="app/animals/create.js"></script>
   </head>
 
   <!-- The nav bar stuff!-->
@@ -38,7 +34,10 @@ Description: This is my privacy page!
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link" href="list.html"><i class="fa-solid fa-gamepad"></i> Shop</a>
+              <a class="nav-link" href="search.html"><i class="fa-solid fa-gamepad"></i> Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create.html"><i class="fa-solid fa-cubes"></i> Add Stock</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
@@ -49,7 +48,7 @@ Description: This is my privacy page!
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="create.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
             </li>
           </ul>
         </div>
@@ -57,41 +56,46 @@ Description: This is my privacy page!
     </nav>
   </header>
 
-
-
-  <main class="flex-shrink-0">
-      <div class="container">
-        <h1 class="mt-5">Privacy Policy</h1>
-        <p class="lead">Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
-    
-        <h2>1. Information We Collect</h2>
-        <p>We collect information that you provide to us directly, such as when you fill out forms or use the features on our site. This includes your name, email address, and any other details you submit.</p>
-    
-        <h2>2. How We Use Your Information</h2>
-        <p>Your information is used to provide and improve our services. We may also use it to communicate with you, send updates, or offer promotional materials, but you can opt-out at any time.</p>
-    
-        <h2>3. Sharing Your Information</h2>
-        <p>We do not sell, trade, or otherwise share your personal information with third parties unless required by law or necessary to provide services.</p>
-    
-        <h2>4. Data Security</h2>
-        <p>We take reasonable precautions to protect your information. However, no method of transmission over the Internet is completely secure, and we cannot guarantee absolute security.</p>
-    
-        <h2>5. Your Rights</h2>
-        <p>You have the right to access, correct, or delete the personal information we hold about you. If you wish to exercise these rights, please contact us.</p>
-    
-        <h2>6. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with the updated date.</p>
-    
-        <h2>7. Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us at [Your Contact Information].</p>
-      </div>
-    </main>
+  <main class="card shadow-sm mt-5">
+    <div class="card-body">
+      <h1 class="card-title">Privacy Policy</h1>
+      <p class="lead">Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information.</p>
   
+      <h2><i class="fas fa-database"></i> 1. Information We Collect</h2>
+      <p>We collect information that you provide to us directly, such as when you fill out forms or use the features on our site. This includes your name, email address, and any other details you submit.</p>
+  
+      <h2><i class="fas fa-user-lock"></i> 2. How We Use Your Information</h2>
+      <p>Your information is used to provide and improve our services. We may also use it to communicate with you, send updates, or offer promotional materials, but you can opt-out at any time.</p>
+  
+      <h2><i class="fa-solid fa-bullhorn"></i> 3. Sharing Your Information</h2>
+      <p>We do not sell, trade, or otherwise share your personal information with third parties unless required by law or necessary to provide services.</p>
+  
+      <h2><i class="fa-solid fa-shield"></i> 4. Data Security</h2>
+      <p>We take reasonable precautions to protect your information. However, no method of transmission over the Internet is completely secure, and we cannot guarantee absolute security.</p>
+  
+      <h2><i class="fa-solid fa-scale-balanced"></i> 5. Your Rights</h2>
+      <p>You have the right to access, correct, or delete the personal information we hold about you. If you wish to exercise these rights, please contact us.</p>
+  
+      <h2><i class="fa-solid fa-lock"></i> 6. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with the updated date.</p>
+  
+      <h2><i class="fa-solid fa-address-book"></i> 7. Contact Us</h2>
+      <p>If you have any questions or concerns about this Privacy Policy, please contact us at [Your Contact Information].</p>
+    </div>
+  </main>
 
-    <!-- Footer -->
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
-    </footer>
+  <!-- Footer -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+  </footer>
+  <!-- JavaScript Files -->
+  <script rel="stylesheet" src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="app/app.js"></script>
+  <script type="module" src="app/products/create.js"></script>
+  <script type="module" src="app/products/about.js"></script>
+  <script type="module" src="app/products/index.js"></script>
+  <script type="module" src="app/products/product.js"></script>
+  <script type="module" src="app/products/product.mock.service.js"></script>
   </body>
 </html>
