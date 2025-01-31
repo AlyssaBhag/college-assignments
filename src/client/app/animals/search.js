@@ -3,7 +3,7 @@ Name: Alyssa Bhagwandin
 Filename: search.js
 Course: INFT 2202
 Created Date: January 8th, 2025
-Last Edited Date: January 20th, 2025
+Last Edited Date: January 30th, 2025
 Description: This is my list.js/now the search.js file
 */
 
@@ -35,9 +35,6 @@ console.log('Total pages:', totalPages);
 // Calculate which animals to show based on the current page
 const currentRecords = records.slice((page - 1) * perPage, page * perPage);
 
-
-
-// Debugging.
 // console.log("Retrieved records:", records);
 
 function toggleTableVisibility (animals){
@@ -96,7 +93,6 @@ function drawPaginationLinks(elePaginationContainer, currentPage, totalPages) {
     nextButton.innerHTML = `<a class="page-link" href="search.html?page=${currentPage + 1}">Next</a>`;
     elePaginationLinks.appendChild(nextButton);
 }
-
 
 function drawAnimalTable(animals){
 

@@ -3,12 +3,11 @@ Name: Alyssa Bhagwandin
 Filename: animal.mock.service.js
 Course: INFT 2202
 Created Date: January 20th, 2025
-Updated last Date: January 22nd, 2025
+Last Edited Date: January 30th, 2025
 Description: This is my animal.mock.service.js file
 */
 
 /// look up jsdoc.
-
 
 import Animal from "./animal.js";
 // Function gets hosited, put here for visibility
@@ -21,9 +20,6 @@ function AnimalService() {
         localStorage.setItem('animals', JSON.stringify([]));
     }
 
-
-// Gets the list of all of the animals when the user enters the stuff in the create.html page.
-// replaces the old one.
 AnimalService.prototype.getAnimals = function (page = 1, perPage = 5) {
     // const animals = JSON.parse(localStorage.getItem('animals')) || [];
     
@@ -38,8 +34,6 @@ AnimalService.prototype.getAnimals = function (page = 1, perPage = 5) {
     
     return animals;    
 };
-
-// create another method called getAllAnimals to get all of the animals when you are looking for them. that is the same as the other method getAnimals.
 
 AnimalService.prototype.getAllAnimals = function () {
     return JSON.parse(localStorage.getItem('animals')) 
@@ -56,17 +50,6 @@ AnimalService.prototype.getAnimalsCount = function() {
 AnimalService.prototype.findAnimal = function(id){
     const animals = this.getAllAnimals();
     return animals.find(a => a.id === id);
-    // // const animal = animals.find(animal => String(animal.id) === String(id));
-    // // animals.find(a => a.name === name) ?? null;
-
-    // console.log("Animal found in the service:", animals); // Log the raw animal object before passing it
-
-    // if (!animals) {
-    //     // console.log("are you stoping here?")
-    //     throw new Error("That animal doesnt exist! Please try again with a valid animal.")
-    // };
-    // // console.log("are you stoping here?")
-    // return new Animal(animals);
 }
 
 // Creates a new animal.
@@ -75,8 +58,6 @@ AnimalService.prototype.createAnimal = function(animalObject){
     if (animals.find(a => a.name === animalObject.name)) {
         throw new Error("This animal name already exist! Please try again with another one.");
     }
-    // Note: took out the JSON() function from here. 
- 
     animals.push(animalObject);
     localStorage.setItem('animals', JSON.stringify (animals));
 
@@ -91,8 +72,6 @@ AnimalService.prototype.updateAnimal = function(updateAnimal) {
     if (index === -1) {
         throw new Error("Animal not found. Cannot update.");
     }
-
-    // I removed the toObject from here.
     animals[index] = updateAnimal;
     localStorage.setItem('animals', JSON.stringify(animals));
     
@@ -106,7 +85,6 @@ AnimalService.prototype.deleteAnimal = function(id) {
     const index = animals.findIndex(a => a.id === id);
     // console.log("hello i am reaching here ")
     // console.log("Animal ID to delete:", animalId);
-
     if (index === -1) {
         throw new Error("That animal doesn't exist. Please try again.");
     }

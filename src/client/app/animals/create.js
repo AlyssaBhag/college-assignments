@@ -3,21 +3,16 @@ Name: Alyssa Bhagwandin
 Filename: create.js
 Course: INFT 2202
 Created Date: January 13th, 2025
+Last Edited Date: January 30th, 2025
 Description: This is my create.js file
 */
-
-// I used this refernce for the !isNaN thingy: https://www.geeksforgeeks.org/number-validation-in-javascript/
-
 
 import Animal from './animal.js'; 
 import animalMockService from './animal.mock.service.js';
 
 
-
 // console.log("AnimalService works if it shows here:", animalMockService);
 // console.log("is getAllAnimals being seen, if yes this will say function:", typeof animalMockService.getAllAnimals);
-
-
 
 const url = new URL(window.location);
 const searchParams= url.searchParams;
@@ -44,20 +39,10 @@ function setupEditForm() {
     eleheading.textContent = "Editing Existing Animal List";
     console.log("Updated the header")
     const existingAnimal = animalMockService.findAnimal(editId);
-//     console.log("gaining access for the animal service.");
-//     let animal = animalMockService.getAllAnimals();
-
-//     console.log("animals received: ", animal);
-// ``
-//     console.log(`checking for the ids: ${editId}`);
-//     const existingAnimal = animal.find(animal => String(animal.id).trim() === String(editId).trim());
-
-//     console.log("Existing animal found:", existingAnimal);
 
     if (existingAnimal) {
         console.log("Animal found!");
         const eleAnimalForm = document.getElementById('animal-form');
-
         // const existingAnimal = animalMockService.findAnimal(editId);
 
         console.log("it is now in the thingy!")
@@ -71,7 +56,6 @@ function setupEditForm() {
         console.log(existingAnimal);
         // console.log(animals)
     } else {
-
         // console.log('Animals retrieved from localStorage:', animals);
         console.log('URL Search Params:', searchParams);
         console.log('Edit ID:', editId);
@@ -91,7 +75,6 @@ function submitAnimalForm(event) {
     const spinner = document.getElementById('spinner');
     // const eleNameError = animalForm.name.nextElementSibling;
     const valid = validateAnimalForm(animalForm);
-    
 
     // Clear previous messages.
     eleNameError .classList.add('d-none');
@@ -143,7 +126,6 @@ function submitAnimalForm(event) {
             eleNameError.classList.remove('d-none');
             eleNameError.textContent = error.message
         }
-        
     } else {
         console.log('not valid')
         eleNameError.classList.remove('d-none');
@@ -153,7 +135,6 @@ function submitAnimalForm(event) {
     console.log('You tried to submit me!')
 
 }
-
 
 function validateAnimalForm(animalForm){
     // console.log("test if its valid or not");
