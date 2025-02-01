@@ -7,7 +7,6 @@ Created Date: January 16th, 2024
 Description: This is my app.js file for lab
 */
 
-
 // The original code from the demo.
 const date = new Date();
 const copy = document.getElementById('copyright');

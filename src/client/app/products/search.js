@@ -11,11 +11,12 @@ import productMockService from "./product.mock.service.js";
 
 console.log("We are on the product list page");
 
+// Get references to key UI elements.
 const eleContainer = document.getElementById('product-form');
 // const cardBody= document.querySelector('cardBody');
 const eleMessageBox = document.getElementById('message-box');
 const elePaginationContainer = document.getElementById('pagination-container');
-
+// Retrieve query parameters from the URL.
 const url = new URL(window.location);
 const search = url.searchParams;
 
@@ -53,6 +54,11 @@ function toggleDisplay(products) {
     }
 }
 
+
+/**
+ * Creates and displays product cards dynamically based on the given product list.
+ * @param {Array} products - List of products to be displayed.
+ */
 function drawProductCards(products) {
     // Clear the container before adding new products.
     eleContainer.innerHTML = ''; 
@@ -65,7 +71,7 @@ function drawProductCards(products) {
 
         const card = document.createElement('div');
         card.classList.add('card', 'h-100');
-
+        // Product image.
         const img = document.createElement('img');
         img.classList.add('card-img-top');
         img.src = '../../img/inven.jpg';
@@ -73,19 +79,19 @@ function drawProductCards(products) {
 
         const cardBody = document.createElement('div');
         cardBody.classList.add('card-body', 'd-flex', 'flex-column');
-
+        // Product name.
         const cardTitle = document.createElement('h5');
         cardTitle.classList.add('card-title');
         cardTitle.textContent = product.name;
-
+        // Product description.
         const cardText = document.createElement('p');
         cardText.classList.add('card-text', 'mb-1'); 
         cardText.textContent = product.description;
-
+        // Product price.
         const priceText = document.createElement('p');
         priceText.classList.add('card-text', 'fw-bold');
         priceText.innerHTML = `<strong>Price:</strong> $${product.price.toFixed(2)}`;
-
+        // Product stock.
         const stockText = document.createElement('p');
         stockText.classList.add('card-text');
         stockText.innerHTML = `<strong>Stock:</strong> ${product.stock}`;
@@ -133,7 +139,6 @@ function drawPaginationLinks(elePaginationContainer, currentPage, totalPages) {
     
     elePaginationLinks.innerHTML = '';
     
-
     // Create "Previous" button.
     const prevButton = document.createElement("li");
     prevButton.classList.add("page-item");
@@ -179,6 +184,11 @@ function editProduct(id) {
     window.location.href = `create.html?id=${id}`;
 }
 
+
+/**
+ * Handles the deletion of a product, including confirmation via a modal.
+ * @param {number} id - Product ID to delete.
+ */
 // Handles product deletion with modal confirmation.
 function onDeleteClick(id) {
     const eleModalWindow = document.getElementById('ConfirmModal');
@@ -201,4 +211,5 @@ function onDeleteClick(id) {
     modal.show();
 }
 
+// Generate pagination links for navigation.
 drawPaginationLinks(elePaginationContainer, page, totalPages);

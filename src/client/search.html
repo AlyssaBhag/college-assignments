@@ -22,7 +22,7 @@ Description: This is my list page!
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   </head>
     
-<!-- The nav bar stuff!-->
+  <!-- The nav bar stuff!-->
   <header>
     <nav class="navbar navbar-expand-md fixed-top custom-navbar ">
       <div class="container-fluid">
@@ -55,20 +55,22 @@ Description: This is my list page!
     </nav>
   </header>
 
+  <!-- For the title and error message when its empty. -->
   <main class="container mt-5">
     <h1 class="mt-5">Available Products</h1>
     <p class="lead">Browse our collection of amazing gaming gear and accessories!</p>
     <div id="message-box" class="alert alert-info d-none">The shop is closed! No products currently available at the moment. </div>
 
+    <!-- where the stuff goes once a user enters the information.  -->
     <div class="container mt-4">
       <div id="product-form" class="row row-cols-1 row-cols-md-3 g-4"></div>
-
+      <!-- Where the page numbers get added to once there is a need for them. -->
       <nav id="pagination-container">
         <ul class="pagination justify-content-center"></ul>
       </nav>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal for the delete button. -->
     <div class="modal fade" id="ConfirmModal" tabindex="-1" aria-labelledby="ConfirmModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
