@@ -7,6 +7,10 @@ Last Edited Date: January 30th, 2025
 Description: This is my list.js/now the search.js file
 */
 
+// ! important comments.
+// TODO: comments.
+// * Highlighted comments.
+
 import animalMockService from "./animal.mock.service.js"
 
 console.log("we are on the list page rn")
@@ -14,7 +18,19 @@ console.log("we are on the list page rn")
 const eleTable = document.getElementById('animals-list');
 const eleTbody= document.querySelector('tbody');
 const eleMessageBox = document.getElementById('message-box');
+const eleSpinIcon = document.getElementById('spinner-icon');
 const elePaginationContainer = document.getElementById("pagination-container");
+const eleDeleteBtn = document.getElementById('deleteBtn');
+
+
+// Ensure the spinner is hidden initially.
+eleMessageBox.classList.remove('d-none');
+// Ensure the spinner is hidden initially.
+eleSpinIcon.classList.remove('d-none');
+//Shows the loading screen once page loads.
+eleMessageBox.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Loading Animals...`;
+// Wait for 3 seconds before showing the table.
+await waitTho(3000);
 
 const url = new URL(window.location);
 const search = url.searchParams;
@@ -37,17 +53,19 @@ const currentRecords = records.slice((page - 1) * perPage, page * perPage);
 
 // console.log("Retrieved records:", records);
 
+function waitTho (ms){
+    return new Promise((resolve) => setTimeout(resolve, 3000));
+}
+
 function toggleTableVisibility (animals){
     if (animals.length === 0) {
+        //Added this here so when theres nothing in the table it shows the msg.
+        eleMessageBox.innerHTML = "There are currently no animals available in your local storage.";
         eleMessageBox.classList.remove('d-none');
         eleTable.classList.add('d-none');
-        //
-        // elePaginationContainer.classList.add("d-none");
     } else {
         eleMessageBox.classList.add('d-none')
         eleTable.classList.remove('d-none');
-        //
-        // elePaginationContainer.classList.remove("d-none");
     }
 }
 // console.log(eleTbody)
@@ -150,12 +168,24 @@ function onDeleteClick(animal){
         const modal = new bootstrap.Modal(eleModalWindow);
 
         // Event listeners for confirm and delete buttons
-        eleModalWindow.querySelector('.btn-danger').addEventListener('click', () => {
+        eleModalWindow.querySelector('.btn-danger').addEventListener('click', async () => {
             try {
-                // Delete the animal
+                // Show the spinner before deleting
+                eleSpinIcon.classList.remove('d-none');
+                        
+                // Change the icon to a spinner
+                eleDeleteBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Deleting...';
+
+
+                // Wait 3 seconds before proceeding.
+                await new Promise(resolve => setTimeout(resolve, 3000));
+
+                // Delete the animal.
                 animalMockService.deleteAnimal(animal.id);
                 // Get the updated list of animals
                 const animals = animalMockService.getAllAnimals();
+
+                
                 // Update the visibility of the table based on the number of animals
                 toggleTableVisibility(animals);
                 // If the animal list is empty, show the message box, otherwise hide it
@@ -179,7 +209,7 @@ function onDeleteClick(animal){
 
             } catch (error) {
                 eleMessageBox.textContent = error.message;
-                eleMessageBox.classList.remove('d-none');
+                eleMessageBox.classList.add('d-none');
                 // console.error(error);
             }
             // Close the modal.

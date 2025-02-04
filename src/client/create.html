@@ -54,52 +54,55 @@ Description: This is my add page!
 
 	<!-- Begin page content -->
 	<main class="flex-shrink-0">
-	  <div class="container">
+    <div class="container">
 		<h1 class="mt-5">Create</h1>
 		<p class="lead">This page is for adding animals to the list.</p>
 
-		  <div id="message-box" class="alert alert-danger d-none"></div>
-		  <i id="spinner" class="fa fa-spinner fa-spin d-none" style="font-size:40px"></i>
+      <div id="message-box" class="alert alert-danger d-none"></div>
+      <i id="spinner" class="fa fa-spinner fa-spin d-none" style="font-size:40px"></i>
 
-		  <form id='animal-form' novalidate>
+      <form id='animal-form' novalidate>
 
 			<!-- Animal Name -->
 			<div class="mb-3">
-			  <label for="animalName" class="form-label">Animal Name</label>
-			  <input type="text" id="animalName" name="name" class="form-control">
-			  <p class="text-danger d-none">Animal name is required.</p>
+			<label for="animalName" class="form-label">Animal Name</label>
+			<input type="text" id="animalName" name="name" class="form-control">
+			<p class="text-danger d-none">Animal name is required.</p>
 			</div>
 
 			<!-- Animal Breed -->
 			<div class="mb-3">
-			  <label for="animalBreed" class="form-label">Animal Breed</label>
-			  <input type="text" id="animalBreed" name="breed" class="form-control">
-			  <p class="text-danger d-none">Please enter a valid breed.</p>
+			<label for="animalBreed" class="form-label">Animal Breed</label>
+      <input type="text" id="animalBreed" name="breed" class="form-control">
+      <p class="text-danger d-none">Please enter a valid breed.</p>
 			</div>
 
 			<!-- Animal Eyes -->
 			<div class="mb-3">
-			  <label for="animalEyes" class="form-label">Animal Eyes</label>
-			  <input type="number" id="animalEyes" name="eyes" class="form-control">
-			  <p class="text-danger d-none">Please enter a valid number of eyes.</p>
+			<label for="animalEyes" class="form-label">Animal Eyes</label>
+      <input type="number" id="animalEyes" name="eyes" class="form-control">
+      <p class="text-danger d-none">Please enter a valid number of eyes.</p>
 			</div>
 
 			<!-- Animal Legs -->
 			<div class="mb-3">
-			  <label for="animalLegs" class="form-label">Animal Legs</label>
-			  <input type="number" id="animalLegs" name="legs" class="form-control">
-			  <p class="text-danger d-none">Please enter a valid amount of legs.</p>
+      <label for="animalLegs" class="form-label">Animal Legs</label>
+      <input type="number" id="animalLegs" name="legs" class="form-control">
+			<p class="text-danger d-none">Please enter a valid amount of legs.</p>
 			</div>
 
 			<!-- Animal Sound -->
 			<div class="mb-3">
-			  <label for="animalSounds" class="form-label">Animal Sound</label>
-			  <input type="text" id="animalSounds" name="sound" class="form-control">
-			  <p class="text-danger d-none">Please enter a valid animal sound.</p>
+			<label for="animalSounds" class="form-label">Animal Sound</label>
+			<input type="text" id="animalSounds" name="sound" class="form-control">
+			<p class="text-danger d-none">Please enter a valid animal sound.</p>
 			</div>
 
-		  <!-- Submit Button -->
-		  <button type="submit" class="btn custom-btn">Add Animal</button>
+      <!-- Submit Button -->
+      <button type="submit" class="btn custom-btn">Add Animal
+          <i id="spinner" class="fa-duotone fa-solid fa-spinner fa-spin d-none"></i>
+      </button>
+
 		  </form>
 	  </div>
 	</main>

@@ -66,7 +66,14 @@ function setupEditForm() {
     }
 }
 
-function submitAnimalForm(event) {
+
+// ! New function for timeouts.
+function waitTho (ms){
+    return new Promise((resolve, reject) => setTimeout(resolve, 3000));
+}
+
+// ! Made this async to do the wait thing.
+async function submitAnimalForm(event) {
     event.preventDefault();
     
     const animalForm = event.target;
@@ -75,13 +82,11 @@ function submitAnimalForm(event) {
     const spinner = document.getElementById('spinner');
     // const eleNameError = animalForm.name.nextElementSibling;
     const valid = validateAnimalForm(animalForm);
-
     // Clear previous messages.
     eleNameError .classList.add('d-none');
     // eleNameError.classList.add('d-none');
 
     if (valid){
-        // const animalParms = {}
         console.log('valid, lets save the animal!');
         const animalObject = new Animal ({
             id: editId,
@@ -103,21 +108,26 @@ function submitAnimalForm(event) {
             }
             // Show spinner while processing
             spinner.classList.remove('d-none');
+            // Disable the boxes once its processing.
+            animalForm.name.disabled = true;
+            animalForm.breed.disabled = true;
+            animalForm.eyes.disabled = true;
+            animalForm.legs.disabled = true;
+            animalForm.sound.disabled = true;
+            // eleButtonSubmit.disabled = true;
+            // Wait for 3 seconds before showing modal
+            await waitTho(3000);
 
-            // // Hide spinner after operation is complete.
-            setTimeout(() => {
-                spinner.classList.add('d-none');
-                // Show the success modal
-                const successModal = new bootstrap.Modal(document.getElementById('SuccessModal'));
-                successModal.show();
+            // Show the success modal
+            const successModal = new bootstrap.Modal(document.getElementById('SuccessModal'));
+            successModal.show();
 
-                // Handle the OK button behavior
-                document.getElementById('modal-ok-btn').addEventListener('click', () => {
-                        console.log("OK button clicked!");
-                        animalForm.reset();
-                        window.location.href = "search.html";
-                });
-            }, 3000);
+            // Handle the OK button behavior
+            document.getElementById('modal-ok-btn').addEventListener('click', () => {
+                    console.log("OK button clicked!");
+                    animalForm.reset();
+                    window.location.href = "search.html";
+            });
 
         } catch(error){
             // hide the spinner when there are errors.

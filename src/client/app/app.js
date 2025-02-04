@@ -13,6 +13,3 @@ const copy = document.getElementById('copyright');
 copy.append(date.getFullYear())
 
 
-
-  
-

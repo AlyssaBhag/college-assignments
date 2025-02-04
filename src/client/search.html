@@ -54,9 +54,12 @@ Description: This is my list page!
     <!-- Begin page content -->
     <main class="flex-shrink-0">
       <div class="container">
-      <h1 class="mt-5">Animal List</h1>
+      <h1 id="deleteBtn" class="mt-5">Animal List <i class="fas fa-spinner fa-spin d-none "></i></h1>
       <p class="lead">Here will display all of the animals in your collection! </p>
-      <div id="message-box" class="alert alert-info d-none">There are currently no animals available in your local storage.</div>
+      <div id="message-box" class="alert alert-info d-none">
+        <i id="spinner-icon" class="fas fa-spinner fa-spin d-none"></i>
+    </div>
+    
       <table id="animals-list" class="table table-striped table-hover d-none">
         <thead>
         <tr>
@@ -87,13 +90,12 @@ Description: This is my list page!
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-danger">Delete Animal</button>
+            <button type="button" class="btn btn-danger"> <i class="fas fa-spinner fa-spin d-none"></i> Delete Animal</button>
           </div>
         </div>
       </div>
     </div>
   
-
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-end"><a href="#">Back to top</a></p>
