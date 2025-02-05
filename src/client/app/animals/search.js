@@ -28,7 +28,7 @@ eleMessageBox.classList.remove('d-none');
 // Ensure the spinner is hidden initially.
 eleSpinIcon.classList.remove('d-none');
 //Shows the loading screen once page loads.
-eleMessageBox.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Loading Animals...`;
+eleMessageBox.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Loading Animals From Storage...`;
 // Wait for 3 seconds before showing the table.
 await waitTho(3000);
 
@@ -53,10 +53,12 @@ const currentRecords = records.slice((page - 1) * perPage, page * perPage);
 
 // console.log("Retrieved records:", records);
 
+// This is a function defined to count the seconds before it has to reload the page.
 function waitTho (ms){
     return new Promise((resolve) => setTimeout(resolve, 3000));
 }
 
+// This function shows the visibility of the table of animals when made..
 function toggleTableVisibility (animals){
     if (animals.length === 0) {
         //Added this here so when theres nothing in the table it shows the msg.
@@ -70,6 +72,7 @@ function toggleTableVisibility (animals){
 }
 // console.log(eleTbody)
 
+// This handles all of the page stuff, to understand when something need to have more pages dependent on how many animals are there.
 function drawPaginationLinks(elePaginationContainer, currentPage, totalPages) {
     const elePaginationLinks = elePaginationContainer.querySelector('ul.pagination');
     // Clear previous links
@@ -139,7 +142,6 @@ function drawAnimalTable(animals){
         eleEditLink.innerHTML = `<i class="fas fa-edit"</i>`;
         // 
         eleEditLink.setAttribute('href', `create.html?id=${animal.id}`);
-
         ;
         // Add tooltip and its text.
         eleEditLink.setAttribute('data-bs-toggle', 'tooltip'); 
@@ -174,7 +176,7 @@ function onDeleteClick(animal){
                 eleSpinIcon.classList.remove('d-none');
                         
                 // Change the icon to a spinner
-                eleDeleteBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Deleting...';
+                eleDeleteBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Deleting an animal from storage...';
 
 
                 // Wait 3 seconds before proceeding.
@@ -232,7 +234,7 @@ function onDeleteClick(animal){
 function onConfirm(animal, modal) {
     return () => {
         console.log(`Confirmed action for animal: ${animal.name}`);
-        // After consfirmation it redirects the page... I can also do refresh but it only rereshed it and not changes you back to the page you need.
+        // After confirmation it redirects the page... I can also do refresh but it only rereshed it and not changes you back to the page you need.
         window.location = 'search.html';
         // Close the modal after confirmation.
         modal.hide(); 

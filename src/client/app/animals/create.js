@@ -3,23 +3,22 @@ Name: Alyssa Bhagwandin
 Filename: create.js
 Course: INFT 2202
 Created Date: January 13th, 2025
-Last Edited Date: January 30th, 2025
+Last Edited Date: February 4th, 2025
 Description: This is my create.js file
 */
 
 import Animal from './animal.js'; 
 import animalMockService from './animal.mock.service.js';
 
-
 // console.log("AnimalService works if it shows here:", animalMockService);
 // console.log("is getAllAnimals being seen, if yes this will say function:", typeof animalMockService.getAllAnimals);
 
 const url = new URL(window.location);
 const searchParams= url.searchParams;
-
 const editId = searchParams.get('id');
 // console.log(editId)
 const isEditMode = editId ? true : false;
+const eleSubmitBtn = document.getElementById('submitBtn');
 
 if(isEditMode) {
     setupEditForm();
@@ -114,7 +113,8 @@ async function submitAnimalForm(event) {
             animalForm.eyes.disabled = true;
             animalForm.legs.disabled = true;
             animalForm.sound.disabled = true;
-            // eleButtonSubmit.disabled = true;
+            // Disables the submit button as well.
+            eleSubmitBtn.disabled = true;
             // Wait for 3 seconds before showing modal
             await waitTho(3000);
 

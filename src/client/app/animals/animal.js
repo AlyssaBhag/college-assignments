@@ -3,7 +3,7 @@ Name: Alyssa Bhagwandin
 Filename: animal.js
 Course: INFT 2202
 Created Date: January 16th, 2024
-Last Edited Date: January 30th, 2025
+Last Edited Date: February 5th, 2025
 Description: This is my animal.js file
 */
 
