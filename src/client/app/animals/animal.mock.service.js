@@ -3,16 +3,15 @@ Name: Alyssa Bhagwandin
 Filename: animal.mock.service.js
 Course: INFT 2202
 Created Date: January 20th, 2025
-Last Edited Date: January 30th, 2025
+Last Edited Date: February 10th, 2025
 Description: This is my animal.mock.service.js file
 */
 
 /// look up jsdoc.
 
 import Animal from "./animal.js";
-// Function gets hosited, put here for visibility
+// Function gets hoisted, put here for visibility
 export default new AnimalService()
-
 
 // service constructor.
 function AnimalService() {

@@ -11,7 +11,8 @@ Description: This is my list.js/now the search.js file
 // TODO: comments.
 // * Highlighted comments.
 
-import animalMockService from "./animal.mock.service.js"
+// import animalMockService from "./animal.mock.service.js"
+import animalService from "./animal.service.js"
 
 console.log("we are on the list page rn")
 
@@ -21,6 +22,9 @@ const eleMessageBox = document.getElementById('message-box');
 const eleSpinIcon = document.getElementById('spinner-icon');
 const elePaginationContainer = document.getElementById("pagination-container");
 const eleDeleteBtn = document.getElementById('deleteBtn');
+// const records = {pagination, pagination.pages, pagination.perPage};
+// const records = {Pagination, page, totalPages};
+
 
 
 // Ensure the spinner is hidden initially.
@@ -30,7 +34,8 @@ eleSpinIcon.classList.remove('d-none');
 //Shows the loading screen once page loads.
 eleMessageBox.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Loading Animals From Storage...`;
 // Wait for 3 seconds before showing the table.
-await waitTho(3000);
+// ! This is commented out for now.
+// await waitTho(3000);
 
 const url = new URL(window.location);
 const search = url.searchParams;
@@ -41,7 +46,8 @@ const perPage = parseInt(search.get('perPage') ?? 5);
 console.log(`Page: ${page}, Per Page: ${perPage}`);
 
 // Get all records
-const records = animalMockService.getAllAnimals() // page, perPage
+// const records = animalMockService.getAllAnimals() // page, perPage
+const records = animalService.getAllAnimals() 
 console.log('All the stuff in local storage rn:', records); 
 
 // Calculate total pages
@@ -54,13 +60,14 @@ const currentRecords = records.slice((page - 1) * perPage, page * perPage);
 // console.log("Retrieved records:", records);
 
 // This is a function defined to count the seconds before it has to reload the page.
-function waitTho (ms){
-    return new Promise((resolve) => setTimeout(resolve, 3000));
-}
 
+function waitTho (ms){
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+// ? This needs to read the stuff for the table .
 // This function shows the visibility of the table of animals when made..
-function toggleTableVisibility (animals){
-    if (animals.length === 0) {
+function toggleTableVisibility (records){
+    if (records.length === 0) {
         //Added this here so when theres nothing in the table it shows the msg.
         eleMessageBox.innerHTML = "There are currently no animals available in your local storage.";
         eleMessageBox.classList.remove('d-none');
@@ -115,21 +122,24 @@ function drawPaginationLinks(elePaginationContainer, currentPage, totalPages) {
     elePaginationLinks.appendChild(nextButton);
 }
 
-function drawAnimalTable(animals){
+// ! Changing anything that takes the params as animals to records.
+function drawAnimalTable(records){
 
     // Clears the Tbody.
     // eleTbody.replaceChild();
     eleTbody.innerHTML = '';
 
-    console.log(animals)
-    toggleTableVisibility(animals);
+    // console.log(animals)
+    console.log(records)
+    toggleTableVisibility(records);
 
-    for (const animal of animals){
+    for (const animal of records){
 
         const eleRow = eleTbody.insertRow();
-
         const ownerCell = eleRow.insertCell();
-        ownerCell.textContent = "Alyssa";
+        // * Changed this to take the owners name(whatever in the local storage as the owners name.)
+        ownerCell.textContent = animal.owner.githubId;
+        // in here you can do ownerCell.innerHTML = something and get the id and show the images of the github ID.
 
         const detailsCell = eleRow.insertCell();
         detailsCell.textContent = animal.toString();
@@ -142,7 +152,7 @@ function drawAnimalTable(animals){
         eleEditLink.innerHTML = `<i class="fas fa-edit"</i>`;
         // 
         eleEditLink.setAttribute('href', `create.html?id=${animal.id}`);
-        ;
+        
         // Add tooltip and its text.
         eleEditLink.setAttribute('data-bs-toggle', 'tooltip'); 
         eleEditLink.setAttribute('title', 'Click here to update your animal!'); 
@@ -185,13 +195,16 @@ function onDeleteClick(animal){
                 // Delete the animal.
                 animalMockService.deleteAnimal(animal.id);
                 // Get the updated list of animals
-                const animals = animalMockService.getAllAnimals();
+                // const animals = animalMockService.getAllAnimals();
+                // ! New version.
+                const animals = animalService.getAllAnimals();
 
-                
+                // ! Updated this.
                 // Update the visibility of the table based on the number of animals
-                toggleTableVisibility(animals);
+                toggleTableVisibility(records);
                 // If the animal list is empty, show the message box, otherwise hide it
-                if (animals.length === 0) {
+                // ! Changed this also
+                if (records.length === 0) {
                     eleMessageBox.classList.remove('d-none');
                     console.log("Hallo is this showing")
                 } else {
@@ -204,7 +217,7 @@ function onDeleteClick(animal){
                 drawAnimalTable(currentPage);
 
                 drawPaginationLinks(elePaginationContainer, page, totalPages);
-                
+                // ! Calls three params 
                 // Reload the page after deletion.
                 // window.location.reload();
                 window.location.href = 'search.html';

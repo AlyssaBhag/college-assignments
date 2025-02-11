@@ -3,14 +3,14 @@ Name: Alyssa Bhagwandin
 Filename: animal.js
 Course: INFT 2202
 Created Date: January 16th, 2024
-Last Edited Date: February 5th, 2025
+Last Edited Date: February 10th, 2025
 Description: This is my animal.js file
 */
 
 export default class Animal {
-    constructor({id = null, name, breed, eyes, legs, sound}) {
+    constructor({id = null, name, breed, eyes, legs, sound, owner = null}) {
         this.id = id || crypto.randomUUID();
-        Object.assign(this, {name, breed, eyes, legs, sound });
+        Object.assign(this, {name, breed, eyes, legs, sound, owner });
     }
 
     toString() {
@@ -25,7 +25,8 @@ export default class Animal {
             breed: this.breed,
             eyes: this.eyes,
             legs: this.legs,
-            sound: this.sound
+            sound: this.sound,
+            owner: this.owner
         };
     }
 }
