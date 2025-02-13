@@ -8,9 +8,10 @@ Description: This is my create.js file
 */
 
 import Animal from './animal.js'; 
-import animalMockService from './animal.mock.service.js';
+// import animalMockService from './animal.mock.service.js';
+import AnimalService from './animal.service.js';
 
-// console.log("AnimalService works if it shows here:", animalMockService);
+console.log("AnimalService works if it shows here:", AnimalService);
 // console.log("is getAllAnimals being seen, if yes this will say function:", typeof animalMockService.getAllAnimals);
 
 const url = new URL(window.location);
@@ -33,16 +34,16 @@ if (eleForm) {
     eleForm.addEventListener('submit', submitAnimalForm);
 }
 
-function setupEditForm() {
+async function setupEditForm() {
     const eleheading = document.querySelector('h1');
     eleheading.textContent = "Editing Existing Animal List";
     console.log("Updated the header")
-    const existingAnimal = animalMockService.findAnimal(editId);
+    // const existingAnimal = animalMockService.findAnimal(editId);
+    const existingAnimal = await AnimalService.findAnimal(editId);
 
     if (existingAnimal) {
         console.log("Animal found!");
         const eleAnimalForm = document.getElementById('animal-form');
-        // const existingAnimal = animalMockService.findAnimal(editId);
 
         console.log("it is now in the thingy!")
         eleAnimalForm.name.value = existingAnimal.name;
@@ -100,10 +101,24 @@ async function submitAnimalForm(event) {
         console.log(animalObject)
         try {
 
+            // Check if an animal with this name already exists.
+            const existingAnimals = await AnimalService.getAllAnimals();
+            const duplicate = existingAnimals.find(a => a.name.toLowerCase() === animalObject.name.toLowerCase());
+
+            // if(isEditMode){
+            //     animalMockService.updateAnimal(animalObject);
+            // } else {
+            //     animalMockService.createAnimal(animalObject);
+            // }
+
+            if (duplicate && !isEditMode) {
+                throw new Error(`Animal with name "${animalObject.name}" already exists.`);
+            }
+
             if(isEditMode){
-                animalMockService.updateAnimal(animalObject);
+                await AnimalService.updateAnimal(animalObject);
             } else {
-                animalMockService.createAnimal(animalObject);
+                await AnimalService.createAnimal(animalObject);
             }
             // Show spinner while processing
             spinner.classList.remove('d-none');
