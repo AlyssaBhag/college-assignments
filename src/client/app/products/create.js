@@ -9,7 +9,8 @@ Description: This is my create.js file for managing products.
 
 // Importing modules.
 import Product from './product.js'; 
-import productMockService from './product.mock.service.js';
+// import productMockService from './product.mock.service.js';
+import productService from "./product.service.js";
 
 // Retrieving URL parameters.
 const url = new URL(window.location);
@@ -33,10 +34,11 @@ if (eleForm) {
 }
 
 // Function to set up the form for editing an existing product.
-function setupEditForm() {
+async function setupEditForm() {
     const eleHeading = document.querySelector('h1');
     eleHeading.textContent = "Editing Existing Product";
-    const existingProduct = productMockService.findProduct(editId);
+    // const existingProduct = productMockService.findProduct(editId);
+    const existingProduct = await productService.findProduct(editId);
 
     if (existingProduct) {
         const eleProductForm = document.getElementById('product-form');
@@ -67,7 +69,7 @@ function submitProductForm(event) {
     if (valid) {
         // Creating or updating product object based on form data.
         const productObject = new Product({
-            id: editId,
+            productId: editId,
             name: productForm.name.value,
             description: productForm.description.value,
             price: parseFloat(productForm.price.value),
@@ -76,10 +78,11 @@ function submitProductForm(event) {
 
         try {
             // Updating or creating product via mock service.
+            // Changed where it says ProductService. It used to sat ProductMockService.
             if (isEditMode) {
-                productMockService.updateProduct(productObject);
+                productService.updateProduct(productObject);
             } else {
-                productMockService.createProduct(productObject);
+                productService.createProduct(productObject);
             }
             spinner.classList.remove('d-none');
             // Show success modal after delay.

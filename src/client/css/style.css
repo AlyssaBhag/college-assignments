@@ -219,3 +219,22 @@ footer {
   display: block !important;
 }
 
+.text-name-games {
+  color: #258893 !important;
+}
+
+.btn-cart {
+  background-color: #772ce8 !important; /* Slightly darker purple for hover effect */
+  color: #ffffff !important;
+}
+
+.custom-btns {
+  background-color: #df469d !important;
+  border-color: #d83491 !important;
+  color: white !important;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
