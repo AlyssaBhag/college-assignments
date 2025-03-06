@@ -22,12 +22,9 @@ const eleMessageBox = document.getElementById('message-box');
 const eleSpinIcon = document.getElementById('spinner-icon');
 const elePaginationContainer = document.getElementById("pagination-container");
 const eleDeleteBtn = document.getElementById('deleteBtn');
-// const records = {pagination, pagination.pages, pagination.perPage};
-// const records = {Pagination, page, totalPages};
-// Added these for the dropdwon bar.
+
 const eleSelectedPerPage = document.getElementById('selectedPerPage');
 const elePerPageOptions = document.querySelectorAll('.per-page-option');
-
 
 // Ensure the spinner is hidden initially.
 eleMessageBox.classList.remove('d-none');
@@ -79,7 +76,7 @@ async function loadAnimals() {
 }
 
 // ! Had to make these two functions for the drop down menu.
-// It is basically a event handler when the drop down is clicked. Chnahiog the page numbers and the record amount.
+// It is basically a event handler when the drop down is clicked. Changing the page numbers and the record amount.
 // Update the dropdown display with the selected value
 if (eleSelectedPerPage) {
     eleSelectedPerPage.textContent = perPage;
@@ -228,7 +225,7 @@ function drawAnimalTable(records){
         eleDelete.setAttribute('title', 'Click here to delete your animal :(');   
         controlsCell.append(eleDelete);
 
-        // 🔹 Disable buttons if the current user is NOT the owner
+        // Disable buttons if the current user is NOT the owner
         if (animal.owner.githubId !== currentUserId) {
             eleEditLink.disabled = true;
             eleDelete.disabled = true;
