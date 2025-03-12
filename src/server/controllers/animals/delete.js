@@ -4,7 +4,7 @@ const handle = async (req, res, next) => {
     try {
         const { animalId } = req.params;
         const animal = await AnimalService.deleteAnimal(animalId);
-        res.json('Animal has been deleted :( ');
+        res.json(`${animal} has been deleted :( `);
 
     } catch (error) {
         next(error);

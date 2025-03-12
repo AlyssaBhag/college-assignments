@@ -15,13 +15,13 @@ export default new AnimalService()
 // service constructor updated.Instead of calling the local host, you get the API key and the url for the website.
 function AnimalService() {
     this.apikey = '24825d3a-0291-4360-957a-425ccdea8b68';
-    this.host = 'https://inft2202.opentech.durhamcollege.org';
+    this.host = 'http://localhost:3000/search.html';
     }
 
 
     // Changed this to 20 pages because it will be long.
 AnimalService.prototype.getAnimals = async function (page = 1, perPage = 5) {
-    const url = new URL("/api/animals", this.host);
+    const url = new URL("/api/animals/search", this.host);
     url.search = new URLSearchParams({page, perPage});
 
     const headers = new Headers ({

@@ -20,9 +20,12 @@ const PORT = 3000;
 // configure express to use json(middleware).
 app.use(express.json());
 
-app.use('/', defaultRouter);
+// app.use('/', defaultRouter);
 app.use('/api', animalsRouter);
 
+// Tells the server to use the client folder as the static folder. The whole directory is being used.
+app.use(express.static(`${import.meta.dirname}/../client`));
+app.use('/node_modules', express.static(`${import.meta.dirname}/../../node_modules`));
 
 app.use((err, req, res, next) => {
     console.log(err);
@@ -31,13 +34,16 @@ app.use((err, req, res, next) => {
     });
 }); 
 
-
 // trying to connect to the database with mongoose.
 await mongoose.connect('mongodb://127.0.0.1:27017/inft2202');
 console.log('Yay we have connected to the database successfully!');
 
-
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`);
 });
+
+// ! Add this later. It will beep at you once your server chases as a audio queue.
+process.on('uncaughtException', (err) => {
+    console.error('An uncaught error has occurred: ', err)
+})
 

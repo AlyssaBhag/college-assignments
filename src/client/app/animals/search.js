@@ -192,10 +192,12 @@ function drawAnimalTable(records){
         const ownerCell = eleRow.insertCell();
         // * Changed this to take the owners name(whatever in the local storage as the owners name.)
         // ownerCell.textContent = animal.owner.githubId;
-        // in here you can do ownerCell.innerHTML = something and get the id and show the images of the github ID.
-        ownerCell.innerHTML = `<img src="https://avatars.githubusercontent.com/${animal.owner.githubId}?size=40" 
-        alt="${animal.owner.githubId}'s Avatar" class="rounded-circle me-2" width="40" height="40">
-        ${animal.owner.githubId}`;
+        ownerCell.textContent = "Alyssa";
+        // // ownerCell.textContent = animal.owner.githubId;
+        // // in here you can do ownerCell.innerHTML = something and get the id and show the images of the github ID.
+        // ownerCell.innerHTML = `<img src="https://avatars.githubusercontent.com/${animal.owner.githubId}?size=40" 
+        // alt="${animal.owner.githubId}'s Avatar" class="rounded-circle me-2" width="40" height="40">
+        // ${animal.owner.githubId}`;
     
     
         const detailsCell = eleRow.insertCell();
@@ -225,13 +227,13 @@ function drawAnimalTable(records){
         eleDelete.setAttribute('title', 'Click here to delete your animal :(');   
         controlsCell.append(eleDelete);
 
-        // Disable buttons if the current user is NOT the owner
-        if (animal.owner.githubId !== currentUserId) {
-            eleEditLink.disabled = true;
-            eleDelete.disabled = true;
-            eleEditLink.classList.add('disabled');
-            eleDelete.classList.add('disabled');
-        }
+        // // Disable buttons if the current user is NOT the owner
+        // if (animal.owner.githubId !== currentUserId) {
+        //     eleEditLink.disabled = true;
+        //     eleDelete.disabled = true;
+        //     eleEditLink.classList.add('disabled');
+        //     eleDelete.classList.add('disabled');
+        // }
     }
 }
 
