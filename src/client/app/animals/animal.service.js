@@ -9,13 +9,13 @@ Description: This is my animal.service.js file
 
 import Animal from "./animal.js";
 // Calls the function for visibility.
-export default new AnimalService()
+// export default new AnimalService()
 
 
 // service constructor updated.Instead of calling the local host, you get the API key and the url for the website.
 function AnimalService() {
     this.apikey = '24825d3a-0291-4360-957a-425ccdea8b68';
-    this.host = 'http://localhost:3000/search.html';
+    this.host = 'http://localhost:3000';
     }
 
 
@@ -80,6 +80,7 @@ AnimalService.prototype.getAllAnimals = async function () {
 // Updated version of the find animal function.
 AnimalService.prototype.findAnimal = async function (id) {
     const url = new URL(`/api/animals/${id}`, this.host);
+    console.log("Fetching animal from URL:", url.toString());
 
     const headers = new Headers ({
         'apikey': this.apikey,
@@ -91,18 +92,28 @@ AnimalService.prototype.findAnimal = async function (id) {
         headers
     };
 
-
     try {
         const response = await fetch(url, options);
-        if (!response.ok) throw new Error(`Animal not found: ${response.statusText}`);
 
-        return new Animal(await response.json());
+        if (!response.ok) {
+            const errorText = await response.text();
+            // throw new Error(`Animal not found: ${response.status} - ${errorText}`);
+            console.error(`Animal not found: ${response.status} - ${errorText}`);
+            return null;  
+        }
+
+        const data = await response.json();
+        if (!data) {
+            console.error("Error: API response is null.");
+            return null; 
+        }
+        // return new Animal(await response.json());
+        return new Animal(data);
     } catch (err) {
-        console.error("Error finding animal:", err);
-        throw err;
+        console.error("Error finding animal:", err.message);
+        return null; 
     }
 };
-
 
 // Updated version of the create animal function.
 AnimalService.prototype.createAnimal = async function (animalObject) {
@@ -182,3 +193,5 @@ AnimalService.prototype.deleteAnimal = async function (id) {
         throw err;
     }
 };
+
+export default new AnimalService();

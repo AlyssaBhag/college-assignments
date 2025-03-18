@@ -8,8 +8,9 @@ Description: This is my animal.js file
 */
 
 export default class Animal {
-    constructor({id = null, name, breed, eyes, legs, sound, owner = null}) {
-        this.id = id || crypto.randomUUID();
+    constructor({_id = null, name, breed, eyes, legs, sound, owner = null}) {
+        // this._id = _id || crypto.randomUUID();
+        this._id = _id ? _id : new mongoose.Types.ObjectId();
         Object.assign(this, {name, breed, eyes, legs, sound, owner });
     }
 
@@ -20,7 +21,7 @@ export default class Animal {
 
     toJSON() {
         return {
-            id: this.id,
+            id: this._id,
             name: this.name,
             breed: this.breed,
             eyes: this.eyes,

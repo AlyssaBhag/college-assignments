@@ -7,9 +7,13 @@ Description: this is the server side version of the app.js file.
 */
 
 import express from 'express';
-import defaultRouter from './routes/routes.js';
+// import defaultRouter from './routes/routes.js';
 import animalsRouter from './routes/animals.js';
 import mongoose from 'mongoose';
+import { logger } from './utils/logger.js';
+import { ErrorHandlingMiddleware } from './middleware/errorHandling.js';
+import { loggerMiddleware } from './middleware/logging.js';
+// import { logger } from 'winston';
 
 console.log('testing');
 
@@ -19,7 +23,7 @@ const PORT = 3000;
 
 // configure express to use json(middleware).
 app.use(express.json());
-
+app.use(loggerMiddleware);
 // app.use('/', defaultRouter);
 app.use('/api', animalsRouter);
 
@@ -27,23 +31,27 @@ app.use('/api', animalsRouter);
 app.use(express.static(`${import.meta.dirname}/../client`));
 app.use('/node_modules', express.static(`${import.meta.dirname}/../../node_modules`));
 
-app.use((err, req, res, next) => {
-    console.log(err);
-    res.status(500).json({
-        message: 'Something went wrong',
+app.use(`*`, (req, res, next) => {
+    res.status(400).json({
+        message: 'Page not found',
     });
 }); 
 
+app.use(ErrorHandlingMiddleware);
+
+// app.use((err, req, res, next) => {
+//     console.log(err);
+//     res.status(500).json({
+//         message: 'Something went wrong',
+//     });
+// }); 
+
 // trying to connect to the database with mongoose.
 await mongoose.connect('mongodb://127.0.0.1:27017/inft2202');
-console.log('Yay we have connected to the database successfully!');
+logger.info('Yay we have connected to the database successfully!');
 
 app.listen(PORT, () => {
-    console.log(`server is running on port ${PORT}`);
+    logger.info(`server is running on port ${PORT}`);
 });
 
-// ! Add this later. It will beep at you once your server chases as a audio queue.
-process.on('uncaughtException', (err) => {
-    console.error('An uncaught error has occurred: ', err)
-})
 

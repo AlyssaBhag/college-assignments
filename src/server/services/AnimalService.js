@@ -1,5 +1,3 @@
-
-
 import Animal from '../models/Animals.js';
 
 class AnimalService{

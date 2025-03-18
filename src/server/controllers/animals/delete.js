@@ -1,4 +1,13 @@
+import { checkSchema } from 'express-validator';
 import AnimalService from "../../services/AnimalService.js";
+
+const rules = checkSchema({
+    animalId: {
+        in: ['params'],
+            errorMessage: 'Invalid animal ID',
+        },
+});
+
 
 const handle = async (req, res, next) => {
     try {
@@ -11,4 +20,4 @@ const handle = async (req, res, next) => {
     }
 };
 
-export default { handle }
+export default { handle, rules }

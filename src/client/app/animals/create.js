@@ -21,6 +21,7 @@ const editId = searchParams.get('id');
 const isEditMode = editId ? true : false;
 const eleSubmitBtn = document.getElementById('submitBtn');
 
+
 if(isEditMode) {
     setupEditForm();
     console.log("edit")
@@ -116,6 +117,7 @@ async function submitAnimalForm(event) {
             }
 
             if(isEditMode){
+                animalObject.id = animalId;
                 await AnimalService.updateAnimal(animalObject);
             } else {
                 await AnimalService.createAnimal(animalObject);

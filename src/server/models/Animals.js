@@ -1,6 +1,11 @@
 import { model, Schema } from "mongoose";
 
 const fields = {
+    _id: {
+        type: String,
+        required: true,
+        default: () => crypto.randomUUID()
+    },
     name: {
         type: String,
         required: true
