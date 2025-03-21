@@ -6,6 +6,13 @@ const rules = checkSchema({
         in: ['params'],
             errorMessage: 'Invalid animal ID',
         },
+            custom: {
+                options: async (value) =>{
+                    if (!await AnimalService.deleteAnimal(value)) {
+                        throw new Error('That animal does not exists');
+                }
+            }
+        },
 });
 
 

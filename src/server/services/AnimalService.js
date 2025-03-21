@@ -1,8 +1,12 @@
 import Animal from '../models/Animals.js';
+import mongoose from 'mongoose';
 
 class AnimalService{
     constructor() {}
 
+        async retrieveAnimalByName(name) {
+            return Animal.findOne({ name });
+        }
 
         async retrieveAnimal(animalId) {
             return Animal.findOne({ _id: animalId });

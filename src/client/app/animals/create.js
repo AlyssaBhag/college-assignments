@@ -16,14 +16,16 @@ console.log("AnimalService works if it shows here:", AnimalService);
 
 const url = new URL(window.location);
 const searchParams= url.searchParams;
-const editId = searchParams.get('id');
+const editId = searchParams.get('_id');
 // console.log(editId)
 const isEditMode = editId ? true : false;
 const eleSubmitBtn = document.getElementById('submitBtn');
 
+let animalId = null;
 
 if(isEditMode) {
-    setupEditForm();
+    animalId = editId;
+    setupEditForm(editId);
     console.log("edit")
 } else {
     console.log("add")
@@ -90,6 +92,7 @@ async function submitAnimalForm(event) {
     if (valid){
         console.log('valid, lets save the animal!');
         const animalObject = new Animal ({
+            // animalId: editId,
             id: editId,
             name: animalForm.name.value,
             breed: animalForm.breed.value,
@@ -117,7 +120,7 @@ async function submitAnimalForm(event) {
             }
 
             if(isEditMode){
-                animalObject.id = animalId;
+                animalObject._id = animalId;
                 await AnimalService.updateAnimal(animalObject);
             } else {
                 await AnimalService.createAnimal(animalObject);

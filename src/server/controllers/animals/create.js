@@ -3,12 +3,21 @@ import AnimalService from '../../services/AnimalService.js';
 
 const rules = checkSchema({
     name: {
+        in: ['body'],
         notEmpty: {
             errorMessage: 'Name is required',
         },
-        in: ['body'],
+        custom: {
+            options: async (value) => {
+                const existingAnimal = await AnimalService.retrieveAnimalByName(value);
+                if (existingAnimal) {
+                    throw new Error('Animal with this name already exists');
+                }
+            }
+        },
     },
     breed: {
+        in: ['body'],
         notEmpty: {
             errorMessage: 'Please enter the breed',
         },
@@ -18,6 +27,7 @@ const rules = checkSchema({
         },
     },
     eyes: {
+        in: ['body'],
         notEmpty: {
             errorMessage: 'Please enter the number of eyes',
         },
@@ -26,6 +36,7 @@ const rules = checkSchema({
         },
     },
     legs: {
+        in: ['body'],
         notEmpty: {
             errorMessage: 'Please enter the number of legs',
         },
@@ -34,6 +45,7 @@ const rules = checkSchema({
         },
     },
     sound: {
+        in: ['body'],
         notEmpty: {
             errorMessage: 'Please enter the sound',
         },
@@ -44,17 +56,14 @@ const rules = checkSchema({
     },
 });
 
-
 const handle = async (req, res, next) => {
     try {
         const { name, breed, eyes, legs, sound } = req.body;
-        const animal = await AnimalService.createAnimal({ name, breed, eyes, legs, sound});
-        // const animal = await AnimalService.createAnimal(req.body);
+        const animal = await AnimalService.createAnimal({ name, breed, eyes, legs, sound });
         res.json(animal);
-
     } catch (error) {
         next(error);
     }
 };
 
-export default { handle, rules};
+export default { handle, rules };

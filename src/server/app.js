@@ -14,6 +14,9 @@ import { logger } from './utils/logger.js';
 import { ErrorHandlingMiddleware } from './middleware/errorHandling.js';
 import { loggerMiddleware } from './middleware/logging.js';
 // import { logger } from 'winston';
+import createHttpError from 'http-errors';
+const {NotFound} = createHttpError;
+
 
 console.log('testing');
 
@@ -31,11 +34,9 @@ app.use('/api', animalsRouter);
 app.use(express.static(`${import.meta.dirname}/../client`));
 app.use('/node_modules', express.static(`${import.meta.dirname}/../../node_modules`));
 
-app.use(`*`, (req, res, next) => {
-    res.status(400).json({
-        message: 'Page not found',
-    });
-}); 
+app.use('*', (req, res, next) => {
+    next(new NotFound('Page not found'));
+});
 
 app.use(ErrorHandlingMiddleware);
 
