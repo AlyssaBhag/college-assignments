@@ -59,7 +59,7 @@ class ProductService {
 
         } catch (err) {
             // Log any errors encountered during the request
-            console.error("Error fetching products:", err);
+            // console.error("Error fetching products:", err);
             // Return an empty array to prevent crashes if the API call fails
             return [];
         }
