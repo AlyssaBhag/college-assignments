@@ -7,9 +7,9 @@ Description: This is my Product.js file
 */
 
 // Constructor function for creating a Product object.
-function Product({productId = null, name, price, stock, description, owner = null , createdDate = new Date().toISOString() }) {
+function Product({_id = null, name, price, stock, description, owner = null , createdDate = new Date().toISOString() }) {
     // Assign a unique ID if not provided.
-    this.id = productId || crypto.randomUUID();
+    this._id = _id || crypto.randomUUID();
     // Assign provided properties to the object.
     Object.assign(this, {name, price, stock, description, owner, createdDate});
 }
@@ -25,7 +25,7 @@ Product.prototype.toString =  async function() {
 // Method to convert the product object to a JSON-friendly format.
 Product.prototype.toJSON = function() {
     return {
-        id: this.id,
+        _id: this._id,
         name: this.name,
         price: this.price,
         stock: this.stock,

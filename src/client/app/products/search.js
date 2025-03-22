@@ -40,53 +40,32 @@ console.log(`Page: ${page}, Per Page: ${perPage}`);
  */
 async function loadProducts() {
     try {
-
         const url = new URL(window.location);
-        // ! Number of products per page (default: 4).
         const perPage = parseInt(url.searchParams.get('perPage')) || 4;
-        // ! Current page number (default: 1).
         const page = parseInt(url.searchParams.get('page')) || 1;
         console.log(`Page: ${page}, Per Page: ${perPage}`);
 
-        // Retrieve all products.
-        // const records = productMockService.getAllProducts();
-        const records = await productService.getAllProducts(); // Ensure records is an array.
-        console.log("Records Type:", typeof records); // Debugging log.
-        console.log("Records Content:", records); // Check what is returned.
+        const records = await productService.getAllProducts();
+        console.log("Records Type:", typeof records);
+        console.log("Records Content:", records);
 
         if (!Array.isArray(records)) {
             throw new Error("getAllProducts() did not return an array");
         }
 
-        // Calculate total pages.
         const totalPages = Math.ceil(records.length / perPage);
         console.log('Total pages:', totalPages);
         const currentRecords = records.slice((page - 1) * perPage, page * perPage);
-        console.log("Retrieved records:", currentRecords);
 
-        // Declared some variable for later instead of doing them kinda messy like my in class.
         toggleDisplay(currentRecords);
         drawProductCards(currentRecords);
-
-
         drawPaginationLinks(elePaginationContainer, page, totalPages);
 
     } catch (error) {
-
         console.error("Error loading Products:", error);
         eleMessageBox.textContent = "Error loading products. Please try again later.";
         eleMessageBox.classList.remove('d-none');
-        
     }
-}
-
-/**
- * Delays execution for a given time.
- * @param {number} ms - Milliseconds to wait.
- * @returns {Promise<void>} A promise that resolves after the given time.
- */
-function waitTho (ms){
-    return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // Update the dropdown display with the selected value
@@ -119,11 +98,21 @@ if (elePerPageOptions) {
 }
 
 /**
+ * Delays execution for a given time.
+ * @param {number} ms - Milliseconds to wait.
+ * @returns {Promise<void>} A promise that resolves after the given time.
+ */
+function waitTho (ms){
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+/**
  * Toggles UI elements based on product availability.
  * @param {Array} products - List of products to check.
  */
 function toggleDisplay(products) {
     if (products.length === 0) {
+        eleMessageBox.innerHTML = "There are currently no products available in the store.";
         eleMessageBox.classList.remove('d-none');
         eleContainer.classList.add('d-none');
     } else {
@@ -136,22 +125,17 @@ function toggleDisplay(products) {
  * Retrieves the current user ID from local storage.
  * @returns {string} User ID or default "AlyssaBhag" if not found.
  */
-function getCurrentUserId() {
-    return localStorage.getItem("userId") || "AlyssaBhag";
-}
+// function getCurrentUserId() {
+//     return localStorage.getItem("userId") || "AlyssaBhag";
+// }
 
 /**
  * Creates and displays product cards dynamically based on the given product list.
  * @param {Array} products - List of products to be displayed.
  */
 function drawProductCards(products) {
-    // Clear the container before adding new products.
     eleContainer.innerHTML = ''; 
-    console.log(products);
     toggleDisplay(products);
-
-    // Get the currently logged-in user's GitHub ID (Modify this based on your login system)
-    const currentUserId = getCurrentUserId(); 
 
     for (const product of products) {
         const cardWrapper = document.createElement('div');
@@ -159,7 +143,7 @@ function drawProductCards(products) {
 
         const card = document.createElement('div');
         card.classList.add('card', 'h-100', 'shadow-sm', 'p-2');
-        // Product image.
+
         const img = document.createElement('img');
         img.classList.add('card-img-top', 'p-1', 'rounded');
         img.src = '../../img/inven.jpg';
@@ -167,46 +151,37 @@ function drawProductCards(products) {
 
         const cardBody = document.createElement('div');
         cardBody.classList.add('card-body', 'd-flex', 'flex-column');
-        // Product name.
+
         const cardTitle = document.createElement('h5');
         cardTitle.classList.add('card-title', 'fw-bold', 'text-name-games');
         cardTitle.textContent = product.name;
-        // Product description.
+
         const cardText = document.createElement('p');
         cardText.classList.add('card-text', 'text-muted');
-        cardText.innerHTML = `<strong>Description:</strong> ${product.description}`;
-        // Product price.
+        cardText.innerHTML = `<strong>Description:</strong> ${product.description || 'N/A'}`;
+
         const priceText = document.createElement('p');
         priceText.classList.add('card-text', 'fw-bold', 'text-success', 'fs-5');
-        priceText.innerHTML = `<strong>Price:</strong> ${product.price.toFixed(2)}`;
-        // Removes default bottom margin.
-        priceText.classList.add('mb-0');
-        // Product stock.
+        priceText.innerHTML = `<strong>Price:</strong> ${product.price !== undefined ? product.price.toFixed(2) : 'N/A'}`;
+
         const stockText = document.createElement('p');
         stockText.classList.add('card-text', 'text-secondary');
-        stockText.innerHTML = `<strong>Stock:</strong> ${product.stock}`;
-        // Removes default bottom margin.
-        stockText.classList.add('mb-2');
-        // ! Added a container to ensure price & stock stay at the bottom.
+        stockText.innerHTML = `<strong>Stock:</strong> ${product.stock !== undefined ? product.stock : 'N/A'}`;
+
         const cardFooter = document.createElement('div');
         cardFooter.classList.add('mt-auto'); 
+        cardFooter.append(priceText, stockText);
 
-        // ! Create a container to group "Listed By" and "Listed Date"
         const listedInfoContainer = document.createElement('div');
         listedInfoContainer.classList.add('text-end', 'text-muted', 'small', 'mt-auto');
 
-        // ! "Listed By" section
         const listedPerson = document.createElement('p');
-        listedPerson.innerHTML = `<em>Listed By:</em> ${product.owner.githubId}`;
+        listedPerson.innerHTML = `<em>Listed By: Alyssa </em>`;
 
-        // ! Format and display the "Listed Date"
         const listedDate = new Date(product.createdDate).toLocaleDateString();
         const listedPersonDate = document.createElement('p');
-        // Removes default bottom margin.
-        listedPerson.classList.add('mb-0');
         listedPersonDate.innerHTML = `<em>Listed Date:</em> ${listedDate}`;
 
-        // Button container.
         const buttonContainer = document.createElement('div');
         buttonContainer.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'mt-3');
         const addToCartButton = document.createElement('button');
@@ -215,46 +190,27 @@ function drawProductCards(products) {
         addToCartButton.setAttribute('data-bs-toggle', 'tooltip');
         addToCartButton.setAttribute('title', 'Click here to add your product to your cart!');
 
-        // This whole area deals with the buttons on the edit and delete, 
-        // including the image for them and the tooltips!
-
-        // Edit button.
         const eleEditLink = document.createElement('a');
         eleEditLink.classList.add('btn', 'btn-primary');
         eleEditLink.innerHTML = `<i class="fas fa-edit"></i>`;
-        eleEditLink.href = `create.html?id=${product.id}`;
+        eleEditLink.href = `create.html?id=${product._id}`;
         eleEditLink.setAttribute('data-bs-toggle', 'tooltip');
         eleEditLink.setAttribute('title', 'Click here to update your product!');
 
-        // Delete button.
         const eleDelete = document.createElement('button');
         eleDelete.classList.add("btn", "btn-danger");
         eleDelete.innerHTML = '<i class="fa-solid fa-trash"></i>';
         eleDelete.addEventListener('click', () => onDeleteClick(product));
         eleDelete.setAttribute('data-bs-toggle', 'tooltip');
         eleDelete.setAttribute('title', 'Click here to delete your product');
-        
-        // ! Append price & stock inside the footer so they're always at the bottom.
-        cardFooter.append(priceText, stockText);
-        // ! Append both elements inside the container right below one another.
+
         listedInfoContainer.appendChild(listedPerson);
         listedInfoContainer.appendChild(listedPersonDate);
-        // Add to card button.
         buttonContainer.append(addToCartButton, eleEditLink, eleDelete);
         cardBody.append(cardTitle, cardText, cardFooter, listedInfoContainer, buttonContainer);
         card.append(img, cardBody);
         cardWrapper.append(card);
         eleContainer.appendChild(cardWrapper);
-            
-        // Disable edit and delete buttons if the current user is NOT the owner.
-        // The add to cart stays!
-        if (product.owner.githubId !== currentUserId) {
-            eleEditLink.disabled = true;
-            eleDelete.disabled = true;
-            eleEditLink.classList.add('disabled');
-            eleDelete.classList.add('disabled');
-        }
-
     }
 }
 
@@ -295,6 +251,13 @@ function drawPaginationLinks(elePaginationContainer, currentPage, totalPages) {
     // Create "Next" button.
     const nextButton = document.createElement("li");
     nextButton.classList.add("page-item");
+
+    // if (product._id) {
+    //     eleEditLink.setAttribute('href', `create.html?id=${product._id}`);
+    // } else {
+    //     console.error("Error: Product has no ID", product);
+    // }
+
     if (currentPage === totalPages) {
         nextButton.classList.add("disabled");
     }
@@ -304,10 +267,10 @@ function drawPaginationLinks(elePaginationContainer, currentPage, totalPages) {
     }
 
 
-// Handles product edit action.
-function editProduct(productId) {
-    window.location.href = `create.html?id=${productId}`;
-}
+// // Handles product edit action.
+// function editProduct(_id) {
+//     window.location.href = `create.html?id=${_id}`;
+// }
 
 /**
  * Handles the deletion of a product, including confirmation via a modal.
@@ -321,7 +284,7 @@ async function onDeleteClick(product) {
     console.log("Full product object:", product); // Log to check the structure
 
     // Use the correct key ('id' instead of 'productId')
-    const productId = product.id;
+    const productId = product._id;
 
     if (!productId) {
         console.error('Product ID not found!');
@@ -360,7 +323,8 @@ async function onDeleteClick(product) {
             } else {
                 eleMessageBox.classList.add('d-none');
             }
-
+            // Reload the products and update the UI
+            loadProducts();
             // Reload the page after deletion.
             window.location.href = 'search.html';
 

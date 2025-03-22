@@ -4,40 +4,42 @@ Filename: create.js
 Course: INFT 2202
 Created Date: January 13th, 2025
 Last Edited Date: January 30th, 2025
-Description: This is my create.js file for managing products.
+Description: This is my create.js file for managing products. this is a test
 */
 
 // Importing modules.
 import Product from './product.js'; 
-// import productMockService from './product.mock.service.js';
 import productService from "./product.service.js";
 
-// Retrieving URL parameters.
-const url = new URL(window.location);
-const searchParams = url.searchParams;
-const eleMessageBox = document.getElementById('message-box');
-const editId = searchParams.get('id');
-const isEditMode = editId ? true : false;
+console.log("ProductService works if it shows here:", productService);
+console.log('create.js loaded');
 
-// Checking if in edit or add mode, cuz sometimes it bugs.
+console.log("Full URL:", window.location.href);
+const searchParams = new URLSearchParams(window.location.search);
+const editId = searchParams.get('id'); 
+const isEditMode = editId ? true : false;
+const eleSubmitBtn = document.getElementById('submitBtn');
+
 if (isEditMode) {
-    setupEditForm();
-    console.log("edit mode");
+    setupEditForm(editId);
+    console.log("edit");
 } else {
-    console.log("add mode");
+    console.log("add");
 }
 
-// Adding form submission listener.
 const eleForm = document.getElementById('product-form');
 if (eleForm) {
     eleForm.addEventListener('submit', submitProductForm);
 }
 
-// Function to set up the form for editing an existing product.
-async function setupEditForm() {
+async function setupEditForm(editId) {
+    if (!editId || editId === "undefined") {
+        console.error("Error: editId is invalid:", editId);
+        return;
+    }
+
     const eleHeading = document.querySelector('h1');
     eleHeading.textContent = "Editing Existing Product";
-    // const existingProduct = productMockService.findProduct(editId);
     const existingProduct = await productService.findProduct(editId);
 
     if (existingProduct) {
@@ -47,132 +49,139 @@ async function setupEditForm() {
         eleProductForm.description.value = existingProduct.description;
         eleProductForm.price.value = existingProduct.price.toFixed(2); 
         eleProductForm.stock.value = existingProduct.stock;
+        // eleProductForm.owner.value = existingProduct.owner;
     } else {
-        // If product not found, display message and redirect.
-        eleMessageBox.classList.remove('d-none');
-        window.location.href = "search.html";
+        alert("Product not found!");
+        window.location.href = "search.html";   
     }
 }
 
-// Function to handle form submission.
-function submitProductForm(event) {
+function waitTho(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function submitProductForm(event) {
     event.preventDefault();
 
     const productForm = event.target;
-    const eleNameError  = document.getElementById('message-box');
+    const eleNameError = document.getElementById('message-box');
     const spinner = document.getElementById('spinner');
     const valid = validateProductForm(productForm);
-
-    // Clear previous messages
     eleNameError.classList.add('d-none');
 
     if (valid) {
-        // Creating or updating product object based on form data.
+        console.log('valid, lets save the product!');
         const productObject = new Product({
-            productId: editId,
-            name: productForm.name.value,
-            description: productForm.description.value,
-            price: parseFloat(productForm.price.value),
-            stock: parseInt(productForm.stock.value),
+            _id: editId,
+            name: productForm.name.value.trim(),
+            description: productForm.description.value.trim(),
+            price: parseFloat(productForm.price.value) || 0,
+            stock: parseInt(productForm.stock.value) || 0,
+            // owner: productForm.owner.value,
+            owner: "Alyssa"
         });
 
+        console.log("Final product object being sent:", productObject);
+
         try {
-            // Updating or creating product via mock service.
-            // Changed where it says ProductService. It used to sat ProductMockService.
-            if (isEditMode) {
-                productService.updateProduct(productObject);
-            } else {
-                productService.createProduct(productObject);
+            const existingProducts = await productService.getAllProducts();
+            const duplicate = existingProducts.find(p => p.name.toLowerCase() === productObject.name.toLowerCase());
+
+            if (duplicate && !isEditMode) {
+                throw new Error(`Product with name "${productObject.name}" already exists.`);
             }
+
+            if (isEditMode) {
+                console.log("Editing product:", editId);
+                await productService.updateProduct(productObject);
+            } else {
+                await productService.createProduct(productObject);
+            }
+            
             spinner.classList.remove('d-none');
-            // Show success modal after delay.
-            setTimeout(() => {
-                spinner.classList.add('d-none');
-                const successModal = new bootstrap.Modal(document.getElementById('SuccessModal'));
-                successModal.show();
-                // Reset form and redirect on modal button click.
-                document.getElementById('modal-ok-btn').addEventListener('click', () => {
-                    productForm.reset();
-                    window.location.href = "search.html";
-                });
-            }, 3000);
+            productForm.name.disabled = true;
+            productForm.description.disabled = true;
+            productForm.price.disabled = true;
+            productForm.stock.disabled = true;
+            // productForm.owner.disabled = true;
+            eleSubmitBtn.disabled = true;
+            await waitTho(3000);
+
+            const successModal = new bootstrap.Modal(document.getElementById('SuccessModal'));
+            successModal.show();
+
+            document.getElementById('modal-ok-btn').addEventListener('click', () => {
+                console.log(" button clicked!");
+                productForm.reset();
+                window.location.href = "search.html";
+            });
 
         } catch (error) {
-            // Display error message if product operation fails.
+            // hide the spinner when there are errors.
             spinner.classList.add('d-none'); 
+            console.error("Error saving prodcut:", error);
             eleNameError.classList.remove('d-none');
-            eleNameError.textContent = error.message;
+            eleNameError.textContent = error.message
         }
     } else {
-        // Display generic error message if form validation fails.
+        console.log('not valid')
         eleNameError.classList.remove('d-none');
         eleNameError.textContent = 'Error! Your form was submitting incorrectly, please try again.';
     }
+    console.log('You tried to submit me!')
 }
 
-// Function to validate product form fields.
 function validateProductForm(productForm) {
     let valid = true;
 
-    // Validation for the product name.
     const name = productForm.name.value;
     const eleNameError = productForm.name.nextElementSibling;
     if (name === "") {
         valid = false;
         eleNameError.classList.remove('d-none');
         eleNameError.textContent = "Name must not be blank"; 
-        //Changes the colour of the border of whatever is wrong to red.       
         productForm.name.style.borderColor = "red"; 
     } else {
         eleNameError.classList.add('d-none');
-        //Changes the colour of the border of whatever is right to green.
         productForm.name.style.borderColor = "green";
     }
 
-    // Validation for the product description.
     const description = productForm.description.value;
     const eleDescriptionError = productForm.description.nextElementSibling;
     if (description === "") {
         valid = false;
         eleDescriptionError.classList.remove('d-none');
         eleDescriptionError.textContent = "Description must not be blank"; 
-        // Changes the colour.
         productForm.description.style.borderColor = "red";
     } else {
         eleDescriptionError.classList.add('d-none');
-        // Changes the colour.
         productForm.description.style.borderColor = "green";
     }
 
-    // Validation for the product price.
     const price = productForm.price.value;
     const elePriceError = productForm.price.nextElementSibling;
     if (price === "" || isNaN(price)) {
         valid = false;
         elePriceError.classList.remove('d-none');
         elePriceError.textContent = "Price must be a numeric value.";
-        // Changes the colour.
         productForm.price.style.borderColor = "red";
     } else {
         elePriceError.classList.add('d-none');
-        // Changes the colour.
         productForm.price.style.borderColor = "green";
     }
 
-    // Validation for the product stock.
     const stock = productForm.stock.value;
     const eleStockError = productForm.stock.nextElementSibling;
     if (stock === "" || isNaN(stock)) {
         valid = false;
         eleStockError.classList.remove('d-none');
         eleStockError.textContent = "Stock must be a numeric value."; 
-        // Changes the colour.
         productForm.stock.style.borderColor = "red";
     } else {
         eleStockError.classList.add('d-none');
-        // Changes the colour.
         productForm.stock.style.borderColor = "green";
     }
+
 
     return valid;
 }

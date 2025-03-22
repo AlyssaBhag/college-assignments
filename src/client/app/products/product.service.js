@@ -8,11 +8,10 @@ Description: This is my product.service.js file that interacts with the Course A
 
 import Product from "./product.js";
 
-
 class ProductService {
     constructor() {
         this.apikey = '24825d3a-0291-4360-957a-425ccdea8b68';
-        this.host = 'https://inft2202.opentech.durhamcollege.org';
+        this.host = 'http://localhost:3000';
     }
 
     /**
@@ -28,39 +27,37 @@ class ProductService {
         const headers = new Headers({
             "apikey": this.apikey,
             "Content-Type": "application/json",
-        })
-        
-        
+        });
+
         const options = {
             method: "GET",
             headers
         };
 
-        try{
-            // Create a new Request object with the API URL and options.
-            const request = new Request(url, options);
+        // Create a new Request object with the API URL and options.
+        const request = new Request(url, options);
+
+        try {
+
             // Perform the API request and wait for the response
-            const response = await fetch (request);
-    
+            const response = await fetch(request);
+
             // If the response is not OK (404, 500), throw an error with details
             if (!response.ok) {
                 throw new Error(`Error fetching products: ${response.statusText}`);
             }
+            const { records } = await response.json();
+            console.log("API Response from getAllProducts():", records);
 
-            const data = await response.json(); 
-            console.log("API Response from getAllProducts():", data);
-    
             // Check if the response contains a "records" field and if it's an array.
-            if (!data.records || !Array.isArray(data.records)) {
-                throw new Error("Invalid API response: expected an array in data.records");
+            if (!records || !Array.isArray(records)) {
+                throw new Error("Invalid API response: expected an array in records.records");
             }
-    
-            // Convert each raw product object into an instance of the Animal class
-            // return data.records.map(product => new Product(product));
-            return data.records.map(product => new Product({ ...product, productId: product.productId }));
 
-    
-        }catch (err) {
+            // Convert each raw product object into an instance of the Product class
+            return records.map(product => new Product(product));
+
+        } catch (err) {
             // Log any errors encountered during the request
             console.error("Error fetching products:", err);
             // Return an empty array to prevent crashes if the API call fails
@@ -81,74 +78,92 @@ class ProductService {
      * @param {string} productId - The product ID.
      * @returns {Promise<Product>} The found product.
      */
-    async findProduct(id) {
-        const url = new URL(`/api/products/${id}`,this.host);
+    async findProduct(_id) {
+        const url = new URL(`/api/products/${_id}`, this.host);
 
         const headers = new Headers({
             "apikey": this.apikey,
             "Content-Type": "application/json",
-        })
+        });
 
         const options = {
             method: "GET",
             headers
         };
 
-        try {
-            const response = await fetch(url, options);
-            if (!response.ok) throw new Error(`Product not found: ${response.statusText}`);
+        const request = new Request(url, options);
 
-            return new Product(await response.json());
+        try {
+            const response = await fetch(request)
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error(`Product not found: ${response.status} - ${errorText}`);
+                return null;
+            }
+
+            const responseData = await response.json();
+            console.log("API Response from findProduct():", responseData);
+
+            const foundProduct = new Product(responseData);
+
+            if (!foundProduct) {
+                throw new Error('Error: That product does not exist.');
+            }
+
+            return foundProduct;
         } catch (err) {
-            console.error("Error finding product:", err);
-            throw err;
+            console.error('Error finding product:', err.message);
+            return null;
         }
     }
 
     /**
      * Creates a new product via the API.
-     * @param {Product} productObject - The product data.
+     * @param {Product} productObject - The product records.
      * @returns {Promise<boolean>} True if successful.
      */
     async createProduct(productObject) {
-        const url = new URL(`/api/products`, this.host);
 
-
+        console.log("Creating product:", productObject);
+        const url = new URL('/api/products', this.host);
         const headers = new Headers({
-            "apikey": this.apikey,
-            "Content-Type": "application/json",
-        })
+            'content-type': 'application/json',
+            'apikey': this.apikey
+        });
 
         const options = {
-            method: "POST",
             headers,
+            method: 'POST',
             body: JSON.stringify(productObject)
         };
 
+        const request = new Request(url, options);
+
         try {
-            const response = await fetch(url, options)
+            const response = await fetch(request);
             if (!response.ok) throw new Error(`Error creating product: ${response.statusText}`);
 
+            const records = await response.json();
+            console.log(records);
             return true;
         } catch (err) {
-            console.error("Error creating product:", err);
+            console.error('Error creating product:', err);
             throw err;
         }
     }
 
     /**
      * Updates an existing product.
-     * @param {Product} updateProduct - The updated product data.
+     * @param {Product} updateProduct - The updated product records.
      * @returns {Promise<boolean>} True if successful.
      */
     async updateProduct(updateProduct) {
-        const url = new URL(`api/products/${updateProduct.id}`, this.host);
-        
+        const url = new URL(`/api/products/${updateProduct._id}`, this.host);
 
         const headers = new Headers({
             "apikey": this.apikey,
             "Content-Type": "application/json",
-        })
+        });
 
         const options = {
             method: "PUT",
@@ -156,12 +171,17 @@ class ProductService {
             body: JSON.stringify(updateProduct)
         };
 
+        const request = new Request(url, options);
+
         try {
-            const response = await fetch(url, options)
+            const response = await fetch(request);
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(`Error updating product: ${response.statusText} - ${errorText}`);
+            }
 
-
-            if (!response.ok) throw new Error(`Error updating product: ${response.statusText}`);
-
+            const records = await response.json();
+            console.log("API Response from updateProduct():", records);
             return true;
         } catch (err) {
             console.error("Error updating product:", err);
@@ -174,17 +194,14 @@ class ProductService {
      * @param {string} productId - The product ID.
      * @returns {Promise<boolean>} True if successful.
      */
-    async deleteProduct(id) {
-        console.log(`Deleting product with ID: ${id}`);
-        console.log(`Attempting to delete product with ID: ${id}`);
-
-        const url = new URL(`/api/products/${id}`, this.host);
-
+    async deleteProduct(productId) {
+        console.log(`Deleting product with ID: ${productId}`);
+        const url = new URL(`/api/products/${productId}`, this.host);
         console.log(`Request URL: ${url}`);
 
         const headers = new Headers({
-            'apikey': this.apikey,
-            'Content-Type': 'application/json'
+            "apikey": this.apikey,
+            "Content-Type": "application/json",
         });
 
         const options = {
@@ -192,16 +209,35 @@ class ProductService {
             headers
         };
 
+        const request = new Request(url, options);
+        
         try {
-            const response = await fetch(url, options);
-            if (!response.ok) throw new Error(`Error deleting product: ${response.statusText}`);
+            const response = await fetch(request);
 
+            if (!response.ok) {
+                throw new Error(`Error deleting product: ${response.statusText}`);
+            }
+
+            const result = await response.json();
+            console.log(`Product deleted: ${result.message}`);
             return true;
-        } catch (err) {
-            console.error("Error deleting product:", err);
-            throw err;
+        } catch (error) {
+            console.error("Error deleting product:", error);
+            throw error;
         }
-    };
+    }
+
+
+    /**
+     * Waits for a specified amount of time.
+     * @param {number} time - The time to wait in milliseconds.
+     * @returns {Promise<void>} A promise that resolves after the specified time.
+     */
+    waitTho(time) {
+        return new Promise((resolve, reject) => {
+            setTimeout(resolve, time);
+        });
+    }
 }
 
 // Export an instance of ProductService
