@@ -13,17 +13,18 @@ import AnimalService from './animal.service.js';
 
 console.log("AnimalService works if it shows here:", AnimalService);
 // console.log("is getAllAnimals being seen, if yes this will say function:", typeof animalMockService.getAllAnimals);
+console.log('create.js loaded');
 
-const url = new URL(window.location);
-const searchParams= url.searchParams;
-const editId = searchParams.get('id');
-// console.log(editId)
+console.log("Full URL:", window.location.href);
+const searchParams = new URLSearchParams(window.location.search);
+const editId = searchParams.get('id'); 
 const isEditMode = editId ? true : false;
 const eleSubmitBtn = document.getElementById('submitBtn');
 
 
 if(isEditMode) {
-    setupEditForm();
+    // animalId = editId;
+    setupEditForm(editId);
     console.log("edit")
 } else {
     console.log("add")
@@ -35,15 +36,21 @@ if (eleForm) {
     eleForm.addEventListener('submit', submitAnimalForm);
 }
 
-async function setupEditForm() {
+async function setupEditForm(editId) {
+    if (!editId || editId === "undefined") {
+        console.error("Error: editId is invalid:", editId);
+        return;
+    }
+
     const eleheading = document.querySelector('h1');
     eleheading.textContent = "Editing Existing Animal List";
     console.log("Updated the header")
     // const existingAnimal = animalMockService.findAnimal(editId);
     const existingAnimal = await AnimalService.findAnimal(editId);
-
+    
+    // console.log(editId)
     if (existingAnimal) {
-        console.log("Animal found!");
+        console.log("Animal found!", existingAnimal);
         const eleAnimalForm = document.getElementById('animal-form');
 
         console.log("it is now in the thingy!")
@@ -58,6 +65,7 @@ async function setupEditForm() {
         // console.log(animals)
     } else {
         // console.log('Animals retrieved from localStorage:', animals);
+        
         console.log('URL Search Params:', searchParams);
         console.log('Edit ID:', editId);
         
@@ -90,7 +98,8 @@ async function submitAnimalForm(event) {
     if (valid){
         console.log('valid, lets save the animal!');
         const animalObject = new Animal ({
-            id: editId,
+            // animalId: editId,
+            _id: editId,
             name: animalForm.name.value,
             breed: animalForm.breed.value,
             eyes: animalForm.eyes.value,
@@ -116,12 +125,13 @@ async function submitAnimalForm(event) {
                 throw new Error(`Animal with name "${animalObject.name}" already exists.`);
             }
 
-            if(isEditMode){
-                animalObject.id = animalId;
+            if (isEditMode) {
+                console.log("Editing animal:", editId);
                 await AnimalService.updateAnimal(animalObject);
             } else {
                 await AnimalService.createAnimal(animalObject);
             }
+            
             // Show spinner while processing
             spinner.classList.remove('d-none');
             // Disable the boxes once its processing.
