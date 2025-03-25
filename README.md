@@ -1,3 +1,15 @@
-# inft-2202-ice
-# Hello, my name is Alyssa and this repository is for all of my in-class assignments in this class for the semester.
+# 🚀 Welcome to your new awesome project!
 
+This project has been created using **webpack-cli**, you can now run
+
+```
+npm run build
+```
+
+or
+
+```
+yarn build
+```
+
+to bundle your application
