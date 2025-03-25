@@ -1,15 +1,3 @@
-# 🚀 Welcome to your new awesome project!
+# inft-2202-lab
 
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+# Hellooooo, my name is Alyssa and this is my repo for my in-class assignments. I hope these look good and they grant me good marks!
