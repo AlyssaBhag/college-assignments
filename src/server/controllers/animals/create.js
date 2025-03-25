@@ -3,18 +3,17 @@ import AnimalService from '../../services/AnimalService.js';
 
 const rules = checkSchema({
     name: {
-        in: ['body'],
-        notEmpty: {
-            errorMessage: 'Name is required',
+        notEmpty:{ 
+            errorMessage: `Name field cannot be empty.`
         },
         custom: {
-            options: async (value) => {
-                const existingAnimal = await AnimalService.retrieveAnimalByName(value);
-                if (existingAnimal) {
-                    throw new Error('Animal with this name already exists');
-                }
-            }
-        },
+                    options: async(value) => {
+                        if(await AnimalService.retrieveAnimalName(value)) {
+                            throw new Error(`Animal with that name already exists.`);
+                        }
+                    }
+                },
+        in: 'body'
     },
     breed: {
         in: ['body'],

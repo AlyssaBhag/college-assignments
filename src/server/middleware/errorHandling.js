@@ -2,13 +2,14 @@ import { logger } from '../utils/logger.js';
 
 export const ErrorHandlingMiddleware = (error, request, response, next) => {
     const { method, originalUrl, body, params, query, headers } = request;
-    const { message, stack, statusCode = 500 } = error;
+    const { message, stack, statusCode = 500, errors= [] } = error;
     const time = new Date().toISOString();
     
     const context = {
         time,
         method,
-        originalUrl,
+        url: originalUrl,
+        error,
         request: {
             body,
             params,
@@ -29,8 +30,13 @@ export const ErrorHandlingMiddleware = (error, request, response, next) => {
     logger.info(`[${time}]  ERROR: ${statusCode}, ${method} ${originalUrl}`, context);
 
     const responseObject = {
-        message
+        message,
+        errors
     };
+
+    if (process.env.NODE_EVN !== 'production') {
+        responseObject.stack = stack;
+    }
 
     response.status(statusCode).json(responseObject);
 };

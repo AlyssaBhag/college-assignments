@@ -3,17 +3,10 @@ import AnimalService from "../../services/AnimalService.js";
 
 const rules = checkSchema({
     animalId: {
-        in: ['params'],
         notEmpty: {
             errorMessage: 'Animal ID is required',
         },
-        custom: {
-            options: async (value) => {
-                if (!await AnimalService.retrieveAnimal(value)) {
-                    throw new Error('Invalid animal ID');
-                }
-            },
-        }
+        in: 'params',
     },
     name: {
         in: ['body'],
@@ -64,11 +57,11 @@ const rules = checkSchema({
 const handle = async (req, res, next) => {
     try {
         const { animalId } = req.params;
-        const animal = await AnimalService.updateAnimal(animalId, req.body);
-        if (!animal) {
-            return res.status(404).json({ message: 'Animal not found' });
-        }
+        const { name, breed, eyes, legs, sound } = req.body;
+
+        const animal = await AnimalService.updateAnimal(animalId, { name, breed, legs, eyes, sound });
         res.json(animal);
+        
     } catch (error) {
         next(error);
     }

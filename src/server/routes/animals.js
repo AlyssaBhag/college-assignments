@@ -18,57 +18,34 @@ import AnimalSearchController from '../controllers/animals/search.js';
 import { CheckValidation } from '../middleware/validation.js';
 
 const router = express.Router();
+export default router;
 
 // Retrieve all animals.
-router.get('/animals/search',
-    AnimalSearchController.rules,
-    (req, res, next) => {
-    CheckValidation(AnimalSearchController.rules),
-    next();
-    },
-    AnimalSearchController.handle
-);
+router.get('/animals/', 
+        CheckValidation(AnimalSearchController.rules),  
+        AnimalSearchController.handle);
+
 
 // Retrieve an animal by ID.
-router.get('/animals/:animalId',
-    AnimalRetrieveController.rules,
-    (req, res, next) => {
-    CheckValidation(AnimalRetrieveController.rules),
-    next();
-    },
-    AnimalRetrieveController.handle
-);
+router.get('/animals/:animalId', 
+    CheckValidation(AnimalRetrieveController.rules),  
+    AnimalRetrieveController.handle);
 
 
-//  "Create" an animal.
-router.post('/animals',
-    AnimalCreateController.rules,
-    (req, res, next) => {
-    CheckValidation(AnimalCreateController.rules);
-    next();
-    },
+// create animal
+router.post(
+    '/animals',
+    CheckValidation(AnimalCreateController.rules), 
     AnimalCreateController.handle
 );
-
-
-// Update an animal by ID
-router.put('/animals/:animalId',
-    AnimalUpdateController.rules,
-    (req, res, next) => {
-    CheckValidation(AnimalUpdateController.rules),
-    next();
-    },
-    AnimalUpdateController.handle
-);
+    
+// update animal
+router.put('/animals/:animalId', 
+    CheckValidation(AnimalUpdateController.rules), 
+    AnimalUpdateController.handle);
 
 // Delete an animal by ID
-router.delete('/animals/:animalId',
-    AnimalDeleteController.rules,
-    (req, res, next) => {
-    CheckValidation(AnimalDeleteController.rules),
-    next();
-    },
-    AnimalDeleteController.handle
-);
+router.delete('/animals/:animalId', 
+    CheckValidation(AnimalDeleteController.rules), 
+    AnimalDeleteController.handle);
 
-export default router;

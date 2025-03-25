@@ -1,10 +1,10 @@
 import { model, Schema } from "mongoose";
 
 const fields = {
-    // animalId: {
+    // _id: {
     //     type: String,
     //     required: true,
-    //     default: () => crypto.randomUUID()
+    //     default: () =>  mongoose.Schema.Types.ObjectId,
     // },
     name: {
         type: String,
