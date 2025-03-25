@@ -1,11 +1,11 @@
 import { model, Schema } from "mongoose";
 
 const fields = {
-    // _id: {
-    //     type: String,
-    //     required: true,
-    //     default: () =>  mongoose.Schema.Types.ObjectId,
-    // },
+    _id: {
+        type: String,
+        required: true,
+        default: () => crypto.randomUUID()
+    },
     name: {
         type: String,
         required: true

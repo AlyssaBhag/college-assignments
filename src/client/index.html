@@ -1,22 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zookédex</title>
-</head>
-<body>
-    <h1>Welcome to Zookédex! (The temporary router page). </h1>
-    <nav>
-        <a href="/">Go to the Home page</a>
-        <a href="/search">Go to Search page</a>
-        <a href="/create">Go to Create page</a>
-        <a href="/about">Go to About page</a>
-        <a href="/contact">Go to Contact page</a>
+<!--
+Name: Alyssa Bhagwandin
+Filename: index.html
+Course: INFT 2202
+Created Date: January 8th, 2024
+Last Edited Date: January 17th, 2024
+Description: This is my main page!
+-->
+
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page - INFT 2202</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/Poké_Ball_icon.png">
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+
+  <!-- The nav bar stuff!-->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top custom-navbar ">
+      <div class="container-fluid">
+        <a class="navbar-brand active" href="index.html"> <i class="fa-solid fa-circle-dot"></i> Zookédex</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="search.html"><i class="fas fa-list"></i> List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create.html"><i class="fas fa-plus"></i> Create</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+  </header>
 
-    <script src="/main.js"></script>
 
-</body>
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Welcome to Zookédex!</h1>
+            <p class="opacity-75">Your one-stop destination to discover, learn about, and add to an ever-growing collection of animals from around the world!</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+          <div class="carousel-caption">
+            <h1>Explore the Animal Kingdom!</h1>
+            <p>Delve into a rich variety of animals and uncover fascinating facts about each species. Perfect for animal lovers of all ages!</p>
+          </div>
+        </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Join the Zookédex Community!</h1>
+            <p>Become a part of our vibrant community. Add your favorite animals and share your knowledge with fellow enthusiasts!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="img/turtle.png" class="rounded-circle" width="140" height="140" alt="Add to Zookédex">
+          <h2 class="fw-normal">Add To Zookédex</h2>
+          <p>Here you can add to your collection of animals in the Zookédex!</p>
+          <p><a class="btn custom-btn" href="create.html">View page &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 text-center">
+          <img src="img/folder.png" class="rounded-circle" width="140" height="140" alt="Add to Zookédex">
+          <h2 class="fw-normal">Zookédex</h2>
+          <p>Here is where you can view the collection of the animals in the Zookédex!</p>
+          <p><a class="btn custom-btn" href="list.html">View page &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="img/info.jpg" class="rounded-circle" width="140" height="140" alt="Add to Zookédex">
+          <h2 class="fw-normal">About Us</h2>
+          <p>Here you can learn all about us and what we do here at Zookédex.</p>
+          <p><a class="btn custom-btn" href="about.html">View page &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1"> Resting in the Wild. <span class="custom-text-color">Discover the beauty of animal sleep.</span></h2>
+          <p class="lead">Even the fiercest creatures need their rest. This sleeping jaguar demonstrates the calmness of the wild when it’s time to recharge. Animals in the wild spend a significant part of their lives resting, ensuring they have the energy to hunt, explore, and thrive.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/jaguar.jpg" class="featurette-image img-fluid mx-auto" alt="Description of your image" width="500" height="500">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">The Peaceful Panda. <span class="custom-text-color">A moment of tranquility in nature.</span></h2>
+          <p class="lead">Here we have a panda, deeply asleep in its serene environment. Pandas are known for their relaxed nature, and their sleep is just as peaceful. Did you know that pandas spend about 10-16 hours a day resting? They conserve energy for their slow and steady lifestyle.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="img/panda.jpg" class="featurette-image img-fluid mx-auto" alt="Description of your image" width="500" height="500">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; <span id="copyright"></span> Alyssa Bhagwandin. &middot; <a href="privacy-policy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+    </footer>
+    <!-- JavaScript Files -->
+    <!-- Added this becuase the instructions said to put it at the bottom. -->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="app/animals/create.js" ></script>
+  </body>
 </html>
-

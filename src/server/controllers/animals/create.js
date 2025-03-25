@@ -3,20 +3,12 @@ import AnimalService from '../../services/AnimalService.js';
 
 const rules = checkSchema({
     name: {
-        notEmpty:{ 
-            errorMessage: `Name field cannot be empty.`
+        notEmpty: {
+            errorMessage: 'Name is required',
         },
-        custom: {
-                    options: async(value) => {
-                        if(await AnimalService.retrieveAnimalName(value)) {
-                            throw new Error(`Animal with that name already exists.`);
-                        }
-                    }
-                },
-        in: 'body'
+        in: ['body'],
     },
     breed: {
-        in: ['body'],
         notEmpty: {
             errorMessage: 'Please enter the breed',
         },
@@ -26,7 +18,6 @@ const rules = checkSchema({
         },
     },
     eyes: {
-        in: ['body'],
         notEmpty: {
             errorMessage: 'Please enter the number of eyes',
         },
@@ -35,7 +26,6 @@ const rules = checkSchema({
         },
     },
     legs: {
-        in: ['body'],
         notEmpty: {
             errorMessage: 'Please enter the number of legs',
         },
@@ -44,7 +34,6 @@ const rules = checkSchema({
         },
     },
     sound: {
-        in: ['body'],
         notEmpty: {
             errorMessage: 'Please enter the sound',
         },
@@ -55,14 +44,17 @@ const rules = checkSchema({
     },
 });
 
+
 const handle = async (req, res, next) => {
     try {
         const { name, breed, eyes, legs, sound } = req.body;
-        const animal = await AnimalService.createAnimal({ name, breed, eyes, legs, sound });
+        const animal = await AnimalService.createAnimal({ name, breed, eyes, legs, sound});
+        // const animal = await AnimalService.createAnimal(req.body);
         res.json(animal);
+
     } catch (error) {
         next(error);
     }
 };
 
-export default { handle, rules };
+export default { handle, rules};

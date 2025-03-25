@@ -8,9 +8,6 @@ const rules = checkSchema({
             options: { min: 1 },
             errorMessage: 'Page must be a positive integer',
         },
-        toInt: true,
-        optional: { options: { nullable: true } },
-        default: 1
     },
     perPage: {
         in: ['query'],
@@ -18,9 +15,6 @@ const rules = checkSchema({
             options: { min: 1 },
             errorMessage: 'PerPage must be a positive integer',
         },
-        toInt: true,
-        optional: { options: { nullable: true } },
-        default: 5
     },
 });
 

@@ -1,8 +1,12 @@
+
+
 import { logger } from "../utils/logger.js";
+// import { res } from "express";
+// import { res } from "express-validator";
 
 export const loggerMiddleware = (req, res, next) => {
     logRequest(req, res);
-    res.on('finish', () => {
+    res.once('finish', () => {
         logRequest(req, res);
     });
     next(); 
@@ -13,12 +17,14 @@ const logRequest = (req, res) => {
     const{ method, originalUrl, body, params, query, headers }  = req;
     const {statusCode} = res;
 
+
     const original = res.json;
     res.json = async(value) => {
         const data = await Promise.resolve(value);
         res.locals.data = data;
         return original.call(res, data);
     }
+
 
     const context = {
         time,
