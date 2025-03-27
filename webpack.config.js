@@ -5,6 +5,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import WorkboxWebpackPlugin from 'workbox-webpack-plugin';
 
+
 const isProduction = process.env.NODE_ENV == 'production';
 
 
@@ -24,7 +25,11 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/client/index.html",
+            template: "./src/client/index.ejs",
+            filename: 'index.html',
+            inject: 'body',
+            title: 'INFT 2202: Animals Database',
+            hash: true,
         }),
 
         new MiniCssExtractPlugin(),
@@ -47,14 +52,30 @@ const config = {
                 use: [stylesHandler, 'css-loader', 'sass-loader'],
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+                test: /\.(eot|svg|ttf|woff|woff2)$/i,
                 type: 'asset',
             },
-
-            // Add your rules for custom modules here
-            // Learn more about loaders from https://webpack.js.org/loaders/
-        ],
-    },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                type: 'asset',
+                generator: {
+                    filename: 'img{name}[ext]'
+                }
+            },
+            {
+                test: /\.ejs$/,
+                use: {
+                    loader:'ejs-compiled-loader',
+                    options:{
+                        htmlmin: true,
+                        htmlminOptions: {
+                            removeComments: true
+                        }
+                    }
+                }
+            }
+        ]
+    }
 };
 
 export default () => {

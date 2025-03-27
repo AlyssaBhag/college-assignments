@@ -45,7 +45,8 @@ const __dirname = dirname(__filename);
 
 // Serve static files from the 'dist' directory
 // app.use(express.static(path.join(__dirname, '../../dist')));
-app.use(express.static(path.join(import.meta.dirname, '../../dist')));
+// app.use(express.static(path.join(import.meta.dirname, '../../dist')));
+app.use(express.static('dist'));
 
 
 //
