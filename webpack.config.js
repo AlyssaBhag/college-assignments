@@ -16,12 +16,11 @@ const config = {
     devtool: "source-map",
     entry: './src/client/index.js',
     output: {
-        path: path.resolve(import.meta.dirname, 'dist'),
+        path: path.resolve('dist'),
     },
     devServer: {
         open: true,
         host: 'localhost',
-        directory: path.join(import.meta.dirname, '../../dist')
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -48,9 +47,10 @@ const config = {
                 use: [stylesHandler,'css-loader'],
             },
             {
-                test: /\.s[ac]ss$/i,
-                use: [stylesHandler, 'css-loader', 'sass-loader'],
+            test: /\.scss$/i,
+            use: [stylesHandler, 'css-loader', 'sass-loader'],
             },
+
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/i,
                 type: 'asset',
