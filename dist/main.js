@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -7775,6 +7774,105 @@ defineJQueryPlugin(Toast);
 
 /***/ }),
 
+/***/ "./src/client/app/components/footer/footer.ejs":
+/*!*****************************************************!*\
+  !*** ./src/client/app/components/footer/footer.ejs ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+module.exports = function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  with (locals || {}) {
+    ; __append("<footer class=\"container\">\r\n  <p class=\"float-end\"><a href=\"#\">Back to top</a></p>\r\n  <p>&copy; <span id=\"copyright\"></span> Alyssa Bhagwandin. \r\n    &middot; <a data-navigo href=\"/privacy-policy\">Privacy</a> \r\n    &middot; <a data-navigo href=\"/terms\">Terms</a>\r\n  </p>\r\n</footer>\r\n")
+  }
+  return __output;
+
+}
+
+/***/ }),
+
+/***/ "./src/client/app/components/footer/footer.js":
+/*!****************************************************!*\
+  !*** ./src/client/app/components/footer/footer.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _footer_ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.ejs */ "./src/client/app/components/footer/footer.ejs");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
+  const html = _footer_ejs__WEBPACK_IMPORTED_MODULE_0__();
+  const appElement = document.getElementById('app');
+  if (appElement) {
+    appElement.insertAdjacentHTML('afterend', html);
+  } else {
+    console.error("App element not found!");
+  }
+});
+
+/***/ }),
+
+/***/ "./src/client/app/components/header/header.ejs":
+/*!*****************************************************!*\
+  !*** ./src/client/app/components/header/header.ejs ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+module.exports = function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  with (locals || {}) {
+    ; __append("<header>\r\n  <nav class=\"navbar navbar-expand-md fixed-top custom-navbar\">\r\n    <div class=\"container-fluid\">\r\n      <a class=\"navbar-brand active\" data-navigo href=\"/\"> <i class=\"fa-solid fa-circle-dot\"></i> Zookédex</a>\r\n      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\r\n        <ul class=\"navbar-nav me-auto mb-2 mb-md-0\">\r\n          <li class=\"nav-item\">\r\n            <a class=\"nav-link\" data-navigo href=\"/search\"><i class=\"fas fa-list\"></i> List</a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a class=\"nav-link\" data-navigo href=\"/create\"><i class=\"fas fa-plus\"></i> Create</a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a class=\"nav-link\" data-navigo href=\"/about\"><i class=\"fas fa-info-circle\"></i> About</a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n            <a class=\"nav-link\" data-navigo href=\"/contact\"><i class=\"fas fa-envelope\"></i> Contact</a>\r\n          </li>          \r\n        </ul>\r\n      </div>\r\n    </div>\r\n  </nav>\r\n</header>\r\n")
+  }
+  return __output;
+
+}
+
+/***/ }),
+
 /***/ "./src/client/app/components/header/header.js":
 /*!****************************************************!*\
   !*** ./src/client/app/components/header/header.js ***!
@@ -7786,13 +7884,649 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './header.ejs'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _header_ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.ejs */ "./src/client/app/components/header/header.ejs");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
+  const html = _header_ejs__WEBPACK_IMPORTED_MODULE_0__();
+  const appElement = document.getElementById('app');
+  if (appElement) {
+    appElement.insertAdjacentHTML('beforebegin', html);
+  } else {
+    console.error("App element not found!");
+  }
+});
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/about/about.ejs":
+/*!*********************************************************!*\
+  !*** ./src/client/app/components/pages/about/about.ejs ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  with (locals || {}) {
+    ; __append("\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\r\n    <title>About - INFT 2202</title>\r\n</head>\r\n\r\n    \r\n    <main class=\"flex-shrink-0\">\r\n      <div class=\"container py-5\">\r\n        <div class=\"row\">\r\n          \r\n          <div class=\"col-md-4 text-center\">\r\n            <img src=\"../../../../img/Poke_Ball_icon.png\" alt=\"Profile Picture\" class=\"img-fluid rounded-circle mb-4\">\r\n          </div>\r\n\r\n          \r\n          <div class=\"col-md-8\">\r\n            <h1 class=\"mt-4\">About Zookédex</h1>\r\n            <p class=\"lead\">Hi! Welcome to Zookédex!</p>\r\n            <p>Whether you're exploring the list of unique animals, contributing your own creations, or simply having fun discovering new species, Zookédex is designed to spark curiosity and bring joy to anyone who visits.</p>\r\n            <p>Our mission is to create a space where imagination meets technology. Every creature in Zookédex is a testament to the boundless potential of human creativity. By offering tools to create, share, and learn, we hope to inspire users to think outside the box and embrace the limitless possibilities of storytelling and design.</p>\r\n            <p>Thank you for being a part of this imaginative journey, and we can't wait to see the creatures you bring to life!</p>\r\n          </div>\r\n        </div>\r\n\r\n        \r\n        <div class=\"accordion my-5\" id=\"aboutAccordion\">\r\n          <div class=\"accordion-item\">\r\n            <h2 class=\"accordion-header\">\r\n              <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\r\n                How do I search for animals?\r\n              </button>\r\n            </h2>\r\n            <div id=\"collapseOne\" class=\"accordion-collapse collapse\" data-bs-parent=\"#aboutAccordion\">\r\n              <div class=\"accordion-body\">\r\n                Use the \"List\" page to browse all the animals in Zookédex or use the search functionality to find specific creatures based on their traits or names.\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"accordion-item\">\r\n            <h2 class=\"accordion-header\">\r\n              <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\r\n                Is this website open to all users?\r\n              </button>\r\n            </h2>\r\n            <div id=\"collapseTwo\" class=\"accordion-collapse collapse\" data-bs-parent=\"#aboutAccordion\">\r\n              <div class=\"accordion-body\">\r\n                Absolutely! Anyone can browse the animals or contribute to the Zookédex. Just make sure your submissions follow community guidelines.\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"accordion-item\">\r\n            <h2 class=\"accordion-header\" id=\"headingThree\">\r\n              <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\r\n                Can I suggest improvements or report a bug?\r\n              </button>\r\n            </h2>\r\n            <div id=\"collapseThree\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingThree\" data-bs-parent=\"#aboutAccordion\">\r\n              <div class=\"accordion-body\">\r\n                Yes, feedback is always welcome! Head to the \"Contact\" page to share your ideas or report any issues.\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </main>")
+  }
+  return __output;
+
+}
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/about/about.js":
+/*!********************************************************!*\
+  !*** ./src/client/app/components/pages/about/about.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _about_ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./about.ejs */ "./src/client/app/components/pages/about/about.ejs");
+/* harmony import */ var _img_poke_Ball_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/poke_Ball_icon.png */ "./src/client/img/poke_Ball_icon.png");
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (route => {
-  console.log("header", route);
-  const html = Object(function webpackMissingModule() { var e = new Error("Cannot find module './header.ejs'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();
-  document.getElementById('app').insertAdjacentHTML('beforebegin', html);
+  console.log("the about page", route);
+  const html = _about_ejs__WEBPACK_IMPORTED_MODULE_0__();
+  document.getElementById('app').innerHTML = html;
+  // .insertAdjacentHTML('afterbegin', html);
 });
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/contact/contact.ejs":
+/*!*************************************************************!*\
+  !*** ./src/client/app/components/pages/contact/contact.ejs ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+module.exports = function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  with (locals || {}) {
+    ; __append("\r\n	\r\n	<main class=\"flex-shrink-0\">\r\n        <div class=\"container\">\r\n          <h1 class=\"mt-5\">Contact Us</h1>\r\n          <p class=\"lead\">\r\n            We’d love to hear from you! Whether you have questions about our animals, need assistance with planning your visit, or just want to share your favorite zoo memory, we’re here to help. Explore, learn, and connect with the wonders of wildlife!\r\n          </p>\r\n          \r\n          \r\n          <div class=\"row mt-4\">\r\n            \r\n            <div class=\"col-md-6\">\r\n              <h3><i class=\"fas fa-envelope\"></i> Email Us</h3>\r\n              <p>\r\n                Have a question or need assistance? Email us at \r\n                <a href=\"mailto:support@Zookédexwebsite.com\">support@Zookédexwebsite.com</a>.  \r\n                We aim to respond within 24-48 hours.\r\n              </p>\r\n              <h3><i class=\"fas fa-phone\"></i> Call Us</h3>\r\n              <p>\r\n                Prefer to speak with us? Call us at +1 (555) 123-4567. We’re available Monday through Friday, 9 AM to 5 PM (local time).\r\n              </p>\r\n            </div>\r\n            \r\n            <div class=\"col-md-6\">\r\n              <h3><i class=\"fas fa-map-marker-alt\"></i> Visit Us</h3>\r\n              <p>\r\n                Zookédex wildlife<br>\r\n                123 Nature Drive<br>\r\n                Safari City, ON, Canada<br>\r\n                Z0O 3P5\r\n              </p>\r\n            </div>\r\n          </div>\r\n  \r\n          \r\n          <div class=\"row mt-5\">\r\n            <div class=\"col-md-12 text-center\">\r\n              <h3><i class=\"fas fa-paw\"></i> Stay Connected</h3>\r\n              <p>\r\n                Follow us on social media to stay updated on the latest news, animal arrivals, and special events at Zookédex.\r\n              </p>\r\n              <ul class=\"list-inline\">\r\n                <li class=\"list-inline-item\">\r\n                  <a href=\"https://facebook.com\" target=\"_blank\" class=\"btn btn-primary\">\r\n                    <i class=\"fab fa-facebook-f\"></i> Facebook\r\n                  </a>\r\n                </li>\r\n                <li class=\"list-inline-item\">\r\n                  <a href=\"https://twitter.com\" target=\"_blank\" class=\"btn btn-info\">\r\n                    <i class=\"fab fa-twitter\"></i> Twitter\r\n                  </a>\r\n                </li>\r\n                <li class=\"list-inline-item\">\r\n                  <a href=\"https://instagram.com\" target=\"_blank\" class=\"btn btn-pink\">\r\n                    <i class=\"fab fa-instagram\"></i> Instagram\r\n                  </a>\r\n                </li>\r\n                <li class=\"list-inline-item\">\r\n                  <a href=\"https://youtube.com\" target=\"_blank\" class=\"btn btn-red\">\r\n                    <i class=\"fab fa-youtube\"></i> YouTube\r\n                  </a>\r\n                </li>\r\n              </ul>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </main>")
+  }
+  return __output;
+
+}
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/contact/contact.js":
+/*!************************************************************!*\
+  !*** ./src/client/app/components/pages/contact/contact.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _contact_ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact.ejs */ "./src/client/app/components/pages/contact/contact.ejs");
+/* harmony import */ var _img_about_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/about.png */ "./src/client/img/about.png");
+/* harmony import */ var _img_bag_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../img/bag.jpg */ "./src/client/img/bag.jpg");
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (route => {
+  console.log("the contact page", route);
+  const html = _contact_ejs__WEBPACK_IMPORTED_MODULE_0__();
+  document.getElementById('app').innerHTML = html;
+  // .insertAdjacentHTML('afterbegin', html);
+});
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/create/create.ejs":
+/*!***********************************************************!*\
+  !*** ./src/client/app/components/pages/create/create.ejs ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  with (locals || {}) {
+    ; __append("\r\n	<main class=\"flex-shrink-0\">\r\n        <div class=\"container mt-5\">\r\n            <h1>Create New Animal</h1>\r\n            <form id=\"create-animal-form\">\r\n                <div class=\"mb-3\">\r\n                    <label for=\"animalName\" class=\"form-label\">Name</label>\r\n                    <input type=\"text\" class=\"form-control\" id=\"animalName\" required>\r\n                </div>\r\n                <div class=\"mb-3\">\r\n                    <label for=\"animalBreed\" class=\"form-label\">Breed</label>\r\n                    <input type=\"text\" class=\"form-control\" id=\"animalBreed\" required>\r\n                </div>\r\n                <div class=\"mb-3\">\r\n                    <label for=\"animalEyes\" class=\"form-label\">Number of Eyes</label>\r\n                    <input type=\"number\" class=\"form-control\" id=\"animalEyes\" required>\r\n                </div>\r\n                <div class=\"mb-3\">\r\n                    <label for=\"animalLegs\" class=\"form-label\">Number of Legs</label>\r\n                    <input type=\"number\" class=\"form-control\" id=\"animalLegs\" required>\r\n                </div>\r\n                <div class=\"mb-3\">\r\n                    <label for=\"animalSound\" class=\"form-label\">Sound</label>\r\n                    <input type=\"text\" class=\"form-control\" id=\"animalSound\" required>\r\n                </div>\r\n                <button type=\"submit\" class=\"btn btn-primary\">Create Animal</button>\r\n            </form>\r\n            <div id=\"message-box\" class=\"alert alert-info mt-3 d-none\">\r\n                <span id=\"message-text\"></span>\r\n            </div>\r\n        </div>\r\n    </main>\r\n    \r\n      \r\n      <div class=\"modal fade\" id=\"SuccessModal\" tabindex=\"-1\" aria-labelledby=\"SuccessModal\" aria-hidden=\"true\">\r\n        <div class=\"modal-dialog\">\r\n          <div class=\"modal-content\">\r\n            <div class=\"modal-header\">\r\n              <h5 class=\"modal-title\">Animal Created 🎉🥳</h5>\r\n              <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n              Your animal has been created successfully!\r\n            </div>\r\n            <div class=\"modal-footer\">\r\n              <button type=\"button\" class=\"btn btn-primary\" id=\"modal-ok-btn\">OK</button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n")
+  }
+  return __output;
+
+}
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/create/create.js":
+/*!**********************************************************!*\
+  !*** ./src/client/app/components/pages/create/create.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _create_ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./create.ejs */ "./src/client/app/components/pages/create/create.ejs");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
+  const html = _create_ejs__WEBPACK_IMPORTED_MODULE_0__();
+  document.getElementById('app').innerHTML = html;
+
+  // Add event listener for form submission
+  document.getElementById('animal-form').addEventListener('submit', async event => {
+    event.preventDefault();
+
+    // Collect form data
+    const records = {
+      name: document.getElementById('animalName').value,
+      breed: document.getElementById('animalBreed').value,
+      eyes: parseInt(document.getElementById('animalEyes')),
+      legs: parseInt(document.getElementById('animalLegs')),
+      sound: document.getElementById('animalSound').value
+      // owner: document.getElementById('Alyssa').value,
+    };
+    try {
+      // Send POST request to create a new animal
+      const response = await fetch('/api/animals', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(animalData)
+      });
+      if (!response.ok) {
+        throw new Error('Failed to create animal');
+      }
+      const result = await response.json();
+
+      // Display success message
+      const messageBox = document.getElementById('message-box');
+      messageBox.classList.remove('d-none');
+      messageBox.classList.add('alert-success');
+      document.getElementById('message-text').textContent = 'Animal created successfully!';
+    } catch (error) {
+      console.error('Error creating animal:', error);
+
+      // Display error message
+      const messageBox = document.getElementById('message-box');
+      messageBox.classList.remove('d-none');
+      messageBox.classList.add('alert-danger');
+      document.getElementById('message-text').textContent = 'Failed to create animal.';
+    }
+  });
+});
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/home/home.ejs":
+/*!*******************************************************!*\
+  !*** ./src/client/app/components/pages/home/home.ejs ***!
+  \*******************************************************/
+/***/ ((module) => {
+
+module.exports = function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  with (locals || {}) {
+    ; __append("\r\n<div id=\"myCarousel\" class=\"carousel slide mb-6\" data-bs-ride=\"carousel\">\r\n  <div class=\"carousel-indicators\">\r\n    <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>\r\n    <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>\r\n    <button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>\r\n  </div>\r\n  <div class=\"carousel-inner\">\r\n    <div class=\"carousel-item active\">\r\n      <div class=\"container\">\r\n        <div class=\"carousel-caption text-start\">\r\n          <h1>Welcome to Zookédex!</h1>\r\n          <p class=\"opacity-75\">Your one-stop destination to discover, learn about, and add to an ever-growing collection of animals from around the world!</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"carousel-item\">\r\n        <div class=\"carousel-caption\">\r\n          <h1>Explore the Animal Kingdom!</h1>\r\n          <p>Delve into a rich variety of animals and uncover fascinating facts about each species. Perfect for animal lovers of all ages!</p>\r\n        </div>\r\n      </div>\r\n    <div class=\"carousel-item\">\r\n      <div class=\"container\">\r\n        <div class=\"carousel-caption text-end\">\r\n          <h1>Join the Zookédex Community!</h1>\r\n          <p>Become a part of our vibrant community. Add your favorite animals and share your knowledge with fellow enthusiasts!</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"prev\">\r\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\r\n    <span class=\"visually-hidden\">Previous</span>\r\n  </button>\r\n  <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"next\">\r\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\r\n    <span class=\"visually-hidden\">Next</span>\r\n  </button>\r\n</div>\r\n\r\n\r\n  \r\n  \r\n\r\n<div class=\"container marketing\">\r\n\r\n    \r\n    <div class=\"row\">\r\n      <div class=\"col-lg-4\">\r\n        <img src=\"img/turtle.png\" class=\"rounded-circle\" width=\"140\" height=\"140\" alt=\"Add to Zookédex\">\r\n        <h2 class=\"fw-normal\">Add To Zookédex</h2>\r\n        <p>Here you can add to your collection of animals in the Zookédex!</p>\r\n        <p><a class=\"btn custom-btn\" href=\"create.html\">View page &raquo;</a></p>\r\n      </div>\r\n      <div class=\"col-lg-4 text-center\">\r\n        <img src=\"img/folder.png\" class=\"rounded-circle\" width=\"140\" height=\"140\" alt=\"Add to Zookédex\">\r\n        <h2 class=\"fw-normal\">Zookédex</h2>\r\n        <p>Here is where you can view the collection of the animals in the Zookédex!</p>\r\n        <p><a class=\"btn custom-btn\" href=\"list.html\">View page &raquo;</a></p>\r\n      </div>\r\n      <div class=\"col-lg-4\">\r\n        <img src=\"img/info.jpg\" class=\"rounded-circle\" width=\"140\" height=\"140\" alt=\"Add to Zookédex\">\r\n        <h2 class=\"fw-normal\">About Us</h2>\r\n        <p>Here you can learn all about us and what we do here at Zookédex.</p>\r\n        <p><a class=\"btn custom-btn\" href=\"about.html\">View page &raquo;</a></p>\r\n      </div>\r\n    </div>\r\n\r\n\r\n    \r\n\r\n    <hr class=\"featurette-divider\">\r\n\r\n    <div class=\"row featurette\">\r\n      <div class=\"col-md-7\">\r\n        <h2 class=\"featurette-heading fw-normal lh-1\"> Resting in the Wild. <span class=\"custom-text-color\">Discover the beauty of animal sleep.</span></h2>\r\n        <p class=\"lead\">Even the fiercest creatures need their rest. This sleeping jaguar demonstrates the calmness of the wild when it’s time to recharge. Animals in the wild spend a significant part of their lives resting, ensuring they have the energy to hunt, explore, and thrive.</p>\r\n      </div>\r\n      <div class=\"col-md-5\">\r\n        <img src=\"img/jaguar.jpg\" class=\"featurette-image img-fluid mx-auto\" alt=\"Description of your image\" width=\"500\" height=\"500\">\r\n      </div>\r\n    </div>\r\n\r\n    <hr class=\"featurette-divider\">\r\n\r\n    <div class=\"row featurette\">\r\n      <div class=\"col-md-7 order-md-2\">\r\n        <h2 class=\"featurette-heading fw-normal lh-1\">The Peaceful Panda. <span class=\"custom-text-color\">A moment of tranquility in nature.</span></h2>\r\n        <p class=\"lead\">Here we have a panda, deeply asleep in its serene environment. Pandas are known for their relaxed nature, and their sleep is just as peaceful. Did you know that pandas spend about 10-16 hours a day resting? They conserve energy for their slow and steady lifestyle.</p>\r\n      </div>\r\n      <div class=\"col-md-5 order-md-1\">\r\n        <img src=\"img/panda.jpg\" class=\"featurette-image img-fluid mx-auto\" alt=\"Description of your image\" width=\"500\" height=\"500\">\r\n      </div>\r\n    </div>\r\n    <hr class=\"featurette-divider\">\r\n  </div>")
+  }
+  return __output;
+
+}
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/home/home.js":
+/*!******************************************************!*\
+  !*** ./src/client/app/components/pages/home/home.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _home_ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.ejs */ "./src/client/app/components/pages/home/home.ejs");
+/* harmony import */ var _img_about_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../img/about.png */ "./src/client/img/about.png");
+/* harmony import */ var _img_bag_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../img/bag.jpg */ "./src/client/img/bag.jpg");
+/* harmony import */ var _img_camal_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../img/camal.png */ "./src/client/img/camal.png");
+/* harmony import */ var _img_folder_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../img/folder.png */ "./src/client/img/folder.png");
+/* harmony import */ var _img_info_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../img/info.jpg */ "./src/client/img/info.jpg");
+/* harmony import */ var _img_jaguar_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../img/jaguar.jpg */ "./src/client/img/jaguar.jpg");
+/* harmony import */ var _img_panda_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../img/panda.jpg */ "./src/client/img/panda.jpg");
+/* harmony import */ var _img_panter_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../img/panter.png */ "./src/client/img/panter.png");
+/* harmony import */ var _img_plus_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../img/plus.png */ "./src/client/img/plus.png");
+/* harmony import */ var _img_turtle_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../img/turtle.png */ "./src/client/img/turtle.png");
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router => {
+  console.log('index', router);
+  render();
+});
+function render() {
+  const html = _home_ejs__WEBPACK_IMPORTED_MODULE_0__({
+    random_stuff: 'This is custom data.'
+  });
+  document.getElementById('app').innerHTML = html;
+}
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/search/search.ejs":
+/*!***********************************************************!*\
+  !*** ./src/client/app/components/pages/search/search.ejs ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = function anonymous(locals, escapeFn, include, rethrow
+) {
+escapeFn = escapeFn || function (markup) {
+  return markup == undefined
+    ? ''
+    : String(markup)
+      .replace(_MATCH_HTML, encode_char);
+};
+var _ENCODE_HTML_RULES = {
+      "&": "&amp;"
+    , "<": "&lt;"
+    , ">": "&gt;"
+    , '"': "&#34;"
+    , "'": "&#39;"
+    }
+  , _MATCH_HTML = /[&<>'"]/g;
+function encode_char(c) {
+  return _ENCODE_HTML_RULES[c] || c;
+};
+;
+  var __output = "";
+  function __append(s) { if (s !== undefined && s !== null) __output += s }
+  with (locals || {}) {
+    ; __append("\r\n<main class=\"flex-shrink-0\">\r\n  <div class=\"container mt-5\">\r\n    <h1>Animal List</h1>\r\n    <p class=\"lead\">Here you can view and manage all the animals in your collection.</p>\r\n\r\n    \r\n    <div class=\"d-flex justify-content-end mb-3\">\r\n      <div class=\"dropdown\">\r\n        <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"perPageDropdown\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\r\n          Records per page: <span id=\"selectedPerPage\">5</span>\r\n        </button>\r\n        <ul class=\"dropdown-menu dropdown-menu-end\" aria-labelledby=\"perPageDropdown\">\r\n          <li><a class=\"dropdown-item per-page-option\" href=\"#\" data-value=\"5\">5</a></li>\r\n          <li><a class=\"dropdown-item per-page-option\" href=\"#\" data-value=\"10\">10</a></li>\r\n          <li><a class=\"dropdown-item per-page-option\" href=\"#\" data-value=\"15\">15</a></li>\r\n          <li><a class=\"dropdown-item per-page-option\" href=\"#\" data-value=\"20\">20</a></li>\r\n          <li><a class=\"dropdown-item per-page-option\" href=\"#\" data-value=\"25\">25</a></li>\r\n          <li><a class=\"dropdown-item per-page-option\" href=\"#\" data-value=\"50\">50</a></li>\r\n          <li><a class=\"dropdown-item per-page-option\" href=\"#\" data-value=\"100\">100</a></li>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n\r\n    \r\n    <div class=\"container mt-5\">\r\n      <h1>Animal List</h1>\r\n      <table id=\"animals-list\" class=\"table table-striped ")
+    ; __append(escapeFn( records && records.length ? '' : 'd-none' ))
+    ; __append("\">\r\n        <thead>\r\n          <tr>\r\n            <th>Owner</th>\r\n            <th>Details</th>\r\n            <th>Actions</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          ")
+    ;  if (records && records.length) { 
+    ; __append("\r\n            ")
+    ;  records.forEach(record => { 
+    ; __append("\r\n              <tr>\r\n                <td>")
+    ; __append(escapeFn( record.owner || 'No owner' ))
+    ; __append("</td>\r\n                <td>")
+    ; __append(escapeFn( record.name ))
+    ; __append(" (")
+    ; __append(escapeFn( record.breed ))
+    ; __append(", ")
+    ; __append(escapeFn( record.eyes ))
+    ; __append(" eyes, ")
+    ; __append(escapeFn( record.legs ))
+    ; __append(" legs, sounds like \"")
+    ; __append(escapeFn( record.sound ))
+    ; __append("\")</td>\r\n                <td>\r\n                  <button class=\"btn btn-primary btn-sm\" onclick=\"editAnimal('")
+    ; __append(escapeFn( record._id ))
+    ; __append("')\">\r\n                    <i class=\"fas fa-edit\"></i> Edit\r\n                  </button>\r\n                  <button class=\"btn btn-danger btn-sm\" onclick=\"deleteAnimal('")
+    ; __append(escapeFn( record._id ))
+    ; __append("')\">\r\n                    <i class=\"fas fa-trash\"></i> Delete\r\n                  </button>\r\n                </td>\r\n              </tr>\r\n            ")
+    ;  }); 
+    ; __append("\r\n          ")
+    ;  } else { 
+    ; __append("\r\n            <tr>\r\n              <td colspan=\"3\">No animals found.</td>\r\n            </tr>\r\n          ")
+    ;  } 
+    ; __append("\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n\r\n    \r\n    <div id=\"message-box\" class=\"")
+    ; __append(escapeFn( records.length ? 'd-none' : '' ))
+    ; __append("\">\r\n      <p>No animals found.</p>\r\n    </div>\r\n\r\n    \r\n    <nav id=\"pagination-container\">\r\n      <ul class=\"pagination justify-content-center\"></ul>\r\n    </nav>\r\n\r\n    \r\n    <div class=\"modal fade\" id=\"ConfirmModal\" tabindex=\"-1\" aria-labelledby=\"ConfirmModal\" aria-hidden=\"true\">\r\n      <div class=\"modal-dialog\">\r\n        <div class=\"modal-content\">\r\n          <div class=\"modal-header\">\r\n            <h1 class=\"modal-title fs-5\">Are you sure? 😔</h1>\r\n            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\r\n          </div>\r\n          <div class=\"modal-body\">\r\n            Are you sure you wish to delete the selected animal forever?\r\n          </div>\r\n          <div class=\"modal-footer\">\r\n            <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\r\n            <button type=\"button\" class=\"btn btn-danger\">\r\n              <i class=\"fas fa-spinner fa-spin d-none\"></i> Delete Animal\r\n            </button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</main>\r\n")
+  }
+  return __output;
+
+}
+
+/***/ }),
+
+/***/ "./src/client/app/components/pages/search/search.js":
+/*!**********************************************************!*\
+  !*** ./src/client/app/components/pages/search/search.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _search_ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./search.ejs */ "./src/client/app/components/pages/search/search.ejs");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
+  const html = _search_ejs__WEBPACK_IMPORTED_MODULE_0__();
+  document.getElementById('app').innerHTML = html;
+
+  // Fetch and display animals
+  loadAnimals();
+});
+async function loadAnimals() {
+  try {
+    const url = new URL(window.location);
+    const perPage = parseInt(url.searchParams.get('perPage')) || 5;
+    const page = parseInt(url.searchParams.get('page')) || 1;
+    const records = await response.json();
+    const response = await fetch('/api/animals');
+    if (!response.ok) {
+      throw new Error('Failed to fetch animals');
+    }
+    if (!Array.isArray(records)) {
+      throw new Error('Invalid response format: Expected an array');
+    }
+    const totalPages = Math.ceil(records.length / perPage);
+    const currentRecords = records.slice((page - 1) * perPage, page * perPage);
+    drawAnimalTable(currentRecords);
+    drawPaginationLinks(document.getElementById('pagination-container'), page, totalPages);
+  } catch (error) {
+    console.error('Error loading animals:', error);
+    const messageBox = document.getElementById('message-box');
+    messageBox.textContent = 'Error loading animals. Please try again later.';
+    messageBox.classList.remove('d-none');
+  }
+}
+function drawAnimalTable(records) {
+  const tableBody = document.querySelector('#animals-list tbody');
+  const messageBox = document.getElementById('message-box');
+  const table = document.getElementById('animals-list');
+  tableBody.innerHTML = '';
+  toggleTableVisibility(records);
+  records.forEach(animal => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${animal.owner || 'Alyssa'}</td>
+      <td>${animal.name} (${animal.breed}, ${animal.eyes} eyes, ${animal.legs} legs, sounds like "${animal.sound}")</td>
+      <td>
+        <button class="btn btn-primary btn-sm" onclick="editAnimal('${animal._id}')">
+          <i class="fas fa-edit"></i> Edit
+        </button>
+        <button class="btn btn-danger btn-sm" onclick="deleteAnimal('${animal._id}')">
+          <i class="fas fa-trash"></i> Delete
+        </button>
+      </td>
+    `;
+    tableBody.appendChild(row);
+  });
+}
+function toggleTableVisibility(records) {
+  const table = document.getElementById('animals-list');
+  const messageBox = document.getElementById('message-box');
+  if (records.length === 0) {
+    messageBox.textContent = 'No animals found.';
+    messageBox.classList.remove('d-none');
+    table.classList.add('d-none');
+  } else {
+    messageBox.classList.add('d-none');
+    table.classList.remove('d-none');
+  }
+}
+function drawPaginationLinks(container, currentPage, totalPages) {
+  const paginationLinks = container.querySelector('ul.pagination');
+  paginationLinks.innerHTML = '';
+  const url = new URL(window.location);
+  const perPage = parseInt(url.searchParams.get('perPage')) || 5;
+  const prevButton = document.createElement('li');
+  prevButton.classList.add('page-item');
+  if (currentPage === 1) {
+    prevButton.classList.add('disabled');
+  }
+  prevButton.innerHTML = `<a class="page-link" href="?page=${currentPage - 1}&perPage=${perPage}">Previous</a>`;
+  paginationLinks.appendChild(prevButton);
+  for (let i = 1; i <= totalPages; i++) {
+    const pageItem = document.createElement('li');
+    pageItem.classList.add('page-item');
+    if (i === currentPage) {
+      pageItem.classList.add('active');
+    }
+    pageItem.innerHTML = `<a class="page-link" href="?page=${i}&perPage=${perPage}">${i}</a>`;
+    paginationLinks.appendChild(pageItem);
+  }
+  const nextButton = document.createElement('li');
+  nextButton.classList.add('page-item');
+  if (currentPage === totalPages) {
+    nextButton.classList.add('disabled');
+  }
+  nextButton.innerHTML = `<a class="page-link" href="?page=${currentPage + 1}&perPage=${perPage}">Next</a>`;
+  paginationLinks.appendChild(nextButton);
+}
+async function deleteAnimal(_id) {
+  const modal = new bootstrap.Modal(document.getElementById('ConfirmModal'));
+  modal.show();
+  document.querySelector('.btn-danger').addEventListener('click', async () => {
+    try {
+      const response = await fetch(`/api/animals/${_id}`, {
+        method: 'DELETE'
+      });
+      if (!response.ok) {
+        throw new Error('Failed to delete animal');
+      }
+      modal.hide();
+      loadAnimals();
+    } catch (error) {
+      console.error('Error deleting animal:', error);
+      const messageBox = document.getElementById('message-box');
+      messageBox.textContent = `Error deleting animal: ${error.message}`;
+      messageBox.classList.remove('d-none');
+    }
+  });
+}
+function editAnimal(id) {
+  window.location.href = `create.html?id=${id}`;
+}
+
+/***/ }),
+
+/***/ "./src/client/img/about.png":
+/*!**********************************!*\
+  !*** ./src/client/img/about.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/about.png";
+
+/***/ }),
+
+/***/ "./src/client/img/bag.jpg":
+/*!********************************!*\
+  !*** ./src/client/img/bag.jpg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/bag.jpg";
+
+/***/ }),
+
+/***/ "./src/client/img/camal.png":
+/*!**********************************!*\
+  !*** ./src/client/img/camal.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/camal.png";
+
+/***/ }),
+
+/***/ "./src/client/img/folder.png":
+/*!***********************************!*\
+  !*** ./src/client/img/folder.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/folder.png";
+
+/***/ }),
+
+/***/ "./src/client/img/info.jpg":
+/*!*********************************!*\
+  !*** ./src/client/img/info.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/info.jpg";
+
+/***/ }),
+
+/***/ "./src/client/img/jaguar.jpg":
+/*!***********************************!*\
+  !*** ./src/client/img/jaguar.jpg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/jaguar.jpg";
+
+/***/ }),
+
+/***/ "./src/client/img/panda.jpg":
+/*!**********************************!*\
+  !*** ./src/client/img/panda.jpg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/panda.jpg";
+
+/***/ }),
+
+/***/ "./src/client/img/panter.png":
+/*!***********************************!*\
+  !*** ./src/client/img/panter.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/panter.png";
+
+/***/ }),
+
+/***/ "./src/client/img/plus.png":
+/*!*********************************!*\
+  !*** ./src/client/img/plus.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/plus.png";
+
+/***/ }),
+
+/***/ "./src/client/img/poke_Ball_icon.png":
+/*!*******************************************!*\
+  !*** ./src/client/img/poke_Ball_icon.png ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/poke_Ball_icon.png";
+
+/***/ }),
+
+/***/ "./src/client/img/turtle.png":
+/*!***********************************!*\
+  !*** ./src/client/img/turtle.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "img/turtle.png";
 
 /***/ }),
 
@@ -7800,9 +8534,12 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 /*!*************************************!*\
   !*** ./src/client/scss/styles.scss ***!
   \*************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nCan't find stylesheet to import.\n\u001b[34m  ╷\u001b[0m\n\u001b[34m3 │\u001b[0m @import \u001b[31m'../app/components/pages/home/home.scss'\u001b[0m;\r\n\u001b[34m  │\u001b[0m \u001b[31m        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\u001b[0m\n\u001b[34m  ╵\u001b[0m\n  src\\client\\scss\\styles.scss 3:9  root stylesheet\n    at tryRunOrWebpackError (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\HookWebpackError.js:86:9)\n    at __webpack_require_module__ (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5301:12)\n    at __webpack_require__ (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5258:18)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5330:20\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\Hook.js:18:14)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5236:43\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5198:16\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5166:15\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5112:8\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:3531:6\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Cache.js:111:20)\n    at ItemCacheFacade.store (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:3530:11\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Cache.js:95:34\n    at Array.<anonymous> (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\cache\\MemoryCachePlugin.js:45:13)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Cache.js:95:19\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:19:1)\n    at Cache.get (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Cache.js:79:18)\n    at ItemCacheFacade.get (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:3498:9)\n    at codeGen (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5100:11)\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5130:14\n    at processQueue (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nCan't find stylesheet to import.\n\u001b[34m  ╷\u001b[0m\n\u001b[34m3 │\u001b[0m @import \u001b[31m'../app/components/pages/home/home.scss'\u001b[0m;\r\n\u001b[34m  │\u001b[0m \u001b[31m        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\u001b[0m\n\u001b[34m  ╵\u001b[0m\n  src\\client\\scss\\styles.scss 3:9  root stylesheet\n    at Object.<anonymous> (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\src\\client\\scss\\styles.scss:1:7)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\javascript\\JavascriptModulesPlugin.js:494:10\n    at Hook.eval [as call] (eval at create (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at Hook.CALL_DELEGATE [as _call] (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\Hook.js:14:14)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5303:39\n    at tryRunOrWebpackError (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\HookWebpackError.js:81:7)\n    at __webpack_require_module__ (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5301:12)\n    at __webpack_require__ (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5258:18)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5330:20\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\Hook.js:18:14)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5236:43\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5198:16\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5166:15\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3485:9)\n    at done (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3527:9)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5112:8\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:3531:6\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Cache.js:111:20)\n    at ItemCacheFacade.store (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:3530:11\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Cache.js:95:34\n    at Array.<anonymous> (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\cache\\MemoryCachePlugin.js:45:13)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Cache.js:95:19\n    at Hook.eval [as callAsync] (eval at create (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:19:1)\n    at Cache.get (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Cache.js:79:18)\n    at ItemCacheFacade.get (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:3498:9)\n    at codeGen (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5100:11)\n    at symbolIterator (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\neo-async\\async.js:3463:5)\n    at C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\Compilation.js:5130:14\n    at processQueue (C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)\n\nGenerated code for C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\css-loader\\dist\\cjs.js!C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\node_modules\\sass-loader\\dist\\cjs.js!C:\\Users\\admin\\Documents\\INFT\\inft-2202-ice\\src\\client\\scss\\styles.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nCan't find stylesheet to import.\\n\\u001b[34m  ╷\\u001b[0m\\n\\u001b[34m3 │\\u001b[0m @import \\u001b[31m'../app/components/pages/home/home.scss'\\u001b[0m;\\r\\n\\u001b[34m  │\\u001b[0m \\u001b[31m        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\u001b[0m\\n\\u001b[34m  ╵\\u001b[0m\\n  src\\\\client\\\\scss\\\\styles.scss 3:9  root stylesheet\");");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ })
 
@@ -7845,6 +8582,18 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -7861,6 +8610,29 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
@@ -7871,39 +8643,45 @@ var __webpack_exports__ = {};
   \*****************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var navigo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! navigo */ "./node_modules/navigo/lib/navigo.min.js");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../client/app/components/pages/home/home.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var _app_components_header_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/components/header/header.js */ "./src/client/app/components/header/header.js");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './app/components/footer/footer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
-/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scss/styles.scss */ "./src/client/scss/styles.scss");
-// Import statments/.
+/* harmony import */ var _client_app_components_pages_home_home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../client/app/components/pages/home/home.js */ "./src/client/app/components/pages/home/home.js");
+/* harmony import */ var _app_components_pages_about_about_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/components/pages/about/about.js */ "./src/client/app/components/pages/about/about.js");
+/* harmony import */ var _app_components_pages_search_search_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/components/pages/search/search.js */ "./src/client/app/components/pages/search/search.js");
+/* harmony import */ var _app_components_pages_create_create_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app/components/pages/create/create.js */ "./src/client/app/components/pages/create/create.js");
+/* harmony import */ var _app_components_pages_contact_contact_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app/components/pages/contact/contact.js */ "./src/client/app/components/pages/contact/contact.js");
+/* harmony import */ var _app_components_header_header_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app/components/header/header.js */ "./src/client/app/components/header/header.js");
+/* harmony import */ var _app_components_footer_footer_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app/components/footer/footer.js */ "./src/client/app/components/footer/footer.js");
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+/* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./scss/styles.scss */ "./src/client/scss/styles.scss");
 
 
 
-// imports out page components.
 
 
 
-//import the styles.
+
+
+
 
 
 // Initialize router
-const router = new navigo__WEBPACK_IMPORTED_MODULE_0__('/');
-// console.log("Hello World!");
-
+const route = new navigo__WEBPACK_IMPORTED_MODULE_0__('/');
 window.addEventListener('load', () => {
-  (0,_app_components_header_header_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
-  router.on('/', Object(function webpackMissingModule() { var e = new Error("Cannot find module '../client/app/components/pages/home/home.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())).on('/about', Object(function webpackMissingModule() { var e = new Error("Cannot find module '../client/app/components/pages/home/home.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())).on('/animals', route => {
-    console.log('animal search page', route);
-  });
-  router.resolve();
-  Object(function webpackMissingModule() { var e = new Error("Cannot find module './app/components/footer/footer.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())();
+  try {
+    // Run the header component
+    (0,_app_components_header_header_js__WEBPACK_IMPORTED_MODULE_6__["default"])();
+
+    // Run the footer component
+    (0,_app_components_footer_footer_js__WEBPACK_IMPORTED_MODULE_7__["default"])();
+
+    // Configure routes
+    route.on('/', _client_app_components_pages_home_home_js__WEBPACK_IMPORTED_MODULE_1__["default"]).on('/about', _app_components_pages_about_about_js__WEBPACK_IMPORTED_MODULE_2__["default"]).on('/search', _app_components_pages_search_search_js__WEBPACK_IMPORTED_MODULE_3__["default"]).on('/create', _app_components_pages_create_create_js__WEBPACK_IMPORTED_MODULE_4__["default"]).on('/contact', _app_components_pages_contact_contact_js__WEBPACK_IMPORTED_MODULE_5__["default"]);
+    route.resolve();
+  } catch (error) {
+    console.error('Error initializing components:', error);
+  }
 });
 })();
 
 /******/ })()
 ;
-=======
-(()=>{var t={804:function(t){"undefined"!=typeof self&&self,t.exports=function(){"use strict";var t={407:function(t,n,e){e.d(n,{default:function(){return T}});var o=/([:*])(\w+)/g,r=/\*/g,a=/\/\?/g;function i(t){return void 0===t&&(t="/"),v()?location.pathname+location.search+location.hash:t}function s(t){return t.replace(/\/+$/,"").replace(/^\/+/,"")}function c(t){return"string"==typeof t}function u(t){return t&&t.indexOf("#")>=0&&t.split("#").pop()||""}function h(t){var n=s(t).split(/\?(.*)?$/);return[s(n[0]),n.slice(1).join("")]}function f(t){for(var n={},e=t.split("&"),o=0;o<e.length;o++){var r=e[o].split("=");if(""!==r[0]){var a=decodeURIComponent(r[0]);n[a]?(Array.isArray(n[a])||(n[a]=[n[a]]),n[a].push(decodeURIComponent(r[1]||""))):n[a]=decodeURIComponent(r[1]||"")}}return n}function l(t,n){var e,i=h(s(t.currentLocationPath)),l=i[0],p=i[1],d=""===p?null:f(p),v=[];if(c(n.path)){if(e="(?:/^|^)"+s(n.path).replace(o,(function(t,n,e){return v.push(e),"([^/]+)"})).replace(r,"?(?:.*)").replace(a,"/?([^/]+|)")+"$",""===s(n.path)&&""===s(l))return{url:l,queryString:p,hashString:u(t.to),route:n,data:null,params:d}}else e=n.path;var g=new RegExp(e,""),m=l.match(g);if(m){var y=c(n.path)?function(t,n){return 0===n.length?null:t?t.slice(1,t.length).reduce((function(t,e,o){return null===t&&(t={}),t[n[o]]=decodeURIComponent(e),t}),null):null}(m,v):m.groups?m.groups:m.slice(1);return{url:s(l.replace(new RegExp("^"+t.instance.root),"")),queryString:p,hashString:u(t.to),route:n,data:y,params:d}}return!1}function p(){return!("undefined"==typeof window||!window.history||!window.history.pushState)}function d(t,n){return void 0===t[n]||!0===t[n]}function v(){return"undefined"!=typeof window}function g(t,n){return void 0===t&&(t=[]),void 0===n&&(n={}),t.filter((function(t){return t})).forEach((function(t){["before","after","already","leave"].forEach((function(e){t[e]&&(n[e]||(n[e]=[]),n[e].push(t[e]))}))})),n}function m(t,n,e){var o=n||{},r=0;!function n(){t[r]?Array.isArray(t[r])?(t.splice.apply(t,[r,1].concat(t[r][0](o)?t[r][1]:t[r][2])),n()):t[r](o,(function(t){void 0===t||!0===t?(r+=1,n()):e&&e(o)})):e&&e(o)}()}function y(t,n){void 0===t.currentLocationPath&&(t.currentLocationPath=t.to=i(t.instance.root)),t.currentLocationPath=t.instance._checkForAHash(t.currentLocationPath),n()}function _(t,n){for(var e=0;e<t.instance.routes.length;e++){var o=l(t,t.instance.routes[e]);if(o&&(t.matches||(t.matches=[]),t.matches.push(o),"ONE"===t.resolveOptions.strategy))return void n()}n()}function k(t,n){t.navigateOptions&&(void 0!==t.navigateOptions.shouldResolve&&console.warn('"shouldResolve" is deprecated. Please check the documentation.'),void 0!==t.navigateOptions.silent&&console.warn('"silent" is deprecated. Please check the documentation.')),n()}function O(t,n){!0===t.navigateOptions.force?(t.instance._setCurrent([t.instance._pathToMatchObject(t.to)]),n(!1)):n()}m.if=function(t,n,e){return Array.isArray(n)||(n=[n]),Array.isArray(e)||(e=[e]),[t,n,e]};var w=v(),L=p();function b(t,n){if(d(t.navigateOptions,"updateBrowserURL")){var e=("/"+t.to).replace(/\/\//g,"/"),o=w&&t.resolveOptions&&!0===t.resolveOptions.hash;L?(history[t.navigateOptions.historyAPIMethod||"pushState"](t.navigateOptions.stateObj||{},t.navigateOptions.title||"",o?"#"+e:e),location&&location.hash&&(t.instance.__freezeListening=!0,setTimeout((function(){if(!o){var n=location.hash;location.hash="",location.hash=n}t.instance.__freezeListening=!1}),1))):w&&(window.location.href=t.to)}n()}function A(t,n){var e=t.instance;e.lastResolved()?m(e.lastResolved().map((function(n){return function(e,o){if(n.route.hooks&&n.route.hooks.leave){var r,a=t.instance.matchLocation(n.route.path,t.currentLocationPath,!1);r="*"!==n.route.path?!a:!(t.matches&&t.matches.find((function(t){return n.route.path===t.route.path}))),d(t.navigateOptions,"callHooks")&&r?m(n.route.hooks.leave.map((function(n){return function(e,o){return n((function(n){!1===n?t.instance.__markAsClean(t):o()}),t.matches&&t.matches.length>0?1===t.matches.length?t.matches[0]:t.matches:void 0)}})).concat([function(){return o()}])):o()}else o()}})),{},(function(){return n()})):n()}function P(t,n){d(t.navigateOptions,"updateState")&&t.instance._setCurrent(t.matches),n()}var R=[function(t,n){var e=t.instance.lastResolved();if(e&&e[0]&&e[0].route===t.match.route&&e[0].url===t.match.url&&e[0].queryString===t.match.queryString)return e.forEach((function(n){n.route.hooks&&n.route.hooks.already&&d(t.navigateOptions,"callHooks")&&n.route.hooks.already.forEach((function(n){return n(t.match)}))})),void n(!1);n()},function(t,n){t.match.route.hooks&&t.match.route.hooks.before&&d(t.navigateOptions,"callHooks")?m(t.match.route.hooks.before.map((function(n){return function(e,o){return n((function(n){!1===n?t.instance.__markAsClean(t):o()}),t.match)}})).concat([function(){return n()}])):n()},function(t,n){d(t.navigateOptions,"callHandler")&&t.match.route.handler(t.match),t.instance.updatePageLinks(),n()},function(t,n){t.match.route.hooks&&t.match.route.hooks.after&&d(t.navigateOptions,"callHooks")&&t.match.route.hooks.after.forEach((function(n){return n(t.match)})),n()}],S=[A,function(t,n){var e=t.instance._notFoundRoute;if(e){t.notFoundHandled=!0;var o=h(t.currentLocationPath),r=o[0],a=o[1],i=u(t.to);e.path=s(r);var c={url:e.path,queryString:a,hashString:i,data:null,route:e,params:""!==a?f(a):null};t.matches=[c],t.match=c}n()},m.if((function(t){return t.notFoundHandled}),R.concat([P]),[function(t,n){t.resolveOptions&&!1!==t.resolveOptions.noMatchWarning&&void 0!==t.resolveOptions.noMatchWarning||console.warn('Navigo: "'+t.currentLocationPath+"\" didn't match any of the registered routes."),n()},function(t,n){t.instance._setCurrent(null),n()}])];function x(){return(x=Object.assign||function(t){for(var n=1;n<arguments.length;n++){var e=arguments[n];for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o])}return t}).apply(this,arguments)}function E(t,n){var e=0;A(t,(function o(){e!==t.matches.length?m(R,x({},t,{match:t.matches[e]}),(function(){e+=1,o()})):P(t,n)}))}function H(t){t.instance.__markAsClean(t)}function C(){return(C=Object.assign||function(t){for(var n=1;n<arguments.length;n++){var e=arguments[n];for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o])}return t}).apply(this,arguments)}var j="[data-navigo]";function T(t,n){var e,o=n||{strategy:"ONE",hash:!1,noMatchWarning:!1,linksSelector:j},r=this,a="/",d=null,w=[],L=!1,A=p(),P=v();function R(t){return t.indexOf("#")>=0&&(t=!0===o.hash?t.split("#")[1]||"/":t.split("#")[0]),t}function x(t){return s(a+"/"+s(t))}function T(t,n,e,o){return t=c(t)?x(t):t,{name:o||s(String(t)),path:t,handler:n,hooks:g(e)}}function I(t,n){if(!r.__dirty){r.__dirty=!0,t=t?s(a)+"/"+s(t):void 0;var e={instance:r,to:t,currentLocationPath:t,navigateOptions:{},resolveOptions:C({},o,n)};return m([y,_,m.if((function(t){var n=t.matches;return n&&n.length>0}),E,S)],e,H),!!e.matches&&e.matches}r.__waiting.push((function(){return r.resolve(t,n)}))}function U(t,n){if(r.__dirty)r.__waiting.push((function(){return r.navigate(t,n)}));else{r.__dirty=!0,t=s(a)+"/"+s(t);var e={instance:r,to:t,navigateOptions:n||{},resolveOptions:n&&n.resolveOptions?n.resolveOptions:o,currentLocationPath:R(t)};m([k,O,_,m.if((function(t){var n=t.matches;return n&&n.length>0}),E,S),b,H],e,H)}}function q(){if(P)return(P?[].slice.call(document.querySelectorAll(o.linksSelector||j)):[]).forEach((function(t){"false"!==t.getAttribute("data-navigo")&&"_blank"!==t.getAttribute("target")?t.hasListenerAttached||(t.hasListenerAttached=!0,t.navigoHandler=function(n){if((n.ctrlKey||n.metaKey)&&"a"===n.target.tagName.toLowerCase())return!1;var e=t.getAttribute("href");if(null==e)return!1;if(e.match(/^(http|https)/)&&"undefined"!=typeof URL)try{var o=new URL(e);e=o.pathname+o.search}catch(t){}var a=function(t){if(!t)return{};var n,e=t.split(","),o={};return e.forEach((function(t){var e=t.split(":").map((function(t){return t.replace(/(^ +| +$)/g,"")}));switch(e[0]){case"historyAPIMethod":o.historyAPIMethod=e[1];break;case"resolveOptionsStrategy":n||(n={}),n.strategy=e[1];break;case"resolveOptionsHash":n||(n={}),n.hash="true"===e[1];break;case"updateBrowserURL":case"callHandler":case"updateState":case"force":o[e[0]]="true"===e[1]}})),n&&(o.resolveOptions=n),o}(t.getAttribute("data-navigo-options"));L||(n.preventDefault(),n.stopPropagation(),r.navigate(s(e),a))},t.addEventListener("click",t.navigoHandler)):t.hasListenerAttached&&t.removeEventListener("click",t.navigoHandler)})),r}function F(t,n,e){var o=w.find((function(n){return n.name===t})),r=null;if(o){if(r=o.path,n)for(var i in n)r=r.replace(":"+i,n[i]);r=r.match(/^\//)?r:"/"+r}return r&&e&&!e.includeRoot&&(r=r.replace(new RegExp("^/"+a),"")),r}function M(t){var n=h(s(t)),o=n[0],r=n[1],a=""===r?null:f(r);return{url:o,queryString:r,hashString:u(t),route:T(o,(function(){}),[e],o),data:null,params:a}}function N(t,n,e){return"string"==typeof n&&(n=z(n)),n?(n.hooks[t]||(n.hooks[t]=[]),n.hooks[t].push(e),function(){n.hooks[t]=n.hooks[t].filter((function(t){return t!==e}))}):(console.warn("Route doesn't exists: "+n),function(){})}function z(t){return"string"==typeof t?w.find((function(n){return n.name===x(t)})):w.find((function(n){return n.handler===t}))}t?a=s(t):console.warn('Navigo requires a root path in its constructor. If not provided will use "/" as default.'),this.root=a,this.routes=w,this.destroyed=L,this.current=d,this.__freezeListening=!1,this.__waiting=[],this.__dirty=!1,this.__markAsClean=function(t){t.instance.__dirty=!1,t.instance.__waiting.length>0&&t.instance.__waiting.shift()()},this.on=function(t,n,o){var r=this;return"object"!=typeof t||t instanceof RegExp?("function"==typeof t&&(o=n,n=t,t=a),w.push(T(t,n,[e,o])),this):(Object.keys(t).forEach((function(n){if("function"==typeof t[n])r.on(n,t[n]);else{var o=t[n],a=o.uses,i=o.as,s=o.hooks;w.push(T(n,a,[e,s],i))}})),this)},this.off=function(t){return this.routes=w=w.filter((function(n){return c(t)?s(n.path)!==s(t):"function"==typeof t?t!==n.handler:String(n.path)!==String(t)})),this},this.resolve=I,this.navigate=U,this.navigateByName=function(t,n,e){var o=F(t,n);return null!==o&&(U(o.replace(new RegExp("^/?"+a),""),e),!0)},this.destroy=function(){this.routes=w=[],A&&window.removeEventListener("popstate",this.__popstateListener),this.destroyed=L=!0},this.notFound=function(t,n){return r._notFoundRoute=T("*",t,[e,n],"__NOT_FOUND__"),this},this.updatePageLinks=q,this.link=function(t){return"/"+a+"/"+s(t)},this.hooks=function(t){return e=t,this},this.extractGETParameters=function(t){return h(R(t))},this.lastResolved=function(){return d},this.generate=F,this.getLinkPath=function(t){return t.getAttribute("href")},this.match=function(t){var n={instance:r,currentLocationPath:t,to:t,navigateOptions:{},resolveOptions:o};return _(n,(function(){})),!!n.matches&&n.matches},this.matchLocation=function(t,n,e){void 0===n||void 0!==e&&!e||(n=x(n));var o={instance:r,to:n,currentLocationPath:n};return y(o,(function(){})),"string"==typeof t&&(t=void 0===e||e?x(t):t),l(o,{name:String(t),path:t,handler:function(){},hooks:{}})||!1},this.getCurrentLocation=function(){return M(s(i(a)).replace(new RegExp("^"+a),""))},this.addBeforeHook=N.bind(this,"before"),this.addAfterHook=N.bind(this,"after"),this.addAlreadyHook=N.bind(this,"already"),this.addLeaveHook=N.bind(this,"leave"),this.getRoute=z,this._pathToMatchObject=M,this._clean=s,this._checkForAHash=R,this._setCurrent=function(t){return d=r.current=t},function(){A&&(this.__popstateListener=function(){r.__freezeListening||I()},window.addEventListener("popstate",this.__popstateListener))}.call(this),q.call(this)}}},n={};function e(o){if(n[o])return n[o].exports;var r=n[o]={exports:{}};return t[o](r,r.exports,e),r.exports}return e.d=function(t,n){for(var o in n)e.o(n,o)&&!e.o(t,o)&&Object.defineProperty(t,o,{enumerable:!0,get:n[o]})},e.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},e(407)}().default}},n={};function e(o){var r=n[o];if(void 0!==r)return r.exports;var a=n[o]={exports:{}};return t[o].call(a.exports,a,a.exports,e),a.exports}(()=>{"use strict";var t=new(e(804))("/");t.on("/",(function(){console.log("The Index / Home page!")})),t.on("/search",(function(){console.log("The Search page!")})),t.on("/create",(function(){console.log("The Create page!")})),t.on("/about",(function(){console.log("The About page!")})),t.on("/contact",(function(){console.log("The Contact page!")})),t.resolve()})()})();
->>>>>>> parent of 70ec6b4 (This isnt complete at all.)
 //# sourceMappingURL=main.js.map

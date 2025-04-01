@@ -1,9 +1,11 @@
 import template from './footer.ejs';
 
-export default() => {
-    console.log("this is the foot", route);
+export default () => {
     const html = template();
-
-    document.getElementById('app')
-        .insertAdjacentElement('afterend', html)
-}
+    const appElement = document.getElementById('app');
+    if (appElement) {
+        appElement.insertAdjacentHTML('afterend', html);
+    } else {
+        console.error("App element not found!");
+    }
+};

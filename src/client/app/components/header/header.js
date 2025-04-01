@@ -1,14 +1,11 @@
 import template from './header.ejs';
 
-export default (router) => {
-    const route = router.current;  // You can access current route from Navigo
-
-
-
-    
+export default () => {
     const html = template();
-    console.log("This is the header, current route:", route);
-
-    document.getElementById('app')
-        .insertAdjacentElement('beforebegin', html);
-}
+    const appElement = document.getElementById('app');
+    if (appElement) {
+        appElement.insertAdjacentHTML('beforebegin', html);
+    } else {
+        console.error("App element not found!");
+    }
+};

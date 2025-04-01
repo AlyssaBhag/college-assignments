@@ -7,7 +7,8 @@ Description: This is my animals router file.
 */
 
 // import the Animal model.
-// import Animal from '../models/Animals.js';  
+import Animal from '../../client/app/models/animal.js';  
+// import Animal from '../../models/Animal.js';
 import express from 'express';
 // import the controllers for the animals.
 import AnimalCreateController from '../controllers/animals/create.js';

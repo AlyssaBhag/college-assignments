@@ -57,9 +57,9 @@ const config = {
             },
             {
                 test: /\.(png|jpg|gif)$/i,
-                type: 'asset',
+                type: 'asset/resource',
                 generator: {
-                    filename: 'img{name}[ext]'
+                    filename: 'img/[name][ext]', // Corrected path
                 }
             },
             {

@@ -7,7 +7,7 @@ Description: this is the server side version of the app.js file.
 */
 
 // import express from 'express';
-import express, { response } from 'express';
+import express from 'express';
 import path from 'path';
 
 // import defaultRouter from './routes/routes.js';
@@ -45,11 +45,9 @@ const __dirname = dirname(__filename);
 
 // Serve static files from the 'dist' directory
 // app.use(express.static(path.join(__dirname, '../../dist')));
-app.use(express.static(path.join(import.meta.dirname, '../../dist')));
+// app.use(express.static(path.join(import.meta.dirname, '../../dist')));
 
-
-//
-
+app.use(express.static(`dist`));
 app.use('/node_modules', express.static(`${import.meta.dirname}/../../node_modules`));
 
 app.use('*', (req, res, next) => {

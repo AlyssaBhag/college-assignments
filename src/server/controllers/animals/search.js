@@ -24,15 +24,20 @@ const rules = checkSchema({
     },
 });
 
-
 const handle = async (req, res, next) => {
-    try{
-        const {page, perPage} = req.query;
-        const body = await AnimalService.searchAnimal(page, perPage);
-        res.json(body);
-    } catch(error){
+    try {
+        const { page, perPage } = req.query;
+
+        // Fetch animals using the AnimalService
+        const records = await AnimalService.searchAnimal(page, perPage);
+
+        console.log('Records:', records);
+
+        // Render the search.ejs template and pass the records
+        res.render('search', { records });
+    } catch (error) {
         next(error);
     }
-}
+};
 
-export default { handle, rules }
+export default { handle, rules };

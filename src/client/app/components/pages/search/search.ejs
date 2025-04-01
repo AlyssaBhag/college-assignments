@@ -1,0 +1,92 @@
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container mt-5">
+    <h1>Animal List</h1>
+    <p class="lead">Here you can view and manage all the animals in your collection.</p>
+
+    <!-- Records per page dropdown -->
+    <div class="d-flex justify-content-end mb-3">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="perPageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          Records per page: <span id="selectedPerPage">5</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="perPageDropdown">
+          <li><a class="dropdown-item per-page-option" href="#" data-value="5">5</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="10">10</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="15">15</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="20">20</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="25">25</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="50">50</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="100">100</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Animal list table -->
+    <div class="container mt-5">
+      <h1>Animal List</h1>
+      <table id="animals-list" class="table table-striped <%= records && records.length ? '' : 'd-none' %>">
+        <thead>
+          <tr>
+            <th>Owner</th>
+            <th>Details</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (records && records.length) { %>
+            <% records.forEach(record => { %>
+              <tr>
+                <td><%= record.owner || 'No owner' %></td>
+                <td><%= record.name %> (<%= record.breed %>, <%= record.eyes %> eyes, <%= record.legs %> legs, sounds like "<%= record.sound %>")</td>
+                <td>
+                  <button class="btn btn-primary btn-sm" onclick="editAnimal('<%= record._id %>')">
+                    <i class="fas fa-edit"></i> Edit
+                  </button>
+                  <button class="btn btn-danger btn-sm" onclick="deleteAnimal('<%= record._id %>')">
+                    <i class="fas fa-trash"></i> Delete
+                  </button>
+                </td>
+              </tr>
+            <% }); %>
+          <% } else { %>
+            <tr>
+              <td colspan="3">No animals found.</td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Message box for no records -->
+    <div id="message-box" class="<%= records.length ? 'd-none' : '' %>">
+      <p>No animals found.</p>
+    </div>
+
+    <!-- Pagination -->
+    <nav id="pagination-container">
+      <ul class="pagination justify-content-center"></ul>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ConfirmModal" tabindex="-1" aria-labelledby="ConfirmModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Are you sure? 😔</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Are you sure you wish to delete the selected animal forever?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger">
+              <i class="fas fa-spinner fa-spin d-none"></i> Delete Animal
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
