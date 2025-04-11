@@ -49,12 +49,13 @@ const rules = checkSchema({
 
 const handle = async (req, res, next) => {
     try {
+        // Log the request body.
         console.log('Request body:', req.body); 
         const { name, price, stock, description } = req.body;
-        // const owner = "Alyssa"; 
         const product = await ProductService.createProduct({ name, price, stock, description });
-        res.json(product);
+        res.status(201).json(product); 
     } catch (error) {
+        console.error('Error creating product:', error.message);
         next(error);
     }
 };

@@ -59,6 +59,7 @@ class ProductService {
         };
 
         const records = await Product.find(filters, fields, options);
+        console.log('Database result:', records); // Log the query result
         return { records, pagination };
     }
 }

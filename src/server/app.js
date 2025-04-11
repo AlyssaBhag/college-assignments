@@ -6,44 +6,56 @@ Created Date: March 12th, 2025
 Description: This is the server-side version of the app.js file for my lab assignment.
 */
 
-import express, { response } from 'express';
+import express from 'express';
 import productsRouter from './routes/products.js';
 import mongoose from 'mongoose';
 import logger from 'winston';
 import { ErrorHandlingMiddleware } from './middleware/errorHandling.js';
 import { loggerMiddleware } from './middleware/logging.js';
-
 import createHttpError from 'http-errors';
-const {NotFound} = createHttpError;
+import path from 'path';
+import { fileURLToPath } from 'url';
 
+const { NotFound } = createHttpError;
 
-console.log('testing');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = 3000;
 
-// configure express to use json(middleware).
+// Middleware
 app.use(express.json());
 app.use(loggerMiddleware);
 
-app.use('/api', productsRouter);
+// Use the products router
+app.use('/api/products', productsRouter);
 
-// Tells the server to use the client folder as the static folder. The whole directory is being used.
-app.use(express.static(`${import.meta.dirname}/../client`));
-app.use('/node_modules', express.static(`${import.meta.dirname}/../../node_modules`));
+// Serve static files
+app.use(express.static(path.join(__dirname, '../../dist')));
 
+// Handle SPA routing
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../dist/index.html'));
+});
+
+// Handle 404 errors
 app.use('*', (req, res, next) => {
     next(new NotFound('Page not found'));
 });
 
+// Error handling middleware
 app.use(ErrorHandlingMiddleware);
 
-// trying to connect to the database with mongoose.
+// Connect to MongoDB
 await mongoose.connect('mongodb://127.0.0.1:27017/inft2202');
-logger.info('Yay we have connected to the database successfully!');
+logger.info('Connected to the database successfully!');
 
+// Start the server
 app.listen(PORT, () => {
-    logger.info(`server is running on port ${PORT}`);
+    logger.info(`Server is running on port ${PORT}`);
 });
+
+export default app;
 
 

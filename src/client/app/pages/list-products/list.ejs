@@ -1,0 +1,81 @@
+<main class="container mt-5">
+    <h1 class="mt-5 d-flex align-items-center gap-2">
+      Available Products
+    </h1>
+  
+    <p class="lead">Browse our collection of amazing gaming gear and accessories!</p>
+
+    <!-- Message area -->
+    <div id="message-box" class="alert alert-info d-none">
+      <span id="message-text"></span>
+    </div>
+
+    <!-- Records per page dropdown -->
+    <div class="d-flex justify-content-end mb-3">
+      <div class="dropdown">
+        <button class="btn custom-btns dropdown-toggle" type="button" id="perPageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Records per page: <span id="selectedPerPage">6</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="perPageDropdown">
+          <li><a class="dropdown-item per-page-option" href="#" data-value="4">4</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="8">8</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="24">24</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="32">32</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="40">40</a></li>
+          <li><a class="dropdown-item per-page-option" href="#" data-value="64">64</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Products Grid -->
+    <div class="container mt-4">
+      <div id="products-grid" class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Product Card Template -->
+        <template id="product-card-template">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <div class="card-text">
+                  <p class="price"></p>
+                  <p class="stock"></p>
+                  <p class="description"></p>
+                </div>
+                <div class="btn-group">
+                  <button class="btn btn-primary btn-sm edit-btn">
+                    <i class="fas fa-edit"></i> Edit
+                  </button>
+                  <button class="btn btn-danger btn-sm delete-btn">
+                    <i class="fas fa-trash"></i> Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <!-- Pagination -->
+      <nav id="pagination-container" class="mt-4">
+        <ul class="pagination justify-content-center"></ul>
+      </nav>
+    </div>
+
+    <div class="modal fade" id="ConfirmModal" tabindex="-1" aria-labelledby="ConfirmModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Are you sure? 😔</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Are you sure you wish to delete the selected product forever?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger confirm-delete-btn">Delete Product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>

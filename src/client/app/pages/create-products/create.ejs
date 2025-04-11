@@ -1,0 +1,61 @@
+<!-- Page Content -->
+  <main class="container mt-5">
+    <h1 class="mt-5">Add a New Product</h1>
+    <p class="lead">Use this form to add new products to the shop.</p>
+    <p class="spinner" style="display:none;">Loading...</p>
+    <i id="spinner" class="fa fa-spinner fa-spin d-none" style="font-size:20px; margin-left: 10px;"></i>
+
+    <div id="message-box" class="alert alert-danger d-none"></div>
+
+    <form id="product-form">
+      <div class="mb-3">
+        <label for="name" class="form-label">Product Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+
+      <div class="mb-3">
+      <!-- Product Price -->
+      <div class="mb-3">
+        <label for="productPrice" class="form-label">Price ($)</label>
+        <input type="number" id="productPrice" name="price" class="form-control" step="0.01">
+        <p class="text-danger d-none">Please enter a valid price.</p>
+      </div>
+
+      <!-- Product Stock -->
+      <div class="mb-3">
+        <label for="productStock" class="form-label">Stock Quantity</label>
+        <input type="number" id="productStock" name="stock" class="form-control">
+        <p class="text-danger d-none">Please enter a valid stock amount.</p>
+      </div>
+
+      <!-- Product Description -->
+      <div class="mb-3">
+        <label for="productDescription" class="form-label">Description</label>
+        <textarea id="productDescription" name="description" class="form-control" rows="3"></textarea>
+        <p class="text-danger d-none">Please enter a description.</p>
+      </div>
+
+      <!-- Submit Button -->
+      <button id="submitBtn" type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal fade" id="SuccessModal" tabindex="-1" aria-labelledby="SuccessModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Inventory Increased 🎉🥳</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div id="modal-message">
+            <span>Your new product has been created successfully!</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="modal-ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,238 @@
+
+// imported bootstrap.scss and google fonts
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=VT323&display=swap');
+
+// Variables
+$primary-color: #1FC8DB;
+$secondary-color: #7E1CC0;
+$accent-color: #b00466;
+$text-color: #258893;
+$twitch-purple: #9146FF;
+$twitch-purple-dark: #772ce8;
+$pink-button: #df469d;
+$pink-button-border: #d83491;
+
+// Global Styles
+body {
+  padding-top: 90px;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+  display: flex;
+  flex-direction: column;
+  font-family: 'Comic Neue', cursive;
+  background-color: #fdf6f9;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+// Carousel Styles
+.carousel {
+  margin-bottom: 4rem;
+  overflow: hidden;
+
+  &-item {
+    position: relative;
+    width: 100%;
+    height: 545px; // Fixed height for carousel items
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    // Specific positioning for different carousel items
+    &:nth-child(1) img {
+      object-position: center 20%;
+    }
+
+    &:nth-child(2) img {
+      object-position: center 70%;
+    }
+
+    &:nth-child(3) img {
+      object-position: center 34%;
+    }
+
+    &:nth-child(4) img {
+      object-position: center 90%;
+    }
+  }
+
+  &-caption {
+    position: absolute;
+    z-index: 10;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    color: #d7e2fb;
+
+    // Specific positioning for captions
+    .carousel-item:nth-child(1) & {
+      top: 70%;
+    }
+
+    .carousel-item:nth-child(2) & {
+      top: 68%;
+    }
+
+    .carousel-item:nth-child(3) & {
+      top: 15%;
+    }
+
+    .carousel-item:nth-child(4) & {
+      top: 10%;
+    }
+  }
+}
+
+// Navbar Styles
+.custom-navbar {
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+
+  .nav-link {
+    font-family: 'VT323', monospace;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+
+    &:hover {
+      color: $secondary-color;
+      font-size: 1.7rem;
+    }
+
+    &-home {
+      color: white;
+      font-size: 1.6rem;
+    }
+  }
+
+  .navbar-brand {
+    font-family: 'VT323', monospace;
+    font-size: 2.7rem;
+    color: $accent-color;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Card Styles
+.card {
+  transition: transform 0.2s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+// Button Styles
+.custom-btns {
+  background-color: $pink-button !important;
+  border-color: $pink-button-border !important;
+  color: white !important;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn {
+  &-purple {
+    background-color: $twitch-purple !important;
+    color: white !important;
+    border: none !important;
+
+    &:hover {
+      background-color: $twitch-purple-dark !important;
+    }
+  }
+
+  &-cart {
+    background-color: $twitch-purple-dark !important;
+    color: white !important;
+  }
+
+  &-group {
+    margin-top: auto;
+  }
+}
+
+// Utility Classes
+.text {
+  &-center { text-align: center; }
+  &-bold { font-weight: bold; }
+  &-name-games { color: $text-color !important; }
+}
+
+.hidden {
+  display: none;
+}
+
+#message-box {
+  margin-bottom: 2rem;
+}
+
+#pagination-container {
+  display: block !important;
+}
+
+// Marketing Styles
+.marketing {
+  .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    
+    p {
+      margin-right: 0.75rem;
+      margin-left: 0.75rem;
+    }
+  }
+}
+
+// Featurettes
+.featurette {
+  &-divider {
+    margin: 5rem 0;
+  }
+
+  &-heading {
+    letter-spacing: -0.05rem;
+  }
+}
+
+// Media Queries
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+    color: #AC261E;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
