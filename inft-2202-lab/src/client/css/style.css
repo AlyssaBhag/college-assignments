@@ -1,0 +1,240 @@
+/* Alyssa Bhagwandin - General Style Sheet */
+/* Filename: style.css
+   Course: INFT 2202
+   Date: January 8th, 2024
+   Description: General styles for the website */
+
+/* GLOBAL STYLES -------------------------------------------------- */
+body {
+  padding-top: 90px;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+  display: flex;
+  flex-direction: column;
+  font-family: 'Comic Neue', cursive;
+  background-color: #fdf6f9;
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  flex: 1; /* Push footer to the bottom */
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* CAROUSEL STYLES -------------------------------------------------- */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 545px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.carousel-inner .carousel-item:nth-child(2) img {
+  object-position: center 70%;
+  transform: scale(1.00);
+  transition: transform 0.3s ease;
+}
+
+.carousel-inner .carousel-item:nth-child(3) img {
+  object-position: center 34%;
+}
+
+.carousel-inner .carousel-item:nth-child(4) img {
+  object-position: center 90%;
+}
+
+.carousel-caption {
+  z-index: 10;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Improve text readability */
+}
+
+.carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+  top: 70%;
+  color: #d7e2fb;
+}
+
+.carousel-inner .carousel-item:nth-child(2) .carousel-caption {
+  top: 68%;
+  color: #d7e2fb;
+}
+
+.carousel-inner .carousel-item:nth-child(3) .carousel-caption {
+  top: 15%;
+  color: #d7e2fb;
+}
+
+.carousel-inner .carousel-item:nth-child(4) .carousel-caption {
+  top: 10%;
+  color: #d7e2fb;
+}
+
+/* MARKETING CONTENT -------------------------------------------------- */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* FEATURETTES -------------------------------------------------- */
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  letter-spacing: -0.05rem;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+    color: #AC261E;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* NAVBAR STYLES -------------------------------------------------- */
+.custom-navbar {
+  background-color: #1FC8DB;
+  color: white;
+}
+
+.custom-navbar .nav-link {
+  font-family: 'VT323', monospace;
+  font-size: 1.6rem;
+}
+
+.custom-navbar .nav-link-home {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #7E1CC0;
+  font-size: 1.7rem;
+}
+
+.custom-navbar .navbar-brand {
+  font-family: 'VT323', monospace;
+  font-size: 2.7rem;
+  color: #b00466;
+  display: flex;
+  align-items: center;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #7E1CC0;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 1rem;
+}
+
+/* ADDITIONAL STYLES -------------------------------------------------- */
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.custom-text-color {
+  color: #4194AC;
+}
+
+.custom-btn {
+  background-color: #1FC8DB !important;
+  border-color: #1FC8DB !important;
+  color: white !important;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-purple {
+  background-color: #9146FF !important; /* Twitch purple */
+  color: white !important;
+  border: none !important;
+}
+
+.btn-purple:hover {
+  background-color: #772ce8 !important; /* Slightly darker purple for hover effect */
+  color: white !important;
+}
+
+
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 500px;
+  height: 300px;
+  border-radius: 40px;
+  margin-left: 10%;
+}
+
+#pagination-container {
+  display: block !important;
+}
+
+.text-name-games {
+  color: #258893 !important;
+}
+
+.btn-cart {
+  background-color: #772ce8 !important; /* Slightly darker purple for hover effect */
+  color: #ffffff !important;
+}
+
+.custom-btns {
+  background-color: #df469d !important;
+  border-color: #d83491 !important;
+  color: white !important;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
