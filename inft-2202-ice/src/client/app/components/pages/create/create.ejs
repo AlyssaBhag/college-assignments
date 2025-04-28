@@ -1,0 +1,50 @@
+<!-- Begin page content -->
+	<main class="flex-shrink-0">
+        <div class="container mt-5">
+            <h1>Create New Animal</h1>
+            <form id="create-animal-form">
+                <div class="mb-3">
+                    <label for="animalName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="animalName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="animalBreed" class="form-label">Breed</label>
+                    <input type="text" class="form-control" id="animalBreed" required>
+                </div>
+                <div class="mb-3">
+                    <label for="animalEyes" class="form-label">Number of Eyes</label>
+                    <input type="number" class="form-control" id="animalEyes" required>
+                </div>
+                <div class="mb-3">
+                    <label for="animalLegs" class="form-label">Number of Legs</label>
+                    <input type="number" class="form-control" id="animalLegs" required>
+                </div>
+                <div class="mb-3">
+                    <label for="animalSound" class="form-label">Sound</label>
+                    <input type="text" class="form-control" id="animalSound" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Animal</button>
+            </form>
+            <div id="message-box" class="alert alert-info mt-3 d-none">
+                <span id="message-text"></span>
+            </div>
+        </div>
+    </main>
+    
+      <!-- Modal -->
+      <div class="modal fade" id="SuccessModal" tabindex="-1" aria-labelledby="SuccessModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Animal Created 🎉🥳</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Your animal has been created successfully!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="modal-ok-btn">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
