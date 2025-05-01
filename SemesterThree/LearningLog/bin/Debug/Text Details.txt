@@ -1,0 +1,18 @@
+
+ Today's Date: 2024-11-16 5:13:10 PM,
+ Wellness Level: 3,
+ Quality Level: 3,
+ ID Number: 1,
+ Text: mfghtgdf,
+
+ Today's Date: 2024-11-16 5:18:59 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 1,
+ Text: ,
+
+ Today's Date: 2024-11-16 5:23:20 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 1,
+ Text: hi thereeeeeeeeeeeeeee,

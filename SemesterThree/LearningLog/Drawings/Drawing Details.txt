@@ -1,0 +1,311 @@
+
+ Today's Date: 2024-11-16 6:36:53 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 3,
+
+ Today's Date: 2024-11-16 6:38:41 PM,
+ Wellness Level: 3,
+ Quality Level: 3,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-16 6:51:41 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 3,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-16 7:06:55 PM,
+ Wellness Level: 6,
+ Quality Level: 4,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-16 7:09:11 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-16 9:27:02 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 13,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-16 9:30:25 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 7,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-16 9:47:54 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 7,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-16 10:03:32 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-18 11:13:55 AM,
+ Wellness Level: 3,
+ Quality Level: 0,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-18 7:19:00 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 3,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-18 7:43:28 PM,
+ Wellness Level: 2,
+ Quality Level: 5,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-18 7:48:04 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing00.png
+
+ Today's Date: 2024-11-18 7:57:08 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:02:27 PM,
+ Wellness Level: 1,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:02:55 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:04:34 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:06:50 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:09:03 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:19:37 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:24:41 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:25:29 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:26:30 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:27:50 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:29:44 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:30:28 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 19,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:30:29 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 21,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:36:46 PM,
+ Wellness Level: 4,
+ Quality Level: 1,
+ ID Number: 3,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:38:13 PM,
+ Wellness Level: 2,
+ Quality Level: 1,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:38:45 PM,
+ Wellness Level: 3,
+ Quality Level: 1,
+ ID Number: 15,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:38:48 PM,
+ Wellness Level: 3,
+ Quality Level: 1,
+ ID Number: 17,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:38:51 PM,
+ Wellness Level: 3,
+ Quality Level: 1,
+ ID Number: 19,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:38:55 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 21,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:39:45 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 41,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:39:50 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 43,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:39:57 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 45,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:45:09 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:46:48 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 11,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:49:18 PM,
+ Wellness Level: 2,
+ Quality Level: 0,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:55:11 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 8:55:14 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 7,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 9:09:18 PM,
+ Wellness Level: 1,
+ Quality Level: 2,
+ ID Number: 7,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 9:09:26 PM,
+ Wellness Level: 3,
+ Quality Level: 2,
+ ID Number: 9,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 9:09:28 PM,
+ Wellness Level: 3,
+ Quality Level: 2,
+ ID Number: 11,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 9:09:31 PM,
+ Wellness Level: 3,
+ Quality Level: 2,
+ ID Number: 13,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 9:09:31 PM,
+ Wellness Level: 3,
+ Quality Level: 2,
+ ID Number: 15,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-18 9:09:31 PM,
+ Wellness Level: 3,
+ Quality Level: 2,
+ ID Number: 17,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-21 5:14:33 PM,
+ Wellness Level: 2,
+ Quality Level: 3,
+ ID Number: 7,
+ Location: C:\Users\admin\source\repos\EchoJournal\Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-22 1:19:50 PM,
+ Wellness Level: 3,
+ Quality Level: 4,
+ ID Number: 1,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-22 1:20:22 PM,
+ Wellness Level: 3,
+ Quality Level: 4,
+ ID Number: 3,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-22 1:35:29 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 4,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-23 5:36:26 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 0,
+ Location: ../../Drawings\\Drawing01.png

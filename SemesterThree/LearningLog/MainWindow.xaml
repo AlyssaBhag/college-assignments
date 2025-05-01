@@ -1,0 +1,404 @@
+﻿<Window x:Class="EchoJournal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EchoJournal"
+        mc:Ignorable="d"
+        Title="MultiMuse" Height="450" Width="430" MinHeight="470" MinWidth="420" WindowStartupLocation="CenterScreen" FontFamily="Georgia" FontSize="12px">
+
+    <Grid>
+        <Grid HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="40" MinHeight="30"/>
+            </Grid.RowDefinitions>
+
+            <DockPanel>
+
+                <Menu DockPanel.Dock="Top" Height="388" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalAlignment="Top">
+                    <MenuItem Header="_File" ToolTip="Click here for file options." >
+                        <MenuItem Header="New" Name="newFile" InputGestureText="Ctrl+N" ToolTip="Click here to make a new file." Click="NewFile_Click"/>
+                        <MenuItem Header="_Open File">
+                            <MenuItem Header="Load Txt" Name="txtLoad" InputGestureText="Ctrl+T" ToolTip="This currntly doesnt work but it saves automatically when you press save anyway."/>
+                            <MenuItem Header="Load Xml" Name="xmlLoad" InputGestureText="Ctrl+M" Click="OpenFile_Click" ToolTip="Click here to load to a XML."/>
+                            <MenuItem Header="Load Json" Name="jsonLoad" InputGestureText="Ctrl+L" Click="OpenFile_Click" ToolTip="Click here to load to a JSON."/>
+                        </MenuItem>
+                        <MenuItem Header="Sa_ve As" Name="saveFile" ToolTip="Click here to see the options of saving.">
+                            <MenuItem Header="Save As XML" Name="xmlSave" InputGestureText="Ctrl+X" Click="SaveAs_Click" ToolTip="Click here to save as a JSON"/>
+                            <MenuItem Header="Save As Json" Name="jsonSave" InputGestureText="Ctrl+J" Click="SaveAs_Click" ToolTip="Click here to save as a JSON"/>
+                        </MenuItem>
+                        <Separator/>
+                        <MenuItem Header="Exit" Name="exitFile" Click="ExitFile_Click" InputGestureText="Alt+F4" ToolTip="Click here to exit."/>
+                    </MenuItem>
+                    <MenuItem Header="Ed_it" ToolTip="Click here for edit options.">
+                        <MenuItem Header="Cut" Name="cutEdit" Click="CutEdit_Click" InputGestureText="Alt+X" ToolTip="Click here to cut your highlighted words."/>
+                        <MenuItem Header="Copy" Name="copyEdit" Click="CopyEdit_Click" InputGestureText="Alt+C" ToolTip="Click here to copy your highlighted words."/>
+                        <MenuItem Header="Paste" Name="pasteEdit" Click="PasteEdit_Click" InputGestureText="Alt+V" ToolTip="Click here to paste."/>
+                        <MenuItem Header="Select All" Name="selectEdit" Click="SelectEdit_Click" InputGestureText="Ctrl+S" ToolTip="Click here to select all words in the text box."/>
+                        <MenuItem Header="Delete" Name="deleteEdit" Click="DeleteEdit_Click" InputGestureText="Ctrl+D" ToolTip="Click here to delete your highlighted words."/>
+                    </MenuItem>
+                    <MenuItem Header="_Help" ToolTip="Click here for help options.">
+                        <MenuItem Header="About" Name="aboutHelp" Click="AboutHelp_Click" InputGestureText="F1" ToolTip="Click here to get help."/>
+                        <MenuItem Header="How To Use" Name="howHelp" Click=" HowHelp_Click" InputGestureText="F2" ToolTip="Click here to learn how to use the program."/>
+                    </MenuItem>
+                </Menu>
+            </DockPanel>
+
+            <TabControl Name="audioTab" SelectionChanged="SummaryTabChange" Margin="0,27,0,0" HorizontalAlignment="Left">
+                <!-- The entry tab. -->
+                <TabItem x:Name="tabAudio" Header="_Audio Entry" ToolTip="Click here to switch to the audio tab." TabIndex="0">
+                    <Grid HorizontalAlignment="Center" Margin="0,0,7,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*" MinHeight="50"/>
+                            <RowDefinition Height="1*" MinHeight="40"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="3*" MinHeight="50"/>
+                            <RowDefinition Height="1*" MinHeight="50"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Record button -->
+                        <Button x:Name="buttonRecord" Grid.Column="0" Grid.Row="0" Width="120" Margin="5,5,0,5" ToolTip="Click here to start the recording!" TabIndex="5" Click="ButtonRecord_Click" HorizontalAlignment="Left">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+
+                                <Label x:Name="labelRecordIcon" FontFamily="Segoe UI Symbol" FontSize="20" Content="&#xE1D6;" Grid.Column="0" HorizontalAlignment="Right"/>
+                                <Label x:Name="labelRecordText" Content="_Record" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"/>
+
+                            </Grid>
+                        </Button>
+
+                        <!-- Playback button -->
+                        <Button x:Name="buttonPlay" Grid.Column="1" Grid.Row="0" Width="120" Margin="5,5,0,5" IsEnabled="False" ToolTip="Click here to playback the recording!" TabIndex="6" Click="ButtonPlay_Click" HorizontalAlignment="Left" >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+
+                                <Label FontFamily="Segoe UI Symbol" FontSize="20" Content="&#xE102;" Grid.Column="0" HorizontalAlignment="Right"/>
+                                <Label x:Name="labelPlayText" Content="_Play" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"/>
+
+                            </Grid>
+                        </Button>
+
+                        <!-- Delete button -->
+                        <Button x:Name="buttonDeleteAudio" Grid.Column="2" Grid.Row="0" Width="120" Margin="5,5,0,5" IsEnabled="False" ToolTip="Click here to delete the recording!" TabIndex="7" Click="ButtonDeleteAudio_Click" HorizontalAlignment="Left" >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+
+                                <Label FontFamily="Segoe UI Symbol" FontSize="20" Content="&#xE107;" Grid.Column="0" HorizontalAlignment="Right"/>
+                                <Label x:Name="labelDeleteText" Content="_Delete" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"/>
+
+                            </Grid>
+                        </Button>
+
+                        <!-- Row 1. Combo boxes for the quality/mood. -->
+                        <Label x:Name="labelMoodAudio" Content="Wellness/Mood" Margin="20,20,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Grid.ColumnSpan="2" Height="28.18"/>
+                        <ComboBox x:Name="comboWellnessSliderAudio" Margin="9,51,0,0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="8" ToolTip="Select your mood (From 1-6)." Width="145" Grid.RowSpan="2" HorizontalAlignment="Left" Grid.ColumnSpan="2" FontSize="11.5" >
+                            <ComboBoxItem Content="1 - Average/Neutral"/>
+                            <ComboBoxItem Content="2 - Calm"/>
+                            <ComboBoxItem Content="3 - Happy/Excited"/>
+                            <ComboBoxItem Content="4 - Anxious/Frustrated"/>
+                            <ComboBoxItem Content="5 - Tired"/>
+                            <ComboBoxItem Content="6 - Angry"/>
+                        </ComboBox>
+
+                        <Label x:Name="labelQualityAudio" Content="Quality" HorizontalAlignment="Right" Margin="0,20,51,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="2" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                        <ComboBox x:Name="comboQualitySliderAudio" Margin="96,51,0,0" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" TabIndex="9" ToolTip="Select the quality of your audio." Grid.RowSpan="2" Grid.Row="1" MinWidth="133" HorizontalAlignment="Left" Grid.ColumnSpan="2" Width="145" FontSize="11.5">
+                            <ComboBoxItem Content="1 - Awful Quality"/>
+                            <ComboBoxItem Content="2 - Low Quality"/>
+                            <ComboBoxItem Content="3 - Neutral"/>
+                            <ComboBoxItem Content="4 - Good Quality"/>
+                            <ComboBoxItem Content="5 - Amazing Quality"/>
+                        </ComboBox>
+
+                        <!-- Row 2. Just the notes label. -->
+                        <Label x:Name="labelNotes" Content="_Notes:" Grid.Column="1" Grid.Row="2" Target="{Binding ElementName=textNotes}" VerticalAlignment="Center" FontSize="16" Height="34" RenderTransformOrigin="0.635,0.181" HorizontalAlignment="Center" Width="56"/>
+
+                        <!-- Row 3. Just the big textbox. -->
+                        <TextBox x:Name="textNotes"  Grid.ColumnSpan="3" Grid.Row="3" Margin="5,5,0,5" ToolTip="Enter any notes about today's entry" TabIndex="10" AutomationProperties.AcceleratorKey="Ctrl + T" />
+
+                        <!-- Row 4. Just the save button. -->
+                        <Button x:Name="buttonSaveAudio" Grid.Column="1" Grid.Row="4" Width="120" Margin="5,0,0,0" IsEnabled="False" ToolTip="Click to finalize and save this recording!" TabIndex="9" Click="ButtonSaveAudio_Click" Height="46" VerticalAlignment="Center" HorizontalAlignment="Left" >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+
+                                <Label FontFamily="Segoe UI Symbol" FontSize="20" Content="&#xE105;" Grid.Column="0" HorizontalAlignment="Right"/>
+                                <Label Content="_Save" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"/>
+
+                            </Grid>
+                        </Button>
+
+                    </Grid>
+                </TabItem>
+                <!-- ________________________________________________________________________________________________________________________________________________________________-->
+                <!-- The text tab. -->
+                <TabItem x:Name="textTab" Header="_Text Entry" ToolTip="Click here to switch to the text tab." TabIndex="1" Height="19.6333333333333" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Top">
+                    <TabControl SelectionChanged="SummaryTabChange" Height="356" Width="405" HorizontalAlignment="Center" VerticalContentAlignment="Top" HorizontalContentAlignment="Stretch">
+                        <Grid Height="353" Margin="3,0,0,0" HorizontalAlignment="Center" Width="397" VerticalAlignment="Top">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="56"/>
+                                <RowDefinition Height="34"/>
+                                <RowDefinition Height="39"/>
+                                <RowDefinition Height="224"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0"/>
+                                <ColumnDefinition Width="159"/>
+                                <ColumnDefinition Width="97"/>
+                                <ColumnDefinition Width="152"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- The save button. -->
+                            <Button x:Name="buttonSaveText" Grid.Column="1" Grid.Row="0" ToolTip="Click to finalize and save this text file!" TabIndex="11" Click="ButtonSaveText_Click" Width="120" HorizontalAlignment="Center" Height="46" VerticalAlignment="Center" >
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label FontFamily="Segoe UI Symbol" FontSize="20" Content="&#xE105;" Grid.Column="0" HorizontalAlignment="Right"/>
+                                    <Label Content="_Save" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"/>
+
+                                </Grid>
+                            </Button>
+
+                            <!-- Delete button -->
+                            <Button x:Name="buttonDeleteText" Grid.Row="0" ToolTip="Click here to delete the text file!" TabIndex="12" Click="ButtonDeleteText_Click" Grid.Column="3" HorizontalAlignment="Center" Width="120" Height="46" VerticalAlignment="Center" >
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label FontFamily="Segoe UI Symbol" FontSize="20" Content="&#xE107;" Grid.Column="0" HorizontalAlignment="Right"/>
+                                    <Label x:Name="labelDeleteText2" Content="_Delete" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"/>
+
+                                </Grid>
+                            </Button>
+
+
+                            <!-- Row 1. Combo boxes for the quality/mood. -->
+                            <Label x:Name="labelMood2" Content="Wellness/Mood" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="28" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Width="122" Grid.Row="1"/>
+                            <ComboBox x:Name="comboWellnessSliderText" TabIndex="13" ToolTip="Select your mood (From 1-6)." Width="146" HorizontalAlignment="Left" FontSize="11.5" Grid.Row="2" HorizontalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Height="30" Margin="10,0,0,0" VerticalContentAlignment="Center" Grid.ColumnSpan="2" >
+                                <ComboBoxItem Content="1 - Average/Neutral"/>
+                                <ComboBoxItem Content="2 - Calm"/>
+                                <ComboBoxItem Content="3 - Happy/Excited"/>
+                                <ComboBoxItem Content="4 - Anxious/Frustrated"/>
+                                <ComboBoxItem Content="5 - Tired"/>
+                                <ComboBoxItem Content="6 - Angry"/>
+                            </ComboBox>
+
+                            <Label x:Name="labelQuality2" Content="Quality" FontSize="16" Grid.Column="3" Height="28" Width="62" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
+                            <ComboBox x:Name="comboQualitySliderText" TabIndex="14" ToolTip="Select the quality of your text file." Height="30" VerticalAlignment="Center" MinWidth="133" HorizontalAlignment="Left" Width="144" FontSize="11.5" Grid.Row="2" Grid.Column="2" Margin="93,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="2">
+                                <ComboBoxItem Content="1 - Awful Quality"/>
+                                <ComboBoxItem Content="2 - Low Quality"/>
+                                <ComboBoxItem Content="3 - Neutral"/>
+                                <ComboBoxItem Content="4 - Good Quality"/>
+                                <ComboBoxItem Content="5 - Amazing Quality"/>
+                            </ComboBox>
+
+                            <TextBox x:Name="textEntry" HorizontalAlignment="Left" Margin="4,0,0,0" Grid.Row="3" TextWrapping="Wrap" Width="388" Grid.Column="1" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Visible" Height="200" VerticalAlignment="Center" Grid.ColumnSpan="3" TabIndex="15"/>
+
+
+                        </Grid>
+                    </TabControl>
+                </TabItem>
+
+                <!-- hi_______________________________________________________________________________________________________________________________________________________________________________________________ -->
+                <!-- The Image tab. -->
+                <TabItem x:Name="drawTab" Header="Drawi_ng Entry" ToolTip="Click here to switch to the drawing tab." TabIndex="2" HorizontalAlignment="Center" HorizontalContentAlignment="Center">
+                    <TabControl SelectionChanged="SummaryTabChange" >
+                        <Grid HorizontalAlignment="Center" Width="386" Height="359" VerticalAlignment="Top">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="57*"/>
+                                <RowDefinition Height="34*"/>
+                                <RowDefinition Height="266*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0*"/>
+                                <ColumnDefinition Width="159*"/>
+                                <ColumnDefinition Width="97*"/>
+                                <ColumnDefinition Width="152*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- The save button. -->
+                            <Button x:Name="buttonSaveDraw" Width="120" ToolTip="Click to finalize and save this drawing!" TabIndex="16" Click="ButtonSaveDraw_Click" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" IsEnabled="False" >
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label FontFamily="Segoe UI Symbol" FontSize="20" Content="&#xE105;" Grid.Column="0" HorizontalAlignment="Right"/>
+                                    <Label Content="_Save" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"/>
+
+                                </Grid>
+                            </Button>
+
+                            <!-- Delete button -->
+                            <Button x:Name="buttonDeleteDraw" ToolTip="Click here to delete the drawing!" TabIndex="17" Click="ButtonDeleteDraw_Click" Grid.Column="3" Height="46" HorizontalAlignment="Center" Width="120" VerticalAlignment="Top" >
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label FontFamily="Segoe UI Symbol" FontSize="20" Content="&#xE107;" Grid.Column="0" HorizontalAlignment="Right"/>
+                                    <Label x:Name="labelDeleteText3" Content="_Delete" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"/>
+
+                                </Grid>
+                            </Button>
+
+
+                            <!-- Row 1. Combo boxes for the quality/mood. -->
+                            <Label x:Name="labelMood3" Content="Wellness/Mood" VerticalAlignment="Center" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="28" Grid.Row="1" HorizontalAlignment="Center" Grid.Column="1"/>
+                            <ComboBox x:Name="comboWellnessSliderDraw" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="18" ToolTip="Select your mood (From 1-6)." Width="146" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" FontSize="11.5" Grid.Row="2" Grid.Column="1" Margin="0,2,0,0" IsTabStop="False" >
+                                <ComboBoxItem Content="1 - Average/Neutral"/>
+                                <ComboBoxItem Content="2 - Calm"/>
+                                <ComboBoxItem Content="3 - Happy/Excited"/>
+                                <ComboBoxItem Content="4 - Anxious/Frustrated"/>
+                                <ComboBoxItem Content="5 - Tired"/>
+                                <ComboBoxItem Content="6 - Angry"/>
+                            </ComboBox>
+
+                            <Label x:Name="labelQuality3" Content="Quality" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="3" Height="28" Width="62" Grid.Row="1"/>
+                            <ComboBox x:Name="comboQualitySliderDraw" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" TabIndex="19" ToolTip="Select the quality of your audio." Height="30" VerticalAlignment="Top" MinWidth="133" HorizontalAlignment="Center" Width="144" FontSize="11.5" Grid.Column="3" Grid.Row="2" Margin="0,2,0,0">
+                                <ComboBoxItem Content="1 - Awful Quality"/>
+                                <ComboBoxItem Content="2 - Low Quality"/>
+                                <ComboBoxItem Content="3 - Neutral"/>
+                                <ComboBoxItem Content="4 - Good Quality"/>
+                                <ComboBoxItem Content="5 - Amazing Quality"/>
+                            </ComboBox>
+
+                            <DockPanel Grid.ColumnSpan="4" LastChildFill="False" Grid.Row="2" Margin="0,37,0,0">
+
+                                <!-- Menu bar im not adding this now....-->
+                                <!-- ToolBar -->
+                                <ToolBar DockPanel.Dock="Top" Height="23" ToolTip="Click here to start erasing." TabIndex="21">
+                                    <Button Content="Draw" Name="draw" ToolTip="Click here to start drawing." Width="237" Click="StartDrawing_Click" TabIndex="20" />
+                                    <Button Content="Erase" Name="erase" ToolTip="Erase drawing" Width="60" Click="StartEraseDrawing_Click"/>
+                                </ToolBar>
+                                <!-- Canvas for drawing. -->
+                                <Canvas Name="canvasDraw" Background="White" Margin="2" MouseLeftButtonDown="BeginDrawing"  MouseMove="MouseOnCanvas" Width="1019" Height="1052"/>
+
+                            </DockPanel>
+                        </Grid>
+                    </TabControl>
+                </TabItem>
+
+
+                <!-- The Summary tab. -->
+                <TabItem x:Name="tabSummary" Header="S_ummary" ToolTip="Click here to switch to the summary tab." TabIndex="3" HorizontalAlignment="Center" HorizontalContentAlignment="Center">
+                    <TabControl SelectionChanged="SummaryTabChange">
+                        <Grid HorizontalAlignment="Center" Width="416" Height="356" VerticalAlignment="Top">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="53*"/>
+                                <RowDefinition Height="99*"/>
+                                <RowDefinition Height="105*"/>
+                                <RowDefinition Height="99*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label x:Name="numberOfEntryLabel" Content="# of &#xD;&#xA;Entries: " HorizontalAlignment="Left" VerticalAlignment="Center" Height="54" Width="80" FontFamily="Georgia" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,0,0,0" Grid.Row="1"/>
+
+                            <Label x:Name="firstEntryLabel" Content="First &#xD;&#xA;Entry: " HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center" Height="54" Width="70" FontFamily="Georgia" FontSize="20" Margin="10,0,0,0" RenderTransformOrigin="0.778,0.726"/>
+
+                            <Label x:Name="newestEntryLabel" Content="Newest&#xD;&#xA; Entry: " HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Height="54" Width="82" FontFamily="Georgia" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="4,10,0,0"/>
+
+
+                            <TextBox x:Name="numberOfEntryAudioTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="96" Height="78" RenderTransformOrigin="0.138,0.277" FontSize="22" IsReadOnly="True" BorderThickness="0,0,0,0" Grid.Column="1" Grid.Row="1" ToolTip="Number of audio entries."/>
+                            <TextBox x:Name="firstEntryAudioTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="96" Height="104" RenderTransformOrigin="0.138,0.277" FontSize="22" IsReadOnly="True" BorderThickness="0,0,0,0" Grid.Row="2" Grid.Column="1" ToolTip="First audio entry."/>
+                            <TextBox x:Name="newestEntryAudioTextBox" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="96" Height="80" RenderTransformOrigin="0.138,0.277" FontSize="22" IsReadOnly="True" BorderThickness="0,0,0,0" Grid.Column="1" ToolTip="Newest audio entry.">
+                                <TextBox.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform AngleX="0"/>
+                                        <RotateTransform/>
+                                        <TranslateTransform X="0"/>
+                                    </TransformGroup>
+                                </TextBox.RenderTransform>
+                            </TextBox>
+
+                            <TextBox x:Name="numberOfEntryTextTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="96" Height="78" RenderTransformOrigin="0.138,0.277" FontSize="22" IsReadOnly="True" BorderThickness="0,0,0,0" Grid.Column="2" Grid.Row="1" ToolTip="Number of text entries."/>
+                            <TextBox x:Name="firstEntryTextTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="96" Height="100" RenderTransformOrigin="0.138,0.277" FontSize="22" IsReadOnly="True" BorderThickness="0,0,0,0" Grid.Column="2" Grid.Row="3" ToolTip="Newest text entry."/>
+                            <TextBox x:Name="newestEntryTextTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="96" Height="84" RenderTransformOrigin="0.138,0.277" FontSize="22" IsReadOnly="True" BorderThickness="0,0,0,0" Grid.Column="2" Grid.Row="2" ToolTip="First text entry."/>
+                            <TextBox x:Name="numberOfEntryDrawingTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="95" Height="78" RenderTransformOrigin="0.138,0.277" FontSize="22" IsReadOnly="True" BorderThickness="0,0,0,0" Grid.Column="3" Grid.Row="1" Margin="10,0,0,0" ToolTip="Number of drawing entries."/>
+                            <TextBox x:Name="firstEntryDrawingTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="96" Height="85" RenderTransformOrigin="0.138,0.277" FontSize="22" IsReadOnly="True" BorderThickness="0,0,0,0" Grid.Column="3" Grid.Row="2" ToolTip="First drawing entry."/>
+                            <TextBox x:Name="newestEntryDrawingTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="96" Height="100" RenderTransformOrigin="0.138,0.277" FontSize="22" IsReadOnly="True" BorderThickness="0,0,0,0" Grid.Column="3" Grid.Row="3" ToolTip="Newest drawing entry."/>
+
+
+                            <Label x:Name="titleLabel" Content="Summary Entire Log" VerticalAlignment="Top" Height="37" FontFamily="Georgia" FontSize="24" HorizontalAlignment="Left" Width="230" Grid.ColumnSpan="4" Margin="93,6,0,0"/>
+                            <Rectangle x:Name="decor" HorizontalAlignment="Left" Height="1" Margin="16,45,0,0" Stroke="Black" VerticalAlignment="Top" Width="382" Grid.ColumnSpan="4"/>
+
+                        </Grid>
+                    </TabControl>
+                </TabItem>
+
+                <!-- The list tab. -->
+                <TabItem x:Name="tabList" Header="_List" ToolTip="Click here to switch to the list tab." TabIndex="4" HorizontalAlignment="Center">
+                    <TabControl Width="411" Height="360" RenderTransformOrigin="0.5,0.5">
+
+                        <Grid Height="290">
+                            <ListView Name="LogListView" Margin="1,-33,0,51" RenderTransformOrigin="0.5,0.5" >
+                                <ListView.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform AngleX="0.633"/>
+                                        <RotateTransform/>
+                                        <TranslateTransform X="0.989"/>
+                                    </TransformGroup>
+                                </ListView.RenderTransform>
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Header="ID #" DisplayMemberBinding="{Binding Id}" Width="50"/>
+                                        <GridViewColumn Header="Wellness" DisplayMemberBinding="{Binding Wellness}" Width="80"/>
+                                        <GridViewColumn Header="Quality" DisplayMemberBinding="{Binding Quality}" Width="80"/>
+                                        <GridViewColumn Header="Notes" DisplayMemberBinding="{Binding Notes}" Width="70"/>
+                                        <GridViewColumn Header="Location" DisplayMemberBinding="{Binding Location}" Width="90"/>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+
+                            <Button Content="_Edit" Name="editButtonList" Margin="0,249,216,0" Width="75" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Height="39" VerticalAlignment="Top" Click="EditButton_Click" ToolTip="Click here to edit a older file." />
+                            <Button Content="_Delete" Name="deleteButtonList" Width="75" Margin="320,249,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="39" VerticalAlignment="Top" Click="DeleteButton_Click" ToolTip="Click here to delete a entry."/>
+                            <Button Content="L_oad" Name="loadButtonList" Width="75" Margin="10,249,0,0" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Click="LoadButton_Click" ToolTip="Click here to load a older file."/>
+                            <Button Content="_Save" x:Name="SaveButtonList" Margin="0,249,110,0" Width="74" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Height="39" VerticalAlignment="Top" Click="SaveAs_Click" ToolTip="Click here to save a file." />
+                        </Grid>
+                    </TabControl>
+                </TabItem>
+            </TabControl>
+
+            <!-- The status bar. -->
+            <StatusBar Grid.Row="1" >
+                <StatusBarItem x:Name="statusState" ToolTip="Here will display your status." VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" />
+            </StatusBar>
+
+        </Grid>
+    </Grid>
+</Window>
+
+    
+    

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfLogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogEntry xsi:type="TextLogEntry">
+    <Id>0</Id>
+    <EntryDate>2024-11-30T12:28:11.4399841-05:00</EntryDate>
+    <Wellness>2</Wellness>
+    <Quality>5</Quality>
+    <Name>Maxon</Name>
+    <Text>ive realized i cant test properly because I was just saving empty things this whole time</Text>
+  </LogEntry>
+</ArrayOfLogEntry>

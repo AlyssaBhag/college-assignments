@@ -1,0 +1,248 @@
+
+ Today's Date: 2024-11-16 5:38:46 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: sdasda,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241116_01.wav
+
+ Today's Date: 2024-11-16 5:39:53 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: ht,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241116.wav
+
+ Today's Date: 2024-11-16 7:06:32 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: dasdsd,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241116_00.wav
+
+ Today's Date: 2024-11-16 7:09:04 PM,
+ Wellness Level: 3,
+ Quality Level: 3,
+ Notes: asdSD,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241116_01.wav
+
+ Today's Date: 2024-11-16 9:26:42 PM,
+ Wellness Level: 1,
+ Quality Level: 4,
+ Notes: qawdf,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241116_02.wav
+
+ Today's Date: 2024-11-16 9:30:00 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ Notes: adfds,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241116_03.wav
+
+ Today's Date: 2024-11-16 9:47:49 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ Notes: aszdasdd,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241116_04.wav
+
+ Today's Date: 2024-11-16 9:54:18 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: ews,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241116_06.wav
+
+ Today's Date: 2024-11-16 9:57:43 PM,
+ Wellness Level: 2,
+ Quality Level: 1,
+ Notes: sad,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241116_07.wav
+
+ Today's Date: 2024-11-16 10:02:33 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ Notes: hgbtde ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241116_10.wav
+
+ Today's Date: 2024-11-18 6:37:35 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ Notes: ki,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118.wav
+
+ Today's Date: 2024-11-18 7:13:17 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: op0,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_01.wav
+
+ Today's Date: 2024-11-18 7:19:12 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_03.wav
+
+ Today's Date: 2024-11-18 7:42:45 PM,
+ Wellness Level: 6,
+ Quality Level: 5,
+ Notes: Hello thereeeee. This is the last test hopefully for assignment 4!,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_04.wav
+
+ Today's Date: 2024-11-18 7:47:57 PM,
+ Wellness Level: 2,
+ Quality Level: 4,
+ Notes: hbj,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_05.wav
+
+ Today's Date: 2024-11-18 7:48:22 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_06.wav
+
+ Today's Date: 2024-11-18 7:56:50 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: Hi,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_07.wav
+
+ Today's Date: 2024-11-18 8:00:45 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ Notes: OLOLOOLOLOLOLOLOL,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_08.wav
+
+ Today's Date: 2024-11-18 8:02:47 PM,
+ Wellness Level: 1,
+ Quality Level: 2,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_09.wav
+
+ Today's Date: 2024-11-18 8:06:35 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_10.wav
+
+ Today's Date: 2024-11-18 8:08:51 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_11.wav
+
+ Today's Date: 2024-11-18 8:09:58 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_12.wav
+
+ Today's Date: 2024-11-18 8:19:16 PM,
+ Wellness Level: 6,
+ Quality Level: 1,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_14.wav
+
+ Today's Date: 2024-11-18 8:24:15 PM,
+ Wellness Level: 6,
+ Quality Level: 1,
+ Notes: s,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_15.wav
+
+ Today's Date: 2024-11-18 8:27:30 PM,
+ Wellness Level: 6,
+ Quality Level: 1,
+ Notes: poink pony,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_16.wav
+
+ Today's Date: 2024-11-18 8:29:57 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_17.wav
+
+ Today's Date: 2024-11-18 8:30:20 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_18.wav
+
+ Today's Date: 2024-11-18 8:36:25 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_19.wav
+
+ Today's Date: 2024-11-18 8:38:21 PM,
+ Wellness Level: 3,
+ Quality Level: 3,
+ Notes: asdsd,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_20.wav
+
+ Today's Date: 2024-11-18 8:38:27 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_21.wav
+
+ Today's Date: 2024-11-18 8:45:43 PM,
+ Wellness Level: 2,
+ Quality Level: 1,
+ Notes: hgjc,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_22.wav
+
+ Today's Date: 2024-11-18 8:45:59 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_23.wav
+
+ Today's Date: 2024-11-18 8:54:14 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ Notes: Hello, i am losing my sanity,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_24.wav
+
+ Today's Date: 2024-11-18 9:08:33 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: big boy,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_25.wav
+
+ Today's Date: 2024-11-18 9:09:41 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241118_26.wav
+
+ Today's Date: 2024-11-21 5:14:11 PM,
+ Wellness Level: 1,
+ Quality Level: 2,
+ Notes: hi,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241121.wav
+
+ Today's Date: 2024-11-22 1:22:27 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: hello1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241122.wav
+
+ Today's Date: 2024-11-22 1:22:54 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241122_00.wav
+
+ Today's Date: 2024-11-22 1:24:45 PM,
+ Wellness Level: 2,
+ Quality Level: 1,
+ Notes: tester1,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241122_01.wav
+
+ Today's Date: 2024-11-22 1:34:48 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: npo,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241122_02.wav
+
+ Today's Date: 2024-11-23 2:52:59 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: fsdgdfg,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241123_03.wav

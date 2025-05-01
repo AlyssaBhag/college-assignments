@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "EntryDate": "2024-11-30T21:15:10.3438754-05:00",
+    "Wellness": 1,
+    "Quality": 1,
+    "Name": "Maxon"
+  },
+  {
+    "Id": 2,
+    "EntryDate": "2024-11-30T21:15:21.298624-05:00",
+    "Wellness": 2,
+    "Quality": 3,
+    "Name": "Maxon"
+  },
+  {
+    "Id": 3,
+    "EntryDate": "2024-11-30T21:15:42.8169052-05:00",
+    "Wellness": 0,
+    "Quality": 0,
+    "Name": "Maxon"
+  }
+]

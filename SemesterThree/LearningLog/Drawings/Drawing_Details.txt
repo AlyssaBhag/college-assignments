@@ -1,0 +1,174 @@
+
+ Today's Date: 2024-11-27 8:03:15 PM,
+ Wellness Level: 4,
+ Quality Level: 5,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-27 8:09:59 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 5:16:10 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 5:33:03 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 5:33:04 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 3,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 5:33:04 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 4,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 5:33:04 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 5,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 5:39:20 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 6:03:48 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 4,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 9:03:48 PM,
+ Wellness Level: 2,
+ Quality Level: 5,
+ ID Number: 3,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 9:17:08 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 9:20:16 PM,
+ Wellness Level: 3,
+ Quality Level: 3,
+ ID Number: 1,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 9:25:01 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 1,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 9:32:52 PM,
+ Wellness Level: 3,
+ Quality Level: 1,
+ ID Number: 1,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-29 10:26:27 PM,
+ Wellness Level: 2,
+ Quality Level: 3,
+ ID Number: 1,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 2:22:19 PM,
+ Wellness Level: 5,
+ Quality Level: 1,
+ ID Number: 0,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 3:28:34 PM,
+ Wellness Level: 4,
+ Quality Level: 2,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 3:44:15 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 4:08:43 PM,
+ Wellness Level: 2,
+ Quality Level: 3,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 4:15:39 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 4:18:05 PM,
+ Wellness Level: 6,
+ Quality Level: 5,
+ ID Number: 6,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 7:08:36 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 8:07:35 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ ID Number: 1,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 9:13:56 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 0,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 9:14:20 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 9:15:21 PM,
+ Wellness Level: 2,
+ Quality Level: 3,
+ ID Number: 2,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-11-30 9:25:37 PM,
+ Wellness Level: 2,
+ Quality Level: 1,
+ ID Number: 1,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2024-12-05 5:00:02 PM,
+ Wellness Level: 3,
+ Quality Level: 5,
+ ID Number: 0,
+ Location: ../../Drawings\\Drawing01.png
+
+ Today's Date: 2025-04-28 4:52:21 PM,
+ Wellness Level: 5,
+ Quality Level: 2,
+ ID Number: 5,
+ Location: ../../Drawings\\Drawing01.png

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ArrayOfLogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogEntry xsi:type="AudioLogEntry">
+    <Id>0</Id>
+    <EntryDate>2024-11-30T19:07:44.8303657-05:00</EntryDate>
+    <Wellness>1</Wellness>
+    <Quality>1</Quality>
+    <Name>Maxon</Name>
+    <Notes>my skin starts to burrrrrrrrrrrrrrrrrrrn. why does my skin start to burrnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</Notes>
+  </LogEntry>
+  <LogEntry xsi:type="TextLogEntry">
+    <Id>1</Id>
+    <EntryDate>2024-11-30T19:08:21.0219132-05:00</EntryDate>
+    <Wellness>1</Wellness>
+    <Quality>1</Quality>
+    <Name>Maxon</Name>
+    <Text>Capital lawwwwwwwwwwwwwwwwwwwww. Love was the law and religion was taughtttttttttt!</Text>
+  </LogEntry>
+</ArrayOfLogEntry>

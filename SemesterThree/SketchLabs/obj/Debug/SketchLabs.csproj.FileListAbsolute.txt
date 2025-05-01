@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\SketchLabs\bin\Debug\SketchLabs.exe.config
+C:\Users\admin\source\repos\SketchLabs\bin\Debug\SketchLabs.exe
+C:\Users\admin\source\repos\SketchLabs\bin\Debug\SketchLabs.pdb
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\SketchLabs.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\MainWindow.g.cs
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\App.g.cs
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\SketchLabs_MarkupCompile.cache
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\SketchLabs_MarkupCompile.lref
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\MainWindow.baml
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\SketchLabs.g.resources
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\SketchLabs.Properties.Resources.resources
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\SketchLabs.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\SketchLabs.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\SketchLabs.exe
+C:\Users\admin\source\repos\SketchLabs\obj\Debug\SketchLabs.pdb

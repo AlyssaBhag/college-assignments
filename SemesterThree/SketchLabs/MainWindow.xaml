@@ -1,0 +1,117 @@
+﻿<Window x:Class="SketchLabs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SketchLabs"
+        mc:Ignorable="d"
+        
+        Title="Sketch Labs"
+        Height="900" MinHeight="900"
+        Width="900" MinWidth="900"
+        SizeToContent="Manual"
+        WindowStartupLocation="CenterScreen">
+
+    <!-- Overall layout. -->
+    <DockPanel>
+        <!-- Menu bar or Ribbon, perhaps, at the top? Dock=Top. -->
+        <!-- The file menu part. -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File" FontSize="24">
+                <MenuItem Header="New File" Click="NewFile_Click"/>
+                <MenuItem Header="Open File" Click="OpenFile_Click"/>
+                <MenuItem Header="Save File" Click="SaveFile_Click"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="ExitFile_Click"/>
+            </MenuItem>
+            <!-- The edit menu part. -->
+            <MenuItem Header="_Edit" FontSize="24">
+                <MenuItem Header="_Cut" Click="CutEdit_Click"/>
+                <MenuItem Header="C_opy" Click="CopyEdit_Click"/>
+                <MenuItem Header="_Paste" Click="PasteEdit_Click"/>
+                <MenuItem Header="_Select All" Click="SelectEdit_Click"/>
+                <MenuItem Header="_Delete" Click="DeleteEdit_Click"/>
+            </MenuItem>
+            <!-- The about menu part. -->
+            <MenuItem Header="_Help" FontSize="24">
+                <MenuItem Header="About Sketch Labs" Click="AboutHelp_Click"/>
+                <MenuItem Header="How to draw" Click="HowHelp_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- I got this cutesy design idea from ChatGpt. This makes it nicer looking. -->
+        <StackPanel DockPanel.Dock="Top" Height="76" Width="868">
+            <Border BorderBrush="MediumOrchid" BorderThickness="3" CornerRadius="15" Height="69" Width="869" >
+                <ToolBar Width="869" Background="Lavender" BorderBrush="Plum" BorderThickness="2" RenderTransformOrigin="0.44,0.499" HorizontalAlignment="Center" Margin="0,7,0,7">
+
+                    <!-- Erase Button. -->
+                    <Button Content="✖ Erase" FontSize="20" Width="122"
+                    Background="LightCoral" Foreground="White" Click="StartErasing_Click"
+                    Height="36"/>
+
+                    <!-- Thickness ComboBox. -->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+                        <TextBlock Text="✏ Thickness: " VerticalAlignment="Center" Margin="9,0" FontSize="18" Foreground="DarkSlateBlue" Width="116" />
+                        <ComboBox x:Name="thickComboBox" Width="122" FontSize="16" SelectionChanged="ChooseThick" Background="White">
+                            <ComboBoxItem Content="Thin 🖉"/>
+                            <ComboBoxItem Content="Medium ✎"/>
+                            <ComboBoxItem Content="Thick 🖍"/>
+                            <ComboBoxItem Content="Extra Thick 🖌"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Brushes ComboBox. -->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+                        <TextBlock Text="🎨 Brush:" VerticalAlignment="Center" Margin="5,0" FontSize="18" Foreground="DarkSlateBlue" Width="78" />
+                        <ComboBox x:Name="brushComboBox" Width="123" FontSize="16" SelectionChanged="Brush_Changed" Background="White">
+                            <ComboBoxItem Content="Solid✏"/>
+                            <ComboBoxItem Content="Dashed➖"/>
+                            <ComboBoxItem Content="Dotted⚫"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Colour ComboBox. -->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+                        <TextBlock Text="🌈 Colour: " VerticalAlignment="Center" Margin="5,0" FontSize="18" Foreground="DarkSlateBlue" Width="85" />
+                        <ComboBox Name="colourComboBox" Width="123" FontSize="16" SelectionChanged="Colour_Changed" Background="White" Height="28">
+                            <ComboBoxItem Content="🖤 Black" Tag="Black"/>
+                            <ComboBoxItem Content="❤️ Red" Tag="Red"/>
+                            <ComboBoxItem Content="💜 Orange" Tag="Orange"/>
+                            <ComboBoxItem Content="💜 Yellow" Tag="Yellow"/>
+                            <ComboBoxItem Content="💚 Green" Tag="Green"/>
+                            <ComboBoxItem Content="💙 Blue" Tag="Blue"/>
+                            <ComboBoxItem Content="💜 Purple" Tag="Purple"/>
+                            <ComboBoxItem Content="💜 Pink" Tag="Pink"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!-- Shape ComboBox. -->
+
+                </ToolBar>
+            </Border>
+        </StackPanel>
+
+
+        <!-- Main content area. -->
+        <Grid Height="749">
+            <!-- Grid for layout. -->
+            <Grid.RowDefinitions>
+                <!-- Canvas for drawing. -->
+                <RowDefinition />
+                <!-- Status bar at the bottom. -->
+                <RowDefinition Height="Auto" MinHeight="2" />
+            </Grid.RowDefinitions>
+
+            <Border BorderThickness="2" BorderBrush="MediumOrchid" Margin="10,10,10,96" CornerRadius="15">
+                <!-- Canvas for drawing. -->
+                <Canvas Name="canvasDraw" Background="White" Grid.Row="0" Margin="0,8,0,0" MouseLeftButtonDown="BeginDrawing" MouseLeftButtonUp="EndDrawing" MouseMove="MouseOnCanvas" Height="550" VerticalAlignment="Top"/>
+            </Border>
+
+            <!-- Status bar, at the bottom? Dock=Bottom. -->
+            <StatusBar Height="81" Margin="0,656,0,0" RenderTransformOrigin="0.5,0.5" FontSize="20" VerticalAlignment="Top">
+                <StatusBarItem x:Name="statusState" ToolTip="Here will display your status." VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" />
+            </StatusBar>
+
+        </Grid>
+    </DockPanel>
+</Window>

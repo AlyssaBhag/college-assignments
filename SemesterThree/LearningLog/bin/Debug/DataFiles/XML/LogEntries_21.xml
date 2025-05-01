@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<ArrayOfLogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogEntry xsi:type="TextLogEntry">
+    <Id>1</Id>
+    <EntryDate>2024-11-30T21:15:10.3438754-05:00</EntryDate>
+    <Wellness>1</Wellness>
+    <Quality>1</Quality>
+    <Name>Maxon</Name>
+    <Text>this is a sfdsdf</Text>
+  </LogEntry>
+  <LogEntry xsi:type="DrawingLogEntry">
+    <Id>2</Id>
+    <EntryDate>2024-11-30T21:15:21.298624-05:00</EntryDate>
+    <Wellness>2</Wellness>
+    <Quality>3</Quality>
+    <Name>Maxon</Name>
+  </LogEntry>
+  <LogEntry xsi:type="TextLogEntry">
+    <Id>3</Id>
+    <EntryDate>2024-11-30T21:15:42.8169052-05:00</EntryDate>
+    <Wellness>0</Wellness>
+    <Quality>0</Quality>
+    <Name>Maxon</Name>
+    <Text />
+  </LogEntry>
+</ArrayOfLogEntry>

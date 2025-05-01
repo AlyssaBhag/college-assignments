@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ArrayOfLogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogEntry xsi:type="DrawingLogEntry">
+    <Id>0</Id>
+    <EntryDate>2024-11-30T14:22:19.7477972-05:00</EntryDate>
+    <Wellness>5</Wellness>
+    <Quality>1</Quality>
+    <Name>Maxon</Name>
+  </LogEntry>
+  <LogEntry xsi:type="TextLogEntry">
+    <Id>1</Id>
+    <EntryDate>2024-11-30T14:22:26.0646807-05:00</EntryDate>
+    <Wellness>5</Wellness>
+    <Quality>3</Quality>
+    <Name>Maxon</Name>
+    <Text>Testterrrrrrr</Text>
+  </LogEntry>
+</ArrayOfLogEntry>

@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\EchoJournal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|c:\\users\\admin\\source\\repos\\echojournal\\xmlfilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|solutionrelative:xmlfilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|C:\\Users\\admin\\source\\repos\\EchoJournal\\jsonfilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|solutionrelative:jsonfilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|C:\\Users\\admin\\source\\repos\\EchoJournal\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|C:\\Users\\admin\\source\\repos\\EchoJournal\\logentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|solutionrelative:logentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|C:\\Users\\admin\\source\\repos\\EchoJournal\\logdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|solutionrelative:logdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|C:\\Users\\admin\\source\\repos\\EchoJournal\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|C:\\Users\\admin\\source\\repos\\EchoJournal\\textlogentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|solutionrelative:textlogentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|C:\\Users\\admin\\source\\repos\\EchoJournal\\drawinglogentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|solutionrelative:drawinglogentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|C:\\Users\\admin\\source\\repos\\EchoJournal\\audiologentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A53F2782-9776-4521-A66D-E5F06B960821}|EchoJournal.csproj|solutionrelative:audiologentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 460,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "XMLFileManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\EchoJournal\\XMLFileManager.cs",
+              "RelativeDocumentMoniker": "XMLFileManager.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\EchoJournal\\XMLFileManager.cs",
+              "RelativeToolTip": "XMLFileManager.cs",
+              "ViewState": "AgIAACIAAADAy8zMzOwwwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T02:50:46.323Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JSONFileManager.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\EchoJournal\\JSONFileManager.cs",
+              "RelativeDocumentMoniker": "JSONFileManager.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\EchoJournal\\JSONFileManager.cs",
+              "RelativeToolTip": "JSONFileManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T02:33:08.996Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LogData.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\EchoJournal\\LogData.cs",
+              "RelativeDocumentMoniker": "LogData.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\EchoJournal\\LogData.cs",
+              "RelativeToolTip": "LogData.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAcwEYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T22:01:28.62Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LogEntry.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\EchoJournal\\LogEntry.cs",
+              "RelativeDocumentMoniker": "LogEntry.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\EchoJournal\\LogEntry.cs",
+              "RelativeToolTip": "LogEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T23:53:42.372Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\EchoJournal\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\EchoJournal\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-23T01:27:11.294Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AudioLogEntry.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\EchoJournal\\AudioLogEntry.cs",
+              "RelativeDocumentMoniker": "AudioLogEntry.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\EchoJournal\\AudioLogEntry.cs",
+              "RelativeToolTip": "AudioLogEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T22:29:32.37Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TextLogEntry.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\EchoJournal\\TextLogEntry.cs",
+              "RelativeDocumentMoniker": "TextLogEntry.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\EchoJournal\\TextLogEntry.cs",
+              "RelativeToolTip": "TextLogEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T22:30:05.81Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DrawingLogEntry.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\EchoJournal\\DrawingLogEntry.cs",
+              "RelativeDocumentMoniker": "DrawingLogEntry.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\EchoJournal\\DrawingLogEntry.cs",
+              "RelativeToolTip": "DrawingLogEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T22:30:32.929Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\EchoJournal\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\EchoJournal\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAP0DAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T01:27:10.782Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 363,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

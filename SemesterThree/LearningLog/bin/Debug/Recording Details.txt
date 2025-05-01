@@ -1,0 +1,161 @@
+
+ Today's Date: 2024-11-01 6:03:15 PM,
+ Wellness Level: 2,
+ Quality Level: 5,
+ Notes: Test 1,
+ 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241101.wav
+
+ Today's Date: 2024-11-01 6:03:31 PM,
+ Wellness Level: 2,
+ Quality Level: 4,
+ Notes: Test 2ish,
+ 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241101_00.wav
+
+ Today's Date: 2024-11-01 6:36:57 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: Hello 2,
+ 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241101_01.wav
+
+ Today's Date: 2024-11-01 6:37:08 PM,
+ Wellness Level: 2,
+ Quality Level: 4,
+ Notes: asdas,
+ 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241101_02.wav
+
+ Today's Date: 2024-11-01 7:43:46 PM,
+ Wellness Level: 2,
+ Quality Level: 5,
+ Notes: whzt,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241101_05.wav
+
+ Today's Date: 2024-11-01 8:06:39 PM,
+ Wellness Level: 1,
+ Quality Level: 2,
+ Notes: d,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241101_06.wav
+
+ Today's Date: 2024-11-01 8:08:05 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ Notes: 1,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241101_07.wav
+
+ Today's Date: 2024-11-01 8:08:34 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241101_08.wav
+
+ Today's Date: 2024-11-02 3:03:54 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: ,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241102.wav
+
+ Today's Date: 2024-11-02 3:04:12 PM,
+ Wellness Level: 2,
+ Quality Level: 3,
+ Notes: please.,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241102_00.wav
+
+ Today's Date: 2024-11-02 3:04:37 PM,
+ Wellness Level: 2,
+ Quality Level: 3,
+ Notes: hellooooooooo cameo,
+ ID Number: 2,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241102_01.wav
+
+ Today's Date: 2024-11-10 2:32:07 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: This file sucks lol,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_03.wav
+
+ Today's Date: 2024-11-10 2:35:17 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: This file sucks lol,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_04.wav
+
+ Today's Date: 2024-11-10 2:36:53 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: This file sucks lol,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_05.wav
+
+ Today's Date: 2024-11-10 2:38:00 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: This file sucks lol,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_06.wav
+
+ Today's Date: 2024-11-10 2:41:17 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: This file sucks lol,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_07.wav
+
+ Today's Date: 2024-11-10 2:46:45 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: This file sucks lol,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_08.wav
+
+ Today's Date: 2024-11-10 2:50:47 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: This file sucks lol,
+ ID Number: 0,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_09.wav
+
+ Today's Date: 2024-11-10 2:51:48 PM,
+ Wellness Level: 1,
+ Quality Level: 3,
+ Notes: This file sucks lol,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_10.wav
+
+ Today's Date: 2024-11-10 2:55:34 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ Notes: calm,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_11.wav
+
+ Today's Date: 2024-11-10 3:25:28 PM,
+ Wellness Level: 3,
+ Quality Level: 3,
+ Notes: rawr,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241110_12.wav
+
+ Today's Date: 2024-11-16 4:53:32 PM,
+ Wellness Level: 4,
+ Quality Level: 4,
+ Notes: hi,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241116.wav
+
+ Today's Date: 2024-11-16 5:38:06 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: asdasdaddasdtest,
+ ID Number: 1,
+ Location: C:\Users\admin\source\repos\EchoJournal\PlayBacks\Recording20241116_00.wav

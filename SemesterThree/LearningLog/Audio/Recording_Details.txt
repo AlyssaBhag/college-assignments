@@ -1,0 +1,42 @@
+
+ Today's Date: 2024-11-30 9:15:02 PM,
+ Wellness Level: 1,
+ Quality Level: 1,
+ Notes: texzt,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241130_31.wav
+
+ Today's Date: 2024-12-05 4:44:20 PM,
+ Wellness Level: 0,
+ Quality Level: 0,
+ Notes: ,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241205.wav
+
+ Today's Date: 2024-12-05 5:02:28 PM,
+ Wellness Level: 1,
+ Quality Level: 2,
+ Notes: llklk,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20241205_00.wav
+
+ Today's Date: 2025-04-28 4:50:23 PM,
+ Wellness Level: 2,
+ Quality Level: 2,
+ Notes: This is my first recording. I am singing,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20250428.wav
+
+ Today's Date: 2025-04-28 4:50:57 PM,
+ Wellness Level: 2,
+ Quality Level: 3,
+ Notes: First recording.,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20250428_00.wav
+
+ Today's Date: 2025-04-28 4:51:15 PM,
+ Wellness Level: 4,
+ Quality Level: 2,
+ Notes: Audio recoding of my day,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20250428_01.wav
+
+ Today's Date: 2025-04-28 4:52:51 PM,
+ Wellness Level: 2,
+ Quality Level: 3,
+ Notes: Day 10,
+ Location: C:\Users\admin\source\repos\EchoJournal\Audio\PlayBacks\Recording20250428_02.wav
