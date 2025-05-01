@@ -1,3 +1,5 @@
+# Semester One Repository 
+---
 # PizzaPiMachine
 
 Welcome to the first version of my **PizzaPiMachine**! 🍕🔢
