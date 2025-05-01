@@ -1,4 +1,4 @@
-# SemesterFour Repository
+# Semester Four Repository
 
 Welcome to my **SemesterFour** repository! 📚💻 This repo showcases projects from my fourth semester, focusing on **CSS-based web development** and **COBOL programming**.
 
