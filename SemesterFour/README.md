@@ -8,13 +8,13 @@ Welcome to my **SemesterFour** repository! 📚💻 This repo showcases projects
 
 Both web projects share a foundational approach, utilizing similar technologies while serving distinct purposes:
 
-#### 🐾 Animal Database Website
+#### 🐾 Animal Database Website (inft-2202-ice)
 A dynamic website designed to manage animal records efficiently:
 - Add, delete, and update entries within a database.
 - Built using **Webpack, Local Storage, EJS, Express, and API calls**.
 - Implements **middleware** for processing requests and robust **error handling**.
 
-#### 🎮 Vintage Games Store Website
+#### 🎮 Vintage Games Store Website (inft-2202-lab)
 An interactive store interface for tracking game inventory:
 - Displays available and out-of-stock games while supporting inventory updates.
 - Utilizes **Express, Local Storage, API interactions, and Middleware** for smooth functionality.
