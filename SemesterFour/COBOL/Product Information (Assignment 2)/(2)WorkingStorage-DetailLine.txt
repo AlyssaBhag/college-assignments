@@ -1,3 +1,5 @@
+NOTES: This is a section from my working storage which displays some headers and a detail lines.
+
       * -------------------------------
       * COLUMN HEADINGS FOR REPORT
       * -------------------------------
