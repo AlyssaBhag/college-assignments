@@ -19,19 +19,19 @@ This program is written in **COBOL**, utilizing **fixed-length sequential files*
 
 ## 🛠 File Structure
 
-### **ENVIRONMENT_WORKINGSTORAGE.txt**
+### **Enviroment&WorkingStorage.txt**
 Defines **file assignments** and access methods. Establishes how input and output files are linked to the program, ensuring smooth data processing.
 
-### **WORKINGSTORAGE-DETAILLINE.txt**
+### **WorkingStorage&DetailLine.txt**
 Structures the **data format** for inventory records. Defines variables and storage areas used to format the output line, ensuring consistency across reports.
 
-### **CALCULATE_EXTENDEDPRICES_AND_DISCOUNTS.txt**
+### **CalculateExtendedPrices&Discounts.txt**
 Handles **price calculations and discounts**:
 - Computes **extended prices** based on unit price and quantity.
 - Applies **discounts** for specific product classes.
 - Stores necessary computed values before generating the output.
 
-### **TRANSPORTATIONCHARGES.txt**
+### **TransportationCharges.txt**
 Processes **transportation costs**:
 - Calculates **shipping fees** based on product class and quantity.
 - Applies different cost structures depending on business rules.
