@@ -1,3 +1,5 @@
+NOTES: This section displays some of the procedures division.
+
       * --------------------------
       * Transportation Charge Based on Product Class
       * --------------------------
