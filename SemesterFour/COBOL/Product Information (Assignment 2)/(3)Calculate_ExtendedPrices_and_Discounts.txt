@@ -1,3 +1,5 @@
+NOTES: This is a clip of the produre division foir the extended prices and transportation.
+
        100-process-data.
       * --------------------------
       * Calculation of Extended Price and Discounts
