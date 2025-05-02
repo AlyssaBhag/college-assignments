@@ -2,9 +2,7 @@
                                                                                                   Alyssa, Assignment 2
                                              Inventory Processing Program 
                                           -----------------------------------
-
 Item # Item Description QTY Unit Price  Extended Price Discount Amount Net Price  Class  Trans %  Transportation Charge
-
 
 1111   1ST PLACE MDL   111       0.01            1.11          0.00          1.11     A    15.50               0.17
 2047   TYPEWRITER      105     801.00       84,105.00      6,307.88     77,797.12     B     4.50           3,784.73
