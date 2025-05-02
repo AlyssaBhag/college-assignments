@@ -1,0 +1,59 @@
+      * -------------------------------
+      * COLUMN HEADINGS FOR REPORT
+      * -------------------------------
+       01 ws-column-headings.
+      * "Item #" heading (6 characters)
+           05 filler                        pic x(6)
+                value "Item #".
+      * Space between columns
+           05 filler                        pic x(1)
+                value spaces.
+      * "Item Description" heading (16 characters)
+           05 filler                        pic x(16)
+                value "Item Description".
+           05 filler                        pic x(1)
+                value spaces.
+      * "QTY" heading (3 characters)
+           05 filler                        pic x(3)
+                value "QTY".
+           05 filler                        pic x(1)
+                value space.
+      * "Unit Price" heading (10 characters)
+           05 filler                        pic x(10)
+                value "Unit Price".
+           05 filler                        pic x(2)
+                value spaces.
+      * "Extended Price" heading (14 characters)
+           05 filler                        pic x(14)
+                value "Extended Price".
+           05 filler                        pic x(1)
+                value spaces.
+
+      * -------------------------------
+      * DETAIL LINE FOR EACH PRODUCT
+      * -------------------------------
+       01 ws-detail-line.
+      * Product number from input (4 characters)
+           05 ws-product-num                pic x(4).
+      * Space between columns
+           05 filler                        pic x(3)
+                value spaces.
+      * Product description (13 characters)
+           05 ws-product-desc               pic x(13).
+           05 filler                        pic x(3)
+                value spaces.
+      * Product quantity, right-justified (up to 3 digits)
+           05 ws-qty                        pic zz9.
+           05 filler                        pic x(3)
+                value spaces.
+      * Unit price formatted with comma and 2 decimals (e.g. 1,234.56)
+           05 ws-unit-price                 pic z,zz9.99.
+           05 filler                        pic x(3)
+                value spaces.
+      * Extended price (qty * unit price), with comma formatting
+           05 ws-extended-price             pic zz,zzz,zz9.99.
+           05 filler                        pic x(1)
+                value spaces.
+
+
+      * Continues below...........

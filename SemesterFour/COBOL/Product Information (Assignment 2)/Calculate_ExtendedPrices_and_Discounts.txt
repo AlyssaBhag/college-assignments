@@ -1,0 +1,30 @@
+       100-process-data.
+      * --------------------------
+      * Calculation of Extended Price and Discounts
+      * --------------------------
+
+      * NOTES (This helps explain without showing the whole code).
+      * ----------------------------------------------------------
+      * Apply discount based on product class and conditions:
+      * - For classes A and F, apply discount if extended price meets threshold
+      * - For class B, apply discount if quantity is greater than 100
+      * - Otherwise, no discount is applied and increment the count of items without discount
+
+      if il-product-class = ws-class-discount-A and
+           ws-extended-calc > 200 or
+      il-product-class = ws-class-discount-F and
+           ws-extended-calc > 1000
+
+      * Calculate discount for applicable product classes (A or F)
+      * (Discount percentage multiplied by extended price)
+
+      else
+      * Apply discount for class B if quantity > 100
+
+           else
+       * No discount for other cases.
+
+           end-if
+      end-if.
+
+      * Continue with further processing...

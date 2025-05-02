@@ -1,0 +1,40 @@
+      * --------------------------
+      * Transportation Charge Based on Product Class
+      * --------------------------
+
+      * NOTES (This helps explain without showing the whole code).
+      * ----------------------------------------------------------
+      * Apply transportation charge based on product class:
+      * - Class A: Apply specific transport rate and calculate charge based on extended price
+      * - Class D: Apply a different transport rate and calculate charge
+      * - Class F: Apply another transport rate for transport calculation
+      * - Other products: Apply lower or flat transport rate based on quantity
+
+
+      if il-product-class = ws-class-trans-A then
+      * Apply transport percentage for class A
+           move ws-transport-per-A to ws-transportation-perc
+      * Calculate transport charge for class A
+           multiply 0.155 by ws-extended-calc
+                giving ws-trans-charge-calc rounded
+      else
+      * Apply transport percentage for class D
+      * Calculate transport charge for class D
+
+      else
+      * Apply transport percentage for class F
+      * Calculate transport charge for class F
+
+
+      else
+      * For non-transport products, calculate lower transport rate
+      * Calculate lower transport charge
+
+      else
+      * For large quantities, apply flat transport rate
+
+           end-if.
+      end-if.
+
+
+      * Continue with further processing...

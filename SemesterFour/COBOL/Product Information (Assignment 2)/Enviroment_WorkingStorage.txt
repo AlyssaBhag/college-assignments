@@ -1,0 +1,82 @@
+      * -------------------------------
+      * ENVIRONMENT DIVISION
+      * -------------------------------
+       environment division.
+
+      * Contains info about the system and files used
+       configuration section.
+
+      * -------------------------------
+      * INPUT-OUTPUT SECTION
+      * -------------------------------
+       input-output section.
+
+      * Define how files are accessed
+       file-control.
+
+      * Input file definition
+           select input-file
+               assign to INFILE
+               organization is sequential.
+
+      * Output file definition
+           select output-file
+               assign to OUTFILE
+               organization is sequential.
+
+      * -------------------------------
+      * DATA DIVISION
+      * -------------------------------
+       data division.
+
+      * File definitions begin here
+       file section.
+
+      * INPUT-FILE layout
+      * 27-character fixed-length record
+       fd input-file
+           recording mode is F
+           data record is input-line
+           record contains 27 characters.
+
+      * Fields in input-line
+       01 input-line.
+           05 il-product-num                pic x(4).     *> Product ID
+           05 il-product-class              pic x(1).     *> Product category/class code
+           05 il-product-desc               pic x(13).    *> Product description
+           05 il-product-qty                pic 999.      *> Quantity as 3-digit number
+           05 il-unit-price                 pic 9(4)v99.  *> Price with 2 decimal places (e.g., 0123.45)
+
+      * OUTPUT-FILE layout
+      * 120-character fixed-length record
+       fd output-file
+           recording mode is F
+           data record is output-line
+           record contains 120 characters.
+
+       01 output-line                       pic x(120).   *> Entire line of formatted output
+
+      * -------------------------------
+      * WORKING-STORAGE SECTION
+      * -------------------------------
+       working-storage section.
+
+      * Flag to indicate end-of-file (EOF)
+       01 ws-eof-flag                       pic x(1)
+           value "N".
+
+      * Constant for comparison when EOF is reached
+       01 ws-yes                            pic x(1)
+           value "Y".
+
+      * Report header including your name
+      * Used for decorative output line or alignment
+       01 ws-heading-my-name.
+           05 filler                        pic x(109)
+                value spaces.              *> Padding to align name on right
+           05 filler                        pic x(6)
+                value "Alyssa".            *> Your first name
+           05 filler                        pic x(4)
+                value ", A2".              *> Section or group ID (e.g., lab group)
+
+      * Continues below.......
