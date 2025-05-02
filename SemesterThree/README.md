@@ -1,4 +1,4 @@
-# SemesterThree Repository
+# Semester Three Repository
 
 Welcome to my **SemesterThree** repository! 📚💻 This collection showcases four projects developed using **C# and WPF**, each emphasizing different aspects of application design and user interaction.
 
