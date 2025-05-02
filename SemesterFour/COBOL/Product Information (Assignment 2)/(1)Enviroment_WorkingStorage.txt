@@ -1,4 +1,4 @@
-Minus some other setup work, this is the start of the program.
+NOTES: Minus some other setup work, this is the start of the program.
 
       * -------------------------------
       * ENVIRONMENT DIVISION
