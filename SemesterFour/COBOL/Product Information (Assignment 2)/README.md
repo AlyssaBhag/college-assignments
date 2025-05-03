@@ -1,61 +1,74 @@
-# 📄 COBOL Inventory Processing Program (Partial View)
+
+# 📄 COBOL Inventory Processing Program (Snippets Only)
 
 ## 🏫 Context
 
-This COBOL program is part of an academic assignment at **Durham College**. Due to academic integrity guidelines and copyright restrictions, **only selected sections** of the source code are provided in this repository. This project demonstrates COBOL fundamentals, including **file handling, working-storage management, record formatting, conditional logic, and calculations**.
+This project is part of a **Durham College** COBOL programming assignment. In alignment with academic integrity policies, this repository includes **only non-executable code snippets** that demonstrate understanding of key COBOL structures such as **file control, data declarations, report formatting, arithmetic logic, and procedural flow**.
 
 ## 📚 Overview
 
-The program processes **inventory data** from an input file and generates a **formatted report** in an output file (`REPORT.OUT`). It handles each item by:
-- Parsing product fields (ID, class, description, quantity, unit price).
+The COBOL program is designed to **read product data** from a sequential file and **generate a structured report** in another file. The process includes:
+- Parsing fields like **product number, class, description, quantity, and price**.
 - Calculating **extended prices**.
-- Applying **discounts** based on product class and price thresholds.
-- Adding **transportation charges** based on specific rules for each product class.
-- Formatting and writing a **detailed output line** for reporting.
+- Applying **conditional discounts**.
+- Determining **transportation charges** by class.
+- Formatting report lines for clean output presentation.
 
-This program is written in **COBOL**, utilizing **fixed-length sequential files** for input and output.
+These segments reflect classic procedural COBOL principles and emphasize **structured data processing**.
 
 ---
 
 ## 🛠 File Structure
 
-### **Enviroment&WorkingStorage.txt**
-Defines **file assignments** and access methods. Establishes how input and output files are linked to the program, ensuring smooth data processing.
+### **EnvironmentAndFileControl.txt**
+Sets up the **input and output file connections** in the ENVIRONMENT DIVISION:
+- Assigns logical file names (`INFILE`, `OUTFILE`).
+- Specifies that files are **sequential**.
+- Declares **recording modes and fixed-length formats**.
 
-### **WorkingStorage&DetailLine.txt**
-Structures the **data format** for inventory records. Defines variables and storage areas used to format the output line, ensuring consistency across reports.
+### **WorkingStorageAndHeadings.txt**
+Includes elements of the WORKING-STORAGE SECTION:
+- Defines a **report heading** with name alignment and section ID.
+- Stores **column headings** (e.g., `Item #`, `QTY`, `Unit Price`, etc.).
+- Structures a **detail line layout** for formatted output, including pricing with commas and decimals.
 
-### **CalculateExtendedPrices&Discounts.txt**
-Handles **price calculations and discounts**:
-- Computes **extended prices** based on unit price and quantity.
-- Applies **discounts** for specific product classes.
-- Stores necessary computed values before generating the output.
+### **ExtendedPriceAndDiscounts.txt**
+Contains the **procedure logic** to:
+- Compute **extended price** = quantity × unit price.
+- Apply **discounts** based on business rules:
+  - **Class A or F**: Discount applied if price threshold is exceeded.
+  - **Class B**: Discount if quantity exceeds 100.
+  - Other classes: No discount.
 
 ### **TransportationCharges.txt**
-Processes **transportation costs**:
-- Calculates **shipping fees** based on product class and quantity.
-- Applies different cost structures depending on business rules.
-- Ensures accurate transport fee representation in the final report.
+Handles the **transportation fee logic**, which varies by product class:
+- **Class A**: Higher transport rate.
+- **Class D**: Moderate rate.
+- **Class F**: Different transport percentage.
+- **Other classes**: Flat or reduced rate based on quantity.
 
-### **REPORT.OUT**
-The final **formatted report** containing the processed inventory data:
-- Displays detailed product information, including **price calculations, discounts, and transportation charges**.
-- Uses structured output formatting for easy readability.
-- Serves as the final data presentation for analysis.
+Each logic block uses **nested `IF` statements** and conditional checks to implement business-specific rules.
 
 ---
 
 ## 🧮 Processing Logic
 
-### 📦 Discount Calculation
-Discounts are conditionally applied:
-- **Class A and F**: Discount if the extended price exceeds a set threshold.
-- **Class B**: Discount if quantity exceeds 100 units.
-- **All Others**: No discount.
+### 📦 Discount Rules
+- **Class A or F**: Apply a discount if the extended price exceeds a threshold.
+- **Class B**: Discount is applied if quantity > 100.
+- **Other Classes**: No discount; a counter tracks non-discounted items.
 
-### 🚚 Transportation Charge
-Transport costs vary by product class:
-- **Class A, D, F**: Assigned a percentage of the extended price.
-- **Other classes**: Receive either a lower percentage or a flat fee based on quantity.
+### 🚚 Transportation Fee Calculation
+- Based on **product class** and occasionally **quantity**.
+- **Classes A, D, F** use **percentages of extended price**.
+- **Others** use **lower percentages or flat fees** for large orders.
 
-These calculations are detailed through structured `IF` blocks with clear documentation.
+---
+
+## 📁 Output File (`REPORT.OUT`)
+The final report includes:
+- Product number and description.
+- Quantity, unit price, extended price.
+- Discounted amounts (if applicable).
+- Transportation fees.
+- Properly formatted rows (fixed-width, aligned output).

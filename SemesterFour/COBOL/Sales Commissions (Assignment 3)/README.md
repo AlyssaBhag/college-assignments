@@ -1,0 +1,59 @@
+# 📄 COBOL Sales Commission Program (Partial View)
+
+## 🏫 Context
+
+This COBOL program is part of an academic assignment at **Durham College**. Due to academic integrity guidelines and copyright restrictions, **only selected sections** of the source code are provided. This project demonstrates COBOL fundamentals including **file handling, commission calculations, bonus processing, and report generation**.
+
+---
+
+## 📚 Overview
+
+The program processes **sales data** from an input file and generates a **formatted commission report**. It handles each salesperson’s record by:
+
+- Parsing fields (ID, name, sales amount, commission rates, thresholds)
+- Calculating **commissions and bonuses**
+- Applying **minimum and maximum thresholds**
+- Tracking **performance metrics**
+- Generating a **detailed report with summaries**
+
+---
+
+## 🛠 File Structure
+
+### **(1) Environment&WorkingStorage.txt**
+- Defines **file assignments and access methods**
+- Sets up **input/output file structures**
+- Establishes **core variables and constants**
+- Contains **program initialization settings**
+
+### **(2) WorkingStorage&DetailLine.txt**
+- Defines **report formatting variables**
+- Structures the **detail lines** for each salesperson
+- Sets up **bonus tracking** variables
+- Contains **report headers and column definitions**
+
+### **(3) PageProcessing.txt**
+- Manages **page layout and formatting**
+- Controls **report pagination**
+- Handles **heading printing logic**
+- Maintains **line and page counters**
+
+### **(4) Calculations.txt**
+- Implements **commission calculation logic**
+- Processes **bonus eligibility and amounts**
+- Applies **minimum/maximum thresholds**
+- Calculates **summary statistics and percentages**
+
+---
+
+## 🧮 Core Features
+
+- Commission calculations based on **sales amounts**
+- Bonus processing for **high performers**
+- **Minimum/maximum commission** enforcement
+- Detailed **performance tracking**
+- **Multi-page report generation** with headers
+- **Summary statistics and percentages**
+
+> 📌 *Note: This repository contains only selected code sections to comply with academic integrity guidelines.*
+
