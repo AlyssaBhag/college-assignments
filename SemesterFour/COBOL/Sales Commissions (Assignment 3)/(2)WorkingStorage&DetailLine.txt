@@ -1,0 +1,64 @@
+NOTES: This is a section from my working storage which displays some headers and a detail lines.
+
+      * -------------------------------
+      * WS-TITLE LINE FOR REPORT HEADER
+      * -------------------------------
+       01 ws-title.
+           05 filler                        pic x(38)
+                value spaces.
+           05 filler                        pic x(23)
+                value "SALES COMMISSION REPORT".
+           05 filler                        pic x(39)
+                value spaces.
+
+      * -------------------------------
+      * COLUMN HEADINGS FOR REPORT
+      * -------------------------------
+      * FIX THE VARIABLE NUMBERS FOR THESE LATER.
+       01 ws-column-headings.
+           05 filler                        pic x(5)
+                value " NO.".
+           05 filler                        pic x(2)
+                value spaces.
+           05 filler                        pic x(4)
+                value "NAME".
+           05 filler                        pic x(6)
+                value spaces.
+           05 filler                        pic x(5)
+                value "SALES".
+
+      * -------------------------------
+      * DETAIL LINE FOR EACH SALESPERSON
+      * -------------------------------
+       01 ws-detail-line.
+           05 filler                        pic x(1)
+                value spaces.
+           05 ws-num
+           05 filler                        pic x(2)
+                value spaces.
+           05 ws-name                       pic x(8).
+           05 filler                        pic x(2)
+                value spaces.
+           05 ws-sales                      pic zzz,zz9.
+           05 filler                        pic x(6)
+                value spaces.
+
+      * ----------------
+      *  BONUS TRACKING
+      * ----------------
+      * Total people who earned more than the max commission threshold
+       01 group-bonus-more-than.
+           05 ws-bonus-more-than            pic x(33)
+                value "NUMBER WITH BONUS MORE THAN MAX: ".
+           05 ws-over-max                   pic 9
+                value 0.
+
+      * Another example...
+      * Total people who earned less than the min commission threshold
+       01 group-bonus-less-than.
+           05 ws-bonus-less-than            pic x(39)
+                value "NUMBER WITH NO BONUS LESS THAN MIN: ".
+           05 ws-under-min                  pic 9
+                value 0.
+
+      * Continues below.......

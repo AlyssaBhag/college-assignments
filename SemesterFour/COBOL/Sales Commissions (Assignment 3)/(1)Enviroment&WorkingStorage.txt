@@ -1,0 +1,84 @@
+NOTES: Minus some other setup work, this is the start of the program.
+
+
+      * -------------------------------
+      * ENVIRONMENT DIVISION
+      * -------------------------------
+       environment division.                 *> Division that describes the computer environment
+       configuration section.                *> Describes the configuration of the COBOL system
+
+      * -------------------------------
+      * INPUT-OUTPUT SECTION
+      * -------------------------------
+       input-output section.                 *> Describes input and output devices or files
+
+       file-control.                         *> Declares how files are accessed by the program
+
+      * Input file declaration
+           select input-file
+               assign to INFILE
+               organization is sequential.
+
+      * Output file declaration
+           select output-file
+               assign to OUTFILE
+               organization is sequential.
+
+      * -------------------------------
+      * DATA DIVISION
+      * -------------------------------
+       data division.                        *> Division that defines variables and file structures
+       file section.                         *> Section to define the structure of input/output files
+
+      * INPUT-FILE layout
+       fd input-file
+           recording mode is F               *> Fixed-length records
+           data record is input-line         *> Name of the record
+           record contains 32 characters.    *> Each record has exactly 32 characters
+
+      * Defining all the individual fields within input-line
+       01 input-line.
+      * Number assigned to the salesperson
+           05 il-sales-num                  pic x(3).     *> 3-character sales ID
+      * Name of the salesperson
+           05 il-sales-name                 pic x(8).     *> 8-character name field
+      * Total sales made by the salesperson
+           05 il-sales                      pic 9(6).     *> 6-digit numeric sales amount
+      * Minimum commission threshold
+           05 il-min                        pic 9(6).     *> 6-digit numeric minimum commission
+      * Maximum commission threshold
+           05 il-max                        pic 9(6).     *> 6-digit numeric maximum commission
+      * Commission rate applied
+           05 il-rate                       pic 99v9.     *> Commission rate with 1 decimal place (e.g., 12.5%)
+
+      * OUTPUT-FILE layout
+       fd output-file
+           recording mode is F              *> Fixed-length records for output
+           data record is output-line       *> Name of the output record
+           record contains 100 characters.  *> Each output record is 100 characters wide
+
+      * Definition of a full output line
+       01 output-line                       pic X(100).   *> Full output line placeholder
+
+      * -------------------------------
+      * WORKING-STORAGE SECTION
+      * -------------------------------
+       working-storage section. 
+
+      * Flag to detect end-of-file condition
+       01 ws-eof-flag                       pic x(1)
+           value "N".                       *> Default: Not at end of file
+      * Constant to compare against end-of-file flag
+       01 ws-yes                            pic x(1)
+           value "Y".                       *> Used to signal end of file
+
+      * Report heading with your name and assignment info
+       01 ws-heading-my-name.
+           05 filler                        pic x(76)
+                value spaces.              *> Used for padding/alignment
+           05 filler                        pic x(9)
+                value "Alyssa <3".         *>  Name
+           05 filler                        pic x(15)
+                value ", Assignment #3".   *> Assignment label
+
+      * Continues below.......

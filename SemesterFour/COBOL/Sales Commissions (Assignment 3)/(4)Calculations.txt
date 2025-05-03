@@ -1,0 +1,79 @@
+NOTES: This section displays more of the procedures division, mainly the calculations.
+
+      * -------------------------------
+      * BONUS CALCULATION BASED ON SALES
+      * -------------------------------
+
+      * Determine if bonus applies based on sales amount
+
+           if il-sales > ws-sales-threshold
+      * Call a procedure to handle commission with bonus
+                perform 400-sales-gtr-threshold
+      * Mark this person as having received a bonus
+                move ws-bonus-yes to ws-bonus-status
+                add 1 to ws-num-earned-bonus
+
+           else
+
+      * Call a procedure to handle normal commission
+                perform 500-sales-less-threshold
+      * Mark this person as having no bonus
+                move ws-no-bonus to ws-bonus-status
+                add 1 to ws-num-no-bonus
+           end-if.
+
+      * -------------------------------
+      * BONUS + COMMISSION CALCULATION
+      * -------------------------------
+       400-sales-gtr-threshold.
+
+      * Compute commission + bonus:
+      * (sales * rate) + bonus for extra sales over threshold
+           compute ws-earned-calc rounded
+                = il-sales * il-rate / 100
+                + (il-sales - ws-sales-threshold)
+                * ws-bonus-rate.
+
+      * If calculated amount is more than the allowed max, cap it
+           if ws-earned-calc > il-max
+                move il-max                 to ws-paid-calc
+                add 1                       to ws-over-max
+           else
+                move ws-earned-calc         to ws-paid-calc
+                add 1                       to ws-num-paid-equal-earned 
+           end-if.
+
+      * ------------------------
+      * COMMISSION CALCULATION
+      * -------------------------
+       500-sales-less-threshold.
+      * Calculate regular commission without bonus
+
+      * Ensure minimum payment is met
+           if ws-earned-calc < il-min
+                move il-min to ws-paid-calc
+                add 1 to ws-under-min
+           else
+                move ws-earned-calc to ws-paid-calc
+                add 1 to ws-num-paid-equal-earned
+           end-if.
+
+      * -------------------------------
+      * SUMMARY TOTAL CALCULATIONS
+      * -------------------------------
+       600-process-totals.
+      *> Calculations were removed for sharing purposes.
+	
+      * Calculate percentages only if there are salespeople
+           if ws-num-of-salespeople > 0
+      *     	Calculate percentage who earned exact commission
+      *     	Calculate percentage who earned bonus....
+      *     	Calculate percentage who earned no bonus...
+           else
+                move 0 to ws-perc-equal-calc
+                move 0 to ws-perc-bonus-over
+                move 0 to ws-perc-no-bonus-under
+           end-if.
+
+
+      * Continue with further processing...

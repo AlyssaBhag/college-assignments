@@ -1,4 +1,4 @@
-NOTES: This is a clip of the produre division foir the extended prices and transportation.
+NOTES: This is a clip of the procedure division for the extended prices and transportation.
 
        100-process-data.
       * --------------------------

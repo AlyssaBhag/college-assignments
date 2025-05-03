@@ -1,0 +1,32 @@
+NOTES: This is a clip of the procedure division for the page counter and deals with printing the correct headings.
+
+      * -------------------------------
+      * MAIN PAGE PROCESSING ROUTINE
+      * -------------------------------
+       100-process-pages.
+
+      * Call the procedure to print the heading lines
+           perform 200-print-headings.
+
+      * Loop to process up to 10 sales records (1 "page") or until EOF
+           perform 300-process-lines
+                varying ws-line-counter from 1 by 1
+                until ws-line-counter > ws-max-lines
+                or ws-eof-flag = ws-yes.
+
+      * -------------------------------
+      * PROCEDURE TO PRINT HEADINGS
+      * -------------------------------
+       200-print-headings.
+
+      * Print title and column headings, format changes based on page number
+           add 1 to ws-page-counter.
+
+           if ws-page-counter > 1
+                write output-line from ws-title
+                write output-line from ws-column-headings
+           else
+                write output-line from ws-column-headings
+           end-if.
+
+      * Continue with further processing...
