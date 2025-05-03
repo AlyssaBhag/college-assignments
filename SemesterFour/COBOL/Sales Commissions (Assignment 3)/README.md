@@ -1,3 +1,6 @@
+> 📌 *Note: This repository contains only selected code sections to comply with academic integrity guidelines.*
+
+
 # 📄 COBOL Sales Commission Program (Partial View)
 
 ## 🏫 Context
@@ -20,25 +23,25 @@ The program processes **sales data** from an input file and generates a **format
 
 ## 🛠 File Structure
 
-### **(1) Environment&WorkingStorage.txt**
+### **Environment&WorkingStorage.txt**
 - Defines **file assignments and access methods**
 - Sets up **input/output file structures**
 - Establishes **core variables and constants**
 - Contains **program initialization settings**
 
-### **(2) WorkingStorage&DetailLine.txt**
+### **WorkingStorage&DetailLine.txt**
 - Defines **report formatting variables**
 - Structures the **detail lines** for each salesperson
 - Sets up **bonus tracking** variables
 - Contains **report headers and column definitions**
 
-### **(3) PageProcessing.txt**
+### **PageProcessing.txt**
 - Manages **page layout and formatting**
 - Controls **report pagination**
 - Handles **heading printing logic**
 - Maintains **line and page counters**
 
-### **(4) Calculations.txt**
+### **Calculations.txt**
 - Implements **commission calculation logic**
 - Processes **bonus eligibility and amounts**
 - Applies **minimum/maximum thresholds**
@@ -54,6 +57,3 @@ The program processes **sales data** from an input file and generates a **format
 - Detailed **performance tracking**
 - **Multi-page report generation** with headers
 - **Summary statistics and percentages**
-
-> 📌 *Note: This repository contains only selected code sections to comply with academic integrity guidelines.*
-
