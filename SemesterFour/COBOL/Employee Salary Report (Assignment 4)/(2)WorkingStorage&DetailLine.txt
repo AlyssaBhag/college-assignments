@@ -1,0 +1,52 @@
+      * -------------------------------
+      * COLUMN HEADINGS FOR REPORT
+      * -------------------------------
+      
+       01 ws-column-headings.
+      * Some we removed....
+           05 filler                        pic x(7)
+                value "Years".
+           05 filler                        pic x(1)
+                value spaces.
+           05 filler                        pic x(9)
+                value "Positions".
+           05 filler                        pic x(3)
+                value spaces.
+           05 filler                        pic x(14)
+                value "Present Salary".
+           05 filler                        pic x(3)
+                value spaces.
+           05 filler                        pic x(8)
+                value "Increase".
+           05 filler                        pic x(3)
+                value spaces.
+           05 filler                        pic x(12)
+                value "Pay Increase".
+           05 filler                        pic x(4)
+                value spaces.
+           05 filler                        pic x(10)
+                value "New Salary".
+
+      * -------------------------------
+      * DETAIL LINE FOR EACH PRODUCT
+      * -------------------------------
+
+       01 ws-detail-line.
+      * Some we removed....
+           05 ws-years                      pic z9.
+           05 filler                        pic x(6)
+                value spaces.
+           05 ws-position                   pic x(8).
+           05 filler                        pic x(6)
+                value spaces.
+           05 ws-present-salary             pic zz,zz9.99.
+           05 filler                        pic x(5)
+                value spaces.
+           05 ws-percent-increase           pic zzz.z.
+           05 ws-percent-sign               pic x.
+           05 filler                        pic x(3)
+                value spaces.
+           05 ws-salary-increase            pic $,$$$,$$9.99+.
+           05 filler                        pic x(2)
+                value spaces.
+           05 ws-new-salary                 pic $z,zzz,zz9.99.

@@ -1,0 +1,68 @@
+      * -------------------------------
+      * GRADUATE EMPLOYEE CALCULATIONS
+      * -------------------------------
+       400-graduates.
+           move "%"                         to ws-percent-sign.
+
+      * For employees with more than 15 years experience
+           if il-years > 15
+                move ws-analyst             to ws-position
+      *         Calculate analyst salary increase
+      *         (Implementation details removed)
+
+                compute ws-tot-incr-perc-calc
+                    = ws-perc-analyst * 100
+
+      *         Update analyst totals
+                add 1                       to ws-analyst-count
+           else
+      * For employees with 7-15 years experience
+           if il-years >= 7 and il-years <= 15
+                move ws-sen-prog            to ws-position
+
+      *         Calculate senior programmer increase
+      *         (Implementation details removed)
+           else
+      * For employees with 2-7 years experience
+           if il-years <= 7 and il-years > 2
+                move ws-prog                to ws-position
+
+      *         Example calculation shown:
+                compute ws-incr-salary-calc rounded
+                    = ws-perc-prog * il-present-salary
+           else
+      * For unclassified employees
+                move spaces                 to ws-position
+                add 1                       to ws-unclass-count
+           end-if
+           end-if
+           end-if.
+
+      * -------------------------------
+      * NON-GRADUATE CALCULATIONS
+      * -------------------------------
+       500-non-graduates.
+           move "%"                         to ws-percent-sign.
+
+      * For employees with more than 10 years experience
+           if il-years > 10
+                move ws-prog                to ws-position
+      *         Calculate programmer increase
+      *         (Implementation details removed)
+           else
+      * For employees with 4-10 years experience
+           if il-years <= 10  and il-years > 4
+                move ws-jr-prog             to ws-position
+                
+      *         Example calculation shown:
+                compute ws-incr-salary-calc rounded
+                    = ws-perc-jr-prog * il-present-salary
+           else
+      * For unclassified employees
+                move spaces                 to ws-position
+                add 1                       to ws-unclass-count
+                move 0                      to ws-incr-salary-calc
+                move ws-incr-salary-calc    to ws-percent-increase
+                move spaces                 to ws-percent-sign
+           end-if
+           end-if.

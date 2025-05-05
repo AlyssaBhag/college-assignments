@@ -1,0 +1,34 @@
+      * -------------------------------
+      * MAIN PAGE PROCESSING ROUTINE
+      * -------------------------------
+
+       100-process-pages.
+      * calling a function to print the headings.
+           perform 200-print-headings.
+
+      * calling function to process 10 sales records per page.
+           perform 300-process-lines
+                varying ws-line-counter from 1 by 1
+                until ws-line-counter > ws-max-lines
+                or ws-eof-flag = ws-yes.
+
+           perform 600-subtotals.
+
+      * -------------------------------
+      * PAGE HEADER PRINTING ROUTINE
+      * -------------------------------
+
+       200-print-headings.
+
+      * Increment and update page counter
+           add 1                            to ws-page-counter.
+           move ws-page-counter             to ws-page-num.
+
+      * Print headers based on page number
+           if (ws-page-counter > 1)
+      *         Handle subsequent pages formatting
+      *         (Implementation details removed)
+           else
+      *         Handle first page formatting
+      *         (Implementation details removed)
+           end-if.
