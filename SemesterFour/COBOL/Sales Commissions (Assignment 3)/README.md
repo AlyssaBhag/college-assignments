@@ -57,3 +57,15 @@ The program processes **sales data** from an input file and generates a **format
 - **Performance Metrics Tracking:** Records individual statistics for analysis and reporting.
 - **Report Formatting & Generation:** Structures multi-page output with dynamic headers and detailed salesperson breakdowns.
 - **Summary Computation:** Aggregates sales figures, percentages, and comparative statistics for final reporting.
+
+---
+
+## 📁 Output File (`REPORT.OUT`)
+The final report provides a structured summary of sales commissions with properly formatted, aligned output.  
+
+**Includes:**  
+- **Salesperson Details:** ID and name  
+- **Earnings Breakdown:** Sales amount, commission rate, calculated earnings  
+- **Threshold Enforcement:** Minimum and maximum payout limits  
+- **Bonus Status:** Qualification for performance-based bonuses  
+- **Summary Metrics:** Total sales, commissions paid, and key percentages  
