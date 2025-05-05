@@ -1,29 +1,55 @@
 
-                                                                                                  Alyssa, Assignment 2
-                                             Inventory Processing Program 
-                                          -----------------------------------
-Item # Item Description QTY Unit Price  Extended Price Discount Amount Net Price  Class  Trans %  Transportation Charge
+                                                                            Alyssa <3, Assignment #3
 
-1111   1ST PLACE MDL   111       0.01            1.11          0.00          1.11     A    15.50               0.17
-2047   TYPEWRITER      105     801.00       84,105.00      6,307.88     77,797.12     B     4.50           3,784.73
-1742   HANDLE           20      10.00          200.00          0.00        200.00     A    15.50              31.00
-2149   USB DRIVE       150   1,200.00      180,000.00          0.00    180,000.00     C     4.50           8,100.00
-3761   TAPE              5   5,000.00       25,000.00          0.00     25,000.00     D    11.50           2,875.00
-2791   BOLTS           200       0.75          150.00          0.00        150.00     A    15.50              23.25
-3000   STAPLER         100       2.00          200.00          0.00        200.00     F     6.50              13.00
-3001   OVERHEAD PROJ   101      99.99       10,098.99        757.42      9,341.57     F     6.50             656.43
-3002   PENCILS          99       0.09            8.91          0.00          8.91     F     6.50               0.58
-4001   CANADIAN RUGS   184     150.29       27,653.36          0.00     27,653.36     D    11.50           3,180.14
-4003   CARPET           50      40.00        2,000.00          0.00      2,000.00     Z     4.50              90.00
-4005   WASTE BASKETS     1       3.79            3.79          0.00          3.79     C     4.50               0.17
-5001   HINGES           10      10.00          100.00          0.00        100.00     A    15.50              15.50
-5003   PENS (GOLD)      10      49.99          499.90          0.00        499.90     B     4.50              22.50
-5004   PENS (BLACK)    400       2.00          800.00          0.00        800.00     D    11.50              92.00
-8888   HIGH CHAIR      999   9,999.99    9,989,990.01    749,249.25  9,240,740.76     A    15.50       1,548,448.45
-8889   PLAY PEN        412      74.99       30,895.88      2,317.19     28,578.69     B     0.00              75.00
-0001   LOW BALL          1       0.01            0.01          0.00          0.01     G     4.50               0.00
-9999   LAST RECORD     999       0.01            9.99          0.00          9.99     A    15.50               1.55
+                                      SALES COMMISSION REPORT
 
-                                       $10,351,716.95               $9,593,085.21                     $1,567,409.47
+ NO.   NAME      SALES         MIN        MAX     RATE %       EARNED        PAID    BONUS/NO BONUS
+ 111  JIM       444,000       50,000   100,000     10.5%      $68,580  $***68,580    BONUS
+ 112  BETH      555,000       40,000   125,000     20.5%     $152,662  $**125,000    BONUS
+ 168  CLAIRE    666,000       30,000   150,000     15.5%     $159,045  $**150,000    BONUS
+ 221  TOM        66,000      100,000   300,000     20.0%      $13,200  $**100,000    NO BONUS
+ 310  SALLY     207,000       90,000   400,000     20.5%      $42,435  $***90,000    NO BONUS
+ 311  GERRY      17,999        2,000     6,000      5.5%         $989  $****2,000    NO BONUS
+ 390  CINDY      33,751        1,000     2,000     19.5%       $6,581  $****6,581    NO BONUS
+ 445  SAMMY      55,000       13,000    15,000     10.5%       $5,775  $***13,000    NO BONUS
+ 492  HARVEY    995,001          500       750     17.0%     $275,137  $******750    BONUS
+ 523  PHIL      205,002          999     2,000     19.5%      $39,975  $***39,975    NO BONUS
 
-Item Without Discount =   78.94%
+                                      SALES COMMISSION REPORT
+
+ NO.   NAME      SALES         MIN        MAX     RATE %       EARNED        PAID    BONUS/NO BONUS
+ 600  WILLIAM    99,003           75       950      8.5%       $8,415  $****8,415    NO BONUS
+ 617  WANDA      99,006          800     1,000      8.0%       $7,920  $****7,920    NO BONUS
+ 684  GEORGE     84,564       10,000    20,000      7.5%       $6,342  $***10,000    NO BONUS
+ 698  IRVING     24,567          300       900      7.0%       $1,719  $****1,719    NO BONUS
+ 700  ROSEMARY      999           75       200     29.5%         $294  $******294    NO BONUS
+ 715  LARRY       9,999        9,750    19,750      5.5%         $549  $****9,750    NO BONUS
+ 753  RONNIE    999,999       99,999   999,999     99.9%   $1,105,748  $**999,999    BONUS
+ 776  MARK      994,999          401       900      8.0%     $185,587  $******900    BONUS
+ 811  ERIC      994,998          300       400      9.0%     $195,537  $******400    BONUS
+ 818  BOB             2           10       900     49.5%           $0  $*******10    NO BONUS
+
+                                      SALES COMMISSION REPORT
+
+ NO.   NAME      SALES         MIN        MAX     RATE %       EARNED        PAID    BONUS/NO BONUS
+ 852  FRANKIE    99,999            1     1,000      1.5%       $1,499  $****1,499    NO BONUS
+ 875  DAVID      88,888           80       800      8.5%       $7,555  $****7,555    NO BONUS
+ 966  MARIO      75,997       20,000    30,000     23.5%      $17,859  $***20,000    NO BONUS
+ 972  NANCY     765,432      200,000   400,000     22.5%     $243,200  $**243,200    BONUS
+ 991  WAYNE     115,998          999     2,000     23.0%      $26,679  $***26,679    NO BONUS
+ 994  CHRIS     275,000       60,000    80,000     17.0%      $46,750  $***60,000    NO BONUS
+
+                                                  TOTALS:  2,620,032.00  1,994,226.00
+
+NUMBER WITH BONUS MORE THAN MAX: 6
+NUMBER WITH NO BONUS LESS THAN MIN:    9
+
+NUMBER OF SALES PEOPLE WITH BONUS: 8
+NUMBER OF SALES PEOPLE WITHOUT BONUS: 18
+NUMBER OF SALES PEOPLE: 26
+
+NUMBER WITH PAID EQUAL EARNED: 11
+PERCENT WITH PAID EQUAL EARNED: 42.30%
+
+PERCENT WITH BONUS: 31%
+PERCENT WITHOUT BONUS: 69%
