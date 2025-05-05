@@ -67,7 +67,9 @@ Each logic block uses **nested `IF` statements** and conditional checks to imple
 ---
 
 ## 📁 Output File (`REPORT.OUT`)
-The final report includes:
+The final report provides a structured summary of sales commissions with properly formatted, aligned output.  
+
+**Includes:**
 - Product number and description.
 - Quantity, unit price, extended price.
 - Discounted amounts (if applicable).
