@@ -49,11 +49,11 @@ The program processes **sales data** from an input file and generates a **format
 
 ---
 
-## 🧮 Core Features
+## 🧮 Processing Logic
 
-- Commission calculations based on **sales amounts**
-- Bonus processing for **high performers**
-- **Minimum/maximum commission** enforcement
-- Detailed **performance tracking**
-- **Multi-page report generation** with headers
-- **Summary statistics and percentages**
+- **Sales Data Parsing:** Extracts fields (ID, name, sales amount, commission rates, thresholds) from input records.
+- **Commission Calculation:** Applies rate-based formulas to determine earnings while enforcing minimum/maximum thresholds.
+- **Bonus Eligibility & Processing:** Evaluates performance criteria and adjusts compensation accordingly.
+- **Performance Metrics Tracking:** Records individual statistics for analysis and reporting.
+- **Report Formatting & Generation:** Structures multi-page output with dynamic headers and detailed salesperson breakdowns.
+- **Summary Computation:** Aggregates sales figures, percentages, and comparative statistics for final reporting.
