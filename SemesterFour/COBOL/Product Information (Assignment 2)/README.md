@@ -1,6 +1,6 @@
 > 📌 *Note: This repository contains only selected code sections to comply with academic integrity guidelines.*
 
-# 📄 COBOL Inventory Processing Program (Snippets Only)
+# 📄 COBOL Inventory Processing Program (Partial View)
 
 ## 🏫 Context
 
