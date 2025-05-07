@@ -1,0 +1,67 @@
+      * -------------------------------
+      * COLUMN HEADINGS FOR REPORT
+      * -------------------------------
+       01 ws-heading-line1.
+           05 filler                        pic x(2)
+                value spaces.
+           05 filler                        pic x(8)
+                value 'Operator'.
+           05 filler                        pic x(4)
+                value spaces.
+           05 filler                        pic x(8)
+                value 'Operator'.
+           05 filler                        pic x(6)
+                value spaces.
+           05 filler                        pic x(3)
+                value 'Jul'.
+           05 filler                        pic x(3)
+                value spaces.
+           05 filler                        pic x(3)
+                value 'Aug'.
+           05 filler                        pic x(3)
+                value spaces.
+           05 filler                        pic x(3)
+                value 'Sep'.
+      * There are more but i cut it down to make the example shorter.
+                
+      *
+       01 ws-heading-line2.
+           05 filler                        pic x(5)
+                value spaces.
+           05 filler                        pic x(1)
+                value '#'.
+           05 filler                        pic x(10)
+                value spaces.
+           05 filler                        pic x(4)
+                value 'Name'.
+           05 filler                        pic x(114)
+               value spaces.
+
+      * -------------------------------
+      * DETAIL LINE FOR EACH PRODUCT
+      * -------------------------------
+      *
+       01 ws-detail-line.
+           05 filler                        pic x(4)
+               value spaces.
+           05 ws-detail-line-num            pic x(3).
+           05 filler                        pic x(9)
+               value spaces.
+           05 ws-detail-line-name           pic x(12).
+      *    Outputs each month with the fillers incase they don't have 3 numbers.
+           05 ws-detail-line-table          occurs 12 times.
+                10 ws-detail-line-months    pic zz9.
+                10 ws-detail-line-filler    pic x(3)
+                    value spaces.
+           05 ws-detail-line-total          pic zzzz9.
+           05 filler                        pic x(3)
+               value spaces.
+           05 ws-detail-line-avg            pic zzzz9.
+      *    The word variable.
+           05 ws-detail-line-avg-text       redefines
+                ws-detail-line-avg          pic x(5).
+           05 filler                        pic x(6)
+               value spaces.
+           05 ws-detail-line-rem            pic x(3).
+           05 filler                        pic x(6)
+               value spaces.

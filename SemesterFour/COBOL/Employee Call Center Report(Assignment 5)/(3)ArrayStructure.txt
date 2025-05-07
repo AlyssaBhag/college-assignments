@@ -1,0 +1,107 @@
+      *================================================================*
+      *                        ARRAY STRUCTURES                        *
+      *================================================================*
+      
+      *----------------------------------------------------------------*
+      * INPUT RECORD ARRAY                                             *
+      *----------------------------------------------------------------*
+       01 input-line.
+      *    Stores 12 monthly call values for each operator record
+      *    Each element is 3 digits (000-999)
+           05 il-rec-calls                 pic 999 occurs 12 times.
+
+      *----------------------------------------------------------------*
+      * WORKING STORAGE ARRAYS                                         *
+      *----------------------------------------------------------------*
+      *    Tracks number of operators with calls each month
+           05 ws-ops-with-calls-tot         pic 99
+                occurs 12 times.
+
+      *    Stores total calls for each month across all operators  
+           05 ws-monthly-totals             pic 9(5)
+                occurs 12 times.
+
+      *----------------------------------------------------------------*
+      * OUTPUT FORMATTING ARRAYS                                       *
+      *----------------------------------------------------------------*
+      *    Detail line table for monthly data display
+
+           05 ws-detail-line-table          occurs 12 times.
+                10 ws-detail-line-months    pic zz9.
+                10 ws-detail-line-filler    pic x(3)
+                    value spaces.
+
+      *    Operators with calls summary table  
+
+           05 ws-ops-months-totals-table    occurs 12 times.
+                10 ws-ops-total             pic zzzz9.
+                10 ws-ops-filler            pic x(1)
+                    value spaces.
+
+      *    Monthly totals summary table
+
+           05 ws-months-totals-table        occurs 12 times. 
+                10 ws-total-totals          pic zzzz9.
+                10 ws-total-filler          pic x(1)
+                    value spaces.
+
+
+      *================================================================*
+      *                      ARRAY PROCESSING EXAMPLES                 *
+      *================================================================*
+      
+      *----------------------------------------------------------------*
+      * 300-PROCESS-RECORDS                                            *
+      *----------------------------------------------------------------*
+      *    Example: Processing monthly records using PERFORM VARYING
+
+           perform 500-process-tables
+               varying ws-index from 1 by 1
+               until ws-index > ws-number-of-months
+
+      *    Example: Calculating averages from array data
+
+           if ws-non-zero-month-count > 0 then
+               divide ws-total
+                   by ws-non-zero-month-count
+                   giving ws-emp-average
+                   remainder ws-emp-remainder
+           end-if
+      
+      *----------------------------------------------------------------*
+      * 400-PRINT-TOTALS                                               *
+      *----------------------------------------------------------------*
+      *    Example: Processing monthly totals
+
+           perform varying ws-index from 1 by 1
+               until ws-index > ws-number-of-months
+               if ws-ops-with-calls-tot(ws-index) > 0 then
+                   divide ws-monthly-totals(ws-index)
+                       by ws-ops-with-calls-tot(ws-index)
+                       giving ws-avg-total(ws-index) rounded
+               end-if
+           end-perform
+
+      *----------------------------------------------------------------*
+      * 500-PROCESS-TABLES                                             *
+      *----------------------------------------------------------------*
+      *    Example: Array indexing and accumulation
+
+           if il-rec-calls(ws-index) > 0 then
+               add 1 to ws-ops-with-calls-tot(ws-index)
+               add il-rec-calls(ws-index) to ws-monthly-totals(ws-index)
+           end-if
+
+      *    Example: Moving array values
+      
+           move il-rec-calls(ws-index)
+               to ws-detail-line-months(ws-index)
+      
+      *================================================================*
+      *   COBOL Array Patterns Demonstrated:                           *
+      * - OCCURS clause: il-rec-calls pic 999 occurs 12 times          *
+      * - PERFORM VARYING: varying ws-index from 1 by 1                *
+      * - Array indexing: il-rec-calls(ws-index)                       *
+      * - Parallel arrays: ws-monthly-totals & ws-ops-with-calls-tot   *
+      * - Nested tables: ws-detail-line-table structure                *
+      *================================================================*

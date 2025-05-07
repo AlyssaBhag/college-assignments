@@ -1,0 +1,88 @@
+
+      * -------------------------------
+      * ENVIRONMENT DIVISION
+      * -------------------------------      
+
+       environment division.
+       input-output section.
+       file-control.
+      *
+           select input-file
+               assign to INFILE
+               organization is sequential.
+      *
+           select output-file
+               assign to OUTFILE
+               organization is sequential.
+      *
+       data division.
+       file section.
+      *
+       fd input-file
+           recording mode is F
+           data record is input-line
+           record contains 51 characters.
+      *
+       01 input-line.
+           05 il-rec-num                   pic x(3).
+           05 il-rec-name                  pic x(12).
+      *    This is how to declare an array.
+           05 il-rec-calls                 pic 999 occurs 12 times.
+
+      *
+       fd output-file
+           recording mode is F
+           data record is output-line
+           record contains 132 characters.
+      *
+       01 output-line                       pic x(132).
+
+      * -------------------------------
+      * WORKING-STORAGE SECTION
+      * -------------------------------
+      *
+       working-storage section.
+      *
+      *create the necessary working storage variables
+      *
+       01 ws-blank-line                     pic x(100)
+           value spaces.
+
+       01 ws-counters.
+           05 ws-index                      pic 99
+                value 0.
+           05 ws-total-zero-months          pic 9(3)
+                value 0.
+
+      * I switch the way this was, putting the date/time after my name.
+       01 ws-name-line.
+           05 filler                        pic x(1)
+               value spaces.
+           05 ws-name-line-date             pic 9(6).
+           05 filler                        pic x(4)
+               value spaces.
+           05 ws-name-line-time             pic 9(8).
+           05 filler                        pic x(50)
+               value spaces.
+
+           05 filler                        pic x(28)
+               value spaces.
+           05 filler                        pic x(19)
+               value '        Alyssa <3, '.
+      *               ----+----1----+----2----+
+           05 filler                        pic x(13)
+               value 'Assignment #5'.
+      *               ----+----1----+----2----+----
+
+      *
+       01 ws-report-heading.
+           05 filler                        pic x(50)
+               value spaces.
+           05 filler                        pic x(40)
+               value 'Call Centre Volumes For July - June     '.
+      *               ----+----1----+----2----+----3----+----4
+           05 filler                        pic x(40)
+               value spaces.
+           05 filler                        pic x(12)
+               value spaces.
+      *
