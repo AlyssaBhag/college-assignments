@@ -1,0 +1,106 @@
+      * ------------------------------------------
+      * ENVIRONMENT DIVISION
+      * ------------------------------------------
+       environment division.
+       configuration section.
+      *
+       input-output section.
+      *
+
+       file-control.
+      * INFILE  - Source transaction records   
+      * input-file declaration
+           select input-file
+               assign to INFILE
+               organization is sequential.
+
+      * OUTFILE - Formatted error report         
+      * output-file declaration
+           select output-file
+               assign to OUTFILE
+               organization is sequential.
+
+      * VALFILE - All of The Valid transaction records
+           select valid-file
+               assign to VALFILE
+               organization is sequential.
+
+      *  INVFILE - All of The Invalid transaction records   
+           select invalid-file
+               assign to INVFILE
+               organization is sequential.
+
+       data division.
+       file section.
+      *
+       fd input-file
+           recording mode is F
+           data record is input-line
+           record contains 36 characters.
+
+      *----------------------------------------------------------------*
+      * INPUT RECORD LAYOUT AND VALIDATION RULES                       *
+      *----------------------------------------------------------------*
+      *    Validation.
+       01 input-line.
+      *    Checks to see if its a valid transation code.
+           05 il-tra-code                   pic x.
+                88 il-valid-tra-code
+                    value 'S', 'R', 'L'.
+
+           05 il-tra-amount                 pic 9(5)v99.
+
+      *    Checks to see if its a valid payment type.
+           05 il-pay-type                   pic xx.
+                88 il-valid-pay-type
+                    value 'CA', 'CR', 'DB'.
+
+      *    Checks to see if its a valid store (store number).
+           05 il-store-num                  pic x(2).
+                88 il-valid-store-num
+                    value '01', '02', '03', '04', '05', '12'.
+
+      *    Validating the numbers it is to see if valid.
+           05 il-invoice-num.
+                10 il-invoice-num-1         pic x.
+                    88 il-valid-invoice-num-1
+                        value 'A', 'B', 'C', 'D', 'E'.
+                10 il-invoice-num-2         pic x.
+                    88 il-valid-invoice-num-2
+                        value 'A', 'B', 'C', 'D', 'E'.
+                10 il-invoice-num-3         pic x(1).
+                    88 il-valid-invoice-num-3
+                        value '-'.
+                10 il-invoice-num-4-9       pic 9(6).
+                    88 il-valid-invoice-num-4-9
+                        value 100000 thru 900000.
+
+      *    Check if its empty.
+           05 il-sku-code                   pic x(15).
+                88 il-invalid-sku-code
+                    value spaces.
+
+      *
+       fd output-file
+           recording mode is F
+           data record is output-line
+           record contains 100 characters.
+
+      * Maybe add more incase I need more in the future.
+       01 output-line                       pic x(100).
+      *
+
+       fd valid-file
+           recording mode is F
+           data record is valid-line
+           record contains 36 characters.
+
+       01 valid-line                        pic x(36).
+
+
+       fd invalid-file
+           recording mode is F
+           data record is invalid-line
+           record contains 36 characters.
+
+       01 invalid-line                      pic x(36).

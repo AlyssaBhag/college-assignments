@@ -1,0 +1,31 @@
+      *================================================================*
+      * MAIN PROCESSING LOOP                                            *
+      * Purpose: Controls the main record processing flow               *
+      * Process:                                                        *
+      * 1. Validate each record                                        *
+      * 2. Update record counters                                      *
+      * 3. Route records to appropriate output files                   *
+      * 4. Reset flags for next iteration                              *
+      *================================================================*
+
+
+       100-process-records.
+      * Main processing loop for each input record
+           perform 200-edit-errors.
+           add 1 to ws-total-records.
+      
+      * Sort records into valid/invalid files based on validation
+           if ws-error-flag = ws-yes
+                add 1 to ws-invalid-records
+                write invalid-line from input-line
+           else
+                add 1 to ws-valid-records
+                write valid-line from input-line
+           end-if.
+           
+           move spaces                      to ws-error-msg-outputs.
+           move "N"                         to ws-error-flag.
+           move "N"                         to ws-check-flag.
+
+           read input-file
+                 at end move "Y"            to ws-eof-flag.

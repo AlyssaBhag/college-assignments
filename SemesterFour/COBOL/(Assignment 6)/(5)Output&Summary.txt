@@ -1,0 +1,64 @@
+      *================================================================*
+      * ERROR WRITING AND REPORT GENERATION PROCEDURES                    *
+      *================================================================*
+
+       300-write-errors.
+      *----------------------------------------------------------------*
+      * Purpose: Handles error record output and page management
+      * - Manages page breaks for report formatting
+      * - Formats and writes detailed error information
+      * - Ensures each record is only printed once
+      *----------------------------------------------------------------*
+           if ws-line-counter >= ws-max-lines
+                perform 400-new-page
+           end-if.
+           add 1 to ws-line-counter.
+
+      * Transfer input record fields to output format
+           move il-tra-code to ws-trans-code.
+           move il-pay-type to ws-pay-type.
+           move il-store-num to ws-store-num.
+           move il-invoice-num to ws-number.
+           move il-sku-code to ws-description.
+           move il-tra-amount to ws-amount.
+
+      * Ensure each record is printed only once, regardless of error count
+           if ws-check-flag = "N"
+                write output-line from ws-detail-line
+                move "Y" to ws-check-flag
+           end-if.
+
+       400-new-page.
+      *----------------------------------------------------------------*
+      * Purpose: Handles page breaks and header formatting
+      * - Resets line counter
+      * - Prints page headers and formatting elements
+      *----------------------------------------------------------------*
+       
+       500-print.
+      *----------------------------------------------------------------*
+      * Purpose: Generates final summary report
+      * - Moves final totals to display fields
+      * - Formats and prints summary statistics
+      * - Shows breakdown of error types and counts
+      *----------------------------------------------------------------*
+      * Update summary totals
+           move ws-total-records to ws-total.
+           move ws-valid-records to ws-valid.
+           move ws-invalid-records to ws-error.
+           
+      * Continues code...
+
+      * Format individual error counters for display
+           move ws-error-1 to ws-error-1-disp.
+           move ws-error-2 to ws-error-2-disp.
+
+      * Continues code...
+
+      * Print formatted summary report sections
+           write output-line from ws-final-decor.
+           write output-line from ws-total-record-count.
+           write output-line from ws-total-valid-count.
+           write output-line from ws-total-error-count.
+
+      * Continues code...

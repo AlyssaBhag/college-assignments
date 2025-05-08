@@ -1,0 +1,45 @@
+      *================================================================*
+      * ERROR VALIDATION PROCEDURE                                       *
+      *================================================================*
+
+       200-edit-errors.
+      *----------------------------------------------------------------*
+      * Purpose: Validates input record fields and tracks errors
+      * Input:  input-line record structure
+      * Output: Sets error flags and counters for invalid data
+      * Process: Checks each field against business rules
+      *----------------------------------------------------------------*
+
+      * Transaction Code Validation (S, L, or R)
+           if not il-valid-tra-code
+                move ws-yes                 to ws-error-flag
+                move ws-error-msg-1         to ws-error-msg-outputs
+                add 1                       to ws-error-1
+                perform 300-write-errors
+           end-if.
+
+      * Transaction Amount Validation (Must be numeric)
+           if il-tra-amount is not numeric
+                move ws-yes                 to ws-error-flag
+                move ws-error-msg-2         to ws-error-msg-outputs
+                add 1                       to ws-error-2
+                perform 300-write-errors
+           end-if.
+
+      * Payment Type Validation (CA, CR, or DB)
+           if not il-valid-pay-type
+                move ws-yes                 to ws-error-flag
+                move ws-error-msg-3         to ws-error-msg-outputs
+                add 1                       to ws-error-3
+                perform 300-write-errors
+           end-if.
+
+
+      * Invoice Number Format Validation
+      * - First character must be A-E
+      * - Second character must be A-E
+      * - Characters cannot be identical
+      * - Must contain hyphen
+      * - Numbers must be 100000-900000
+
+      * Continues with the other validation....

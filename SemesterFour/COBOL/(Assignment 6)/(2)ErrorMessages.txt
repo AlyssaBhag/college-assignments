@@ -1,0 +1,27 @@
+      *================================================================*
+      * ERROR MESSAGE DEFINITIONS                                      *
+      * Purpose: Defines all possible validation error messages        *
+      *----------------------------------------------------------------*
+
+      * Error messages.
+        01 ws-error-messages-setup.
+           05 ws-error-msg-1                pic x(44)
+                value 'Error 1: Transaction code must be S, L or R.'.
+           05 ws-error-msg-2                pic x(44)
+                value 'Error 2: Transaction amount must be numeric.'.
+           05 ws-error-msg-3                pic x(30)
+                value 'Error 3: Invalid payment type.'.
+           05 ws-error-msg-4                pic x(30)
+                value 'Error 4: Invalid Store number.'.
+           05 ws-error-msg-5                pic x(32)
+                value 'Error 5: Invalid invoice format.'.
+           05 ws-error-msg-6                pic x(35)
+                value 'Error 6: Incorrect invoice prefix.'.
+           05 ws-error-msg-7                pic x(35)
+                value 'Error 7: Duplicate invoice prefixs.'.
+           05 ws-error-msg-8                pic x(47)
+                value 'Error 8: A Too Small or Large invoice prefix.'.
+           05 ws-error-msg-9                pic x(46)
+                value 'Error 9: Invoice Number must contain a hyphen'.
+           05 ws-error-msg-10               pic x(33)
+                value 'Error 10: Invalid/Empty SKU Code.'.

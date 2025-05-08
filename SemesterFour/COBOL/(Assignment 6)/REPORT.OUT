@@ -1,0 +1,243 @@
+****************************************************************************************************
+
+                                                                           Alyssa <3, Assignment #6
+ Error Report from Processing for 250320
+
+                                        Point Of Sales Report                              Page  01
+----------------------------------------------------------------------------------------------------
+
+    Transaction   Payment   Store   Invoice
+        Code       Type       #        #         Description     Amount
+    ~~~~~~~~~~~   ~~~~~~~   ~~~~~   ~~~~~~~      ~~~~~~~~~~~     ~~~~~~
+
+         S          CA       01    XA-600005                     $20.00
+~~>Error 5: Invalid invoice format.
+~~>Error 10: Invalid/Empty SKU Code.
+
+         S          CR       01    AA-700006  247R20EHF02EF8E   $149.99
+~~>Error 7: Duplicate invoice prefixs.
+
+         S          CA       01    EB-900008  SDFSKJ84MS09123    $10.00
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         S          CR       01    EB-1500A3  WI8HRW8H43FJSHF     $9.99
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         S          CA       01    AA-240108  SDFSKJ84MS09123    $10.00
+~~>Error 7: Duplicate invoice prefixs.
+
+         S          DB       01    DZ-250109  247R20EHF02EF8E   $129.99
+~~>Error 6: Incorrect invoice prefix.
+
+         R          CR       02    EB-310212                     $24.99
+~~>Error 10: Invalid/Empty SKU Code.
+
+         R          CA       02    BB-320015  SDFSKJ84MS09123    $20.00
+~~>Error 7: Duplicate invoice prefixs.
+
+         S          CW       02    BA-350001  AADFSKJ84MS0913    $10.07
+~~>Error 2: Transaction amount must be numeric.
+~~>Error 3: Invalid payment type.
+
+         S          CR       02    BC-0S0030  WI8HRW8H43FJSHF    $89.99
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         S          CA       02    BB-460031  SDFSKJ84MS09123    $10.00
+~~>Error 7: Duplicate invoice prefixs.
+
+         X          CR       02    CA-480033  WI8HRW8H43FJSHF     $9.97
+~~>Error 1: Transaction code must be S, L or R.
+~~>Error 2: Transaction amount must be numeric.
+****************************************************************************************************
+
+                                                                           Alyssa <3, Assignment #6
+ Error Report from Processing for 250320
+
+                                        Point Of Sales Report                              Page  02
+----------------------------------------------------------------------------------------------------
+
+    Transaction   Payment   Store   Invoice
+        Code       Type       #        #         Description     Amount
+    ~~~~~~~~~~~   ~~~~~~~   ~~~~~   ~~~~~~~      ~~~~~~~~~~~     ~~~~~~
+
+         R          CR       02    CD-500122                    $124.99
+~~>Error 10: Invalid/Empty SKU Code.
+
+         X          CR       02    DA-520036  247R20EHF02EF8E   $149.99
+~~>Error 1: Transaction code must be S, L or R.
+
+         S          DW       02    DB-530037  WI8HRW8H43FJSH2    $29.99
+~~>Error 3: Invalid payment type.
+
+         R          CR       02    DE-550212                     $24.99
+~~>Error 10: Invalid/Empty SKU Code.
+
+         S          DW       02    EC-580217  WI8HRW8H43FJSHF    $29.99
+~~>Error 3: Invalid payment type.
+
+         X          DB       02    AB-600219  247R20EHF02EF8E   $129.99
+~~>Error 1: Transaction code must be S, L or R.
+
+         S          CA       02    ET-640225  SDFSKJ84MS09123    $20.00
+~~>Error 6: Incorrect invoice prefix.
+
+         S          CR       02    EE-650226  247R20EHF02EF8E   $149.99
+~~>Error 7: Duplicate invoice prefixs.
+
+         L          DB       12    CC-730234  LFW8H88W84HFW4F   $149.99
+~~>Error 7: Duplicate invoice prefixs.
+
+         R          CW       02    CE-750335  SDFSKJ84MS09123    $29.99
+~~>Error 3: Invalid payment type.
+
+         C          CR       02    DA-760336  247R20EHF02EF8E   $149.99
+~~>Error 1: Transaction code must be S, L or R.
+
+         R          CR       13    EC-810402  FLW8H4FW8H4FWF4    $24.99
+~~>Error 4: Invalid Store number.
+
+         S          CA       13    AD-850408  SDFSKJ84MS09123    $10.00
+~~>Error 4: Invalid Store number.
+
+         S          CR       03    AA-870410  WI8HRW8H43FJSHF    $89.99
+~~>Error 7: Duplicate invoice prefixs.
+
+         S          CR       03    EA-900413  WI8HRW8H43FJSHF     $9.99
+~~>Error 8: A Too Small or Large invoice prefix.
+****************************************************************************************************
+
+                                                                           Alyssa <3, Assignment #6
+ Error Report from Processing for 250320
+
+                                        Point Of Sales Report                              Page  03
+----------------------------------------------------------------------------------------------------
+
+    Transaction   Payment   Store   Invoice
+        Code       Type       #        #         Description     Amount
+    ~~~~~~~~~~~   ~~~~~~~   ~~~~~   ~~~~~~~      ~~~~~~~~~~~     ~~~~~~
+
+         L          CA       03    GB-910401  SDFSKJ84MS09123    $10.00
+~~>Error 5: Invalid invoice format.
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         S          DB       03    CC-920402  247R20EHF02EF8E   $129.99
+~~>Error 7: Duplicate invoice prefixs.
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         S          CR       03    ED-930403  WI8HRW8H43FJSHF    $89.99
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         L          DB       03    AB-940404  LFW8H88W84HFW4F    $49.99
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         R          CR       03    AC-950402  FLW8H4FW8H4FWF4    $24.99
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         S          CA       04    AD-960405  SDFSKJ84MS09123    $20.00
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         S          CR       17    AE-970406  247R20EHF02EF8E   $179.99
+~~>Error 2: Transaction amount must be numeric.
+~~>Error 4: Invalid Store number.
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         R          DB       04    BA-98S407  WI8HRW8H43FJSHF    $29.99
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         S          CA       04    CC-99S508  SDFSKJ84MS09123    $10.00
+~~>Error 7: Duplicate invoice prefixs.
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         R          CR       04    DB-106512                     $24.99
+~~>Error 10: Invalid/Empty SKU Code.
+****************************************************************************************************
+
+                                                                           Alyssa <3, Assignment #6
+ Error Report from Processing for 250320
+
+                                        Point Of Sales Report                              Page  04
+----------------------------------------------------------------------------------------------------
+
+    Transaction   Payment   Store   Invoice
+        Code       Type       #        #         Description     Amount
+    ~~~~~~~~~~~   ~~~~~~~   ~~~~~   ~~~~~~~      ~~~~~~~~~~~     ~~~~~~
+
+         S          CW       05    EC-110501  AADFSKJ84MS0913   $710.07
+~~>Error 2: Transaction amount must be numeric.
+~~>Error 3: Invalid payment type.
+
+         L          DB       05    DD-113524  LFW8H88W84HFW4F    $49.99
+~~>Error 7: Duplicate invoice prefixs.
+
+         S          CR       12    DC-123633  WI8HRW8H43FJSHF     $9.97
+~~>Error 2: Transaction amount must be numeric.
+
+         R          CX       14    EE-125722                    $124.99
+~~>Error 3: Invalid payment type.
+~~>Error 4: Invalid Store number.
+~~>Error 7: Duplicate invoice prefixs.
+~~>Error 10: Invalid/Empty SKU Code.
+
+         X          CR       12    EB-127636  247R20EHF02EF8E   $149.99
+~~>Error 1: Transaction code must be S, L or R.
+
+         S          DW       12    EA-128637  WI8HRW8H43FJSH2    $29.99
+~~>Error 3: Invalid payment type.
+
+         R          CA       12    AD-131S15  SDFSKJ84MS09123    $24.00
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         S          DW       01    BA-133617  WI8HRW8H43FJSHF    $29.99
+~~>Error 3: Invalid payment type.
+
+         W          DB       03    BD-135619  247R20EHF02EF8E   $129.99
+~~>Error 1: Transaction code must be S, L or R.
+
+         S          CR       04    BB-136623  WI8HRW8H43FJSHF    $89.99
+~~>Error 7: Duplicate invoice prefixs.
+
+         S          DB       05    DD-143629  247R20EHF02EF8E   $129.99
+~~>Error 7: Duplicate invoice prefixs.
+****************************************************************************************************
+
+                                                                           Alyssa <3, Assignment #6
+ Error Report from Processing for 250320
+
+                                        Point Of Sales Report                              Page  05
+----------------------------------------------------------------------------------------------------
+
+    Transaction   Payment   Store   Invoice
+        Code       Type       #        #         Description     Amount
+    ~~~~~~~~~~~   ~~~~~~~   ~~~~~   ~~~~~~~      ~~~~~~~~~~~     ~~~~~~
+
+         R          CR       05    AC-1496N2  F4WO8JFO8W4JFW8     $4.99
+~~>Error 8: A Too Small or Large invoice prefix.
+
+         R          CW       12    AD-150635  SDFSKJ84MS09123    $29.99
+~~>Error 3: Invalid payment type.
+
+         X          CR       71    AE-151636  247R20EHF02EF8E   $149.99
+~~>Error 1: Transaction code must be S, L or R.
+~~>Error 4: Invalid Store number.
+
+         S          DB       08    AB-152637  WI8HRW8H43FJSH2    $29.99
+~~>Error 4: Invalid Store number.
+
+           Final Summary Report
+          ~~~~~~~~~~~~~~~~~~~~~~
+          Total Record Count = 152
+          Total Valid Count =  100
+          Total Error Count =  52
+
+             Individual Counts
+          ~~~~~~~~~~~~~~~~~~~~~~
+               Error 1 =  7
+               Error 2 =  5
+               Error 3 =  9
+               Error 4 =  6
+               Error 5 =  2
+               Error 6 =  2
+               Error 7 = 13
+               Error 8 = 15
+               Error 9 =  0
+               Error 10 = 6
