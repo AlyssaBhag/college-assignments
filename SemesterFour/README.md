@@ -25,3 +25,4 @@ An interactive store interface for tracking game inventory:
 - Utilizes **Express, Local Storage, API interactions, and Middleware** for smooth functionality.
 - Features stock management tools for adding, deleting, and modifying records.
 
+---
