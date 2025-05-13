@@ -13,7 +13,7 @@ This repository showcases a selection of assignments and projects from my colleg
   - **Express.js (JavaScript)** – Web backend and middleware integration.
   - **EJS** – Templating for dynamic web pages.
 - Project-specific technologies are detailed within individual folders.
-
+---
 
 ## 📂 How to Navigate
 - Explore the folders to view specific projects. *(My website serves as the main hub for accessing everything.)*
