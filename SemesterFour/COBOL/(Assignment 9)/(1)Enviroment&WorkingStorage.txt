@@ -1,0 +1,86 @@
+
+       environment division.
+       configuration section.
+      *
+       input-output section.
+      *
+       file-control.
+      * input-file declaration
+           select input-file
+               assign to INFILE
+               organization is sequential.
+      *
+      * output-file declaration
+           select output-file
+               assign to OUTFILE
+               organization is sequential.
+
+       data division.
+       file section.
+      *
+       fd input-file
+           recording mode is F
+           data record is input-line
+           record contains 36 characters.
+
+      * All of the input line variables.
+       01 input-line.
+           05 il-tra-code                   pic x.
+           05 il-tra-amount                 pic 9(5)v99.
+           05 il-pay-type                   pic xx.
+           05 il-store-num                  pic 99.
+           05 il-invoice-num                pic x(9).
+           05 il-sku-code                   pic x(15).
+
+      *
+       fd output-file
+           recording mode is F
+           data record is output-line
+           record contains 100 characters.
+
+       01 output-line                       pic x(100).
+      *
+
+       working-storage section.
+
+      * Normal setup. Including flags, blank lines, and my name.
+       01 ws-eof-flag                       pic x(1)
+           value "N".
+       01 ws-yes                            pic x(1)
+           value "Y".
+
+       01 ws-blank-line                     pic x(100)
+           value spaces.
+
+       01 ws-page-tracker-group.
+           05 ws-max-lines                  pic 99
+                value 20.
+           05 ws-line-counter               pic 99
+                value 0.
+           05 ws-page-counter               pic 9
+                value 0.
+
+       01 ws-my-name-and-date.
+           05 filler                        pic x(1)
+                value spaces.
+           05 filler                        pic x(12)
+                value "Output Date:".
+           05 ws-name-line-date             pic 9(6).
+           05 filler                        pic x(56)
+                value spaces.
+           05 filler                        pic x(9)
+                value "Alyssa <3".
+           05 filler                        pic x(15)
+                value ", Assignment #9".
+
+       01 ws-title.
+           05 filler                        pic x(40)
+                value spaces.
+           05 filler                        pic x(35)
+                value "Returns Report".
+           05 filler                        pic x(16)
+                value spaces.
+           05 filler                        pic x(6)
+                value "Page ".
+           05 ws-page-num                   pic 99
+                value 1.

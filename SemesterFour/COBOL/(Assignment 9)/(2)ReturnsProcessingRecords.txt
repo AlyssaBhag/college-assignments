@@ -1,0 +1,47 @@
+*----------------------------------------------------------------*
+* RECORD PROCESSING (300-400)                                     *
+*----------------------------------------------------------------*
+300-process-records.
+    /* Process returns transactions */
+    if il-tra-code = 'R'
+         perform 400-process-returns-records
+    end-if
+
+    /* Get next record */
+    read input-file
+         at end move ws-yes to ws-eof-flag.
+
+400-process-returns-records.
+    /* Calculate tax and update totals */
+    compute ws-tax-owing-amount = il-tra-amount * 0.13
+    add ws-tax-owing-amount     to ws-total-tax-owing
+
+    /* Format output line */
+    move il-tra-code                 to ws-tra-code-var
+    // ...more move statements...
+
+    /* Update store-specific totals */
+        add il-tra-amount
+            to ws-return-total-num.
+        add 1
+            to ws-return-total-count-num.
+         // ...other store cases...
+    end-if
+    end-if
+    end-if
+    end-if
+    end-if.
+
+*----------------------------------------------------------------*
+* REPORT GENERATION (500)                                         *
+*----------------------------------------------------------------*
+500-print-report.
+    /* Move totals to display fields */
+    move ws-return-total-num to ws-return-total
+    move ws-return-total-count-num to ws-return-total-count
+    // ...more move statements...
+
+    /* Print report sections */
+    write output-line from ws-returns-header
+    write output-line from ws-heading-three
+    // ...more write statements...

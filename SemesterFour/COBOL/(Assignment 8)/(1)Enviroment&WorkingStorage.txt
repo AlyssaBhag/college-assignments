@@ -1,0 +1,80 @@
+*================================================================*
+* ENVIRONMENT DIVISION - File Configuration                        *
+*================================================================*
+
+environment division.
+configuration section.
+input-output section.
+
+file-control.
+    /* Input file configuration - Sequential transaction data */
+    select input-file
+        assign to INFILE
+        organization is sequential.
+
+    /* Output file configuration - Report generation */
+    select output-file
+        assign to OUTFILE
+        organization is sequential.
+
+*================================================================*
+* DATA DIVISION - File and Record Definitions                      *
+*================================================================*
+
+data division.
+file section.
+
+/* Input file record structure */
+fd input-file
+    recording mode is F
+    data record is input-line
+    record contains 36 characters.
+
+/* Transaction record layout */
+01 input-line.
+    05 il-tra-code                   pic x.      /* Transaction type (S/L) */
+    05 il-tra-amount                 pic 9(5)v99./* Transaction amount */
+    05 il-pay-type                   pic xx.     /* Payment method */
+    05 il-store-num                  pic 99.     /* Store number */
+    05 il-invoice-num                pic x(9).   /* Invoice number */
+    05 il-sku-code                   pic x(15).  /* Product SKU */
+
+/* Output file definition */
+fd output-file
+    recording mode is F
+    data record is output-line
+    record contains 100 characters.
+
+*================================================================*
+* WORKING STORAGE SECTION - Program Variables                      *
+*================================================================*
+
+working-storage section.
+
+/* Control flags and constants */
+01 ws-eof-flag                       pic x(1)    /* End of file flag */
+    value "N".
+01 ws-yes                            pic x(1)    /* Positive response flag */
+    value "Y".
+
+/* Page formatting controls */
+01 ws-blank-line                     pic x(100)  /* Blank line for spacing */
+    value spaces.
+
+/* Page tracking group */
+01 ws-page-tracker-group.
+    05 ws-max-lines                  pic 99      /* Max lines per page */
+         value 20.
+    05 ws-line-counter               pic 99      /* Current line count */
+         value 0.
+    05 ws-page-counter               pic 9       /* Current page number */
+         value 0.
+
+/* Report header information */
+01 ws-my-name-and-date.
+    05 filler                        pic x(1)    /* Leading space */
+         value spaces.
+    05 filler                        pic x(12)   /* Date label */
+         value "Output Date:".
+    05 ws-name-line-date             pic 9(6).   /* Current date */
+    // ...remaining header fields...

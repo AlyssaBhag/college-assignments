@@ -1,0 +1,75 @@
+*----------------------------------------------------------------*
+* Sales and Layaway Processing                                    *
+*----------------------------------------------------------------*
+
+300-process-records.
+    /* Handle different transaction types */
+
+    if il-tra-code = 'S'
+        perform 400-process-sales-records
+            add il-tra-amount
+                to ws-sl-total-sales-num
+            add 1
+                to ws-sl-total-sales-count-num
+            add ws-tax-owing-amount
+                to ws-sales-tax-total
+    else
+    if il-tra-code = 'L'
+        /* Process layaway transaction */
+        perform 400-process-sales-records
+        // ...update layaway totals...
+
+
+*----------------------------------------------------------------*
+* Detailed Sales Processing                                       *
+*----------------------------------------------------------------*
+
+400-process-sales-records.
+    /* Calculate tax and update totals */
+        compute ws-tax-owing-amount = il-tra-amount * 0.13
+        add ws-tax-owing-amount to ws-total-tax-owing
+
+    /* Update store-specific totals */
+        if il-store-num = 01
+            add il-tra-amount
+                to ws-one-total-amount-num
+            add 1
+                to ws-one-total-count-num
+        else
+        if il-store-num = 02
+            add il-tra-amount
+                to ws-two-total-amount-num
+            add 1
+                to ws-two-total-count-num
+        else
+        // ...handle other stores...
+
+    /* Track payment methods */
+        if il-pay-type = "CA" then
+            add il-tra-amount
+                to ws-cash-total-amount-count
+            add ws-tax-owing-amount
+                to ws-cash-tax-total-count
+            add 1
+                to ws-sl-cash-tax-count-num
+        else
+        if il-pay-type = "CR" then
+            // ...process credit payment...
+        else if il-pay-type = "DB"
+            // ...process debit payment...
+
+
+*----------------------------------------------------------------*
+* Report Generation and Output                                    *
+*----------------------------------------------------------------*
+
+600-print-report.
+    /* Move calculated totals to display fields */
+    move ws-total-tax-owing to ws-sl-tax
+    // ...move other totals...
+
+    /* Print formatted report sections */
+    write output-line from ws-totals-header
+    write output-line from ws-heading-totals-one
+    // ...print store data...
+    // ...print payment summaries...

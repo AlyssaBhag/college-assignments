@@ -1,0 +1,149 @@
+ Output Date:250414                                                        Alyssa <3, Assignment #8
+                                        Sales and Records Report                           Page  01
+
+    Transaction   Payment   Store     Invoice        Product        Transaction     Tax
+        Code       Type       #          #            Code            Amount      Amount
+
+         S          CA        01    AB-100001    SDFSKJ84MS09123                   $1.30
+         S          DB        01    BC-200002    247R20EHF02EF8E                  $16.89
+         S          CR        01    DE-300003    WI8HRW8H43FJSHF                  $11.69
+         L          DB        01    EA-400004    LFW8H88W84HFW4F                   $6.49
+         S          DB        01    CE-800007    WI8HRW8H43FJSHF                   $3.89
+         S          DB        01    BD-110009    247R20EHF02EF8E                  $16.89
+         S          CR        01    DA-120010    WI8HRW8H43FJSHF                  $11.69
+         S          CA        01    AC-130011    SDFSKJ84MS09123                   $1.30
+         L          DB        01    CE-140012    247R20EHF02EF8E                 $146.89
+         L          CA        01    CE-160101    SDFSKJ84MS09123                   $1.30
+         S          DB        01    AB-170102    247R20EHF02EF8E                  $16.89
+         S          CR        01    CD-180103    WI8HRW8H43FJSHF                  $11.69
+         L          DB        01    EA-190104    LFW8H88W84HFW4F                   $6.49
+         S          CA        01    DE-210105    SDFSKJ84MS09123                   $2.60
+         S          CR        01    AD-220106    247R20EHF02EF8E                  $19.49
+         S          CA        01    BC-270111    SDFSKJ84MS09123                   $1.30
+         S          DB        01    DE-280112    247R20EHF02EF8E                 $146.89
+         S          CR        01    AB-290113    WI8HRW8H43FJSHF                   $1.29
+         L          DB        02    CD-300014    LFW8H88W84HFW4F                   $6.49
+         S          CR        02    AC-330016    247R20EHF02EF8E                  $19.49
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                        Sales and Records Report                           Page  02
+
+    Transaction   Payment   Store     Invoice        Product        Transaction     Tax
+        Code       Type       #          #            Code            Amount      Amount
+
+         S          DB        02    AE-340017    WI8HRW8H43FJSHF                   $3.89
+         S          DB        02    CB-360019    247R20EHF02EF8E                  $16.89
+         S          CR        02    DC-370023    WI8HRW8H43FJSHF                  $11.69
+         L          DB        02    ED-380024    LFW8H88W84HFW4F                   $6.49
+         S          CA        02    AB-400025    SDFSKJ84MS09123                   $2.60
+         S          CR        02    AC-410026    247R20EHF02EF8E                  $19.49
+         S          DB        02    AD-420027    WI8HRW8H43FJSHF                   $3.89
+         S          CA        02    AE-430028    SDFSKJ84MS09123                   $1.30
+         S          DB        02    BA-440029    247R20EHF02EF8E                  $16.89
+         S          DB        02    BE-470032    247R20EHF02EF8E                 $146.89
+         L          DB        02    CB-490034    LFW8H88W84HFW4F                  $19.49
+         L          DB        02    DC-540214    LFW8H88W84HFW4F                   $6.49
+         S          CR        02    EB-570216    247R20EHF02EF8E                  $19.49
+         S          CA        02    ED-590201    AADFSKJ84MS0913                   $1.30
+         S          CR        02    AC-610223    WI8HRW8H43FJSHF                  $11.69
+         L          DB        02    AD-620224    LFW8H88W84HFW4F                   $6.49
+         S          DB        02    EC-660227    WI8HRW8H43FJSHF                   $3.89
+         S          CA        02    ED-670228    SDFSKJ84MS09123                   $1.30
+         S          DB        02    BA-680229    247R20EHF02EF8E                  $16.89
+         S          CR        02    BD-690230    WI8HRW8H43FJSHF                  $11.69
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                        Sales and Records Report                           Page  03
+
+    Transaction   Payment   Store     Invoice        Product        Transaction     Tax
+        Code       Type       #          #            Code            Amount      Amount
+
+         S          CA        02    BE-700231    SDFSKJ84MS09123                   $1.30
+         S          DB        02    BC-710232    247R20EHF02EF8E                 $146.89
+         S          CR        02    CA-720233    WI8HRW8H43FJSHF                   $1.29
+         S          DB        02    DB-760337    WI8HRW8H43FJSH2                   $3.89
+         S          CA        03    DC-770401    SDFSKJ84MS09123                   $1.30
+         S          DB        03    DE-780402    247R20EHF02EF8E                  $16.89
+         S          CR        03    EA-790403    WI8HRW8H43FJSHF                  $11.69
+         L          DB        03    EB-800404    LFW8H88W84HFW4F                   $6.49
+         S          CA        03    ED-820405    SDFSKJ84MS09123                   $2.60
+         S          CR        03    AB-830406    247R20EHF02EF8E                  $19.49
+         S          DB        03    AC-840407    WI8HRW8H43FJSHF                   $3.89
+         S          DB        03    AE-860409    247R20EHF02EF8E                  $16.89
+         S          CA        03    BD-880411    SDFSKJ84MS09123                   $1.30
+         L          DB        03    DE-890412    247R20EHF02EF8E                 $146.89
+         S          DB        04    BD-100509    247R20EHF02EF8E                  $16.89
+         S          CA        04    CA-102511    SDFSKJ84MS09123                   $1.30
+         S          DB        04    CD-103512    247R20EHF02EF8E                 $146.89
+         S          CR        04    CE-104513    WI8HRW8H43FJSHF                   $1.29
+         L          DB        04    DA-105514    LFW8H88W84HFW4F                   $6.49
+         S          CR        05    DE-108516    247R20EHF02EF8E                  $19.49
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                        Sales and Records Report                           Page  04
+
+    Transaction   Payment   Store     Invoice        Product        Transaction     Tax
+        Code       Type       #          #            Code            Amount      Amount
+
+         S          DB        05    ED-109517    WI8HRW8H43FJSHF                   $3.89
+         S          DB        05    EB-111519    247R20EHF02EF8E                  $94.89
+         S          CR        05    EA-112523    WI8HRW8H43FJSHF                  $11.69
+         S          CA        05    DB-115525    SDFSKJ84MS09123                   $2.60
+         S          CR        05    DA-116526    247R20EHF02EF8E                  $19.49
+         S          DB        05    CA-117527    WI8HRW8H43FJSHF                   $3.89
+         S          CA        05    CB-118528    SDFSKJ84MS09123                   $1.30
+         S          CA        05    CD-119529    247R20EHF02EF8E                  $16.83
+         S          CR        12    CE-120530    WI8HRW8H43FJSHF                  $11.69
+         S          CA        12    DA-121631    SDFSKJ84MS09123                $1041.30
+         S          DB        12    DB-122632    247R20EHF02EF8E                 $146.89
+         L          DB        12    DE-124634    LFW8H88W84HFW4F                  $19.49
+         L          DB        12    AB-129614    LFW8H88W84HFW4F                   $6.49
+         S          CR        12    AE-132616    247R20EHF02EF8E                  $19.49
+         S          CA        02    BC-134601    AADFSKJ84MS0913                   $1.30
+         L          DB        05    CA-137624    LFW8H88W84HFW4F                   $6.49
+         S          CA        01    CD-139625    SDFSKJ84MS09123                   $2.60
+         S          CR        02    CE-140626    247R20EHF02EF8E                  $19.49
+         S          DB        03    DA-141627    WI8HRW8H43FJSHF                   $3.89
+         S          CA        04    DB-142628    SDFSKJ84MS09123                   $1.30
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                        Sales and Records Report                           Page  05
+
+    Transaction   Payment   Store     Invoice        Product        Transaction     Tax
+        Code       Type       #          #            Code            Amount      Amount
+
+         S          CR        12    DE-144630    WI8HRW8H43FJSHF                  $11.69
+         S          CA        01    EA-145631    SDFSKJ84MS09123                   $1.30
+         S          DB        02    EB-146632    247R20EHF02EF8E                 $146.89
+         S          CR        03    EC-147633    WI8HRW8H43FJSHF                   $1.29
+         L          DB        04    ED-148634    LFW8H88W84HFW4F                  $19.49
+
+
+***********************************************TOTALS RECORDS***************************************
+   Descriptions  | Sales & Layaway | Sales & Layaway |      | Sales & Layaway |  Sales |  Layaway |
+ & Store Numbers |     Counts      |      Amount     |      |      Total      |  Total |   Total  |
+
+    Store #  1           20             $3,299.87     Count:         85            69        16
+    Store #  2           29             $5,199.77     Totals:     $22,838.86  $19,619.01  $3,219.85
+    Store #  3           12             $1,789.91     Tax:        $ 2,968.50  $ 2,550.05  $  418.45
+    Store #  4            7             $1,489.95
+    Store #  5           10             $1,389.42
+    Store # 12            7             $9,669.94
+
+Store With The Largest S&L Totals: 12
+Store With The Smallest S&L Totals: 5
+
+***********************************************PERCENT RECORDS**************************************
+   Payment | Sales & Layaway | Sales & Layaway | Sales & Layaway | Sales & Layaway |
+    Type   |    Tax Count    | % Tax Amount %  |    $ Total $    |    Total Tax    |
+
+    CA              22             25%              $8,389.49         $1,090.63
+    CR              23             27%              $2,289.77         $  297.47
+    DB              40             47%              $12,159.60         $1,580.40
+
+Total Payment Count:     85
+Total Payment Percent:   100%
