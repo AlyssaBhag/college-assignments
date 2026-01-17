@@ -1,0 +1,3304 @@
+fileFormatVersion: 2
+guid: 1d68962194a92a64f906646478e99e3e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1448252480329919801
+    second: Warrior_Blue_0
+  - first:
+      213: -8838482275237848885
+    second: Warrior_Blue_1
+  - first:
+      213: 5406782203547414040
+    second: Warrior_Blue_2
+  - first:
+      213: 1463704688382458982
+    second: Warrior_Blue_3
+  - first:
+      213: -9152939422376490735
+    second: Warrior_Blue_4
+  - first:
+      213: 5013799040997709749
+    second: Warrior_Blue_5
+  - first:
+      213: -1672519898550114602
+    second: Warrior_Blue_6
+  - first:
+      213: -7791425953029368767
+    second: Warrior_Blue_7
+  - first:
+      213: 1484279566179589967
+    second: Warrior_Blue_8
+  - first:
+      213: -3403234807515756179
+    second: Warrior_Blue_9
+  - first:
+      213: -7028422606531620881
+    second: Warrior_Blue_10
+  - first:
+      213: -8599349895570148482
+    second: Warrior_Blue_11
+  - first:
+      213: 4887455543641441687
+    second: Warrior_Blue_12
+  - first:
+      213: 1617535587422869692
+    second: Warrior_Blue_13
+  - first:
+      213: -6733473425934966021
+    second: Warrior_Blue_14
+  - first:
+      213: 8057981515537251145
+    second: Warrior_Blue_15
+  - first:
+      213: -2295091820497786881
+    second: Warrior_Blue_16
+  - first:
+      213: -4070611951465040981
+    second: Warrior_Blue_17
+  - first:
+      213: -6020158371915913484
+    second: Warrior_Blue_18
+  - first:
+      213: 6852195566242143941
+    second: Warrior_Blue_19
+  - first:
+      213: 8623725918659698721
+    second: Warrior_Blue_20
+  - first:
+      213: -7630331419334528658
+    second: Warrior_Blue_21
+  - first:
+      213: 8250042118999599827
+    second: Warrior_Blue_22
+  - first:
+      213: 1831561948527194828
+    second: Warrior_Blue_23
+  - first:
+      213: 5737398224882651483
+    second: Warrior_Blue_24
+  - first:
+      213: 686275002757285879
+    second: Warrior_Blue_25
+  - first:
+      213: -6820794401073396575
+    second: Warrior_Blue_26
+  - first:
+      213: -8322565654407655767
+    second: Warrior_Blue_27
+  - first:
+      213: 999363956346284212
+    second: Warrior_Blue_28
+  - first:
+      213: 920778665628228539
+    second: Warrior_Blue_29
+  - first:
+      213: -1862056862079330845
+    second: Warrior_Blue_30
+  - first:
+      213: -175862040222990888
+    second: Warrior_Blue_31
+  - first:
+      213: 2103004666898697155
+    second: Warrior_Blue_32
+  - first:
+      213: -4121134383873880558
+    second: Warrior_Blue_33
+  - first:
+      213: -1349581481503386264
+    second: Warrior_Blue_34
+  - first:
+      213: -2586977061673965500
+    second: Warrior_Blue_35
+  - first:
+      213: -3057998330571279762
+    second: Warrior_Blue_36
+  - first:
+      213: 4015574649506354893
+    second: Warrior_Blue_37
+  - first:
+      213: -232515625000527906
+    second: Warrior_Blue_38
+  - first:
+      213: 807218313078530972
+    second: Warrior_Blue_39
+  - first:
+      213: 675785488431832003
+    second: Warrior_Blue_40
+  - first:
+      213: 8958472748343319348
+    second: Warrior_Blue_41
+  - first:
+      213: 8782361303006435773
+    second: Warrior_Blue_42
+  - first:
+      213: 5704183421965384451
+    second: Warrior_Blue_43
+  - first:
+      213: -2183790841163557842
+    second: Warrior_Blue_44
+  - first:
+      213: 9051283987780761484
+    second: Warrior_Blue_45
+  - first:
+      213: -4985013248184194703
+    second: Warrior_Blue_46
+  - first:
+      213: -2110690741743447410
+    second: Warrior_Blue_47
+  - first:
+      213: 5597869990218008791
+    second: Warrior_Blue_48
+  - first:
+      213: -7490071170321743814
+    second: Warrior_Blue_49
+  - first:
+      213: -3107757338139221465
+    second: Warrior_Blue_50
+  - first:
+      213: 5047536160546663753
+    second: Warrior_Blue_51
+  - first:
+      213: -4148541266878104647
+    second: Warrior_Blue_52
+  - first:
+      213: 429336043104486409
+    second: Warrior_Blue_53
+  - first:
+      213: -3187246170801061930
+    second: Warrior_Blue_54
+  - first:
+      213: 1547359339963549388
+    second: Warrior_Blue_55
+  - first:
+      213: -6021040159146955871
+    second: Warrior_Blue_56
+  - first:
+      213: 5150042056499323221
+    second: Warrior_Blue_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Warrior_Blue_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1127
+        width: 89
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 23, y: -45.5}
+        - {x: 27, y: -42.5}
+        - {x: 27, y: -38.5}
+        - {x: 21, y: -36.5}
+        - {x: 21, y: -32.5}
+        - {x: 26, y: -24.5}
+        - {x: 27, y: -22.5}
+        - {x: 27, y: 9.5}
+        - {x: 24, y: 17.5}
+        - {x: 18, y: 24.5}
+        - {x: 17, y: 35.5}
+        - {x: 9, y: 43.5}
+        - {x: 2, y: 46.5}
+        - {x: -10, y: 46.5}
+        - {x: -13, y: 45.5}
+        - {x: -19, y: 39.5}
+        - {x: -20, y: 36.5}
+        - {x: -20, y: 28.5}
+        - {x: -19, y: 25.5}
+        - {x: -14, y: 21.5}
+        - {x: -11, y: 18.5}
+        - {x: -14, y: 9.5}
+        - {x: -16, y: 2.5}
+        - {x: -21, y: 6.5}
+        - {x: -25, y: 6.5}
+        - {x: -27, y: 4.5}
+        - {x: -27, y: -26.5}
+        - {x: -26, y: -29.5}
+        - {x: -10, y: -44.5}
+        - {x: -5, y: -46.5}
+        - {x: 20, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 93da42b25f9391410800000000000000
+      internalID: 1448252480329919801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_2
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1130
+        width: 70
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 17, y: -44.5}
+        - {x: 29, y: -37.5}
+        - {x: 30, y: -34.5}
+        - {x: 30, y: -28.5}
+        - {x: 35, y: -22.5}
+        - {x: 35, y: 4.5}
+        - {x: 29, y: 15.5}
+        - {x: 31, y: 21.5}
+        - {x: 28, y: 22.5}
+        - {x: 20, y: 22.5}
+        - {x: 16, y: 19.5}
+        - {x: 9, y: 22.5}
+        - {x: 9, y: 34.5}
+        - {x: -1, y: 45.5}
+        - {x: -6, y: 46.5}
+        - {x: -18, y: 46.5}
+        - {x: -21, y: 45.5}
+        - {x: -28, y: 39.5}
+        - {x: -29, y: 29.5}
+        - {x: -27, y: 26.5}
+        - {x: -22, y: 22.5}
+        - {x: -15, y: 20.5}
+        - {x: -19, y: 17.5}
+        - {x: -22, y: 8.5}
+        - {x: -23, y: 1.5}
+        - {x: -29, y: 6.5}
+        - {x: -33, y: 6.5}
+        - {x: -35, y: 4.5}
+        - {x: -35, y: -26.5}
+        - {x: -34, y: -29.5}
+        - {x: -18, y: -44.5}
+        - {x: -13, y: -46.5}
+        - {x: 12, y: -46.5}
+      - - {x: 14, y: -30.5}
+        - {x: 15, y: -29.5}
+        - {x: 15, y: -30.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 81ee85c84cfb80b40800000000000000
+      internalID: 5406782203547414040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_3
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1130
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 18, y: -43.5}
+        - {x: 21, y: -39.5}
+        - {x: 21, y: -38.5}
+        - {x: 17, y: -32.5}
+        - {x: 16, y: -30.5}
+        - {x: 21, y: -35.5}
+        - {x: 29, y: -35.5}
+        - {x: 31, y: -33.5}
+        - {x: 32, y: -26.5}
+        - {x: 36, y: -20.5}
+        - {x: 36, y: 3.5}
+        - {x: 34, y: 8.5}
+        - {x: 29, y: 16.5}
+        - {x: 32, y: 18.5}
+        - {x: 30, y: 24.5}
+        - {x: 21, y: 23.5}
+        - {x: 17, y: 20.5}
+        - {x: 14, y: 17.5}
+        - {x: 10, y: 29.5}
+        - {x: 7, y: 35.5}
+        - {x: -2, y: 43.5}
+        - {x: -6, y: 45.5}
+        - {x: -19, y: 45.5}
+        - {x: -22, y: 44.5}
+        - {x: -29, y: 36.5}
+        - {x: -28, y: 26.5}
+        - {x: -23, y: 22.5}
+        - {x: -14, y: 20.5}
+        - {x: -19, y: 16.5}
+        - {x: -22, y: 7.5}
+        - {x: -23, y: 1.5}
+        - {x: -29, y: 7.5}
+        - {x: -34, y: 6.5}
+        - {x: -36, y: 4.5}
+        - {x: -36, y: -26.5}
+        - {x: -35, y: -29.5}
+        - {x: -21, y: -42.5}
+        - {x: -13, y: -45.5}
+        - {x: 12, y: -45.5}
+      - - {x: 20, y: -0.5}
+        - {x: 21, y: -0.5}
+        - {x: 21, y: -1.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 66c3c17b8af105410800000000000000
+      internalID: 1463704688382458982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_4
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1130
+        width: 72
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 15, y: -43.5}
+        - {x: 20, y: -39.5}
+        - {x: 20, y: -37.5}
+        - {x: 17, y: -31.5}
+        - {x: 14, y: -29.5}
+        - {x: 16, y: -30.5}
+        - {x: 21, y: -33.5}
+        - {x: 29, y: -33.5}
+        - {x: 32, y: -32.5}
+        - {x: 33, y: -23.5}
+        - {x: 36, y: -18.5}
+        - {x: 36, y: 5.5}
+        - {x: 34, y: 10.5}
+        - {x: 29, y: 18.5}
+        - {x: 31, y: 21.5}
+        - {x: 31, y: 23.5}
+        - {x: 29, y: 25.5}
+        - {x: 21, y: 25.5}
+        - {x: 17, y: 22.5}
+        - {x: 15, y: 15.5}
+        - {x: 15, y: 19.5}
+        - {x: 10, y: 32.5}
+        - {x: 8, y: 34.5}
+        - {x: 1, y: 42.5}
+        - {x: -5, y: 44.5}
+        - {x: -19, y: 44.5}
+        - {x: -25, y: 40.5}
+        - {x: -27, y: 34.5}
+        - {x: -27, y: 27.5}
+        - {x: -26, y: 24.5}
+        - {x: -21, y: 20.5}
+        - {x: -17, y: 19.5}
+        - {x: -20, y: 15.5}
+        - {x: -23, y: 4.5}
+        - {x: -25, y: 2.5}
+        - {x: -30, y: 6.5}
+        - {x: -34, y: 6.5}
+        - {x: -36, y: 4.5}
+        - {x: -36, y: -26.5}
+        - {x: -35, y: -29.5}
+        - {x: -21, y: -42.5}
+        - {x: -13, y: -44.5}
+        - {x: 12, y: -44.5}
+      - - {x: 20, y: 1.5}
+        - {x: 21, y: 1.5}
+        - {x: 21, y: 0.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 1198496f61a3af080800000000000000
+      internalID: -9152939422376490735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_5
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1130
+        width: 70
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 17, y: -43}
+        - {x: 21, y: -39}
+        - {x: 22, y: -35}
+        - {x: 12, y: -29}
+        - {x: 20, y: -33}
+        - {x: 28, y: -33}
+        - {x: 30, y: -32}
+        - {x: 33, y: -23}
+        - {x: 35, y: -19}
+        - {x: 35, y: 7}
+        - {x: 29, y: 19}
+        - {x: 30, y: 22}
+        - {x: 30, y: 24}
+        - {x: 28, y: 26}
+        - {x: 20, y: 26}
+        - {x: 16, y: 23}
+        - {x: 15, y: 20}
+        - {x: 10, y: 24}
+        - {x: 9, y: 32}
+        - {x: 8, y: 35}
+        - {x: 1, y: 43}
+        - {x: -5, y: 45}
+        - {x: -17, y: 45}
+        - {x: -19, y: 44}
+        - {x: -24, y: 39}
+        - {x: -27, y: 34}
+        - {x: -27, y: 27}
+        - {x: -26, y: 24}
+        - {x: -22, y: 20}
+        - {x: -20, y: 16}
+        - {x: -24, y: 3}
+        - {x: -29, y: 7}
+        - {x: -33, y: 7}
+        - {x: -35, y: 5}
+        - {x: -35, y: -26}
+        - {x: -34, y: -29}
+        - {x: -21, y: -42}
+        - {x: -16, y: -45}
+        - {x: 12, y: -45}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 5b7dcddd9a7949540800000000000000
+      internalID: 5013799040997709749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_6
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1130
+        width: 70
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 18, y: -44.5}
+        - {x: 21, y: -40.5}
+        - {x: 21, y: -36.5}
+        - {x: 17, y: -32.5}
+        - {x: 11, y: -30.5}
+        - {x: 16, y: -28.5}
+        - {x: 20, y: -32.5}
+        - {x: 28, y: -32.5}
+        - {x: 31, y: -31.5}
+        - {x: 32, y: -22.5}
+        - {x: 35, y: -17.5}
+        - {x: 35, y: 7.5}
+        - {x: 29, y: 19.5}
+        - {x: 31, y: 21.5}
+        - {x: 29, y: 27.5}
+        - {x: 20, y: 26.5}
+        - {x: 15, y: 23.5}
+        - {x: 14, y: 19.5}
+        - {x: 9, y: 23.5}
+        - {x: 9, y: 35.5}
+        - {x: 1, y: 43.5}
+        - {x: -6, y: 46.5}
+        - {x: -16, y: 46.5}
+        - {x: -21, y: 44.5}
+        - {x: -28, y: 38.5}
+        - {x: -29, y: 27.5}
+        - {x: -27, y: 24.5}
+        - {x: -22, y: 20.5}
+        - {x: -20, y: 15.5}
+        - {x: -24, y: 2.5}
+        - {x: -29, y: 6.5}
+        - {x: -33, y: 6.5}
+        - {x: -35, y: 4.5}
+        - {x: -35, y: -26.5}
+        - {x: -34, y: -29.5}
+        - {x: -18, y: -44.5}
+        - {x: -13, y: -46.5}
+        - {x: 12, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 6d6e52f73040ac8e0800000000000000
+      internalID: -1672519898550114602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 937
+        width: 74
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 20, y: -45.5}
+        - {x: 23, y: -41.5}
+        - {x: 23, y: -37.5}
+        - {x: 19, y: -33.5}
+        - {x: 15, y: -32.5}
+        - {x: 15, y: -30.5}
+        - {x: 0, y: -28.5}
+        - {x: 12, y: -29.5}
+        - {x: 15, y: -29.5}
+        - {x: 19, y: -33.5}
+        - {x: 21, y: -33.5}
+        - {x: 25, y: -29.5}
+        - {x: 25, y: -24.5}
+        - {x: 24, y: -23.5}
+        - {x: 24, y: -19.5}
+        - {x: 23, y: -7.5}
+        - {x: 22, y: 8.5}
+        - {x: 16, y: 23.5}
+        - {x: 12, y: 36.5}
+        - {x: 6, y: 44.5}
+        - {x: -1, y: 47.5}
+        - {x: -17, y: 47.5}
+        - {x: -20, y: 46.5}
+        - {x: -25, y: 39.5}
+        - {x: -25, y: 27.5}
+        - {x: -21, y: 22.5}
+        - {x: -17, y: 21.5}
+        - {x: -19, y: 16.5}
+        - {x: -23, y: 16.5}
+        - {x: -25, y: 14.5}
+        - {x: -25, y: -16.5}
+        - {x: -24, y: -19.5}
+        - {x: -18, y: -28.5}
+        - {x: -18, y: -31.5}
+        - {x: -20, y: -37.5}
+        - {x: -20, y: -41.5}
+        - {x: -17, y: -45.5}
+        - {x: -13, y: -47.5}
+        - {x: 14, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 144dcef506b4fd390800000000000000
+      internalID: -7791425953029368767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_9
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 938
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 16, y: -46}
+        - {x: 19, y: -42}
+        - {x: 19, y: -33}
+        - {x: 17, y: -31}
+        - {x: 25, y: -31}
+        - {x: 28, y: -30}
+        - {x: 27, y: -21}
+        - {x: 32, y: -17}
+        - {x: 32, y: 8}
+        - {x: 30, y: 13}
+        - {x: 25, y: 21}
+        - {x: 27, y: 24}
+        - {x: 27, y: 26}
+        - {x: 25, y: 28}
+        - {x: 17, y: 28}
+        - {x: 13, y: 25}
+        - {x: 12, y: 22}
+        - {x: 12, y: 21}
+        - {x: 7, y: 25}
+        - {x: 7, y: 37}
+        - {x: -1, y: 45}
+        - {x: -8, y: 48}
+        - {x: -21, y: 48}
+        - {x: -23, y: 47}
+        - {x: -31, y: 38}
+        - {x: -31, y: 30}
+        - {x: -25, y: 23}
+        - {x: -19, y: 22}
+        - {x: -24, y: 15}
+        - {x: -26, y: 11}
+        - {x: -30, y: 11}
+        - {x: -32, y: 9}
+        - {x: -32, y: -22}
+        - {x: -31, y: -25}
+        - {x: -24, y: -38}
+        - {x: -24, y: -42}
+        - {x: -21, y: -46}
+        - {x: -17, y: -48}
+        - {x: 10, y: -48}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: d6947c249f745c0d0800000000000000
+      internalID: -3403234807515756179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_10
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 938
+        width: 70
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 16, y: -39}
+        - {x: 20, y: -35}
+        - {x: 20, y: -31}
+        - {x: 17, y: -27}
+        - {x: 20, y: -28}
+        - {x: 28, y: -28}
+        - {x: 30, y: -26}
+        - {x: 31, y: -18}
+        - {x: 35, y: -13}
+        - {x: 35, y: 13}
+        - {x: 29, y: 24}
+        - {x: 31, y: 26}
+        - {x: 29, y: 32}
+        - {x: 20, y: 31}
+        - {x: 16, y: 28}
+        - {x: 14, y: 25}
+        - {x: 14, y: 21}
+        - {x: 5, y: 28}
+        - {x: 4, y: 31}
+        - {x: -3, y: 39}
+        - {x: -7, y: 41}
+        - {x: -26, y: 41}
+        - {x: -32, y: 36}
+        - {x: -34, y: 31}
+        - {x: -35, y: 22}
+        - {x: -28, y: 13}
+        - {x: -33, y: 13}
+        - {x: -35, y: 11}
+        - {x: -35, y: -20}
+        - {x: -34, y: -23}
+        - {x: -23, y: -33}
+        - {x: -24, y: -36}
+        - {x: -16, y: -41}
+        - {x: 11, y: -41}
+      - - {x: 19.333328, y: 6.6666718}
+        - {x: 20, y: 7}
+        - {x: 20, y: 6}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: fef8b56a0e6067e90800000000000000
+      internalID: -7028422606531620881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_11
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 938
+        width: 87
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 29, y: -45.5}
+        - {x: 32, y: -42.5}
+        - {x: 32, y: -36.5}
+        - {x: 29, y: -33.5}
+        - {x: 25, y: -32.5}
+        - {x: 28, y: -28.5}
+        - {x: 27, y: -24.5}
+        - {x: 29, y: -27.5}
+        - {x: 31, y: -29.5}
+        - {x: 32, y: -29.5}
+        - {x: 32, y: 21.5}
+        - {x: 29, y: 20.5}
+        - {x: 22, y: 27.5}
+        - {x: 21, y: 39.5}
+        - {x: 16, y: 44.5}
+        - {x: 9, y: 47.5}
+        - {x: -6, y: 47.5}
+        - {x: -9, y: 45.5}
+        - {x: -13, y: 42.5}
+        - {x: -16, y: 35.5}
+        - {x: -17, y: 29.5}
+        - {x: -11, y: 22.5}
+        - {x: -7, y: 21.5}
+        - {x: -9, y: 16.5}
+        - {x: -11, y: 7.5}
+        - {x: -26, y: 17.5}
+        - {x: -30, y: 17.5}
+        - {x: -32, y: 15.5}
+        - {x: -32, y: -15.5}
+        - {x: -31, y: -18.5}
+        - {x: -17, y: -31.5}
+        - {x: -15, y: -31.5}
+        - {x: -6, y: -22.5}
+        - {x: 0, y: -28.5}
+        - {x: -4, y: -31.5}
+        - {x: -11, y: -36.5}
+        - {x: -10, y: -41.5}
+        - {x: -6, y: -45.5}
+        - {x: -1, y: -47.5}
+        - {x: 24, y: -47.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: e73bf3fc4d8f8a880800000000000000
+      internalID: -8599349895570148482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_13
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 938
+        width: 83
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 27.5, y: -46}
+        - {x: 30.5, y: -43}
+        - {x: 30.5, y: -37}
+        - {x: 28.5, y: -34}
+        - {x: 25.5, y: -32}
+        - {x: 25.5, y: -26}
+        - {x: 29.5, y: -28}
+        - {x: 30.5, y: -28}
+        - {x: 30.5, y: 2}
+        - {x: 28.5, y: 11}
+        - {x: 20.5, y: 34}
+        - {x: 17.5, y: 39}
+        - {x: 11.5, y: 45}
+        - {x: 5.5, y: 48}
+        - {x: -7.5, y: 48}
+        - {x: -10.5, y: 47}
+        - {x: -16.5, y: 41}
+        - {x: -17.5, y: 38}
+        - {x: -18.5, y: 30}
+        - {x: -12.5, y: 23}
+        - {x: -6.5, y: 22}
+        - {x: -10.5, y: 18}
+        - {x: -12.5, y: 4}
+        - {x: -24.5, y: 12}
+        - {x: -28.5, y: 12}
+        - {x: -30.5, y: 10}
+        - {x: -30.5, y: -21}
+        - {x: -29.5, y: -24}
+        - {x: -15.5, y: -37}
+        - {x: -13.5, y: -37}
+        - {x: -4.5, y: -28}
+        - {x: -7.5, y: -34}
+        - {x: -11.5, y: -38}
+        - {x: -11.5, y: -42}
+        - {x: -7.5, y: -46}
+        - {x: -2.5, y: -48}
+        - {x: 22.5, y: -48}
+      - - {x: 30.5, y: 23}
+        - {x: 27.5, y: 22}
+        - {x: 27.5, y: 14}
+        - {x: 29.5, y: 12}
+        - {x: 30.5, y: 12}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: cb894e3fb04a27610800000000000000
+      internalID: 1617535587422869692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_15
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 938
+        width: 71
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 17.5, y: -40}
+        - {x: 22.5, y: -32}
+        - {x: 28.5, y: -31}
+        - {x: 30.5, y: -29}
+        - {x: 30.5, y: -23}
+        - {x: 35.5, y: -16}
+        - {x: 35.5, y: 8}
+        - {x: 33.5, y: 13}
+        - {x: 28.5, y: 21}
+        - {x: 31.5, y: 23}
+        - {x: 29.5, y: 29}
+        - {x: 20.5, y: 28}
+        - {x: 16.5, y: 25}
+        - {x: 15.5, y: 22}
+        - {x: 13.5, y: 21}
+        - {x: 5.5, y: 28}
+        - {x: 4.5, y: 31}
+        - {x: -2.5, y: 39}
+        - {x: -6.5, y: 41}
+        - {x: -25.5, y: 41}
+        - {x: -31.5, y: 36}
+        - {x: -33.5, y: 31}
+        - {x: -34.5, y: 22}
+        - {x: -27.5, y: 13}
+        - {x: -24.5, y: 10}
+        - {x: -29.5, y: 14}
+        - {x: -33.5, y: 14}
+        - {x: -35.5, y: 12}
+        - {x: -35.5, y: -19}
+        - {x: -34.5, y: -22}
+        - {x: -22.5, y: -33}
+        - {x: -23.5, y: -36}
+        - {x: -15.5, y: -41}
+        - {x: 11.5, y: -41}
+      - - {x: 20, y: 3.5}
+        - {x: 20.5, y: 4}
+        - {x: 20.5, y: 3}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 94bf240de73b3df60800000000000000
+      internalID: 8057981515537251145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 743
+        width: 76
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 21.5, y: -45.5}
+        - {x: 25.5, y: -42.5}
+        - {x: 25.5, y: -38.5}
+        - {x: 19.5, y: -36.5}
+        - {x: 19.5, y: -32.5}
+        - {x: 23.5, y: -27.5}
+        - {x: 25.5, y: -22.5}
+        - {x: 25.5, y: 9.5}
+        - {x: 22.5, y: 17.5}
+        - {x: 16.5, y: 24.5}
+        - {x: 15.5, y: 35.5}
+        - {x: 7.5, y: 43.5}
+        - {x: 0.5, y: 46.5}
+        - {x: -11.5, y: 46.5}
+        - {x: -14.5, y: 45.5}
+        - {x: -22.5, y: 36.5}
+        - {x: -21.5, y: 25.5}
+        - {x: -15.5, y: 21.5}
+        - {x: -9.5, y: 20.5}
+        - {x: -13.5, y: 15.5}
+        - {x: -21.5, y: 19.5}
+        - {x: -24.5, y: 19.5}
+        - {x: -25.5, y: 18.5}
+        - {x: -25.5, y: 5.5}
+        - {x: -21.5, y: 1.5}
+        - {x: -20.5, y: -15.5}
+        - {x: -16.5, y: -21.5}
+        - {x: -12.5, y: -21.5}
+        - {x: -5.5, y: -28.5}
+        - {x: -14.5, y: -40.5}
+        - {x: -15.5, y: -42.5}
+        - {x: -8.5, y: -46.5}
+        - {x: 18.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: ff7235036223620e0800000000000000
+      internalID: -2295091820497786881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_18
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 742
+        width: 63
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 12.5, y: -44.5}
+        - {x: 16.5, y: -40.5}
+        - {x: 16.5, y: -37.5}
+        - {x: 10.5, y: -31.5}
+        - {x: 15.5, y: -33.5}
+        - {x: 24.5, y: -33.5}
+        - {x: 27.5, y: -32.5}
+        - {x: 28.5, y: -22.5}
+        - {x: 31.5, y: -19.5}
+        - {x: 31.5, y: 3.5}
+        - {x: 26.5, y: 14.5}
+        - {x: 26.5, y: 24.5}
+        - {x: 23.5, y: 25.5}
+        - {x: 14.5, y: 25.5}
+        - {x: 10.5, y: 21.5}
+        - {x: 9.5, y: 17.5}
+        - {x: 7.5, y: 21.5}
+        - {x: 4.5, y: 24.5}
+        - {x: 4.5, y: 30.5}
+        - {x: 2.5, y: 35.5}
+        - {x: -6.5, y: 44.5}
+        - {x: -10.5, y: 46.5}
+        - {x: -22.5, y: 46.5}
+        - {x: -25.5, y: 45.5}
+        - {x: -31.5, y: 40.5}
+        - {x: -31.5, y: 26.5}
+        - {x: -26.5, y: 22.5}
+        - {x: -20.5, y: 20.5}
+        - {x: -23.5, y: 17.5}
+        - {x: -25.5, y: 12.5}
+        - {x: -31.5, y: 4.5}
+        - {x: -31.5, y: -15.5}
+        - {x: -27.5, y: -21.5}
+        - {x: -26.5, y: -25.5}
+        - {x: -17.5, y: -32.5}
+        - {x: -25.5, y: -40.5}
+        - {x: -26.5, y: -42.5}
+        - {x: -19.5, y: -46.5}
+        - {x: 7.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 4f6ab5e5bd9147ca0800000000000000
+      internalID: -6020158371915913484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_19
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 742
+        width: 96
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -3, y: -43.5}
+        - {x: 3, y: -39.5}
+        - {x: 10, y: -39.5}
+        - {x: 14, y: -36.5}
+        - {x: 14, y: -33.5}
+        - {x: 12, y: -28.5}
+        - {x: 16, y: -26.5}
+        - {x: 18, y: -21.5}
+        - {x: 18, y: -12.5}
+        - {x: 23, y: -9.5}
+        - {x: 29, y: -6.5}
+        - {x: 36, y: -4.5}
+        - {x: 39, y: -4.5}
+        - {x: 48, y: 3.5}
+        - {x: 48, y: 12.5}
+        - {x: 43, y: 13.5}
+        - {x: 32, y: 13.5}
+        - {x: 29, y: 10.5}
+        - {x: 26, y: 6.5}
+        - {x: 14, y: 1.5}
+        - {x: 6, y: 13.5}
+        - {x: 6, y: 18.5}
+        - {x: 4, y: 22.5}
+        - {x: -7, y: 21.5}
+        - {x: -9, y: 19.5}
+        - {x: -11, y: 30.5}
+        - {x: -14, y: 34.5}
+        - {x: -23, y: 43.5}
+        - {x: -27, y: 45.5}
+        - {x: -40, y: 45.5}
+        - {x: -43, y: 44.5}
+        - {x: -48, y: 39.5}
+        - {x: -48, y: 26.5}
+        - {x: -44, y: 22.5}
+        - {x: -35, y: 20.5}
+        - {x: -40, y: 16.5}
+        - {x: -43, y: 6.5}
+        - {x: -45, y: -0.5}
+        - {x: -45, y: -20.5}
+        - {x: -41, y: -26.5}
+        - {x: -37, y: -26.5}
+        - {x: -39, y: -37.5}
+        - {x: -38, y: -43.5}
+        - {x: -35, y: -45.5}
+        - {x: -9, y: -45.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 5ce9e512093e71f50800000000000000
+      internalID: 6852195566242143941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_20
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 742
+        width: 85
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -1.5, y: -43.5}
+        - {x: 3.5, y: -39.5}
+        - {x: 3.5, y: -37.5}
+        - {x: 1.5, y: -31.5}
+        - {x: 3.5, y: -28.5}
+        - {x: 3.5, y: -23.5}
+        - {x: 9.5, y: -24.5}
+        - {x: 14.5, y: -27.5}
+        - {x: 18.5, y: -30.5}
+        - {x: 24.5, y: -30.5}
+        - {x: 31.5, y: -27.5}
+        - {x: 31.5, y: -23.5}
+        - {x: 30.5, y: -15.5}
+        - {x: 31.5, y: -12.5}
+        - {x: 34.5, y: -5.5}
+        - {x: 42.5, y: 3.5}
+        - {x: 42.5, y: 8.5}
+        - {x: 38.5, y: 10.5}
+        - {x: 28.5, y: 11.5}
+        - {x: 24.5, y: 8.5}
+        - {x: 18.5, y: 16.5}
+        - {x: 11.5, y: 20.5}
+        - {x: 11.5, y: 26.5}
+        - {x: 9.5, y: 28.5}
+        - {x: 3.5, y: 26.5}
+        - {x: -1.5, y: 23.5}
+        - {x: -2.5, y: 18.5}
+        - {x: -6.5, y: 23.5}
+        - {x: -7.5, y: 31.5}
+        - {x: -8.5, y: 34.5}
+        - {x: -15.5, y: 42.5}
+        - {x: -21.5, y: 44.5}
+        - {x: -35.5, y: 44.5}
+        - {x: -41.5, y: 40.5}
+        - {x: -42.5, y: 36.5}
+        - {x: -42.5, y: 24.5}
+        - {x: -37.5, y: 20.5}
+        - {x: -35.5, y: 17.5}
+        - {x: -39.5, y: 0.5}
+        - {x: -39.5, y: -19.5}
+        - {x: -35.5, y: -25.5}
+        - {x: -28.5, y: -30.5}
+        - {x: -36.5, y: -38.5}
+        - {x: -37.5, y: -41.5}
+        - {x: -31.5, y: -44.5}
+        - {x: -4.5, y: -44.5}
+      - - {x: 4.5, y: 0.5}
+        - {x: 4.5, y: 3.5}
+        - {x: 3.5, y: 4.5}
+        - {x: 3.5, y: 6.5}
+        - {x: 6.5, y: 3.5}
+        - {x: 6.5, y: 2.5}
+        - {x: 8.5, y: 0.5}
+        - {x: 5.5, y: 0.5}
+        - {x: 5, y: 0}
+      - - {x: 7.5, y: -15.5}
+        - {x: 6.5, y: -15.5}
+        - {x: 4.5, y: -13.5}
+        - {x: 7.5, y: -12.5}
+        - {x: 12.5, y: -11.5}
+        - {x: 13.5, y: -10.5}
+        - {x: 12.5, y: -15.5}
+        - {x: 8.5, y: -16.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 1206a065801ada770800000000000000
+      internalID: 8623725918659698721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_21
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 742
+        width: 77
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 4.5, y: -43}
+        - {x: 8.5, y: -39}
+        - {x: 8.5, y: -36}
+        - {x: 5.5, y: -33}
+        - {x: 7.5, y: -29}
+        - {x: 6.5, y: -22}
+        - {x: 19.5, y: -22}
+        - {x: 25.5, y: -28}
+        - {x: 31.5, y: -27}
+        - {x: 38.5, y: -24}
+        - {x: 38.5, y: -2}
+        - {x: 36.5, y: 1}
+        - {x: 38.5, y: 3}
+        - {x: 38.5, y: 9}
+        - {x: 37.5, y: 10}
+        - {x: 32.5, y: 10}
+        - {x: 28.5, y: 17}
+        - {x: 25.5, y: 20}
+        - {x: 18.5, y: 24}
+        - {x: 18.5, y: 30}
+        - {x: 16.5, y: 33}
+        - {x: 8.5, y: 30}
+        - {x: 4.5, y: 27}
+        - {x: 3.5, y: 19}
+        - {x: 3.5, y: 15}
+        - {x: 1.5, y: 19}
+        - {x: -2.5, y: 24}
+        - {x: -3.5, y: 32}
+        - {x: -4.5, y: 35}
+        - {x: -11.5, y: 43}
+        - {x: -17.5, y: 45}
+        - {x: -29.5, y: 45}
+        - {x: -31.5, y: 44}
+        - {x: -36.5, y: 39}
+        - {x: -38.5, y: 36}
+        - {x: -38.5, y: 24}
+        - {x: -34.5, y: 20}
+        - {x: -32.5, y: 16}
+        - {x: -34.5, y: 9}
+        - {x: -36.5, y: 1}
+        - {x: -36.5, y: -19}
+        - {x: -32.5, y: -25}
+        - {x: -28.5, y: -26}
+        - {x: -26.5, y: -33}
+        - {x: -32.5, y: -39}
+        - {x: -33.5, y: -42}
+        - {x: -27.5, y: -45}
+        - {x: -0.5, y: -45}
+      - - {x: 6.5, y: 8}
+        - {x: 9.5, y: 11}
+        - {x: 10.5, y: 11}
+        - {x: 10.5, y: 10}
+        - {x: 15.5, y: 5}
+        - {x: 9.5, y: 4}
+        - {x: 7.5, y: 2}
+      - - {x: 10.5, y: -15}
+        - {x: 7.5, y: -13}
+        - {x: 7.5, y: -12}
+        - {x: 19.5, y: -7}
+        - {x: 19.5, y: -12}
+        - {x: 14.5, y: -13}
+        - {x: 10.5, y: -16}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: e613018500e9b1690800000000000000
+      internalID: -7630331419334528658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_22
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 742
+        width: 77
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 12.5, y: -9.5}
+        - {x: 19.5, y: -9.5}
+        - {x: 16.5, y: -13.5}
+        - {x: 9.5, y: -16.5}
+        - {x: 9.5, y: -17.5}
+        - {x: 8.5, y: -14.5}
+      - - {x: 7.5, y: 5.5}
+        - {x: 7.5, y: 9.5}
+        - {x: 9.5, y: 10.5}
+        - {x: 12.5, y: 6.5}
+        - {x: 13.5, y: 5.5}
+        - {x: 11.5, y: 3.5}
+        - {x: 8.5, y: 3.5}
+        - {x: 8.5, y: 4.5}
+      - - {x: 23.5, y: -27.5}
+        - {x: 29.5, y: -27.5}
+        - {x: 38.5, y: -24.5}
+        - {x: 36.5, y: -16.5}
+        - {x: 34.5, y: -13.5}
+        - {x: 37.5, y: -10.5}
+        - {x: 38.5, y: -4.5}
+        - {x: 35.5, y: 0.5}
+        - {x: 38.5, y: 3.5}
+        - {x: 38.5, y: 7.5}
+        - {x: 36.5, y: 9.5}
+        - {x: 31.5, y: 11.5}
+        - {x: 22.5, y: 20.5}
+        - {x: 17.5, y: 23.5}
+        - {x: 18.5, y: 28.5}
+        - {x: 16.5, y: 32.5}
+        - {x: 7.5, y: 29.5}
+        - {x: 4.5, y: 25.5}
+        - {x: 3.5, y: 19.5}
+        - {x: -2.5, y: 23.5}
+        - {x: -2.5, y: 35.5}
+        - {x: -10.5, y: 43.5}
+        - {x: -17.5, y: 46.5}
+        - {x: -27.5, y: 46.5}
+        - {x: -32.5, y: 44.5}
+        - {x: -38.5, y: 38.5}
+        - {x: -38.5, y: 24.5}
+        - {x: -33.5, y: 20.5}
+        - {x: -29.5, y: 19.5}
+        - {x: -32.5, y: 15.5}
+        - {x: -36.5, y: 1.5}
+        - {x: -36.5, y: -18.5}
+        - {x: -33.5, y: -24.5}
+        - {x: -24.5, y: -29.5}
+        - {x: -25.5, y: -33.5}
+        - {x: -32.5, y: -40.5}
+        - {x: -33.5, y: -42.5}
+        - {x: -26.5, y: -46.5}
+        - {x: 0.5, y: -46.5}
+        - {x: 5.5, y: -44.5}
+        - {x: 9.5, y: -40.5}
+        - {x: 9.5, y: -36.5}
+        - {x: 5.5, y: -32.5}
+        - {x: 4.5, y: -28.5}
+        - {x: 6.5, y: -26.5}
+        - {x: 9.5, y: -19.5}
+        - {x: 10.5, y: -22.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 3da6bfcb8990e7270800000000000000
+      internalID: 8250042118999599827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_23
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 745
+        width: 88
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 23, y: -40.5}
+        - {x: 21, y: -33.5}
+        - {x: 19, y: -30.5}
+        - {x: 24, y: -26.5}
+        - {x: 27, y: -18.5}
+        - {x: 27, y: 0.5}
+        - {x: 26, y: 4.5}
+        - {x: 25, y: 9.5}
+        - {x: 23, y: 17.5}
+        - {x: 17, y: 24.5}
+        - {x: 16, y: 35.5}
+        - {x: 8, y: 43.5}
+        - {x: 1, y: 46.5}
+        - {x: -11, y: 46.5}
+        - {x: -14, y: 45.5}
+        - {x: -20, y: 39.5}
+        - {x: -21, y: 36.5}
+        - {x: -21, y: 28.5}
+        - {x: -20, y: 25.5}
+        - {x: -15, y: 21.5}
+        - {x: -9, y: 20.5}
+        - {x: -13, y: 16.5}
+        - {x: -15, y: 11.5}
+        - {x: -21, y: -10.5}
+        - {x: -26, y: -12.5}
+        - {x: -27, y: -14.5}
+        - {x: -27, y: -23.5}
+        - {x: -21, y: -29.5}
+        - {x: -15, y: -27.5}
+        - {x: -10, y: -25.5}
+        - {x: -6, y: -29.5}
+        - {x: -7, y: -32.5}
+        - {x: -15, y: -39.5}
+        - {x: -15, y: -42.5}
+        - {x: -8, y: -46.5}
+        - {x: 19, y: -46.5}
+      - - {x: 27, y: 28.5}
+        - {x: 24, y: 27.5}
+        - {x: 24, y: 24.5}
+        - {x: 26, y: 22.5}
+        - {x: 27, y: 22.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: cc2f51e53e30b6910800000000000000
+      internalID: 1831561948527194828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_25
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 744
+        width: 70
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 20.5, y: -44.5}
+        - {x: 23.5, y: -41.5}
+        - {x: 23.5, y: -36.5}
+        - {x: 19.5, y: -32.5}
+        - {x: 23.5, y: -25.5}
+        - {x: 23.5, y: 26.5}
+        - {x: 21.5, y: 26.5}
+        - {x: 17.5, y: 22.5}
+        - {x: 16.5, y: 19.5}
+        - {x: 13.5, y: 31.5}
+        - {x: 10.5, y: 35.5}
+        - {x: 1.5, y: 44.5}
+        - {x: -2.5, y: 46.5}
+        - {x: -14.5, y: 46.5}
+        - {x: -17.5, y: 45.5}
+        - {x: -23.5, y: 40.5}
+        - {x: -23.5, y: 26.5}
+        - {x: -18.5, y: 22.5}
+        - {x: -11.5, y: 20.5}
+        - {x: -15.5, y: 17.5}
+        - {x: -18.5, y: 7.5}
+        - {x: -20.5, y: 0.5}
+        - {x: -20.5, y: -14.5}
+        - {x: -22.5, y: -17.5}
+        - {x: -22.5, y: -25.5}
+        - {x: -16.5, y: -30.5}
+        - {x: -9.5, y: -29.5}
+        - {x: -9.5, y: -32.5}
+        - {x: -17.5, y: -40.5}
+        - {x: -18.5, y: -42.5}
+        - {x: -11.5, y: -46.5}
+        - {x: 15.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 7f7049d9a73268900800000000000000
+      internalID: 686275002757285879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_27
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 552
+        width: 76
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 21.5, y: -45.5}
+        - {x: 25.5, y: -42.5}
+        - {x: 25.5, y: -38.5}
+        - {x: 19.5, y: -36.5}
+        - {x: 25.5, y: -25.5}
+        - {x: 25.5, y: -13.5}
+        - {x: 24.5, y: -11.5}
+        - {x: 25.5, y: -10.5}
+        - {x: 25.5, y: 4.5}
+        - {x: 24.5, y: 9.5}
+        - {x: 22.5, y: 17.5}
+        - {x: 16.5, y: 24.5}
+        - {x: 15.5, y: 35.5}
+        - {x: 7.5, y: 43.5}
+        - {x: 0.5, y: 46.5}
+        - {x: -11.5, y: 46.5}
+        - {x: -14.5, y: 45.5}
+        - {x: -20.5, y: 39.5}
+        - {x: -21.5, y: 36.5}
+        - {x: -21.5, y: 28.5}
+        - {x: -20.5, y: 25.5}
+        - {x: -15.5, y: 21.5}
+        - {x: -9.5, y: 20.5}
+        - {x: -12.5, y: 17.5}
+        - {x: -14.5, y: 12.5}
+        - {x: -21.5, y: 16.5}
+        - {x: -25.5, y: 16.5}
+        - {x: -25.5, y: 2.5}
+        - {x: -21.5, y: -1.5}
+        - {x: -20.5, y: -15.5}
+        - {x: -16.5, y: -21.5}
+        - {x: -12.5, y: -21.5}
+        - {x: -5.5, y: -28.5}
+        - {x: -14.5, y: -40.5}
+        - {x: -15.5, y: -42.5}
+        - {x: -8.5, y: -46.5}
+        - {x: 18.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 9ae4a25d1ae408c80800000000000000
+      internalID: -8322565654407655767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_29
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 552
+        width: 63
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 12.5, y: -44.5}
+        - {x: 16.5, y: -40.5}
+        - {x: 16.5, y: -37.5}
+        - {x: 10.5, y: -31.5}
+        - {x: 11.5, y: -28.5}
+        - {x: 15.5, y: -32.5}
+        - {x: 24.5, y: -32.5}
+        - {x: 27.5, y: -31.5}
+        - {x: 28.5, y: -21.5}
+        - {x: 31.5, y: -18.5}
+        - {x: 31.5, y: 4.5}
+        - {x: 26.5, y: 15.5}
+        - {x: 26.5, y: 25.5}
+        - {x: 23.5, y: 26.5}
+        - {x: 14.5, y: 26.5}
+        - {x: 10.5, y: 23.5}
+        - {x: 9.5, y: 20.5}
+        - {x: 4.5, y: 24.5}
+        - {x: 4.5, y: 30.5}
+        - {x: 2.5, y: 35.5}
+        - {x: -6.5, y: 44.5}
+        - {x: -10.5, y: 46.5}
+        - {x: -22.5, y: 46.5}
+        - {x: -25.5, y: 45.5}
+        - {x: -31.5, y: 40.5}
+        - {x: -31.5, y: 26.5}
+        - {x: -26.5, y: 22.5}
+        - {x: -20.5, y: 20.5}
+        - {x: -23.5, y: 17.5}
+        - {x: -25.5, y: 12.5}
+        - {x: -31.5, y: 4.5}
+        - {x: -31.5, y: -15.5}
+        - {x: -27.5, y: -21.5}
+        - {x: -23.5, y: -25.5}
+        - {x: -17.5, y: -32.5}
+        - {x: -25.5, y: -40.5}
+        - {x: -26.5, y: -42.5}
+        - {x: -19.5, y: -46.5}
+        - {x: 7.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: bbb5781615347cc00800000000000000
+      internalID: 920778665628228539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_30
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 551
+        width: 99
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -5.5, y: -43.5}
+        - {x: 7.5, y: -42.5}
+        - {x: 10.5, y: -41.5}
+        - {x: 9.5, y: -32.5}
+        - {x: 10.5, y: -31.5}
+        - {x: 14.5, y: -28.5}
+        - {x: 15.5, y: -25.5}
+        - {x: 16.5, y: -16.5}
+        - {x: 35.5, y: -10.5}
+        - {x: 37.5, y: -12.5}
+        - {x: 40.5, y: -12.5}
+        - {x: 49.5, y: -3.5}
+        - {x: 49.5, y: 1.5}
+        - {x: 45.5, y: 3.5}
+        - {x: 33.5, y: 4.5}
+        - {x: 30.5, y: -0.5}
+        - {x: 27.5, y: -0.5}
+        - {x: 14.5, y: -5.5}
+        - {x: 11.5, y: 1.5}
+        - {x: 7.5, y: 6.5}
+        - {x: 8.5, y: 15.5}
+        - {x: 6.5, y: 16.5}
+        - {x: -1.5, y: 16.5}
+        - {x: -5.5, y: 12.5}
+        - {x: -8.5, y: 17.5}
+        - {x: -12.5, y: 29.5}
+        - {x: -15.5, y: 35.5}
+        - {x: -24.5, y: 43.5}
+        - {x: -28.5, y: 45.5}
+        - {x: -41.5, y: 45.5}
+        - {x: -44.5, y: 44.5}
+        - {x: -49.5, y: 39.5}
+        - {x: -49.5, y: 26.5}
+        - {x: -45.5, y: 22.5}
+        - {x: -36.5, y: 20.5}
+        - {x: -41.5, y: 16.5}
+        - {x: -44.5, y: 6.5}
+        - {x: -46.5, y: -0.5}
+        - {x: -46.5, y: -20.5}
+        - {x: -42.5, y: -26.5}
+        - {x: -38.5, y: -26.5}
+        - {x: -40.5, y: -37.5}
+        - {x: -39.5, y: -43.5}
+        - {x: -36.5, y: -45.5}
+        - {x: -10.5, y: -45.5}
+      - - {x: 5.5, y: 30.5}
+        - {x: 4.5, y: 33.5}
+        - {x: -4.5, y: 33.5}
+        - {x: -6.5, y: 31.5}
+        - {x: -5.5, y: 28.5}
+        - {x: 3.5, y: 28.5}
+      - - {x: -6.5, y: -30.5}
+        - {x: -6.300003, y: -30.5}
+        - {x: -6.25, y: -30.75}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 3e5de284625a826e0800000000000000
+      internalID: -1862056862079330845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_31
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 551
+        width: 85
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -1.5, y: -43.5}
+        - {x: 3.5, y: -39.5}
+        - {x: 3.5, y: -37.5}
+        - {x: 1.5, y: -31.5}
+        - {x: 8.5, y: -29.5}
+        - {x: 10.5, y: -34.5}
+        - {x: 14.5, y: -39.5}
+        - {x: 25.5, y: -38.5}
+        - {x: 26.5, y: -35.5}
+        - {x: 26.5, y: -32.5}
+        - {x: 23.5, y: -28.5}
+        - {x: 29.5, y: -21.5}
+        - {x: 32.5, y: -15.5}
+        - {x: 40.5, y: -10.5}
+        - {x: 42.5, y: -7.5}
+        - {x: 42.5, y: -1.5}
+        - {x: 39.5, y: -0.5}
+        - {x: 27.5, y: 1.5}
+        - {x: 23.5, y: 5.5}
+        - {x: 15.5, y: 12.5}
+        - {x: 16.5, y: 18.5}
+        - {x: 14.5, y: 22.5}
+        - {x: 4.5, y: 21.5}
+        - {x: 1.5, y: 16.5}
+        - {x: 0.5, y: 11.5}
+        - {x: -1.5, y: 17.5}
+        - {x: -6.5, y: 23.5}
+        - {x: -7.5, y: 31.5}
+        - {x: -8.5, y: 34.5}
+        - {x: -15.5, y: 42.5}
+        - {x: -21.5, y: 44.5}
+        - {x: -35.5, y: 44.5}
+        - {x: -41.5, y: 40.5}
+        - {x: -42.5, y: 36.5}
+        - {x: -42.5, y: 24.5}
+        - {x: -37.5, y: 20.5}
+        - {x: -35.5, y: 17.5}
+        - {x: -37.5, y: 4.5}
+        - {x: -39.5, y: 0.5}
+        - {x: -39.5, y: -19.5}
+        - {x: -35.5, y: -25.5}
+        - {x: -28.5, y: -30.5}
+        - {x: -36.5, y: -38.5}
+        - {x: -37.5, y: -41.5}
+        - {x: -31.5, y: -44.5}
+        - {x: -4.5, y: -44.5}
+      - - {x: 9.5, y: -4.5}
+        - {x: 5.5, y: -4.5}
+        - {x: 5.5, y: -0.5}
+      - - {x: 5.5, y: -20.5}
+        - {x: 7.5, y: -17.5}
+        - {x: 11.5, y: -16.5}
+        - {x: 10.5, y: -17.5}
+        - {x: 10.5, y: -20.5}
+        - {x: 9.5, y: -21.5}
+        - {x: 6.5, y: -21.5}
+        - {x: 5.5, y: -22.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 8dd780bf7663f8df0800000000000000
+      internalID: -175862040222990888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_32
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 549
+        width: 78
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -1, y: -43}
+        - {x: 4, y: -41}
+        - {x: 8, y: -37}
+        - {x: 8, y: -34}
+        - {x: 5, y: -31}
+        - {x: 7, y: -27}
+        - {x: 9, y: -22}
+        - {x: 18, y: -23}
+        - {x: 21, y: -28}
+        - {x: 26, y: -30}
+        - {x: 33, y: -28}
+        - {x: 35, y: -26}
+        - {x: 35, y: -23}
+        - {x: 32, y: -17}
+        - {x: 37, y: -12}
+        - {x: 37, y: -4}
+        - {x: 39, y: -1}
+        - {x: 39, y: 7}
+        - {x: 32, y: 10}
+        - {x: 25, y: 18}
+        - {x: 21, y: 23}
+        - {x: 22, y: 30}
+        - {x: 19, y: 32}
+        - {x: 10, y: 29}
+        - {x: 6, y: 26}
+        - {x: 4, y: 16}
+        - {x: 2, y: 22}
+        - {x: -3, y: 35}
+        - {x: -12, y: 45}
+        - {x: -33, y: 45}
+        - {x: -39, y: 39}
+        - {x: -39, y: 25}
+        - {x: -35, y: 22}
+        - {x: -33, y: 18}
+        - {x: -35, y: 11}
+        - {x: -37, y: 3}
+        - {x: -37, y: -17}
+        - {x: -33, y: -23}
+        - {x: -25, y: -27}
+        - {x: -33, y: -37}
+        - {x: -34, y: -40}
+        - {x: -27, y: -44}
+        - {x: -6, y: -44}
+      - - {x: 7, y: 4}
+        - {x: 7, y: 8}
+        - {x: 11, y: 10}
+        - {x: 11, y: 8}
+        - {x: 16, y: 4}
+        - {x: 13, y: 4}
+        - {x: 9, y: 3}
+        - {x: 8, y: 2}
+      - - {x: 9, y: -13}
+        - {x: 7, y: -11}
+        - {x: 11, y: -11}
+        - {x: 12, y: -10}
+        - {x: 15, y: -10}
+        - {x: 16, y: -9}
+        - {x: 19, y: -9}
+        - {x: 20, y: -8}
+        - {x: 18, y: -14}
+        - {x: 16, y: -13}
+        - {x: 15, y: -14}
+        - {x: 9, y: -15}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 3cb4c733a9f5f2d10800000000000000
+      internalID: 2103004666898697155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_33
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 551
+        width: 78
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 9, y: -13.5}
+        - {x: 20, y: -12.5}
+        - {x: 16, y: -17.5}
+        - {x: 9, y: -20.5}
+      - - {x: 9, y: 0.5}
+        - {x: 8, y: 1.5}
+        - {x: 8, y: 4.5}
+        - {x: 10, y: 6.5}
+        - {x: 11, y: 6.5}
+        - {x: 16, y: 1.5}
+        - {x: 16, y: 0.5}
+        - {x: 14, y: 1.5}
+        - {x: 12, y: -0.5}
+        - {x: 10, y: 0.5}
+        - {x: 9, y: -0.5}
+      - - {x: 10, y: -26.5}
+        - {x: 20, y: -26.5}
+        - {x: 20, y: -27.5}
+        - {x: 24, y: -31.5}
+        - {x: 28, y: -32.5}
+        - {x: 32, y: -31.5}
+        - {x: 37, y: -29.5}
+        - {x: 37, y: -17.5}
+        - {x: 39, y: -10.5}
+        - {x: 37, y: -4.5}
+        - {x: 39, y: -2.5}
+        - {x: 39, y: 2.5}
+        - {x: 33, y: 7.5}
+        - {x: 27, y: 14.5}
+        - {x: 21, y: 20.5}
+        - {x: 21, y: 25.5}
+        - {x: 19, y: 27.5}
+        - {x: 13, y: 26.5}
+        - {x: 8, y: 24.5}
+        - {x: 5, y: 19.5}
+        - {x: 5, y: 11.5}
+        - {x: 2, y: 19.5}
+        - {x: -2, y: 31.5}
+        - {x: -5, y: 37.5}
+        - {x: -11, y: 43.5}
+        - {x: -17, y: 46.5}
+        - {x: -28, y: 46.5}
+        - {x: -33, y: 44.5}
+        - {x: -39, y: 38.5}
+        - {x: -39, y: 24.5}
+        - {x: -34, y: 20.5}
+        - {x: -30, y: 19.5}
+        - {x: -33, y: 15.5}
+        - {x: -37, y: 1.5}
+        - {x: -37, y: -18.5}
+        - {x: -33, y: -24.5}
+        - {x: -25, y: -30.5}
+        - {x: -26, y: -33.5}
+        - {x: -33, y: -40.5}
+        - {x: -34, y: -42.5}
+        - {x: -27, y: -46.5}
+        - {x: 0, y: -46.5}
+        - {x: 5, y: -44.5}
+        - {x: 9, y: -40.5}
+        - {x: 9, y: -36.5}
+        - {x: 5, y: -32.5}
+        - {x: 1, y: -29.5}
+        - {x: 4, y: -28.5}
+        - {x: 6, y: -26.5}
+        - {x: 9, y: -22.5}
+        - {x: 9, y: -23.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 21e8c81dc1acec6c0800000000000000
+      internalID: -4121134383873880558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_34
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 548
+        width: 91
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 18.5, y: -40.5}
+        - {x: 18.5, y: -38.5}
+        - {x: 16.5, y: -33.5}
+        - {x: 15.5, y: -30.5}
+        - {x: 20.5, y: -26.5}
+        - {x: 22.5, y: -22.5}
+        - {x: 22.5, y: 9.5}
+        - {x: 19.5, y: 17.5}
+        - {x: 13.5, y: 24.5}
+        - {x: 12.5, y: 35.5}
+        - {x: 4.5, y: 43.5}
+        - {x: 0.5, y: 45.5}
+        - {x: -17.5, y: 45.5}
+        - {x: -22.5, y: 39.5}
+        - {x: -22.5, y: 25.5}
+        - {x: -18.5, y: 21.5}
+        - {x: -12.5, y: 20.5}
+        - {x: -16.5, y: 17.5}
+        - {x: -19.5, y: 7.5}
+        - {x: -21.5, y: 0.5}
+        - {x: -21.5, y: -19.5}
+        - {x: -17.5, y: -25.5}
+        - {x: -13.5, y: -25.5}
+        - {x: -9.5, y: -29.5}
+        - {x: -12.5, y: -34.5}
+        - {x: -18.5, y: -41.5}
+        - {x: -14.5, y: -44.5}
+        - {x: -12.5, y: -45.5}
+        - {x: 16.5, y: -45.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 8659b8ffac2554de0800000000000000
+      internalID: -1349581481503386264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_36
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 553
+        width: 73
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 20.5, y: -44.5}
+        - {x: 23.5, y: -41.5}
+        - {x: 23.5, y: -36.5}
+        - {x: 19.5, y: -32.5}
+        - {x: 19.5, y: -28.5}
+        - {x: 23.5, y: -28.5}
+        - {x: 23.5, y: -0.5}
+        - {x: 21.5, y: 8.5}
+        - {x: 13.5, y: 31.5}
+        - {x: 10.5, y: 36.5}
+        - {x: 1.5, y: 44.5}
+        - {x: -2.5, y: 46.5}
+        - {x: -14.5, y: 46.5}
+        - {x: -17.5, y: 45.5}
+        - {x: -23.5, y: 39.5}
+        - {x: -23.5, y: 26.5}
+        - {x: -18.5, y: 22.5}
+        - {x: -11.5, y: 20.5}
+        - {x: -15.5, y: 17.5}
+        - {x: -18.5, y: 7.5}
+        - {x: -20.5, y: 0.5}
+        - {x: -20.5, y: -7.5}
+        - {x: -23.5, y: -10.5}
+        - {x: -23.5, y: -17.5}
+        - {x: -17.5, y: -25.5}
+        - {x: -12.5, y: -25.5}
+        - {x: -9.5, y: -32.5}
+        - {x: -17.5, y: -40.5}
+        - {x: -18.5, y: -42.5}
+        - {x: -11.5, y: -46.5}
+        - {x: 15.5, y: -46.5}
+      - - {x: 23.5, y: 22.5}
+        - {x: 20.5, y: 21.5}
+        - {x: 20.5, y: 13.5}
+        - {x: 22.5, y: 11.5}
+        - {x: 23.5, y: 11.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: e62bf8668becf85d0800000000000000
+      internalID: -3057998330571279762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_38
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 342
+        width: 84
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 22, y: -45.5}
+        - {x: 26, y: -42.5}
+        - {x: 26, y: -38.5}
+        - {x: 20, y: -36.5}
+        - {x: 20, y: -32.5}
+        - {x: 24, y: -27.5}
+        - {x: 26, y: -22.5}
+        - {x: 26, y: 4.5}
+        - {x: 25, y: 8.5}
+        - {x: 26, y: 8.5}
+        - {x: 26, y: 19.5}
+        - {x: 21, y: 19.5}
+        - {x: 17, y: 31.5}
+        - {x: 14, y: 37.5}
+        - {x: 8, y: 43.5}
+        - {x: 2, y: 46.5}
+        - {x: -11, y: 46.5}
+        - {x: -14, y: 45.5}
+        - {x: -20, y: 39.5}
+        - {x: -22, y: 36.5}
+        - {x: -21, y: 25.5}
+        - {x: -15, y: 21.5}
+        - {x: -12, y: 17.5}
+        - {x: -13, y: 13.5}
+        - {x: -22, y: 18.5}
+        - {x: -25, y: 18.5}
+        - {x: -26, y: 17.5}
+        - {x: -26, y: 4.5}
+        - {x: -21, y: 0.5}
+        - {x: -20, y: -15.5}
+        - {x: -16, y: -21.5}
+        - {x: -12, y: -21.5}
+        - {x: -5, y: -28.5}
+        - {x: -14, y: -40.5}
+        - {x: -15, y: -42.5}
+        - {x: -8, y: -46.5}
+        - {x: 19, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: ed79d1f5540f5ccf0800000000000000
+      internalID: -232515625000527906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_40
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 341
+        width: 63
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 12.5, y: -44.5}
+        - {x: 25.5, y: -37.5}
+        - {x: 27.5, y: -35.5}
+        - {x: 26.5, y: -29.5}
+        - {x: 31.5, y: -22.5}
+        - {x: 31.5, y: 0.5}
+        - {x: 26.5, y: 11.5}
+        - {x: 26.5, y: 21.5}
+        - {x: 23.5, y: 22.5}
+        - {x: 14.5, y: 22.5}
+        - {x: 10.5, y: 18.5}
+        - {x: 4.5, y: 24.5}
+        - {x: 4.5, y: 30.5}
+        - {x: 2.5, y: 35.5}
+        - {x: -6.5, y: 44.5}
+        - {x: -10.5, y: 46.5}
+        - {x: -22.5, y: 46.5}
+        - {x: -25.5, y: 45.5}
+        - {x: -31.5, y: 39.5}
+        - {x: -31.5, y: 26.5}
+        - {x: -26.5, y: 22.5}
+        - {x: -20.5, y: 20.5}
+        - {x: -23.5, y: 17.5}
+        - {x: -25.5, y: 12.5}
+        - {x: -31.5, y: 4.5}
+        - {x: -31.5, y: -15.5}
+        - {x: -27.5, y: -21.5}
+        - {x: -25.5, y: -25.5}
+        - {x: -25.5, y: -28.5}
+        - {x: -18.5, y: -33.5}
+        - {x: -25.5, y: -40.5}
+        - {x: -26.5, y: -42.5}
+        - {x: -19.5, y: -46.5}
+        - {x: 7.5, y: -46.5}
+      - - {x: 9.5, y: -30.5}
+        - {x: 10.5, y: -29.5}
+        - {x: 10.5, y: -30.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 3cbd75e325fd06900800000000000000
+      internalID: 675785488431832003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_41
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 336
+        width: 100
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -5, y: -43.5}
+        - {x: -1, y: -41.5}
+        - {x: 2, y: -35.5}
+        - {x: 9, y: -31.5}
+        - {x: 10, y: -28.5}
+        - {x: 13, y: -23.5}
+        - {x: 21, y: -24.5}
+        - {x: 31, y: -25.5}
+        - {x: 33, y: -29.5}
+        - {x: 44, y: -28.5}
+        - {x: 48, y: -25.5}
+        - {x: 50, y: -23.5}
+        - {x: 50, y: -18.5}
+        - {x: 43, y: -12.5}
+        - {x: 36, y: -10.5}
+        - {x: 29, y: -12.5}
+        - {x: 20, y: -11.5}
+        - {x: 15, y: -11.5}
+        - {x: 16, y: -8.5}
+        - {x: 15, y: 0.5}
+        - {x: 14, y: 4.5}
+        - {x: 18, y: 7.5}
+        - {x: 19, y: 11.5}
+        - {x: 11, y: 16.5}
+        - {x: 5, y: 15.5}
+        - {x: -1, y: 6.5}
+        - {x: -3, y: -1.5}
+        - {x: -5, y: 7.5}
+        - {x: -7, y: 15.5}
+        - {x: -13, y: 22.5}
+        - {x: -14, y: 29.5}
+        - {x: -16, y: 35.5}
+        - {x: -25, y: 43.5}
+        - {x: -29, y: 45.5}
+        - {x: -42, y: 45.5}
+        - {x: -45, y: 44.5}
+        - {x: -50, y: 39.5}
+        - {x: -50, y: 26.5}
+        - {x: -46, y: 22.5}
+        - {x: -37, y: 20.5}
+        - {x: -42, y: 16.5}
+        - {x: -45, y: 6.5}
+        - {x: -47, y: -0.5}
+        - {x: -47, y: -20.5}
+        - {x: -43, y: -26.5}
+        - {x: -39, y: -26.5}
+        - {x: -41, y: -37.5}
+        - {x: -40, y: -43.5}
+        - {x: -37, y: -45.5}
+        - {x: -11, y: -45.5}
+      - - {x: 22, y: 24.5}
+        - {x: 22, y: 28.5}
+        - {x: 16, y: 32.5}
+        - {x: 12, y: 32.5}
+        - {x: 11, y: 31.5}
+        - {x: 11, y: 27.5}
+        - {x: 17, y: 23.5}
+        - {x: 20, y: 23.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 43b55072083e25c70800000000000000
+      internalID: 8958472748343319348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_42
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 334
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -5.5, y: -42.5}
+        - {x: -2.5, y: -41.5}
+        - {x: 2.5, y: -37.5}
+        - {x: 2.5, y: -36.5}
+        - {x: 8.5, y: -43.5}
+        - {x: 17.5, y: -42.5}
+        - {x: 19.5, y: -40.5}
+        - {x: 21.5, y: -32.5}
+        - {x: 27.5, y: -26.5}
+        - {x: 32.5, y: -24.5}
+        - {x: 43.5, y: -19.5}
+        - {x: 43.5, y: -13.5}
+        - {x: 37.5, y: -9.5}
+        - {x: 27.5, y: -3.5}
+        - {x: 24.5, y: 3.5}
+        - {x: 24.5, y: 15.5}
+        - {x: 20.5, y: 17.5}
+        - {x: 13.5, y: 17.5}
+        - {x: 9.5, y: 15.5}
+        - {x: 8.5, y: 11.5}
+        - {x: 2.5, y: 4.5}
+        - {x: 1.5, y: 10.5}
+        - {x: -1.5, y: 20.5}
+        - {x: -7.5, y: 34.5}
+        - {x: -9.5, y: 36.5}
+        - {x: -16.5, y: 44.5}
+        - {x: -38.5, y: 44.5}
+        - {x: -41.5, y: 41.5}
+        - {x: -43.5, y: 38.5}
+        - {x: -43.5, y: 26.5}
+        - {x: -38.5, y: 22.5}
+        - {x: -36.5, y: 19.5}
+        - {x: -40.5, y: 2.5}
+        - {x: -40.5, y: -17.5}
+        - {x: -36.5, y: -23.5}
+        - {x: -29.5, y: -28.5}
+        - {x: -37.5, y: -36.5}
+        - {x: -38.5, y: -39.5}
+        - {x: -31.5, y: -43.5}
+        - {x: -10.5, y: -43.5}
+      - - {x: 10.5, y: -6.5}
+        - {x: 4.5, y: -6.5}
+        - {x: 4.5, y: -1.5}
+        - {x: 6.5, y: -1.5}
+        - {x: 8.5, y: 0.5}
+        - {x: 8.5, y: -2.5}
+        - {x: 10.5, y: -4.5}
+        - {x: 11.5, y: -7.5}
+      - - {x: 3.5, y: -23.5}
+        - {x: 4.5, y: -19.5}
+        - {x: 9.5, y: -19.5}
+        - {x: 8.5, y: -21.5}
+        - {x: 6.5, y: -23.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: db9d5daf21731e970800000000000000
+      internalID: 8782361303006435773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_43
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 330
+        width: 79
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 24.5, y: -47}
+        - {x: 23.5, y: -41}
+        - {x: 28.5, y: -39}
+        - {x: 33.5, y: -34}
+        - {x: 39.5, y: -27}
+        - {x: 39.5, y: -21}
+        - {x: 37.5, y: -18}
+        - {x: 36.5, y: -11}
+        - {x: 35.5, y: -7}
+        - {x: 32.5, y: 1}
+        - {x: 35.5, y: 4}
+        - {x: 35.5, y: 7}
+        - {x: 32.5, y: 10}
+        - {x: 28.5, y: 11}
+        - {x: 23.5, y: 11}
+        - {x: 18.5, y: 5}
+        - {x: 12.5, y: 2}
+        - {x: 8.5, y: -1}
+        - {x: 8.5, y: -3}
+        - {x: 9.5, y: -6}
+        - {x: 18.5, y: -5}
+        - {x: 19.5, y: -8}
+        - {x: 18.5, y: -11}
+        - {x: 7.5, y: -10}
+        - {x: 6.5, y: 4}
+        - {x: 5.5, y: 8}
+        - {x: 4.5, y: 13}
+        - {x: 2.5, y: 21}
+        - {x: -3.5, y: 27}
+        - {x: -4.5, y: 35}
+        - {x: -5.5, y: 38}
+        - {x: -12.5, y: 46}
+        - {x: -18.5, y: 48}
+        - {x: -30.5, y: 48}
+        - {x: -32.5, y: 47}
+        - {x: -37.5, y: 42}
+        - {x: -39.5, y: 39}
+        - {x: -39.5, y: 27}
+        - {x: -35.5, y: 23}
+        - {x: -33.5, y: 19}
+        - {x: -35.5, y: 12}
+        - {x: -37.5, y: 4}
+        - {x: -37.5, y: -16}
+        - {x: -33.5, y: -22}
+        - {x: -29.5, y: -22}
+        - {x: -25.5, y: -26}
+        - {x: -33.5, y: -36}
+        - {x: -34.5, y: -39}
+        - {x: -27.5, y: -43}
+        - {x: -6.5, y: -43}
+        - {x: 1.5, y: -42}
+        - {x: 9.5, y: -38}
+        - {x: 9.5, y: -43}
+        - {x: 13.5, y: -48}
+        - {x: 23.5, y: -48}
+      - - {x: 12.5, y: -29}
+        - {x: 10.5, y: -28}
+        - {x: 4.375, y: -27.125}
+        - {x: 6.5, y: -25}
+        - {x: 6.5, y: -23}
+        - {x: 16.5, y: -26}
+        - {x: 12.5, y: -30}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 30b3be7a994592f40800000000000000
+      internalID: 5704183421965384451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_44
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 322
+        width: 74
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 21, y: -48}
+        - {x: 20, y: -43}
+        - {x: 29, y: -41}
+        - {x: 35, y: -32}
+        - {x: 37, y: -31}
+        - {x: 37, y: -10}
+        - {x: 35, y: -2}
+        - {x: 37, y: 0}
+        - {x: 37, y: 6}
+        - {x: 31, y: 9}
+        - {x: 27, y: 9}
+        - {x: 22, y: 6}
+        - {x: 20, y: 3}
+        - {x: 13, y: 2}
+        - {x: 11, y: 14}
+        - {x: 10, y: 18}
+        - {x: 1, y: 44}
+        - {x: -7, y: 52}
+        - {x: -29, y: 52}
+        - {x: -35, y: 47}
+        - {x: -36, y: 44}
+        - {x: -36, y: 36}
+        - {x: -35, y: 33}
+        - {x: -30, y: 29}
+        - {x: -26, y: 28}
+        - {x: -29, y: 24}
+        - {x: -33, y: 10}
+        - {x: -33, y: -10}
+        - {x: -29, y: -16}
+        - {x: -25, y: -16}
+        - {x: -22, y: -25}
+        - {x: -29, y: -32}
+        - {x: -30, y: -34}
+        - {x: -22, y: -39}
+        - {x: -1, y: -39}
+        - {x: 4, y: -38}
+        - {x: 9, y: -48}
+        - {x: 15, y: -50}
+        - {x: 19, y: -50}
+      - - {x: 17, y: -12}
+        - {x: 13, y: -9}
+        - {x: 13, y: -6.25}
+        - {x: 16, y: -7}
+        - {x: 20, y: -6}
+        - {x: 20, y: -14}
+      - - {x: 10, y: -24}
+        - {x: 11, y: -24}
+        - {x: 14, y: -26}
+        - {x: 16, y: -26}
+        - {x: 13.600006, y: -27.600006}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: e24d1b8dccd91b1e0800000000000000
+      internalID: -2183790841163557842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_45
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 321
+        width: 95
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 19.5, y: -40.5}
+        - {x: 17.5, y: -33.5}
+        - {x: 15.5, y: -30.5}
+        - {x: 20.5, y: -26.5}
+        - {x: 23.5, y: -18.5}
+        - {x: 23.5, y: 0.5}
+        - {x: 22.5, y: 4.5}
+        - {x: 21.5, y: 9.5}
+        - {x: 19.5, y: 17.5}
+        - {x: 13.5, y: 24.5}
+        - {x: 12.5, y: 31.5}
+        - {x: 10.5, y: 37.5}
+        - {x: 4.5, y: 43.5}
+        - {x: -2.5, y: 46.5}
+        - {x: -14.5, y: 46.5}
+        - {x: -17.5, y: 45.5}
+        - {x: -23.5, y: 39.5}
+        - {x: -23.5, y: 25.5}
+        - {x: -18.5, y: 21.5}
+        - {x: -12.5, y: 20.5}
+        - {x: -16.5, y: 16.5}
+        - {x: -18.5, y: 11.5}
+        - {x: -21.5, y: 0.5}
+        - {x: -22.5, y: -11.5}
+        - {x: -21.5, y: -19.5}
+        - {x: -17.5, y: -25.5}
+        - {x: -13.5, y: -25.5}
+        - {x: -9.5, y: -29.5}
+        - {x: -12.5, y: -34.5}
+        - {x: -18.5, y: -42.5}
+        - {x: -11.5, y: -46.5}
+        - {x: 15.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: c877ad4c4de9c9d70800000000000000
+      internalID: 9051283987780761484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_47
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 338
+        width: 68
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 21, y: -45.5}
+        - {x: 20, y: -39.5}
+        - {x: 29, y: -35.5}
+        - {x: 31, y: -31.5}
+        - {x: 34, y: -21.5}
+        - {x: 34, y: -4.5}
+        - {x: 32, y: 2.5}
+        - {x: 34, y: 4.5}
+        - {x: 34, y: 9.5}
+        - {x: 32, y: 11.5}
+        - {x: 20, y: 12.5}
+        - {x: 16, y: 5.5}
+        - {x: 17, y: -2.5}
+        - {x: 15, y: -6.5}
+        - {x: 15, y: -11.5}
+        - {x: 14, y: -0.5}
+        - {x: 13, y: 3.5}
+        - {x: 12, y: 8.5}
+        - {x: 10, y: 16.5}
+        - {x: 4, y: 23.5}
+        - {x: 3, y: 34.5}
+        - {x: -7, y: 45.5}
+        - {x: -12, y: 46.5}
+        - {x: -24, y: 46.5}
+        - {x: -27, y: 45.5}
+        - {x: -33, y: 39.5}
+        - {x: -34, y: 36.5}
+        - {x: -34, y: 29.5}
+        - {x: -33, y: 26.5}
+        - {x: -28, y: 22.5}
+        - {x: -21, y: 20.5}
+        - {x: -25, y: 17.5}
+        - {x: -28, y: 7.5}
+        - {x: -30, y: 0.5}
+        - {x: -30, y: -8.5}
+        - {x: -34, y: -10.5}
+        - {x: -34, y: -19.5}
+        - {x: -31, y: -24.5}
+        - {x: -22, y: -25.5}
+        - {x: -19, y: -32.5}
+        - {x: -27, y: -40.5}
+        - {x: -28, y: -42.5}
+        - {x: -21, y: -46.5}
+        - {x: 21, y: -46.5}
+      - - {x: 8, y: -29.5}
+        - {x: 7, y: -31.5}
+        - {x: 6.6666718, y: -31.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: e821dab04f155b2e0800000000000000
+      internalID: -2110690741743447410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_48
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 143
+        width: 74
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 21.5, y: -45.5}
+        - {x: 25.5, y: -42.5}
+        - {x: 25.5, y: -38.5}
+        - {x: 19.5, y: -36.5}
+        - {x: 19.5, y: -32.5}
+        - {x: 23.5, y: -27.5}
+        - {x: 25.5, y: -22.5}
+        - {x: 25.5, y: 9.5}
+        - {x: 22.5, y: 17.5}
+        - {x: 18.5, y: 22.5}
+        - {x: 19.5, y: 26.5}
+        - {x: 15.5, y: 31.5}
+        - {x: 13.5, y: 36.5}
+        - {x: 7.5, y: 43.5}
+        - {x: 1.5, y: 46.5}
+        - {x: -11.5, y: 46.5}
+        - {x: -14.5, y: 45.5}
+        - {x: -22.5, y: 36.5}
+        - {x: -21.5, y: 25.5}
+        - {x: -15.5, y: 21.5}
+        - {x: -12.5, y: 18.5}
+        - {x: -13.5, y: 14.5}
+        - {x: -21.5, y: 18.5}
+        - {x: -25.5, y: 18.5}
+        - {x: -25.5, y: 4.5}
+        - {x: -21.5, y: 0.5}
+        - {x: -20.5, y: -15.5}
+        - {x: -16.5, y: -21.5}
+        - {x: -12.5, y: -21.5}
+        - {x: -5.5, y: -28.5}
+        - {x: -14.5, y: -40.5}
+        - {x: -15.5, y: -42.5}
+        - {x: -8.5, y: -46.5}
+        - {x: 18.5, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 7d883c9e811afad40800000000000000
+      internalID: 5597869990218008791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_50
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 145
+        width: 62
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 13, y: -44.5}
+        - {x: 25, y: -37.5}
+        - {x: 26, y: -34.5}
+        - {x: 26, y: -28.5}
+        - {x: 31, y: -21.5}
+        - {x: 31, y: 0.5}
+        - {x: 26, y: 11.5}
+        - {x: 26, y: 21.5}
+        - {x: 23, y: 22.5}
+        - {x: 13, y: 23.5}
+        - {x: 8, y: 22.5}
+        - {x: 5, y: 24.5}
+        - {x: 5, y: 30.5}
+        - {x: 3, y: 35.5}
+        - {x: -6, y: 44.5}
+        - {x: -10, y: 46.5}
+        - {x: -22, y: 46.5}
+        - {x: -25, y: 45.5}
+        - {x: -31, y: 39.5}
+        - {x: -31, y: 26.5}
+        - {x: -26, y: 22.5}
+        - {x: -20, y: 20.5}
+        - {x: -23, y: 17.5}
+        - {x: -25, y: 12.5}
+        - {x: -31, y: 4.5}
+        - {x: -31, y: -15.5}
+        - {x: -27, y: -21.5}
+        - {x: -26, y: -25.5}
+        - {x: -26, y: -28.5}
+        - {x: -18, y: -33.5}
+        - {x: -25, y: -40.5}
+        - {x: -26, y: -42.5}
+        - {x: -19, y: -46.5}
+        - {x: 8, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 7222914aa270fd4d0800000000000000
+      internalID: -3107757338139221465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_51
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 131
+        width: 82
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 41, y: -50}
+        - {x: 41, y: -44}
+        - {x: 39, y: -39}
+        - {x: 34, y: -34}
+        - {x: 26, y: -32}
+        - {x: 19, y: -26}
+        - {x: 15, y: -25}
+        - {x: 18, y: -19}
+        - {x: 19, y: -13}
+        - {x: 27, y: -7}
+        - {x: 27, y: -4}
+        - {x: 21, y: 3}
+        - {x: 15, y: 3}
+        - {x: 8, y: -3}
+        - {x: 4, y: 13}
+        - {x: 0, y: 23}
+        - {x: -4, y: 35}
+        - {x: -7, y: 41}
+        - {x: -16, y: 49}
+        - {x: -20, y: 51}
+        - {x: -33, y: 51}
+        - {x: -36, y: 50}
+        - {x: -41, y: 45}
+        - {x: -41, y: 32}
+        - {x: -37, y: 28}
+        - {x: -28, y: 26}
+        - {x: -33, y: 22}
+        - {x: -34, y: 19}
+        - {x: -38, y: 5}
+        - {x: -38, y: -15}
+        - {x: -34, y: -21}
+        - {x: -30, y: -21}
+        - {x: -32, y: -32}
+        - {x: -31, y: -38}
+        - {x: -27, y: -40}
+        - {x: -23, y: -40}
+        - {x: -20, y: -44}
+        - {x: -17, y: -45}
+        - {x: -13, y: -41}
+        - {x: -7, y: -41}
+        - {x: -2, y: -40}
+        - {x: 3, y: -38}
+        - {x: 9, y: -36}
+        - {x: 12, y: -39}
+        - {x: 18, y: -43}
+        - {x: 23, y: -45}
+        - {x: 22, y: -49}
+        - {x: 26, y: -51}
+        - {x: 40, y: -51}
+      - - {x: 38, y: 5}
+        - {x: 38, y: 9}
+        - {x: 34, y: 15}
+        - {x: 31, y: 15}
+        - {x: 29, y: 13}
+        - {x: 29, y: 10}
+        - {x: 35, y: 4}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 94da25025637c0640800000000000000
+      internalID: 5047536160546663753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_52
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 125
+        width: 77
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8.5, y: -47}
+        - {x: 12.5, y: -47}
+        - {x: 19.5, y: -45}
+        - {x: 21.5, y: -42}
+        - {x: 24.5, y: -45}
+        - {x: 29.5, y: -46}
+        - {x: 36.5, y: -47}
+        - {x: 38.5, y: -45}
+        - {x: 38.5, y: -40}
+        - {x: 34.5, y: -31}
+        - {x: 31.5, y: -25}
+        - {x: 32.5, y: -17}
+        - {x: 37.5, y: -10}
+        - {x: 37.5, y: -4}
+        - {x: 31.5, y: 2}
+        - {x: 25.5, y: 1}
+        - {x: 22.5, y: 0}
+        - {x: 11.5, y: -4}
+        - {x: 9.5, y: -2}
+        - {x: 8.5, y: 8}
+        - {x: 7.5, y: 12}
+        - {x: 6.5, y: 17}
+        - {x: 2.5, y: 26}
+        - {x: -2.5, y: 32}
+        - {x: -3.5, y: 40}
+        - {x: -4.5, y: 43}
+        - {x: -11.5, y: 51}
+        - {x: -17.5, y: 53}
+        - {x: -32.5, y: 53}
+        - {x: -36.5, y: 48}
+        - {x: -38.5, y: 45}
+        - {x: -38.5, y: 33}
+        - {x: -33.5, y: 29}
+        - {x: -31.5, y: 26}
+        - {x: -33.5, y: 13}
+        - {x: -35.5, y: 9}
+        - {x: -35.5, y: -11}
+        - {x: -31.5, y: -17}
+        - {x: -24.5, y: -22}
+        - {x: -32.5, y: -30}
+        - {x: -33.5, y: -33}
+        - {x: -26.5, y: -37}
+        - {x: -5.5, y: -37}
+        - {x: -5.5, y: -46}
+        - {x: 1.5, y: -53}
+        - {x: 6.5, y: -53}
+      - - {x: 8.5, y: -14}
+        - {x: 12.5, y: -10}
+        - {x: 14.5, y: -12}
+        - {x: 17.5, y: -11}
+        - {x: 15.5, y: -13}
+        - {x: 15.5, y: -15}
+        - {x: 16.5, y: -16}
+        - {x: 15.5, y: -17}
+        - {x: 15.5, y: -19}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 9bb7eab92bb6d66c0800000000000000
+      internalID: -4148541266878104647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_53
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 125
+        width: 76
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 11, y: -51.5}
+        - {x: 11, y: -47.5}
+        - {x: 18, y: -46.5}
+        - {x: 24, y: -43.5}
+        - {x: 28, y: -39.5}
+        - {x: 31, y: -39.5}
+        - {x: 34, y: -36.5}
+        - {x: 34, y: -34.5}
+        - {x: 32, y: -29.5}
+        - {x: 34, y: -25.5}
+        - {x: 34, y: -14.5}
+        - {x: 38, y: -8.5}
+        - {x: 38, y: -3.5}
+        - {x: 36, y: -0.5}
+        - {x: 29, y: 2.5}
+        - {x: 26, y: 2.5}
+        - {x: 21, y: -1.5}
+        - {x: 12, y: -1.5}
+        - {x: 10, y: -3.5}
+        - {x: 10, y: -7.5}
+        - {x: 14, y: -9.5}
+        - {x: 18, y: -12.5}
+        - {x: 17, y: -20.5}
+        - {x: 14, y: -16.5}
+        - {x: 8, y: -12.5}
+        - {x: 9, y: -6.5}
+        - {x: 8, y: 9.5}
+        - {x: 7, y: 13.5}
+        - {x: 6, y: 18.5}
+        - {x: 3, y: 28.5}
+        - {x: -2, y: 41.5}
+        - {x: -4, y: 43.5}
+        - {x: -11, y: 51.5}
+        - {x: -17, y: 53.5}
+        - {x: -29, y: 53.5}
+        - {x: -31, y: 52.5}
+        - {x: -36, y: 47.5}
+        - {x: -38, y: 44.5}
+        - {x: -38, y: 32.5}
+        - {x: -34, y: 28.5}
+        - {x: -32, y: 24.5}
+        - {x: -34, y: 17.5}
+        - {x: -36, y: 9.5}
+        - {x: -36, y: -10.5}
+        - {x: -32, y: -16.5}
+        - {x: -28, y: -16.5}
+        - {x: -24, y: -20.5}
+        - {x: -32, y: -30.5}
+        - {x: -33, y: -33.5}
+        - {x: -26, y: -37.5}
+        - {x: -5, y: -37.5}
+        - {x: -2, y: -40.5}
+        - {x: -2, y: -47.5}
+        - {x: 5, y: -53.5}
+        - {x: 9, y: -53.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 904c3824bde45f500800000000000000
+      internalID: 429336043104486409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_54
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 128
+        width: 70
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 10, y: -51.5}
+        - {x: 15, y: -47.5}
+        - {x: 16, y: -47.5}
+        - {x: 23, y: -43.5}
+        - {x: 25, y: -38.5}
+        - {x: 30, y: -39.5}
+        - {x: 32, y: -37.5}
+        - {x: 32, y: -33.5}
+        - {x: 31, y: -27.5}
+        - {x: 33, y: -21.5}
+        - {x: 33, y: -10.5}
+        - {x: 35, y: -8.5}
+        - {x: 35, y: -1.5}
+        - {x: 29, y: 3.5}
+        - {x: 25, y: 3.5}
+        - {x: 18, y: -1.5}
+        - {x: 12, y: -2.5}
+        - {x: 12, y: 7.5}
+        - {x: 11, y: 11.5}
+        - {x: 10, y: 16.5}
+        - {x: 2, y: 39.5}
+        - {x: -1, y: 44.5}
+        - {x: -7, y: 50.5}
+        - {x: -13, y: 53.5}
+        - {x: -24, y: 53.5}
+        - {x: -29, y: 51.5}
+        - {x: -35, y: 45.5}
+        - {x: -35, y: 31.5}
+        - {x: -30, y: 27.5}
+        - {x: -28, y: 24.5}
+        - {x: -30, y: 19.5}
+        - {x: -33, y: 8.5}
+        - {x: -33, y: 3.5}
+        - {x: -35, y: 1.5}
+        - {x: -35, y: -11.5}
+        - {x: -30, y: -17.5}
+        - {x: -25, y: -17.5}
+        - {x: -21, y: -21.5}
+        - {x: -22, y: -26.5}
+        - {x: -29, y: -33.5}
+        - {x: -30, y: -35.5}
+        - {x: -22, y: -40.5}
+        - {x: -3, y: -41.5}
+        - {x: -3, y: -47.5}
+        - {x: 1, y: -52.5}
+        - {x: 4, y: -53.5}
+        - {x: 8, y: -53.5}
+      - - {x: 11, y: -15.5}
+        - {x: 11, y: -14.5}
+        - {x: 13, y: -11.5}
+        - {x: 16, y: -11.5}
+        - {x: 16, y: -12.5}
+        - {x: 15, y: -13.5}
+        - {x: 15, y: -18.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 6dfbda19e70a4c3d0800000000000000
+      internalID: -3187246170801061930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_55
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 135
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 21, y: -40.5}
+        - {x: 19, y: -33.5}
+        - {x: 17, y: -30.5}
+        - {x: 22, y: -26.5}
+        - {x: 25, y: -18.5}
+        - {x: 25, y: 0.5}
+        - {x: 24, y: 4.5}
+        - {x: 23, y: 9.5}
+        - {x: 21, y: 17.5}
+        - {x: 15, y: 24.5}
+        - {x: 14, y: 35.5}
+        - {x: 6, y: 43.5}
+        - {x: -1, y: 46.5}
+        - {x: -13, y: 46.5}
+        - {x: -16, y: 45.5}
+        - {x: -22, y: 39.5}
+        - {x: -23, y: 36.5}
+        - {x: -23, y: 28.5}
+        - {x: -22, y: 25.5}
+        - {x: -17, y: 21.5}
+        - {x: -11, y: 20.5}
+        - {x: -15, y: 17.5}
+        - {x: -20, y: -0.5}
+        - {x: -25, y: -6.5}
+        - {x: -25, y: -13.5}
+        - {x: -24, y: -16.5}
+        - {x: -20, y: -19.5}
+        - {x: -17, y: -25.5}
+        - {x: -12, y: -25.5}
+        - {x: -8, y: -29.5}
+        - {x: -10, y: -34.5}
+        - {x: -15, y: -38.5}
+        - {x: -17, y: -41.5}
+        - {x: -10, y: -46.5}
+        - {x: 17, y: -46.5}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: cc609661f13597510800000000000000
+      internalID: 1547359339963549388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warrior_Blue_57
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 135
+        width: 78
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 16, y: -49}
+        - {x: 19, y: -43}
+        - {x: 21, y: -44}
+        - {x: 28, y: -41}
+        - {x: 30, y: -36}
+        - {x: 36, y: -24}
+        - {x: 37, y: -20}
+        - {x: 37, y: -14}
+        - {x: 36, y: -6}
+        - {x: 39, y: -4}
+        - {x: 39, y: 1}
+        - {x: 38, y: 3}
+        - {x: 30, y: 6}
+        - {x: 25, y: 4}
+        - {x: 20, y: -3}
+        - {x: 18, y: -11}
+        - {x: 18, y: -14}
+        - {x: 16, y: -15}
+        - {x: 11, y: -24}
+        - {x: 9, y: -27}
+        - {x: 0, y: -28}
+        - {x: 6, y: -25}
+        - {x: 9, y: -20}
+        - {x: 9, y: -11}
+        - {x: 8, y: 4}
+        - {x: 7, y: 8}
+        - {x: 6, y: 13}
+        - {x: 2, y: 23}
+        - {x: -2, y: 35}
+        - {x: -5, y: 41}
+        - {x: -14, y: 49}
+        - {x: -18, y: 51}
+        - {x: -30, y: 51}
+        - {x: -33, y: 50}
+        - {x: -39, y: 44}
+        - {x: -39, y: 31}
+        - {x: -34, y: 27}
+        - {x: -27, y: 25}
+        - {x: -31, y: 22}
+        - {x: -34, y: 12}
+        - {x: -36, y: 5}
+        - {x: -36, y: -15}
+        - {x: -32, y: -21}
+        - {x: -28, y: -21}
+        - {x: -25, y: -28}
+        - {x: -33, y: -36}
+        - {x: -34, y: -38}
+        - {x: -26, y: -43}
+        - {x: 0, y: -43}
+        - {x: 5, y: -49}
+        - {x: 9, y: -51}
+        - {x: 14, y: -51}
+      physicsShape: []
+      tessellationDetail: 0.542
+      bones: []
+      spriteID: 551e6fbd6ff987740800000000000000
+      internalID: 5150042056499323221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 08b231af0b52944419eedfed41b63c33
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Warrior_Blue_0: 1448252480329919801
+      Warrior_Blue_1: -8838482275237848885
+      Warrior_Blue_10: -7028422606531620881
+      Warrior_Blue_11: -8599349895570148482
+      Warrior_Blue_12: 4887455543641441687
+      Warrior_Blue_13: 1617535587422869692
+      Warrior_Blue_14: -6733473425934966021
+      Warrior_Blue_15: 8057981515537251145
+      Warrior_Blue_16: -2295091820497786881
+      Warrior_Blue_17: -4070611951465040981
+      Warrior_Blue_18: -6020158371915913484
+      Warrior_Blue_19: 6852195566242143941
+      Warrior_Blue_2: 5406782203547414040
+      Warrior_Blue_20: 8623725918659698721
+      Warrior_Blue_21: -7630331419334528658
+      Warrior_Blue_22: 8250042118999599827
+      Warrior_Blue_23: 1831561948527194828
+      Warrior_Blue_24: 5737398224882651483
+      Warrior_Blue_25: 686275002757285879
+      Warrior_Blue_26: -6820794401073396575
+      Warrior_Blue_27: -8322565654407655767
+      Warrior_Blue_28: 999363956346284212
+      Warrior_Blue_29: 920778665628228539
+      Warrior_Blue_3: 1463704688382458982
+      Warrior_Blue_30: -1862056862079330845
+      Warrior_Blue_31: -175862040222990888
+      Warrior_Blue_32: 2103004666898697155
+      Warrior_Blue_33: -4121134383873880558
+      Warrior_Blue_34: -1349581481503386264
+      Warrior_Blue_35: -2586977061673965500
+      Warrior_Blue_36: -3057998330571279762
+      Warrior_Blue_37: 4015574649506354893
+      Warrior_Blue_38: -232515625000527906
+      Warrior_Blue_39: 807218313078530972
+      Warrior_Blue_4: -9152939422376490735
+      Warrior_Blue_40: 675785488431832003
+      Warrior_Blue_41: 8958472748343319348
+      Warrior_Blue_42: 8782361303006435773
+      Warrior_Blue_43: 5704183421965384451
+      Warrior_Blue_44: -2183790841163557842
+      Warrior_Blue_45: 9051283987780761484
+      Warrior_Blue_46: -4985013248184194703
+      Warrior_Blue_47: -2110690741743447410
+      Warrior_Blue_48: 5597869990218008791
+      Warrior_Blue_49: -7490071170321743814
+      Warrior_Blue_5: 5013799040997709749
+      Warrior_Blue_50: -3107757338139221465
+      Warrior_Blue_51: 5047536160546663753
+      Warrior_Blue_52: -4148541266878104647
+      Warrior_Blue_53: 429336043104486409
+      Warrior_Blue_54: -3187246170801061930
+      Warrior_Blue_55: 1547359339963549388
+      Warrior_Blue_56: -6021040159146955871
+      Warrior_Blue_57: 5150042056499323221
+      Warrior_Blue_6: -1672519898550114602
+      Warrior_Blue_7: -7791425953029368767
+      Warrior_Blue_8: 1484279566179589967
+      Warrior_Blue_9: -3403234807515756179
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
