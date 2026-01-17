@@ -23,7 +23,23 @@
 
 ## 📸 Screenshots
 
-> *Coming soon! Check back for epic gameplay screenshots!*
+### 🎮 Start Screen
+<div align="center">
+  <img src="Screenshots/Start_Page.png" alt="Game Start Screen" width="700">
+  <p><em>Welcome to the Journey of the Goblin Slayer!</em></p>
+</div>
+
+### ⚔️ Intense Gameplay
+<div align="center">
+  <img src="Screenshots/Game.png" alt="Gameplay Action" width="700">
+  <p><em>Battle through waves of enemies with your bow!</em></p>
+</div>
+
+### ⚙️ Game Settings
+<div align="center">
+  <img src="Screenshots/Settings.png" alt="Settings Menu" width="700">
+  <p><em>Customize your gaming experience</em></p>
+</div>
 
 ---
 
