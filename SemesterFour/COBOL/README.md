@@ -40,12 +40,3 @@ A collection of COBOL programming assignments demonstrating various business app
 - Store-specific tracking
 - Tax calculations
 
----
-
-## 🎯 Learning Objectives
-- COBOL syntax and structure
-- Business logic implementation
-- File handling techniques
-- Report generation
-- Data processing methods
-

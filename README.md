@@ -18,4 +18,3 @@ This repository showcases a selection of assignments and projects from my colleg
 ## 📂 How to Navigate
 - Explore the folders to view specific projects. *(My website serves as the main hub for accessing everything.)*
 - Some projects include their own `README.md` files with additional details and instructions.
-
