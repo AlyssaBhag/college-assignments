@@ -17,7 +17,8 @@
 
 ### Controls
 - **WASD / Arrow Keys** - Move your character
-- **Mouse** - Aim your weapon
+- **K** - Shot your weapon
+- **ESC** - Pauses/exit game button
 - **Spacebar** - Activate special abilities (when available)
 
 
