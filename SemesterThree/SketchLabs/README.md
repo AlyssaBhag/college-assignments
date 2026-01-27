@@ -11,21 +11,22 @@ Your all-in-one digital creative studio! SketchLabs is a C# and WPF desktop appl
 
 ## 📸 Screenshots
 
-### Record Screen
-<div align="left">
-  <img src="Screenshots/Record.png" alt="Record audio page" width="700">
-  <p><em>Audio recording interface for capturing voice memos and reflections</em></p>
-</div>
-
-### Text Screen
-<div align="left">
-  <img src="Screenshots/Text.png" alt="Text entry page" width="700">
-  <p><em>Written content editor for notes, ideas, and journal entries</em></p>
-</div>
-
-### Draw Screen
-<div align="left">
-  <img src="Screenshots/Draw.png" alt="Drawing canvas page" width="700">
-  <p><em>Digital drawing canvas for sketches and creative artwork</em></p>
+<div align="center">
+  <table>
+    <tr>
+      <td width="33%" align="center">
+        <img src="Screenshots/Record.png" alt="Record audio page" width="300">
+        <p><em>Audio Recording</em></p>
+      </td>
+      <td width="33%" align="center">
+        <img src="Screenshots/Text.png" alt="Text entry page" width="300">
+        <p><em>Text Editor</em></p>
+      </td>
+      <td width="33%" align="center">
+        <img src="Screenshots/Draw.png" alt="Drawing canvas page" width="300">
+        <p><em>Drawing Canvas</em></p>
+      </td>
+    </tr>
+  </table>
 </div>
 

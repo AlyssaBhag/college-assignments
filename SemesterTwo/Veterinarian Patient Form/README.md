@@ -15,7 +15,6 @@ Patient records are saved to `patientForms.txt`
 ### This is also a screenshot of what it looks like: 
 <div align="center">
   <img src="Screenshots/VetForm.png" alt="form" width="700">
-  <p><em>Customize your gaming experience</em></p>
 </div>
 
 
