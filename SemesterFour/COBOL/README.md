@@ -1,6 +1,4 @@
-# 🎓 College Programming Assignments
-
-## 📚 COBOL Programming - Semester 4
+# 📚 COBOL Programming - Semester 4
 A collection of COBOL programming assignments demonstrating various business application development concepts.
 
 ### Assignments Overview

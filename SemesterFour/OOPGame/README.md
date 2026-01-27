@@ -1,13 +1,13 @@
-# 🔥 The Journey of the Goblin Slayer 🔥
+#  The Journey of the Goblin Slayer 🧌 🏹
 ### *A 2D Survivor Shooter Inspired by Stardew Valley's Prairie King*
 
-[![Unity](https://img.shields.io/badge/Unity-2022.3-black?logo=unity)](https://unity.com/)
+<!-- [![Unity](https://img.shields.io/badge/Unity-2022.3-black?logo=unity)](https://unity.com/)
 [![C#](https://img.shields.io/badge/C%23-10.0-blue?logo=c-sharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
-[![License](https://img.shields.io/badge/License-Academic-green)]()
+[![License](https://img.shields.io/badge/License-Academic-green)]() -->
 
 ---
 
-## 🎮 About The Game
+## About The Game
 
 **The Journey of the Goblin Slayer ** is an intense 2D top-down shooter where you battle through waves of enemies in a desperate fight for survival. Inspired by the beloved mini game *Journey of the Prairie King* from Stardew Valley, this action-packed adventure tests your reflexes, strategy, and determination as the difficulty escalates with each passing wave. You are armed with nothing but your bow and determination, you must face increasingly challenging waves of enemies. Collect powerful perks, upgrade your arsenal, and prove your worth as the ultimate survivor. Will you climb to the top of the leaderboard, or fall to your enemies?
 
